@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HDC Wiki</title>
+<meta name="description" content="Knowledge graph of high ductile concrete research, compiled and maintained by an LLM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cement:#E6E8E6; --slab:#F4F5F3; --paper:#FFFFFF; --graphite:#22272B; --muted:#5E666C;
+  --line:#C9CDCB; --hair:rgba(34,39,43,.16);
+  --source:#1F5D7F; --concept:#B07D12; --material:#5F7631; --property:#8E3A57;
+  --test-method:#4F5597; --application:#2A7A69; --dataset:#8A5A2B; --hub:#22272B; --synthesis:#22272B;
+  --focus:#1F5D7F;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --cement:#1A1D1F; --slab:#202427; --paper:#262A2E; --graphite:#E4E7E5; --muted:#9AA3A8;
+    --line:#3A4045; --hair:rgba(228,231,229,.14);
+    --source:#5FA3C8; --concept:#D9A93F; --material:#9DB665; --property:#CF7896;
+    --test-method:#9399DA; --application:#5FB8A4; --dataset:#C99561; --hub:#E4E7E5; --synthesis:#E4E7E5; --focus:#5FA3C8; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--cement);color:var(--graphite);font:15px/1.5 Archivo,system-ui,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--source)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+header{display:flex;align-items:flex-end;gap:32px;padding:18px 24px 0;border-bottom:1px solid var(--line);background:var(--slab);flex-wrap:wrap}
+.brand h1{margin:0;font-size:22px;font-weight:700;letter-spacing:-.01em}
+.brand p{margin:2px 0 12px;color:var(--muted);font-size:13px;max-width:60ch}
+nav{display:flex;gap:2px}
+nav a{display:block;padding:10px 14px;text-decoration:none;color:var(--muted);font-weight:500;border-bottom:3px solid transparent}
+nav a[aria-current="page"]{color:var(--graphite);border-bottom-color:var(--graphite)}
+nav a:hover{color:var(--graphite)}
+.stats{margin-left:auto;padding-bottom:12px;color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+main{flex:1;display:flex;min-height:0}
+.view{display:none;flex:1;min-width:0}
+.view.on{display:flex}
+/* graph */
+#v-graph{flex-direction:column}
+.toolbar{display:flex;gap:8px;align-items:center;padding:8px 24px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+input[type=search]{font:inherit;padding:7px 10px;border:1px solid var(--line);background:var(--paper);color:var(--graphite);border-radius:4px;width:220px}
+.chip{font:inherit;font-size:13px;display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid var(--line);background:var(--paper);color:var(--graphite);border-radius:999px;cursor:pointer}
+.chip[aria-pressed=false]{opacity:.45}
+.chip i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.btn{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--graphite);background:transparent;color:var(--graphite);border-radius:4px;cursor:pointer}
+.btn:hover{background:var(--graphite);color:var(--slab)}
+.stage{flex:1;display:flex;min-height:0}
+#graph{flex:1;min-width:0;position:relative}
+aside.panel{width:340px;border-left:1px solid var(--line);background:var(--slab);padding:20px;overflow:auto}
+.panel .empty{color:var(--muted)}
+.type{font-size:12.5px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.type i{width:9px;height:9px;border-radius:50%}
+.panel h2{font-size:18px;line-height:1.3;margin:6px 0 10px}
+.panel p{font-family:"Source Serif 4",Georgia,serif;font-size:15px;line-height:1.6;margin:0 0 14px}
+.panel h3{font-size:13px;color:var(--muted);font-weight:600;margin:16px 0 6px}
+.linklist{list-style:none;padding:0;margin:0;font-size:13.5px}
+.linklist li{padding:3px 0;display:flex;gap:8px;align-items:baseline}
+.linklist i{flex:none;width:7px;height:7px;border-radius:50%;transform:translateY(-1px)}
+.linklist a{text-decoration:none;color:var(--graphite)}
+.linklist a:hover{text-decoration:underline}
+/* catalog / concepts / about */
+.page{flex:1;overflow:auto;padding:28px 24px 60px}
+.page-inner{max-width:1100px;margin:0 auto}
+.page h2{font-size:24px;margin:0 0 6px;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 20px;max-width:70ch}
+table.cat{width:100%;border-collapse:collapse;background:var(--paper);font-size:14px}
+table.cat th{text-align:left;font-weight:600;font-size:13px;color:var(--muted);padding:10px 12px;border-bottom:2px solid var(--graphite);cursor:pointer;white-space:nowrap}
+table.cat td{padding:10px 12px;border-bottom:1px solid var(--hair);vertical-align:top}
+table.cat td.yr{font-variant-numeric:tabular-nums;font-weight:600}
+table.cat a.t{color:var(--graphite);font-weight:500;text-decoration:none}
+table.cat a.t:hover{text-decoration:underline}
+.term{font-size:12.5px;color:var(--muted)}
+.groups{columns:3 300px;column-gap:32px}
+.group{break-inside:avoid;margin:0 0 28px}
+.group h3{font-size:15px;margin:0 0 8px;padding-bottom:6px;border-bottom:2px solid currentColor;display:flex;justify-content:space-between}
+.group ul{list-style:none;margin:0;padding:0}
+.group li{padding:6px 0;border-bottom:1px solid var(--hair)}
+.group li a{color:var(--graphite);font-weight:500;text-decoration:none}
+.group li a:hover{text-decoration:underline}
+.group li span{display:block;font-size:13px;color:var(--muted);line-height:1.4;margin-top:2px}
+.about{max-width:68ch;font-family:"Source Serif 4",Georgia,serif;font-size:17px;line-height:1.65}
+.about h3{font-family:Archivo,sans-serif;font-size:16px;margin:28px 0 8px}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:16px 0;font-family:Archivo,sans-serif;font-size:14px}
+.flow div{border:1px solid var(--graphite);padding:12px;margin-right:-1px;background:var(--paper)}
+.flow b{display:block;margin-bottom:4px}
+/* note reader */
+#v-note .page-inner{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px}
+.note-side{font-size:13.5px;position:sticky;top:0;align-self:start}
+.note-side h3{font-size:13px;color:var(--muted);margin:18px 0 6px}
+.md{font-family:"Source Serif 4",Georgia,serif;font-size:16.5px;line-height:1.65;max-width:78ch;background:var(--paper);padding:32px 40px;border:1px solid var(--line)}
+.md h1{font-family:Archivo,sans-serif;font-size:26px;line-height:1.25;margin:0 0 18px;letter-spacing:-.01em}
+.md h2{font-family:Archivo,sans-serif;font-size:19px;margin:30px 0 10px}
+.md h3{font-family:Archivo,sans-serif;font-size:16px;margin:22px 0 8px}
+.md table{border-collapse:collapse;font-family:Archivo,sans-serif;font-size:13px;line-height:1.4;display:block;overflow-x:auto;margin:12px 0}
+.md th,.md td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.md th{background:var(--slab)}
+.md blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--concept);background:var(--slab)}
+.md code{font-size:.88em;background:var(--slab);padding:1px 4px}
+.md a.wl{text-decoration:none;border-bottom:1px solid currentColor}
+.md a.wl.missing{color:var(--muted);border-bottom-style:dotted}
+footer{padding:12px 24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);background:var(--slab)}
+@media (max-width:820px){
+  header{gap:8px} .stats{margin-left:0}
+  .stage{flex-direction:column} #graph{min-height:60vh} aside.panel{width:auto;border-left:0;border-top:1px solid var(--line)}
+  #v-note .page-inner{grid-template-columns:1fr} .note-side{position:static} .md{padding:20px 16px}
+  .flow{grid-template-columns:1fr} .flow div{margin:0 0 -1px}
+  input[type=search]{width:100%}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>HDC Wiki</h1>
+    <p>A knowledge graph of high ductile concrete research, compiled and kept current by an LLM. Every number links back to its paper.</p>
+  </div>
+  <nav aria-label="Sections">
+    <a href="#/graph">Graph</a><a href="#/catalog">Catalog</a><a href="#/concepts">Concepts</a><a href="#/about">About</a>
+  </nav>
+  <div class="stats" id="stats"></div>
+</header>
+<main>
+  <section class="view" id="v-graph" aria-label="Graph">
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search notes" aria-label="Search notes">
+      <div id="chips" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+      <button class="btn" id="fit">Fit to screen</button>
+    </div>
+    <div class="stage">
+      <div id="graph" role="img" aria-label="Network of wiki notes"></div>
+      <aside class="panel" id="panel" aria-live="polite"><p class="empty">Select a node to see its summary and connections. Double-click to open the note.</p></aside>
+    </div>
+  </section>
+  <section class="view" id="v-catalog"><div class="page"><div class="page-inner">
+    <h2>Catalog</h2>
+    <p class="lede">Every paper ingested into the wiki. Select a title to read its source note, with mix designs, results and the items still to verify.</p>
+    <input type="search" id="cq" placeholder="Filter papers" aria-label="Filter papers" style="margin-bottom:12px">
+    <div style="overflow-x:auto"><table class="cat"><thead><tr>
+      <th data-k="year">Year</th><th data-k="title">Paper</th><th data-k="venue">Journal</th><th data-k="material_term">Material term</th><th>DOI</th>
+    </tr></thead><tbody id="cat"></tbody></table></div>
+  </div></div></section>
+  <section class="view" id="v-concepts"><div class="page"><div class="page-inner">
+    <h2>Concepts</h2>
+    <p class="lede">Topic notes synthesised across papers, grouped by kind. Each one cites the source notes behind its claims.</p>
+    <div class="groups" id="groups"></div>
+  </div></div></section>
+  <section class="view" id="v-about"><div class="page"><div class="page-inner about" id="about"></div></div></section>
+  <section class="view" id="v-note"><div class="page"><div class="page-inner">
+    <div class="note-side" id="note-side"></div>
+    <article class="md" id="note-body"></article>
+  </div></div></section>
+</main>
+<footer id="foot"></footer>
+
+<script id="data" type="application/json">/*__DATA__*/null</script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/force-graph@1.43.5/dist/force-graph.min.js"></script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const NOTES = DATA.notes, BY = Object.fromEntries(NOTES.map(n => [n.slug, n]));
+const TYPES = [
+  ['source','Papers'],['concept','Concepts'],['material','Materials'],['property','Properties'],
+  ['test-method','Test methods'],['application','Applications'],['dataset','Datasets'],['hub','Hubs'],['synthesis','Synthesis']];
+const TLABEL = Object.fromEntries(TYPES);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const color = t => css('--' + t) || css('--hub');
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const dot = t => `<i style="background:${color(t)}"></i>`;
+const nLinks = NOTES.reduce((a, n) => a + n.links.length, 0);
+const nSrc = NOTES.filter(n => n.type === 'source').length;
+document.getElementById('stats').textContent = `${NOTES.length} notes · ${nLinks} links · ${nSrc} papers`;
+document.getElementById('foot').textContent = `Built ${DATA.built} from the wiki folder. Summaries and data extracted by an LLM; verify numbers against the original papers.`;
+
+/* ---------- graph ---------- */
+const active = new Set(TYPES.map(t => t[0]));
+const chips = document.getElementById('chips');
+TYPES.forEach(([t, label]) => {
+  const c = NOTES.filter(n => n.type === t).length; if (!c) return;
+  const b = document.createElement('button');
+  b.className = 'chip'; b.setAttribute('aria-pressed', 'true');
+  b.innerHTML = `${dot(t)}${label} ${c}`;
+  b.onclick = () => { active.has(t) ? active.delete(t) : active.add(t); b.setAttribute('aria-pressed', active.has(t)); refresh(); };
+  chips.appendChild(b);
+});
+const deg = Object.fromEntries(NOTES.map(n => [n.slug, n.links.length + n.backlinks.length]));
+let selected = null, hoverSet = null, G = null, fitted = false, lastClick = {id: null, t: 0};
+function graphData() {
+  const nodes = NOTES.filter(n => active.has(n.type)).map(n => ({id: n.slug, type: n.type, title: n.title}));
+  const ids = new Set(nodes.map(n => n.id));
+  const links = [];
+  NOTES.forEach(n => n.links.forEach(l => { if (ids.has(n.slug) && ids.has(l)) links.push({source: n.slug, target: l}); }));
+  return {nodes, links};
+}
+function neighbours(id) { const n = BY[id]; return new Set([id, ...n.links, ...n.backlinks]); }
+function initGraph() {
+  const el = document.getElementById('graph');
+  G = ForceGraph()(el)
+    .graphData(graphData())
+    .nodeId('id')
+    .nodeVal(n => 1 + deg[n.id] * 0.3)
+    .nodeRelSize(2.6)
+    .linkColor(l => {
+      const s = l.source.id ?? l.source, t = l.target.id ?? l.target;
+      if (hoverSet) return (hoverSet.has(s) && hoverSet.has(t) && (s === selected || t === selected)) ? css('--graphite') : css('--hair');
+      return css('--hair');
+    })
+    .linkWidth(l => { const s = l.source.id ?? l.source, t = l.target.id ?? l.target; return selected && (s === selected || t === selected) ? 1.4 : 0.6; })
+    .nodeCanvasObject((n, ctx, scale) => {
+      const r = Math.sqrt(1 + deg[n.id] * 0.3) * 3.2;
+      const dim = hoverSet && !hoverSet.has(n.id);
+      ctx.globalAlpha = dim ? 0.15 : 1;
+      ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, 2 * Math.PI); ctx.fillStyle = color(n.type); ctx.fill();
+      if (n.id === selected) { ctx.lineWidth = 2 / scale; ctx.strokeStyle = css('--graphite'); ctx.stroke(); }
+      const showLabel = !dim && (n.id === selected || (hoverSet && hoverSet.has(n.id)) || n.type === 'source' || (n.type === 'hub' && n.id !== 'log') || scale > 2.6);
+      if (showLabel) {
+        const fs = Math.max(11 / scale, 2.2);
+        ctx.font = `${n.type === 'source' ? 600 : 500} ${fs}px Archivo, sans-serif`;
+        ctx.fillStyle = css('--graphite'); ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+        const label = n.type === 'source' ? n.id.replace(/^([a-z]+)(\d{4}).*/, (m, a, y) => a[0].toUpperCase() + a.slice(1) + ' ' + y) : n.title.replace(/\s*[(:—].*$/, '');
+        ctx.fillText(label.length > 34 ? label.slice(0, 32) + '…' : label, n.x, n.y + r + 1.5);
+      }
+      ctx.globalAlpha = 1;
+    })
+    .nodePointerAreaPaint((n, col, ctx) => { const r = Math.sqrt(1 + deg[n.id] * 0.3) * 3.2 + 2; ctx.fillStyle = col; ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, 2 * Math.PI); ctx.fill(); })
+    .onNodeClick(n => {
+      const now = Date.now();
+      if (lastClick.id === n.id && now - lastClick.t < 350) { location.hash = '#/note/' + n.id; return; }
+      lastClick = {id: n.id, t: now}; select(n.id);
+    })
+    .onBackgroundClick(() => select(null))
+    .cooldownTicks(300)
+    .onEngineStop(() => { if (!fitted) { fitted = true; G.zoomToFit(500, 50); } });
+  G.d3Force('charge').strength(-160);
+  G.d3Force('link').distance(l => (l.source.type === 'source' || l.target.type === 'source') ? 60 : 40);
+  const ro = new ResizeObserver(() => G.width(el.clientWidth).height(el.clientHeight));
+  ro.observe(el);
+}
+function refresh() { G.graphData(graphData()); }
+function select(id) {
+  selected = id; hoverSet = id ? neighbours(id) : null;
+  const p = document.getElementById('panel');
+  if (!id) { p.innerHTML = '<p class="empty">Select a node to see its summary and connections. Double-click to open the note.</p>'; G && G.refresh?.(); return; }
+  const n = BY[id];
+  const li = arr => arr.map(s => `<li>${dot(BY[s].type)}<a href="#/note/${s}">${esc(BY[s].title)}</a></li>`).join('');
+  p.innerHTML = `<span class="type">${dot(n.type)}${TLABEL[n.type] || n.type}</span>
+    <h2>${esc(n.title)}</h2>${n.summary ? `<p>${esc(n.summary)}</p>` : ''}
+    <a class="btn" href="#/note/${id}" style="text-decoration:none;display:inline-block">Open note</a>
+    ${n.links.length ? `<h3>Links to ${n.links.length}</h3><ul class="linklist">${li(n.links)}</ul>` : ''}
+    ${n.backlinks.length ? `<h3>Linked from ${n.backlinks.length}</h3><ul class="linklist">${li(n.backlinks)}</ul>` : ''}`;
+}
+document.getElementById('fit').onclick = () => G.zoomToFit(400, 40);
+document.getElementById('q').addEventListener('input', e => {
+  const q = e.target.value.trim().toLowerCase();
+  if (!q) { select(null); return; }
+  const hit = NOTES.find(n => n.title.toLowerCase().includes(q) || n.slug.includes(q));
+  if (hit && active.has(hit.type)) {
+    select(hit.slug);
+    const node = G.graphData().nodes.find(x => x.id === hit.slug);
+    if (node && node.x != null) { G.centerAt(node.x, node.y, 500); G.zoom(3, 500); }
+  }
+});
+
+/* ---------- catalog ---------- */
+const sources = NOTES.filter(n => n.type === 'source');
+let sortK = 'year', sortDir = 1;
+function renderCatalog() {
+  const q = document.getElementById('cq').value.trim().toLowerCase();
+  const rows = sources.filter(n => !q || JSON.stringify(n.meta).toLowerCase().includes(q))
+    .sort((a, b) => String(a.meta[sortK] ?? '').localeCompare(String(b.meta[sortK] ?? ''), undefined, {numeric: true}) * sortDir);
+  document.getElementById('cat').innerHTML = rows.map(n => {
+    const m = n.meta, au = Array.isArray(m.authors) ? m.authors : [];
+    const doi = (m.doi || '').match(/10\.\d{4,}\/\S+/);
+    return `<tr><td class="yr">${esc(m.year)}</td>
+      <td><a class="t" href="#/note/${n.slug}">${esc(m.title || n.title)}</a><div class="term">${esc(au.slice(0, 3).join(', '))}${au.length > 3 ? ' et al.' : ''}</div></td>
+      <td>${esc((m.venue || '').replace(/\s*\(.*$/, ''))}</td>
+      <td class="term">${esc((m.material_term || '').split(/[;(]/)[0])}</td>
+      <td>${doi ? `<a href="https://doi.org/${esc(doi[0])}" target="_blank" rel="noopener">Open DOI</a>` : '<span class="term">not listed</span>'}</td></tr>`;
+  }).join('') || '<tr><td colspan="5">No papers match this filter. Clear the box to see all papers.</td></tr>';
+}
+document.querySelectorAll('table.cat th[data-k]').forEach(th => th.onclick = () => {
+  sortDir = sortK === th.dataset.k ? -sortDir : 1; sortK = th.dataset.k; renderCatalog(); });
+document.getElementById('cq').addEventListener('input', renderCatalog);
+
+/* ---------- concepts ---------- */
+document.getElementById('groups').innerHTML = TYPES.filter(([t]) => t !== 'source').map(([t, label]) => {
+  const items = NOTES.filter(n => n.type === t).sort((a, b) => (b.backlinks.length - a.backlinks.length));
+  if (!items.length) return '';
+  return `<div class="group" style="color:${color(t)}"><h3><span>${label}</span><span>${items.length}</span></h3><ul>` +
+    items.map(n => `<li><a href="#/note/${n.slug}">${esc(n.title)}</a>${n.summary ? `<span>${esc(n.summary.slice(0, 140))}${n.summary.length > 140 ? '…' : ''}</span>` : ''}</li>`).join('') +
+    '</ul></div>';
+}).join('');
+
+/* ---------- about ---------- */
+document.getElementById('about').innerHTML = `
+  <h2 style="font-family:Archivo,sans-serif">About this wiki</h2>
+  <p>This site is an <strong>LLM wiki</strong> on high ductile concrete (HDC) and related strain-hardening cementitious composites. Instead of searching raw PDFs at question time, a language model reads each paper once and compiles what it learns into linked notes: one note per paper, plus topic notes that are updated every time a new paper arrives.</p>
+  <h3>How it is built</h3>
+  <div class="flow"><div><b>Raw sources</b>Original papers. Never edited.</div><div><b>Wiki</b>Markdown notes written and maintained by the LLM.</div><div><b>Schema</b>Rules the LLM must follow: citations, units, conflict handling.</div></div>
+  <p>Each new paper is <em>ingested</em>: the model writes a source note, adds its mix designs and results to the shared tables, updates the related topic notes, and logs any disagreement with earlier papers. A periodic <em>lint</em> pass looks for uncited claims, broken links and research gaps.</p>
+  <h3>Evidence rules</h3>
+  <p>Every number cites a source note and, where possible, the table or figure it came from. Values the model could not confirm are marked for checking. When papers disagree, both values are kept and the conflict is listed on the <a href="#/note/gaps">gaps</a> page.</p>
+  <h3>Current contents</h3>
+  <p>${nSrc} papers, ${NOTES.length} notes and ${nLinks} links. Start with the <a href="#/note/index">index</a>, the <a href="#/note/review-outline">review outline</a> or the <a href="#/note/terminology-hdc-ecc-shcc">terminology</a> note.</p>`;
+
+/* ---------- note reader ---------- */
+marked.use({gfm: true});
+function renderNote(slug) {
+  const n = BY[slug];
+  if (!n) { document.getElementById('note-body').innerHTML = `<h1>Note not found</h1><p>No note is named “${esc(slug)}”. Go back to the <a href="#/graph">graph</a> or the <a href="#/concepts">concepts list</a>.</p>`; document.getElementById('note-side').innerHTML = ''; return; }
+  const md = n.body.replace(/\[\[([^\]|#]+)\]\]/g, (m, s) => BY[s] ? `<a class="wl" href="#/note/${s}" style="color:${color(BY[s].type)}">${esc(BY[s].title.replace(/\s*\(.*$/, ''))}</a>` : `<a class="wl missing">${esc(s)}</a>`);
+  document.getElementById('note-body').innerHTML = marked.parse(md);
+  const li = arr => arr.map(s => `<li>${dot(BY[s].type)}<a href="#/note/${s}">${esc(BY[s].title)}</a></li>`).join('');
+  document.getElementById('note-side').innerHTML = `<a href="#/graph">Back to graph</a>
+    <h3>Kind</h3><span class="type">${dot(n.type)}${TLABEL[n.type] || n.type}</span>
+    ${n.backlinks.length ? `<h3>Linked from ${n.backlinks.length}</h3><ul class="linklist">${li(n.backlinks)}</ul>` : ''}`;
+  document.querySelector('#v-note .page').scrollTop = 0;
+  document.title = n.title + ' · HDC Wiki';
+}
+
+/* ---------- router ---------- */
+function route() {
+  const h = location.hash || '#/graph';
+  const [, view, arg] = h.match(/^#\/([a-z]+)\/?(.*)$/) || [, 'graph'];
+  document.querySelectorAll('.view').forEach(v => v.classList.toggle('on', v.id === 'v-' + view));
+  document.querySelectorAll('nav a').forEach(a => { if (a.getAttribute('href') === '#/' + view) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  if (view === 'graph' && !G) initGraph();
+  if (view === 'catalog') renderCatalog();
+  if (view === 'note') renderNote(decodeURIComponent(arg));
+  if (view !== 'note') document.title = 'HDC Wiki';
+}
+window.addEventListener('hashchange', route);
+route();
+</script>
+</body>
+</html>
