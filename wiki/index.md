@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-10-06
+updated: 2026-10-16
 ---
 
 # HDC Wiki — Index
@@ -8,12 +8,17 @@ updated: 2026-10-06
 The LLM reads this page first. Each entry is a wikilink to a page slug, followed by a one-line summary.
 
 ## Hubs
-- [[gaps]]: 7 conflicts, under-studied areas, open questions
+- [[gaps]]: 14 conflicts, under-studied areas, open questions
 - [[log]]: operation history
 - [[review-outline]]: review chapters, with source coverage (✅/🟡/❌)
 - [[terminology-hdc-ecc-shcc]]: HDC ≈ ECC/SHCC; HSHDC has 3 lineages; UHDC; definitions
 
-## Sources (6)
+## Sources (11)
+- [[li1992-steady-state-multiple-cracking]]: Li & Leung 1992 (J Eng Mech): steady-state cracking theory; V_f^crit; failure-mode map
+- [[li2002-pva-ecc-interface-tailoring]]: Li et al. 2002 (ACI MJ): oil-coated PVA tunes τ0 and Gd; ε_tu 0.99 → 4.88%; classic PVA-ECC
+- [[yu2018-ecc-direct-tensile-review]]: Yu et al. 2018 (CBM review): direct tension of ECC; specimens, rate, temperature, fiber effects
+- [[ma2021-ecc-durability-review]]: Ma et al. 2021 (CBM review): ECC durability: fire, permeability, freeze–thaw, shrinkage, fatigue, self-healing
+- [[zhang2022-hshdcc-review]]: Zhang et al. 2022 (Compos B review): HSHDCC (> 100 MPa, > 3%): design, production, properties
 - [[he2024-hdc-research-advances]]: review of HDC (Materials 2024): definitions, durability, applications, 3D printing; second-hand data
 - [[ranade2015-hshdc-tensile-rate-effects]]: Michigan HSHDC under dynamic tension 10⁻⁴–10 s⁻¹ (CCR 2015)
 - [[ranade2017-hshdc-impact-resistance]]: Michigan HSHDC vs Cor-Tuf FR-UHPC slabs under repeated drop-weight impact (CCR 2017)
@@ -24,8 +29,10 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 ## Concepts
 - [[hshdc]]: three HSHDC lineages compared
 - [[uhdc]]: ultra-high ductile concrete (Tongji, PE, up to 9.45%)
+- [[steady-state-cracking]]: Li & Leung 1992 foundation; V_f^crit; failure modes
+- [[fiber-surface-treatment]]: PVA oiling and PE coatings; interface tailoring
 - [[uhpc-vhsc]]: comparison family; Cor-Tuf FR-UHPC
-- [[strain-hardening]]: PSH criteria and indices; necessary but not sufficient
+- [[strain-hardening]]: PSH criteria and indices; history; where each index fails
 - [[multiple-cracking]]: cracking stages, crack counts, impact damage patterns
 - [[fiber-bridging]]: σ–δ, scale-linking, J′b
 - [[fiber-matrix-interface]]: τ0, Gd, β, f, µ; W/B and FA effects; rate dependence
@@ -40,13 +47,13 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 
 ## Materials
 - [[pe-fiber]]: UHMWPE properties across 4 sources; rate-sensitive; low melting point
-- [[pva-fiber]]: weak in high-strength matrices; normal-strength primary data missing
+- [[pva-fiber]]: needs oiling; 4.88% in a normal matrix; fails in high-strength matrices
 - [[fly-ash]]: raises ductility; HVFA in UHDC
 - [[silica-fume]] · [[ggbfs]]: binder components
 - [[crumb-rubber]]: powder rubber raises ε_tu, lowers f'c and Km
 
 ## Properties
-- [[tensile-strain-capacity]]: ε_tu across lineages; strength–ductility trade-off
+- [[tensile-strain-capacity]]: ε_tu across lineages; the trade-off is not fundamental
 - [[tensile-toughness]]: gp, σe, Ipost indices
 - [[compressive-strength]]: f'c across lineages
 - [[flexural-strength]]: notched f_n, f_f, f_b
@@ -55,7 +62,8 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[impact-resistance]]: drop-weight slab results
 - [[fresh-properties]]: rheology, slump
 - [[durability]]: freeze–thaw, sulfate, chloride (review only)
-- [[high-temperature-behaviour]]: fire, fiber melting
+- [[high-temperature-behaviour]]: PE loses SH at 100–140 °C, PVA at about 150–200 °C
+- [[permeability]] · [[self-healing]] · [[shrinkage]] · [[fatigue]]: durability sub-topics (review data)
 
 ## Test methods
 - [[dogbone-uniaxial-tension]]: setups compared across 6 sources
@@ -66,9 +74,9 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[extreme-loading-applications]] · [[masonry-wall-retrofit]] · [[rc-member-strengthening]] · [[unreinforced-hdc-structures]] · [[3d-printed-hdc]]
 
 ## Datasets
-- [[mix-designs]]: 15 rows (some grouped)
-- [[mechanical-results]]: 32 rows
-- [[micromechanical-parameters]]: 7 rows
+- [[mix-designs]]: 16 rows (some grouped)
+- [[mechanical-results]]: 44 rows
+- [[micromechanical-parameters]]: 14 rows
 
 ## Synthesis
 - [[review-outline]]

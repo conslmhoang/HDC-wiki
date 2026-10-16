@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mechanical-results
-updated: 2026-10-06
+updated: 2026-10-16
 ---
 
 # Mechanical Results — Master Table
@@ -45,5 +45,17 @@ n.s. = not stated; ≈ = read from a figure.
 | [[ye2021-uhdc-flexural-size-effect]] | NC | 28 | 45.2 (as cited) | — | — | — | — | — | f_n 3.65–7.13 (notched 3-pt) | Table 3 |
 | same | UHDC-1 | 28 | 37.7 (as cited) | JSCE dogbone, 80 mm gauge | ≈4–5 | ≈7 | 4.31 | — | f_n 10.00–21.56 | p. 3; Fig. 4b; Table 3 |
 | same | UHDC-2 | 28 | 36.4 (as cited) | same | ≈4–5 | ≈9.5 | 9.45 | — | f_n 18.27–22.11 | p. 3; Fig. 4b; Table 3 |
+| [[li2002-pva-ecc-interface-tailoring]] | PVA-ECC oil 0% | about 14 | — | coupon 304.8×76.2×12.7, about 185 mm gauge | 3.11 | 4.89 | 0.99 | 43 (residual) | — | Table 4; crack spacing 27 mm |
+| same | PVA-ECC oil 0.3% | about 14 | — | same | 2.63 | 4.72 | 1.55 | 44 | — | Table 4; spacing 7.5 mm |
+| same | PVA-ECC oil 0.5% | about 14 | — | same | 2.35 | 4.09 | 2.73 | 52 | — | Table 4; spacing 3.5 mm |
+| same | PVA-ECC oil 0.8% | about 14 | — | same | 2.90 | 4.62 | 3.81 | 71 | — | Table 4; spacing 2.5 mm |
+| same | PVA-ECC oil 1.2% | about 14 | — | same | 2.92 | 4.41 | 4.88 | 88 | — | Table 4; spacing 2.8 mm |
+| [[zhang2022-hshdcc-review]] | Ranade 2011 (as cited) | 14 | 160 | JSCE dogbone | n.s. | ≈12–13 | 3.5 | n.s. | — | p. 2, 7; Fig. 9 |
+| same | Yu K 2017 (as cited) | n.s. | 122 | n.s. | n.s. | 18.2 | 8.5 | n.s. | — | p. 10; Table 10 |
+| same | Huang 2021, 90 °C water 9 d (as cited) | 12 | > 210 | n.s. | n.s. | ≈16 | > 5 | n.s. | — | p. 2, 7–8 |
+| same | Yu KQ 2019, 45% GGBS + 10% RFP (as cited) | 28 | 102.5 | n.s. | n.s. | n.s. | 7.8 | n.s. | — | p. 2 |
+| same | Li Y 2020, river sand (as cited) | n.s. | 115–131 | n.s. | n.s. | 12.1 | 11.0 | n.s. | — | p. 10; Table 10 |
+| same | Lei 2019, SF 0 → 40% (as cited) | n.s. | ≈55 → ≈145 | n.s. | 2.8 → 3.9 | 4.9 → 6.6 | 2.5 → 4.7 | 82.6 → 69.3 | 15 → 31 | Figs. 10, 12, 15 |
+| [[yu2018-ecc-direct-tensile-review]] | Tongji PE-ECC, Vf·Lf/df 7.5 → 18 (range) | n.s. | — | n.s. | — | 10.29 → 17.86 | 2.20 → 7.91 | narrowing | — | Fig. 2 |
 
 Related: [[mix-designs]], [[tensile-strain-capacity]], [[review-outline]]

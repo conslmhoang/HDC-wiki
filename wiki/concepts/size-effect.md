@@ -3,8 +3,8 @@ type: concept
 slug: size-effect
 aliases: [flexural size effect, Bažant size effect law, SEL, Weibull size effect, Type-I, Type-II]
 tags: [fracture, scaling]
-sources: [ye2021-uhdc-flexural-size-effect, ranade2017-hshdc-impact-resistance]
-updated: 2026-10-06
+sources: [ye2021-uhdc-flexural-size-effect, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, yu2018-ecc-direct-tensile-review]
+updated: 2026-10-16
 ---
 
 # Size Effect
@@ -38,6 +38,15 @@ SEL fits, notched three-point bending, d = 40–150 mm ([[ye2021-uhdc-flexural-s
   (as cited in [[ye2021-uhdc-flexural-size-effect]], p. 3). Lepech & Li 2004 found it inappreciable
   for PVA-ECC.
 - Sizes tested only reach 150 mm. A size effect may appear in UHDC at metre scale (stated, p. 9). → [[gaps]]
+
+## Notch sensitivity (theory) and tension size effects
+- [[li1992-steady-state-multiple-cracking]] (p. 2251, Fig. 3):
+  - when K̃ > K̃_crit, σ_fc depends on flaw size, so the composite is **notch-sensitive**;
+  - when K̃ < K̃_crit, the composite fails at σ_ss independent of flaw size, so it is **notch-insensitive**.
+  → [[steady-state-cracking]]
+- **In tension:** no conclusive size effect for ECC. Geometry has an "apparent influence", attributed
+  to imperfections, fiber orientation, end effects and stress singularities. A size-independent
+  constitutive model is needed ([[yu2018-ecc-direct-tensile-review]], p. 348, 359).
 
 ## Related
 - [[flexural-strength]] · [[notched-beam-three-point-bending]] · [[fracture-process-zone]] · [[uhdc]]

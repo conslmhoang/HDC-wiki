@@ -3,8 +3,8 @@ type: concept
 slug: heat-curing
 aliases: [curing regime, elevated temperature curing, standard curing, ambient curing]
 tags: [curing, processing]
-sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect]
-updated: 2026-10-06
+sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review]
+updated: 2026-10-16
 ---
 
 # Curing Regimes (heat vs ambient)
@@ -23,6 +23,11 @@ updated: 2026-10-06
   3.8%, and Xi'an reaches up to 6.48% strain, both at ambient temperature.
 - Heat curing limits cast-in-place use. He et al. note that on-site HDC quality is hard to
   guarantee and propose factory production ([[he2024-hdc-research-advances]], p. 20).
+
+## Review view ([[zhang2022-hshdcc-review]])
+- Heat curing is a strength lever: the record is 210 MPa after 9 d in 90 °C water (Huang 2021,
+  as cited, p. 8). Most compiled HSHDCC are ambient-cured.
+- The effect of curing regime on the PSH indices and ductility is **unclear** (outlook, p. 17). → [[gaps]]
 
 ## Related
 - [[hshdc]] · [[mix-designs]]

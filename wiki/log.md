@@ -89,3 +89,20 @@ Append-only. Format: `## YYYY-MM-DD — <operation> — <subject>`, followed by 
   - HDC ≈ ECC/SHCC in the Chinese usage; fiber type does not define it.
   - Heat curing is not required.
   - There is a strength–ductility trade-off across lineages.
+
+## 2026-10-16 — ingest new — 5 sources (parallel source drafting, sequential integration)
+- New sources: li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring,
+  yu2018-ecc-direct-tensile-review (raw "Yu2017"), ma2021-ecc-durability-review (raw "Ma2020"),
+  zhang2022-hshdcc-review. Slug years use the journal volume year.
+- New pages:
+  - concepts: steady-state-cracking, fiber-surface-treatment
+  - properties: self-healing, permeability, shrinkage, fatigue
+- Rewritten: pva-fiber, durability, high-temperature-behaviour, crack-width, gaps, review-outline.
+- Updated about 20 topic pages; datasets +20 rows.
+- Key changes:
+  - The PVA gap is filled (Li 2002).
+  - The strength–ductility trade-off is revised: it is not fundamental (Zhang 2022).
+  - The two PSH indices fail in opposite cases (Li 2002 vs Su 2023).
+  - There are two crack-width families: PVA about 40–90 µm, PE about 80–200 µm.
+- The human decided the corpus (11 papers) is sufficient.
+

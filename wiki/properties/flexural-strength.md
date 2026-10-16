@@ -3,8 +3,8 @@ type: property
 slug: flexural-strength
 aliases: [MOR, nominal flexural strength, f_n, bending]
 tags: [flexure]
-sources: [ye2021-uhdc-flexural-size-effect, yang2024-hshdc-uniaxial-tension]
-updated: 2026-10-06
+sources: [ye2021-uhdc-flexural-size-effect, yang2024-hshdc-uniaxial-tension, zhang2022-hshdcc-review]
+updated: 2026-10-16
 ---
 
 # Flexural Strength
@@ -26,6 +26,12 @@ Always state the test type: notched or unnotched, and three- or four-point loadi
   | NC | 0.02 |
   | UHDC-1 | about 0.8–1.4 |
   | UHDC-2 | 3.5–6.8 |
+
+## HSHDCC flexure ([[zhang2022-hshdcc-review]], p. 9–10, Table 6)
+- Flexural strength ranges 15.5–33.5 MPa, with an optimum W/B of 0.19 (Lei 2019, as cited).
+- With 2% fiber, PE gives 88% more flexural strength than steel (Zhou 2018, as cited).
+- Deflection-hardening in bending does **not** prove tensile strain-hardening. → [[strain-hardening]]
+- There are no uniform flexural test methods; specimen sizes vary widely (Table 6).
 
 ## Related
 - [[notched-beam-three-point-bending]] · [[size-effect]] · [[tensile-strain-capacity]]

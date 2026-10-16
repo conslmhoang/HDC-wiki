@@ -3,8 +3,8 @@ type: concept
 slug: multiple-cracking
 aliases: [multiple microcracking, saturated cracking, crack number, crack density]
 tags: [mechanism]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect]
-updated: 2026-10-06
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review]
+updated: 2026-10-16
 ---
 
 # Multiple Cracking
@@ -38,6 +38,20 @@ physical mechanism behind [[strain-hardening]].
 | same | 12 mm group | rises with PR | — | ⚠️ the text range (8–17) conflicts with the table (23) |
 
 Crack number rises with fiber length and rubber content ([[su2023-rubber-modified-hshdc]], Table 3). → [[crack-width]]
+
+## Mechanism and crack saturation (2026-10-16 ingest)
+- **Mechanism** ([[li1992-steady-state-multiple-cracking]], p. 2255):
+  - After the first crack, the fibers must carry the total load.
+  - If they can, they transfer load back to the matrix by shear, and a new crack forms.
+  - This repeats into periodic sub-parallel cracks until σ0 is reached.
+  - Multiple cracking also needs a flaw size c̃ > c̃_mc. → [[steady-state-cracking]]
+- **PVA-ECC crack spacing** with oil 0 / 0.3 / 0.5 / 0.8 / 1.2%: 27 / 7.5 / 3.5 / 2.5 / 2.8 mm
+  ([[li2002-pva-ecc-interface-tailoring]], Table 4).
+  - From 0.3% to 0.5% oil, ductility comes from **more** cracks.
+  - Above that, it comes from **wider** cracks. Saturation is reached at about 0.8% oil.
+  - Saturated specimens have more than 60 cracks in 150 mm (p. 467–471).
+- In HSHDCC, adding SF from 0 to 40% raised the crack count and lowered crack width
+  (Lei 2019, as cited in [[zhang2022-hshdcc-review]], p. 12).
 
 ## Related
 - [[strain-hardening]] · [[crack-width]] · [[fiber-bridging]] · [[digital-image-correlation]]

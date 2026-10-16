@@ -1,25 +1,4 @@
-# Reading list — High Ductile Concrete (HDC / ECC / SHCC) literature review
 
-24 journal papers, all checked against Crossref metadata (plus ACI publisher pages for ACI papers) on 2026-10-06. This list does not repeat the 6 papers already in the wiki (He 2024; Ranade 2015; Ranade 2017; Su 2023; Yang/Deng 2024; Ye/Yu 2021), and it leaves out Ranade et al. 2013 ACI MJ on purpose. "Core" = read deeply. OA = open access (marked Yes only when the journal or licence is clearly OA).
-
-## A. Foundations / micromechanics of ECC
-
-| # | Priority | Authors | Year | Title | Journal, vol(issue), pages | DOI | OA? | Suggested raw filename | Why include |
-|---|---|---|---|---|---|---|---|---|---|
-| A1 | Core | Li V.C., Leung C.K.Y. | 1992 | Steady-state and multiple cracking of short random fiber composites | J. Engineering Mechanics (ASCE), 118(11), 2246–2264 | https://doi.org/10.1061/(ASCE)0733-9399(1992)118:11(2246) | No | `Li1992_steady-state-multiple-cracking.pdf` | Origin of steady-state flat-crack criterion underlying all strain-hardening design |
-| A2 | Core | Li V.C., Wang S., Wu C. | 2001 | Tensile strain-hardening behavior of polyvinyl alcohol engineered cementitious composite (PVA-ECC) | ACI Materials Journal, 98(6), 483–492 | https://doi.org/10.14359/10851 | No | `Li2001_PVA-ECC-tensile.pdf` | Classic PVA-ECC mix (M45 lineage); >4% strain, <100 µm cracks |
-| A3 | Core | Li V.C., Wu C., Wang S., et al. | 2002 | Interface tailoring for strain-hardening polyvinyl alcohol-engineered cementitious composite (PVA-ECC) | ACI Materials Journal, 99(5), 463–472 | https://doi.org/10.14359/12325 | No | `Li2002_PVA-ECC-interface-tailoring.pdf` | Oil-coating of PVA fibre to control bond; key to PVA-HDC |
-| A4 | Core | Kanda T., Li V.C. | 2006 | Practical design criteria for saturated pseudo strain hardening behavior in ECC | J. Advanced Concrete Technology, 4(1), 59–72 | https://doi.org/10.3151/jact.4.59 | Yes (J-STAGE) | `Kanda2006_PSH-design-criteria.pdf` | Defines PSH strength/energy indices used to design robust strain hardening |
-| A5 | Core | Yang E.H., Wang S., Yang Y., et al. | 2008 | Fiber-bridging constitutive law of engineered cementitious composites | J. Advanced Concrete Technology, 6(1), 181–193 | https://doi.org/10.3151/jact.6.181 | Yes (J-STAGE) | `Yang2008_fiber-bridging-law.pdf` | Standard σ(δ) bridging model with fibre rupture and slip-hardening |
-| A6 | Core | Li V.C. | 2003 | On engineered cementitious composites (ECC): a review of the material and its applications | J. Advanced Concrete Technology, 1(3), 215–230 | https://doi.org/10.3151/jact.1.215 | Yes (J-STAGE) | `Li2003_On-ECC-review.pdf` | Most-cited ECC overview; links micromechanics to applications |
-
-## B. Reviews
-
-| # | Priority | Authors | Year | Title | Journal, vol(issue), pages | DOI | OA? | Suggested raw filename | Why include |
-|---|---|---|---|---|---|---|---|---|---|
-| B1 | Core | Yu K., Li L., Yu J., et al. | 2018 | Direct tensile properties of engineered cementitious composites: A review | Construction and Building Materials, 165, 346–362 | https://doi.org/10.1016/j.conbuildmat.2017.12.124 | No | `Yu2018_ECC-direct-tensile-review.pdf` | Compiles tensile test methods, specimen effects and results across ECC literature |
-| B2 | Core | Ma H., Yi C., Wu C. | 2021 | Review and outlook on durability of engineered cementitious composite (ECC) | Construction and Building Materials, 287, 122719 | https://doi.org/10.1016/j.conbuildmat.2021.122719 | No | `Ma2021_ECC-durability-review.pdf` | Covers fire, permeability, frost, shrinkage, salt attack of ECC |
-| B3 | Extended | Zhang H., Wu Z., Hu X., et al. | 2022 | Design, production, and properties of high-strength high-ductility cementitious composite (HSHDCC): A review | Composites Part B: Engineering, 247, 110258 | https://doi.org/10.1016/j.compositesb.2022.110258 | No | `Zhang2022_HSHDCC-review.pdf` | Reviews the high-strength branch of HDC; context for the HSHDC sources already in the wiki |
 
 ## C. PVA-HDC materials and mechanical properties
 

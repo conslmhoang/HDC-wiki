@@ -3,8 +3,8 @@ type: property
 slug: compressive-strength
 aliases: [f'c, fc, uniaxial compression]
 tags: [compression]
-sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances]
-updated: 2026-10-06
+sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review]
+updated: 2026-10-16
 ---
 
 # Compressive Strength
@@ -31,6 +31,17 @@ Always record the specimen type and size and the age.
   - Under sulfate plus wet–dry cycles, f'c rises up to 30 cycles and then falls (p. 11–12).
   - f'c falls with temperature (p. 7).
   → [[durability]], [[high-temperature-behaviour]]
+
+## HSHDCC strategies ([[zhang2022-hshdcc-review]], p. 7–9)
+- Five strategies are named:
+  1. particle packing;
+  2. hydration and pozzolanic reaction (SF 0 → 10% gave +71% ⚠️);
+  3. smaller aggregate (124 → 132 MPa);
+  4. heat curing (record 210 MPa after 9 d in 90 °C water);
+  5. steel fiber (+51%).
+- Compressive strain capacity is 2.8–4.1‰. LC³ lowers f'c by 13.3%.
+- Under heat, f'c stays about constant up to 200 °C, then falls by more than 75% at 800 °C
+  (as cited in [[ma2021-ecc-durability-review]]). → [[high-temperature-behaviour]]
 
 ## Related
 - [[hshdc]] · [[uhpc-vhsc]] · [[mechanical-results]]

@@ -3,7 +3,7 @@ type: concept
 slug: hshdc
 aliases: [HSHDC, high-strength high-ductility concrete, high strength-high ductility concrete, R-HSHDC, HS-ECC, PE-HSHDC, PVA-HSHDC]
 tags: [material-family, high-strength]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances]
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review]
 updated: 2026-10-06
 ---
 
@@ -45,6 +45,23 @@ Full rows are in [[mix-designs]] and [[mechanical-results]].
   ε_tu up to 5.7% while keeping f'c above about 100 MPa ([[su2023-rubber-modified-hshdc]]).
   → [[crumb-rubber]]
 
+## The wider HSHDCC field ([[zhang2022-hshdcc-review]])
+- The review defines HSHDCC as SHCC with **f'c > 100 MPa and ε_tu > 3%**. It treats HSHDC,
+  UHP-ECC, HS-SHCC, HS-ECC, SHUHPC, UHS-UHDCC and others as members (p. 1–2).
+- The first HSHDCC credited is Ranade et al. 2011 (Michigan): 14-d f'c 160 MPa, ε_tu 3.5%, PE with
+  L/d 334 (38 µm) (as cited, p. 2). The Michigan PE was later changed to 28 µm (L/d 454).
+- The field is now dominated by Chinese groups (Yu KQ, Tongji/PolyU; Huang BT; Lei & Guo,
+  Southeast Univ.). Notable results (as cited):
+
+  | Study | f'c | ε_tu | Note |
+  |---|---|---|---|
+  | Huang 2021 | > 210 MPa | > 5% | 90 °C water curing |
+  | Li Y 2020 | 115–131 MPa | 11% | river sand |
+  | Yu K 2017 | 122 MPa | 8.5% | σ_tu 18.2 MPa |
+
+- There is **no field deployment** yet (p. 2).
+- **PE is "mandatory"** in HSHDCC; PVA bonds too strongly and ruptures (p. 4, 16). → [[pe-fiber]]
+
 > Synthesis:
 > - The Michigan lineage gets strength through heat curing and a dense VHSC matrix.
 > - The Chinese lineages use ambient-curable binders (FA, GGBFS) and finer PE fibers.
@@ -53,7 +70,8 @@ Full rows are in [[mix-designs]] and [[mechanical-results]].
 > Report the lineage whenever you quote HSHDC values.
 
 ## Conflicts & open questions
-- ⚔️ Quasi-static ε_tu of Michigan HSHDC: 3.4% vs 4.2% → [[tensile-strain-capacity]], [[gaps]]
+- ⚔️ Quasi-static ε_tu of Michigan HSHDC: 3.4% vs 4.2%, plus 3.5% at 14 d in the 2011 version
+  (as cited in [[zhang2022-hshdcc-review]]) → [[tensile-strain-capacity]], [[gaps]]
 - No study compares the three lineages directly, or tests their durability.
 
 ## Related

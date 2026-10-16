@@ -3,8 +3,8 @@ type: concept
 slug: strain-rate-effects
 aliases: [rate effects, dynamic behaviour, dynamic increase factor, DIF, high strain rate, loading rate]
 tags: [dynamic, tension, extreme-loading]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance]
-updated: 2026-10-06
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, yu2018-ecc-direct-tensile-review]
+updated: 2026-10-16
 ---
 
 # Strain-Rate Effects (Dynamic Tension)
@@ -69,6 +69,35 @@ Micro-scale drivers in HSHDC (0.009 → 900 mm/s) ([[ranade2015-hshdc-tensile-ra
 - Rates above 10 s⁻¹ (impact or blast range, typically 10²–10³ s⁻¹ [general knowledge — needs
   source]) have not been tested for HSHDC.
 - Compressive rate effects in HSHDC: not yet studied (as of this source).
+
+## ECC literature on rate effects ([[yu2018-ecc-direct-tensile-review]], p. 348–351)
+- **Reference rate ranges** (Eibl, as cited):
+
+  | Load case | Strain rate (s⁻¹) |
+  |---|---|
+  | seismic | 10⁻³–10⁻¹ |
+  | aircraft landing | 10⁻²–1 |
+  | hard impact | 1–50 |
+  | hyper-velocity | > 10² |
+
+- **Strength DIF** rises nearly linearly between 1 and 10 s⁻¹, then much more steeply. PVA-ECC is
+  more rate-sensitive than PE-ECC. The **ε DIF decreases** for both (Fig. 12).
+- **Impact at about 150 s⁻¹** (Curosu 2016, as cited):
+
+  | Material | σ DIF | Fracture-energy DIF |
+  |---|---|---|
+  | PVA-ECC | 6.7 | 2.4 |
+  | moderate-strength PE-ECC | 5.4 | 3.3 |
+  | high-strength PE-ECC | 3.12 | 4.2 |
+
+- PVA-ECC at 25–50 s⁻¹: hardening with a single crack.
+- S/PE hybrid: negligible ε rate effect from 10⁻⁶ to 10⁻¹ s⁻¹ (Maalej 2005).
+- High-volume FA stabilises ε across rates (Yang & Li 2012).
+- ⚔️ PVA-ECC ε vs rate: a decrease (Yang & Li 2014; Mechtcherine) vs no significant change
+  (Boshoff & van Zijl 2007). → [[gaps]]
+- ⚔️ PVA failure at high rate: composite tests show pull-out dominating, while single-fiber tests show
+  more rupture (p. 350). → [[gaps]]
+- The review restates the Michigan HSHDC rate results of [[ranade2015-hshdc-tensile-rate-effects]] exactly.
 
 ## Related
 - [[hshdc]] · [[pe-fiber]] · [[extreme-loading-applications]] · [[tensile-strain-capacity]]

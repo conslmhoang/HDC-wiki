@@ -3,7 +3,7 @@ type: concept
 slug: terminology-hdc-ecc-shcc
 aliases: [HDC, ECC, SHCC, HSHDC, UHDC, UHTCC, UHS-UHDCC, high ductility concrete, high ductile concrete, highly ductile concrete, bendable concrete]
 tags: [scope, terminology]
-sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance]
+sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, ma2021-ecc-durability-review, zhang2022-hshdcc-review]
 updated: 2026-10-06
 ---
 
@@ -32,6 +32,16 @@ updated: 2026-10-06
 | [[su2023-rubber-modified-hshdc]], p. 1 (refs 3–7 as cited) | normal-strength HDC | 30–80 MPa | 4–8 MPa | 2–8% | — |
 | [[he2024-hdc-research-advances]], p. 17 (refs 106–107) | UHS-UHDCC | > 160 MPa | — | > 6% | — |
 | [[ye2021-uhdc-flexural-size-effect]], p. 2 | UHDC | — | — | up to 12% | "steel-like" deformability |
+| [[li2002-pva-ecc-interface-tailoring]], p. 463 | ECC (Michigan) | — | — | "in excess of 3%" | — |
+| [[yu2018-ecc-direct-tensile-review]], p. 347 | ECC | 20–150 MPa (Table 1 range) | 4–20 MPa | > 3% with Vf ≤ 2%; range 3–12% | ECC = SHCC = PSH composites |
+| [[ma2021-ecc-durability-review]], p. 1–2 | ECC | — | — | > 3% ("ultimate"); crack width < 100 µm | ECC = UHPFRCC (Japan) = SHCC (Europe) |
+| [[zhang2022-hshdcc-review]], p. 1–2, Table 1 | normal ECC / **HSHDCC** / UHPC | 40–70 / **> 100** / ≥ 150 MPa | — | 3–7 / **> 3** / < 1% | other reviews use > 55 MPa and > 4% (Yoo & Banthia 2021), or > 80 MPa and > 2% (Ding 2022) |
+
+⚔️ The thresholds are not consistent. Under Zhang's HSHDCC cut-off (f'c > 100 MPa), the Xi'an PVA-HSHDC
+(91.6–96.4 MPa) would **not** qualify as "high-strength".
+
+**Historical note:** Li & Leung 1992 used "pseudo strain hardening" and "short random fiber composites",
+before the term ECC existed ([[li1992-steady-state-multiple-cracking]]). → [[steady-state-cracking]]
 
 No source cites a formal standard (e.g. a Chinese JGJ/T or CECS specification) that defines HDC.
 → [[gaps]]

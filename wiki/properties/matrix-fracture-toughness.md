@@ -3,8 +3,8 @@ type: property
 slug: matrix-fracture-toughness
 aliases: [Km, K_IC, matrix toughness, J_tip, crack tip toughness]
 tags: [fracture, matrix]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect]
-updated: 2026-10-06
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking]
+updated: 2026-10-16
 ---
 
 # Matrix Fracture Toughness (Km) & J_tip
@@ -34,6 +34,15 @@ the two. On an Ashby chart UHDC sits near metals, bamboo and wood
 
 > Synthesis: matrix Km ranks about ECC (0.5) < GDUT HSHDC (0.79) < Michigan HSHDC (1.10) ≈ UHPC (1.31).
 > This order matches the inverse ductility trend in [[tensile-strain-capacity]].
+
+## Further data (2026-10-16 ingest)
+- PVA-ECC matrix (w/c 0.45): measured J_tip = 4.5–7.2 J/m², with 5 J/m² assumed in the analysis
+  ([[li2002-pva-ecc-interface-tailoring]], p. 470).
+- **Theory:**
+  - K_tip = Km at low Vf, otherwise (Ec/Em)Km.
+  - A higher Gm needs a proportionally higher V_f^crit.
+  - The design lever is Gm/(g·τ·df) ([[li1992-steady-state-multiple-cracking]], p. 2250–2259).
+  → [[steady-state-cracking]]
 
 ## Related
 - [[strain-hardening]] · [[fracture-process-zone]] · [[micromechanical-parameters]]

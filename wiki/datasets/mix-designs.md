@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mix-designs
-updated: 2026-10-06
+updated: 2026-10-16
 ---
 
 # Mix Designs — Master Table
@@ -27,5 +27,6 @@ The review [[he2024-hdc-research-advances]] gives no complete mixes, so it has n
 | same | M3-0.16-PE22 / PVA39–2.0 | HSHDC | 0.60 b | 0.25 b | SF 0.15 b; DA 3.0% b | 0.36 b | 0.5 | 0.16 | 2.0% b | PE / PVA | 12 | 22 / 39 | 2.0 | binder fraction | — |
 | [[ye2021-uhdc-flexural-size-effect]] | NC | fiber-free mortar (reference) | 1 (P·II 52.5, 711.6 kg/m³) | 1.20 (Class F, 853.9) | 0 | silica sand 0.80 (569.3) | 0.25 | 0.252 (computed) | 0.0067 | none | — | — | 0 | mass ratio to cement (+kg/m³) | Table 1 |
 | same | UHDC-1 / UHDC-2 | UHDC (Tongji) | 1 (711.6) | 1.20 (853.9) | 0 | 0.80 (569.3) | 0.25 | 0.252 | 0.0067 | PE | n.r. (ref [26]) | n.r. | 1 / 2 | mass ratio (+kg/m³) | air-cured 1 d, then 27 d |
+| [[li2002-pva-ecc-interface-tailoring]] | PVA-ECC oil 0 / 0.3 / 0.5 / 0.8 / 1.2% | ECC (Michigan) | 1 (Type I) | 0 | methyl cellulose 0.15 ⚠️; defoamer 0.05% | F110 silica sand 0.6 | 0.15 (50–150 µm) | 0.45 (w/c; no SCM) | HRWR 2.0% ⚠️ basis | PVA (Kuraray), oil-coated | 12 | 39 | 2 | mass ratio to cement (assumed ⚠️) | water-cured about 14 d; oil = coating mass / fiber mass; Table 2 |
 
 Related: [[mechanical-results]], [[micromechanical-parameters]], [[review-outline]]
