@@ -106,3 +106,15 @@ Append-only. Format: `## YYYY-MM-DD — <operation> — <subject>`, followed by 
   - There are two crack-width families: PVA about 40–90 µm, PE about 80–200 µm.
 - The human decided the corpus (11 papers) is sufficient.
 
+## 2026-10-20 — ingest — 5 sources (downloaded by the LLM; 13 more still to obtain)
+- Downloaded: Kanda 2006, Yang 2008, Li 2003 (J-STAGE PDFs); Chai 2023 and Li 2021 sulfate (Europe PMC
+  full-text XML, CC BY, because MDPI/NCBI block scripted PDF download). Hindawi, ScienceDirect and ACI
+  blocked automated download; the 13 remaining papers need the human's browser or library access.
+- New sources: kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, li2003-ecc-review,
+  chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet.
+- New page: repair-and-field-applications.
+- Corrected: PSH thresholds (1.2 / 3 = pull-out type, Kanda & Li 1998b; 1.3 / 2.7 = rupture type, 2006)
+  on strain-hardening and steady-state-cracking; "no standard" → JC/T 2461-2018 (≥ 0.5%, ≤ 200 µm);
+  "no primary durability study" and "no Chinese PVA-HDC primary data" statements.
+- Updated about 20 topic pages and 3 datasets (+18 rows); gaps: 3 conflicts resolved or refined, 4 new.
+

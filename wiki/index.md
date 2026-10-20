@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # HDC Wiki — Index
@@ -8,12 +8,17 @@ updated: 2026-10-16
 The LLM reads this page first. Each entry is a wikilink to a page slug, followed by a one-line summary.
 
 ## Hubs
-- [[gaps]]: 14 conflicts, under-studied areas, open questions
+- [[gaps]]: 18 conflicts, under-studied areas, open questions
 - [[log]]: operation history
 - [[review-outline]]: review chapters, with source coverage (✅/🟡/❌)
 - [[terminology-hdc-ecc-shcc]]: HDC ≈ ECC/SHCC; HSHDC has 3 lineages; UHDC; definitions
 
-## Sources (11)
+## Sources (16)
+- [[kanda2006-psh-design-criteria]]: Kanda & Li 2006 (JACT): PSH thresholds 1.3 / 2.7 for fiber-rupture ECC (1.2 / 3 = pull-out type); first-crack and flaw model
+- [[yang2008-ecc-fiber-bridging-law]]: Yang et al. 2008 (JACT): bridging law with two-way pull-out, spalling, Cook–Gordon; M45 PVA-ECC; weakest-plane method
+- [[li2003-ecc-review]]: Li 2003 (JACT review): ECC design philosophy, R/ECC structural behaviour, early field use, 2003 R&D needs
+- [[chai2023-hdc-ambient-temperature]]: Chai et al. 2023 (Materials): Chinese PVA-HDC C40 from −30 to 60 °C; JC/T 2461-2018 HDC definition; bilinear tension model
+- [[li2021-hdc-sulfate-dry-wet]]: Li, Shi & Kou 2021 (Materials): PVA-HDC under sulfate + dry–wet cycles; compression only
 - [[li1992-steady-state-multiple-cracking]]: Li & Leung 1992 (J Eng Mech): steady-state cracking theory; V_f^crit; failure-mode map
 - [[li2002-pva-ecc-interface-tailoring]]: Li et al. 2002 (ACI MJ): oil-coated PVA tunes τ0 and Gd; ε_tu 0.99 → 4.88%; classic PVA-ECC
 - [[yu2018-ecc-direct-tensile-review]]: Yu et al. 2018 (CBM review): direct tension of ECC; specimens, rate, temperature, fiber effects
@@ -32,7 +37,7 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[steady-state-cracking]]: Li & Leung 1992 foundation; V_f^crit; failure modes
 - [[fiber-surface-treatment]]: PVA oiling and PE coatings; interface tailoring
 - [[uhpc-vhsc]]: comparison family; Cor-Tuf FR-UHPC
-- [[strain-hardening]]: PSH criteria and indices; history; where each index fails
+- [[strain-hardening]]: PSH criteria; 1998 vs 2006 thresholds by fiber type; where each index fails
 - [[multiple-cracking]]: cracking stages, crack counts, impact damage patterns
 - [[fiber-bridging]]: σ–δ, scale-linking, J′b
 - [[fiber-matrix-interface]]: τ0, Gd, β, f, µ; W/B and FA effects; rate dependence
@@ -61,8 +66,8 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[matrix-fracture-toughness]]: Km and apparent K_IC
 - [[impact-resistance]]: drop-weight slab results
 - [[fresh-properties]]: rheology, slump
-- [[durability]]: freeze–thaw, sulfate, chloride (review only)
-- [[high-temperature-behaviour]]: PE loses SH at 100–140 °C, PVA at about 150–200 °C
+- [[durability]]: freeze–thaw, chloride (reviews); sulfate + dry–wet (primary, compression)
+- [[high-temperature-behaviour]]: −30 to 60 °C PVA-HDC (primary); PE loses SH at 100–140 °C, PVA at about 150–200 °C
 - [[permeability]] · [[self-healing]] · [[shrinkage]] · [[fatigue]]: durability sub-topics (review data)
 
 ## Test methods
@@ -71,12 +76,12 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[single-fiber-pullout-test]] · [[single-crack-test]] · [[impact-test]] · [[digital-image-correlation]]
 
 ## Applications
-- [[extreme-loading-applications]] · [[masonry-wall-retrofit]] · [[rc-member-strengthening]] · [[unreinforced-hdc-structures]] · [[3d-printed-hdc]]
+- [[extreme-loading-applications]] · [[repair-and-field-applications]] · [[masonry-wall-retrofit]] · [[rc-member-strengthening]] · [[unreinforced-hdc-structures]] · [[3d-printed-hdc]]
 
 ## Datasets
-- [[mix-designs]]: 16 rows (some grouped)
-- [[mechanical-results]]: 44 rows
-- [[micromechanical-parameters]]: 14 rows
+- [[mix-designs]]: 22 rows (some grouped)
+- [[mechanical-results]]: 53 rows
+- [[micromechanical-parameters]]: 17 rows
 
 ## Synthesis
 - [[review-outline]]

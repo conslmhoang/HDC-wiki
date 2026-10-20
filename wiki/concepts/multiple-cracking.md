@@ -3,8 +3,8 @@ type: concept
 slug: multiple-cracking
 aliases: [multiple microcracking, saturated cracking, crack number, crack density]
 tags: [mechanism]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review]
-updated: 2026-10-16
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law]
+updated: 2026-10-20
 ---
 
 # Multiple Cracking
@@ -52,6 +52,11 @@ Crack number rises with fiber length and rubber content ([[su2023-rubber-modifie
   - Saturated specimens have more than 60 cracks in 150 mm (p. 467–471).
 - In HSHDCC, adding SF from 0 to 40% raised the crack count and lowered crack width
   (Lei 2019, as cited in [[zhang2022-hshdcc-review]], p. 12).
+
+## Saturation (2026-10-20 ingest)
+- **Saturation index** = x_d^test / x_d, where x_d is the Wu & Li 1995 saturated spacing and x_d^test is
+  inferred as δ_peak/ε_cu. A ratio > 2 means saturated cracking is "rarely expected" ([[kanda2006-psh-design-criteria]], Eqs. 15–16, p. 69).
+- M45 PVA-ECC: average crack spacing about 1 mm, crack width constant at about 60 µm after 1% strain ([[yang2008-ecc-fiber-bridging-law]], p. 181, 188).
 
 ## Related
 - [[strain-hardening]] · [[crack-width]] · [[fiber-bridging]] · [[digital-image-correlation]]

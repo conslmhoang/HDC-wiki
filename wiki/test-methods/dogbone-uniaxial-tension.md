@@ -3,8 +3,8 @@ type: test-method
 slug: dogbone-uniaxial-tension
 aliases: [direct tension test, uniaxial tension, JSCE dogbone, dumbbell]
 tags: [tension, test, standard]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review]
-updated: 2026-10-16
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, li2003-ecc-review]
+updated: 2026-10-20
 ---
 
 # Dogbone (Dumbbell) Uniaxial Tension Test
@@ -59,6 +59,13 @@ recommendation. It gives σ_fc, σ_tu and ε_tu → [[tensile-strain-capacity]].
   - cylinders give lower σ and ε than dogbones (Kesner 2003; Mechtcherine 2011);
   - thickness of 13 / 30 / 50 mm has a negligible effect (Rokugo 2007).
 - At impact rates, if only one crack forms, ε depends on the gauge length (p. 349).
+
+## Further setups (2026-10-20 ingest)
+- Kanda & Li: coupon 305 × 76.2 × 12.7 mm, glued Al plates, 2 LVDTs over 205 mm; first crack = first
+  inflection of the σ–ε curve; ε_cu = onset of continuous stress drop ([[kanda2006-psh-design-criteria]], Fig. 3, Fig. 7, p. 64).
+- Chinese PVA-HDC: dogbone with a 13 × 30 mm section and 100 mm LVDT gauge ([[chai2023-hdc-ambient-temperature]], §2).
+- A standard uniaxial tension test that accounts for size and geometry was already listed as an R&D need
+  in 2003 ([[li2003-ecc-review]], Sect. 8). It is still missing.
 
 ## Related
 - [[tensile-strain-capacity]] · [[tensile-constitutive-model]] · [[tensile-toughness]] · [[single-crack-test]]

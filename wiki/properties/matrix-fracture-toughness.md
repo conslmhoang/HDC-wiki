@@ -3,8 +3,8 @@ type: property
 slug: matrix-fracture-toughness
 aliases: [Km, K_IC, matrix toughness, J_tip, crack tip toughness]
 tags: [fracture, matrix]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking]
-updated: 2026-10-16
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria]
+updated: 2026-10-20
 ---
 
 # Matrix Fracture Toughness (Km) & J_tip
@@ -43,6 +43,12 @@ the two. On an Ashby chart UHDC sits near metals, bamboo and wood
   - A higher Gm needs a proportionally higher V_f^crit.
   - The design lever is Gm/(g·τ·df) ([[li1992-steady-state-multiple-cracking]], p. 2250–2259).
   → [[steady-state-cracking]]
+
+## Flaw size (2026-10-20 ingest)
+- Representative flaw c_m = (√π/2 · Km/σ_mu)², about 33 mm for both paste matrices (computed here from
+  Km 0.33 / 0.23 MPa√m and σ_mu 1.60 / 1.12 MPa). It is "too large": uncorrected σ_fc is 45% too high,
+  and a 0.8 factor brings the error within 10% ([[kanda2006-psh-design-criteria]], Eq. 12, Fig. 12, p. 67–70).
+- No flaw-size distribution is measured; a random, interacting-flaw model is needed (p. 68). → [[gaps]]
 
 ## Related
 - [[strain-hardening]] · [[fracture-process-zone]] · [[micromechanical-parameters]]

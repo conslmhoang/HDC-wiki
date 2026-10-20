@@ -3,8 +3,8 @@ type: property
 slug: high-temperature-behaviour
 aliases: [fire resistance, elevated temperature, residual strength after heating, spalling]
 tags: [durability, fire]
-sources: [ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, he2024-hdc-research-advances, ranade2017-hshdc-impact-resistance]
-updated: 2026-10-16
+sources: [ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, he2024-hdc-research-advances, ranade2017-hshdc-impact-resistance, chai2023-hdc-ambient-temperature]
+updated: 2026-10-20
 ---
 
 # High-Temperature Behaviour
@@ -46,6 +46,22 @@ Whether these are hot or residual tests is not stated ⚠️.
 
 > Synthesis: ECC/HDC ductility is a **low-temperature property**. Above about 150 °C (PE) or about
 > 200 °C (PVA), the material loses strain hardening. Fire is therefore a key limit for PE-based HSHDC.
+
+## Low and moderate temperatures: primary data ([[chai2023-hdc-ambient-temperature]])
+Chinese PVA-HDC, 28 d standard cure, then 8 h at the test temperature, 1 h at 20 °C (residual tests):
+
+| T (°C) | −30 | 0 | 20 | 40 | 60 |
+|---|---|---|---|---|---|
+| f_cu (MPa) | 46.7 | 47.1 | 48.0 | 50.9 | 52.7 |
+| σ_tu (MPa) | 3.74 | 3.99 | 4.23 | 4.46 | 4.80 |
+| ε_tu (%) | 1.34 | 1.46 | 1.15 | 1.23 | 1.31 |
+| Flexural strength (MPa) | 12.23 | 13.08 | 14.08 | 14.65 | 15.64 |
+
+Tables 5–8. Strain hardening is kept at every temperature; ε_tu peaks at 0 °C.
+
+- ⚔️ Dong et al. 2022 (PE-HDC, −20 to 90 °C, as cited in [[chai2023-hdc-ambient-temperature]]) found f'c and σ_tu *falling* with
+  temperature and ε_tu rising steadily. Fiber type and in-situ vs residual testing may explain it. → [[gaps]]
+- Only 8 h exposure was tested; years of service are not represented (§3.6).
 
 ## Related
 - [[pe-fiber]] · [[pva-fiber]] · [[durability]] · [[gaps]]

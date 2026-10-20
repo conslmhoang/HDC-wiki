@@ -3,8 +3,8 @@ type: property
 slug: tensile-strain-capacity
 aliases: [tensile ductility, ε_tu, εp, ε_cu, strain capacity, peak strain]
 tags: [tension, ductility, key-property]
-sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review]
-updated: 2026-10-06
+sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law]
+updated: 2026-10-20
 ---
 
 # Tensile Strain Capacity (ε_tu)
@@ -66,6 +66,17 @@ so check this before comparing. → [[dogbone-uniaxial-tension]]
 - Specimen shape matters: cylinders give lower σ and ε than dogbones (Kesner 2003; Mechtcherine 2011),
   while thickness (13 / 30 / 50 mm) does not (Rokugo 2007), as cited in
   [[yu2018-ecc-direct-tensile-review]], p. 348. → [[dogbone-uniaxial-tension]]
+
+## Further evidence (2026-10-20 ingest)
+| Source | Material | Curing / age | ε_tu (%) | σ_tu (MPa) | Note |
+|---|---|---|---|---|---|
+| [[chai2023-hdc-ambient-temperature]] Tables 4, 6 | Chinese PVA-HDC C40 (FA/C 0.88) | 28 d std + 8 h exposure | 1.15 at 20 °C; 1.15–1.46 over −30 to 60 °C | 3.74–4.80 | dogbone, 100 mm gauge; strain basis n.s. ⚠️ |
+| same | screening W/B 0.31 / 0.25 / 0.20 | 28 d | 0.64 / 0.55 / 0.42 | 4.47 / 4.22 / 4.83 | f_cu 47.8 / 50.2 / 59.0 MPa |
+| [[kanda2006-psh-design-criteria]] Table 4 | paste + SF, PVA 14 / 40 µm, PE 14 µm | n.s. | 0.26–1.50 (PVA); 5.10 (PE) | 2.43–4.62 | coupon, 205 mm gauge; ultimate strain |
+| [[yang2008-ecc-fiber-bridging-law]] Fig. 1 | M45 PVA-ECC 2% | n.s. | ≈4–4.5 ⚠️ (read) | about 5 | reference mix |
+
+- **Chinese PVA-HDC reaches only about 1.2–1.5%**, far below ECC's > 3% but above the 0.5% HDC
+  standard ([[chai2023-hdc-ambient-temperature]]). Lower W/B raises strength and lowers ε_tu in the same mixes (Table 4). → [[water-binder-ratio]]
 
 ## Related
 - [[strain-hardening]] · [[crack-width]] · [[tensile-toughness]] · [[mechanical-results]]

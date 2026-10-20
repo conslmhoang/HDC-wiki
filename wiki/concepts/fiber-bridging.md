@@ -3,8 +3,8 @@ type: concept
 slug: fiber-bridging
 aliases: [crack bridging, σ-δ relation, bridging law, scale-linking model, complementary energy]
 tags: [micromechanics, constitutive]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring]
-updated: 2026-10-16
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review]
+updated: 2026-10-20
 ---
 
 # Fiber Bridging & the σ–δ Relation
@@ -50,6 +50,18 @@ The bridging stress σ that fibers carry across a crack, as a function of the cr
   Fig. 2, p. 465). → [[fiber-surface-treatment]]
 - Protruding fiber length on the fracture surface rises from below 1 mm (no oil) to about 2 mm
   (1.2% oil); full pull-out would average 3 mm (p. 471).
+
+## Yang et al. 2008 bridging law (2026-10-20 ingest)
+- Adds **two-way pull-out**, **matrix micro-spalling** and the **Cook–Gordon effect** to the 1991 model
+  ([[yang2008-ecc-fiber-bridging-law]], Eqs. 3–31). For M45 at 2% PVA the peak changes from 6.2 MPa / 93 µm (one-way) to
+  6.3 / 130 (two-way), 6.7 / 131 (+ spalling) and 6.7 / 133 µm (+ Cook–Gordon) (Fig. 14).
+  Two-way pull-out raises δ0; spalling raises σ0; Cook–Gordon is negligible for PVA (α = 2df).
+- **Weakest-plane method (original)**: the mean curve over-predicts σ_tu by 25%, so bridging Vf is
+  taken to vary ±25% between planes (inferred, not measured). σ_tu = the weakest plane; crack width is δ
+  read at σ = σ_tu, 37–133 µm, "mean" 62 µm vs about 60 µm measured ([[yang2008-ecc-fiber-bridging-law]], Fig. 13).
+  Ranade 2015 adapted this with a *measured* min(Vf) = 0.80·Vf and δ at min(σ0).
+- Validated with single-crack tests at 0.1% and 0.5% fiber, assuming 2-D orientation ([[yang2008-ecc-fiber-bridging-law]], Fig. 12).
+- The σ–δ curve is "the most fundamental property" linking material and structural design ([[li2003-ecc-review]], p. 217–218).
 
 ## Related
 - [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]]

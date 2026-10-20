@@ -3,8 +3,8 @@ type: property
 slug: compressive-strength
 aliases: [f'c, fc, uniaxial compression]
 tags: [compression]
-sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review]
-updated: 2026-10-16
+sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet]
+updated: 2026-10-20
 ---
 
 # Compressive Strength
@@ -42,6 +42,16 @@ Always record the specimen type and size and the age.
 - Compressive strain capacity is 2.8–4.1‰. LC³ lowers f'c by 13.3%.
 - Under heat, f'c stays about constant up to 200 °C, then falls by more than 75% at 800 °C
   (as cited in [[ma2021-ecc-durability-review]]). → [[high-temperature-behaviour]]
+
+## Further evidence (2026-10-20 ingest)
+| Source | Material | Specimen | Age | f'c (MPa) |
+|---|---|---|---|---|
+| [[chai2023-hdc-ambient-temperature]] Table 5 | Chinese PVA-HDC C40 | 100 mm cube / prism | 28 d | f_cu 48.0; prism 43.1 (f_c/f_cu 0.90 vs 0.76 for concrete); E 23.2–24.1 GPa |
+| [[li2021-hdc-sulfate-dry-wet]] Table 4 | XUT PVA-HDC (FA/C 1.0) | 100 mm cube | 90 d | 45.8; drum-shaped failure (cracked, not scattered) |
+
+- 8 h exposure at −30 to 60 °C changes f_cu only −2.7% to +9.8% ([[chai2023-hdc-ambient-temperature]], Table 5). → [[high-temperature-behaviour]]
+- Under sulfate plus dry–wet cycles, f_cu first rises then falls; the water control also rises 39%
+  (45.8 → 63.6 MPa), so part of the early gain is continued hydration ([[li2021-hdc-sulfate-dry-wet]], Table 4). → [[durability]]
 
 ## Related
 - [[hshdc]] · [[uhpc-vhsc]] · [[mechanical-results]]

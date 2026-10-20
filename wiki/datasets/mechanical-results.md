@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mechanical-results
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # Mechanical Results — Master Table
@@ -57,5 +57,14 @@ n.s. = not stated; ≈ = read from a figure.
 | same | Li Y 2020, river sand (as cited) | n.s. | 115–131 | n.s. | n.s. | 12.1 | 11.0 | n.s. | — | p. 10; Table 10 |
 | same | Lei 2019, SF 0 → 40% (as cited) | n.s. | ≈55 → ≈145 | n.s. | 2.8 → 3.9 | 4.9 → 6.6 | 2.5 → 4.7 | 82.6 → 69.3 | 15 → 31 | Figs. 10, 12, 15 |
 | [[yu2018-ecc-direct-tensile-review]] | Tongji PE-ECC, Vf·Lf/df 7.5 → 18 (range) | n.s. | — | n.s. | — | 10.29 → 17.86 | 2.20 → 7.91 | narrowing | — | Fig. 2 |
+| [[kanda2006-psh-design-criteria]] | 40PVA-27 / 40PVA-42 | n.s. | — | coupon, 205 mm gauge | 2.47 / 1.85 | 3.25 / 2.43 | 1.03 / 1.50 (ultimate) | — | — | Table 4 |
+| same | 14PVA-27 / 14PVA-42 | n.s. | — | same | 3.99 / 2.92 | 4.62 / 3.32 | 0.26 / 0.55 | — | — | Table 4 |
+| same | 14PE-27 | n.s. | — | same | 2.25 | 3.25 | 5.10 | — | — | Table 4 |
+| [[yang2008-ecc-fiber-bridging-law]] | M45 2% PVA | n.r. | — | n.r. | ≈4 ⚠️ | about 5 | ≈4–4.5 ⚠️ | about 60 | — | Fig. 1 |
+| [[chai2023-hdc-ambient-temperature]] | HDC-1 @20 °C | 28 | 48.0 (100 mm cube) | dogbone, 100 mm gauge | 2.86 | 4.23 | 1.15 | n.r. | 14.08 (plate) | Tables 4–8 |
+| same | HDC-1 @−30 / 0 / 40 / 60 °C (8 h) | 28 + exposure | 46.7 / 47.1 / 50.9 / 52.7 | same | 2.79 / 1.56 / 3.28 / 2.92 | 3.74 / 3.99 / 4.46 / 4.80 | 1.34 / 1.46 / 1.23 / 1.31 | n.r. | 12.23 / 13.08 / 14.65 / 15.64 | Tables 5–8 |
+| same | HDC-2 / HDC-3 / HDC-4 | 28 | 47.8 / 50.2 / 59.0 | same | n.r. | 4.47 / 4.22 / 4.83 | 0.64 / 0.55 / 0.42 | n.r. | — | Table 4 |
+| [[li2021-hdc-sulfate-dry-wet]] | HDC, 0 cycles | 90 | 45.8 (100 mm cube) | not tested | — | — | — | — | — | Table 4 |
+| same | HDC, 150 dry–wet cycles: water / 5% / 10% / sat. Na₂SO₄ | 90 + exposure | 58.3 / 50.1 / 37.9 / 28.9 | not tested | — | — | — | — | — | Table 4 |
 
 Related: [[mix-designs]], [[tensile-strain-capacity]], [[review-outline]]

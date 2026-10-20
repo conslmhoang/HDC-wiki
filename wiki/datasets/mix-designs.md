@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mix-designs
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # Mix Designs — Master Table
@@ -28,5 +28,11 @@ The review [[he2024-hdc-research-advances]] gives no complete mixes, so it has n
 | [[ye2021-uhdc-flexural-size-effect]] | NC | fiber-free mortar (reference) | 1 (P·II 52.5, 711.6 kg/m³) | 1.20 (Class F, 853.9) | 0 | silica sand 0.80 (569.3) | 0.25 | 0.252 (computed) | 0.0067 | none | — | — | 0 | mass ratio to cement (+kg/m³) | Table 1 |
 | same | UHDC-1 / UHDC-2 | UHDC (Tongji) | 1 (711.6) | 1.20 (853.9) | 0 | 0.80 (569.3) | 0.25 | 0.252 | 0.0067 | PE | n.r. (ref [26]) | n.r. | 1 / 2 | mass ratio (+kg/m³) | air-cured 1 d, then 27 d |
 | [[li2002-pva-ecc-interface-tailoring]] | PVA-ECC oil 0 / 0.3 / 0.5 / 0.8 / 1.2% | ECC (Michigan) | 1 (Type I) | 0 | methyl cellulose 0.15 ⚠️; defoamer 0.05% | F110 silica sand 0.6 | 0.15 (50–150 µm) | 0.45 (w/c; no SCM) | HRWR 2.0% ⚠️ basis | PVA (Kuraray), oil-coated | 12 | 39 | 2 | mass ratio to cement (assumed ⚠️) | water-cured about 14 d; oil = coating mass / fiber mass; Table 2 |
+| [[yang2008-ecc-fiber-bridging-law]] | M45 (Vf 2 / 0.5 / 0.1%) | ECC (PVA-ECC M45) | 571 (Type I) | 685 (Class F) | none | silica sand 456 (mean 110 µm) | n.r. | 0.26 (computed) | 6.8 (PCE) | PVA REC-15, 1.2% oil | 12 | 39 | 2 / 0.5 / 0.1 | kg/m³ | air-cured 50% RH, 23 °C, 28 d; Table 1 |
+| [[kanda2006-psh-design-criteria]] | 40PVA-27 / 14PVA-27 / 14PE-27 | ECC (paste) | 0.8 | 0 | SF 0.2 | none | — | 0.27 | 0.040 | PVA 40 µm / PVA 14 µm / PE 14 µm | 12 / 6 / 6 | 40 / 14 / 14 | 2 / 1.5 / 2 | mass ratio | Tables 2–3 |
+| same | 40PVA-42 / 14PVA-42 | ECC (paste) | 1.0 | 0 | viscous agent 0.0015 | none | — | 0.42 | 0.007 | PVA 40 µm / 14 µm | 12 / 6 | 40 / 14 | 2 / 1.5 | mass ratio | Tables 2–3 |
+| [[chai2023-hdc-ambient-temperature]] | HDC-1 | HDC (PVA, C40) | 680 | 600 | 0 | river sand 384 | 1.18 | 0.300 (computed) | 1.01 (PCE powder) | PVA (domestic) | 12 | 39 | 26 kg/m³ (≈2 vol.% ⚠️) | kg/m³ | FA/C 0.88; 28 d std; Table 1 |
+| same | HDC-2 / HDC-3 / HDC-4 | HDC | 768 | 512 | 0 | 384 | 1.18 | 0.31 / 0.25 / 0.20 (computed) | 1.54 / 1.31 / 1.92 | PVA | 12 | 39 | 26 kg/m³ | kg/m³ | screening; Table 1 |
+| [[li2021-hdc-sulfate-dry-wet]] | HDC | HDC (XUT, Shi) | 598.2 | 598.2 | none | 430.7 | 1.18 | 0.29 (computed) | 2.5 mL PCE | PVA Kuraray K-II | 12 | 39 | 26 kg/m³ (≈2 vol.% ⚠️) | kg/m³ | FA/C 1.0; 90 d std; Tables 1–2 |
 
 Related: [[mechanical-results]], [[micromechanical-parameters]], [[review-outline]]

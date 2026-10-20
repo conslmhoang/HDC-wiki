@@ -3,8 +3,8 @@ type: property
 slug: crack-width
 aliases: [crack opening, residual crack width, crack spacing]
 tags: [cracking, durability-relevant]
-sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ma2021-ecc-durability-review, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review]
-updated: 2026-10-16
+sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ma2021-ecc-durability-review, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, chai2023-hdc-ambient-temperature]
+updated: 2026-10-20
 ---
 
 # Crack Width
@@ -43,6 +43,17 @@ These measure different things, so they are not a strict conflict.
 >
 > High strength and high ductility from PE therefore come at the cost of crack-width-controlled
 > durability. The ingested sources do not fill this gap. → [[gaps]], [[self-healing]]
+
+## Further evidence (2026-10-20 ingest)
+| Source | Material | Condition | Crack width |
+|---|---|---|---|
+| [[yang2008-ecc-fiber-bridging-law]] Fig. 1, 13 | M45 PVA-ECC | constant after about 1% strain | about 60 µm (predicted 37–133, mean 62); spacing about 1 mm |
+| [[li2003-ecc-review]] p. 224, Fig. 15 | PVA-ECC | stable beyond about 1% strain | about 80 µm ⚠️ (points read 70–76); "generally < 100 µm" |
+| [[chai2023-hdc-ambient-temperature]] | Chinese PVA-HDC | — | not reported, although the HDC standard is defined by it |
+
+- **Standard bar**: JC/T 2461-2018 allows an average crack width up to **200 µm** for HDC (as cited in
+  [[chai2023-hdc-ambient-temperature]]), twice the 100 µm ECC design target. → [[terminology-hdc-ecc-shcc]]
+- 100 µm is where water flow through cracks becomes appreciable (Tsukamoto 1990; Wang 1997, as cited in [[li2003-ecc-review]], p. 225).
 
 ## Related
 - [[multiple-cracking]] · [[tensile-strain-capacity]] · [[durability]] · [[permeability]] · [[self-healing]]

@@ -3,8 +3,8 @@ type: application
 slug: rc-member-strengthening
 aliases: [column jacketing, beam strengthening, slab strengthening, TR-HDC, HSHD-ECC]
 tags: [application, strengthening]
-sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension]
-updated: 2026-10-06
+sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, li2003-ecc-review]
+updated: 2026-10-20
 ---
 
 # Strengthening of RC Members with HDC
@@ -22,6 +22,14 @@ updated: 2026-10-06
   carrying load after cracking (p. 20).
 - **Open issue:** the bond between HSHDC and existing concrete has not been studied
   ([[yang2024-hshdc-uniaxial-tension]], p. 14). → [[gaps]]
+
+## Early structural evidence (as cited in [[li2003-ecc-review]], p. 221–224)
+- R/ECC beams without stirrups beat R/C beams with stirrups in capacity and energy absorption, with no
+  spalling at 10% drift (Fischer & Li 2002b).
+- Steel and ECC deform compatibly: no shear lag, low bond stress, no bond splitting (Fischer & Li 2002a).
+- GFRP bars in ECC avoid premature FRP failure (Fischer & Li 2003a).
+- Hybrid steel-beam / RC-column joints with ECC need no stirrups (Parra-Montesinos & Wight 2000).
+- Precast ECC infill panels: 56 kN vs 38 kN for concrete panels in cyclic shear (Kesner & Billington 2002).
 
 ## Related
 - [[masonry-wall-retrofit]] · [[unreinforced-hdc-structures]]

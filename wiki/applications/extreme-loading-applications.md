@@ -3,8 +3,8 @@ type: application
 slug: extreme-loading-applications
 aliases: [blast resistance, impact resistance, protective structures, resilient infrastructure]
 tags: [application]
-sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc]
-updated: 2026-10-06
+sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, li2003-ecc-review]
+updated: 2026-10-20
 ---
 
 # Extreme-Loading Applications (impact, blast)
@@ -23,6 +23,10 @@ updated: 2026-10-06
 - Reinforced HSHDC members, assessed by penetration, crater, perforation, mass loss and frangibility.
 - HSHDC vs ECC under impact, to separate the role of f'c.
 - High temperature and PE melting under blast. → [[high-temperature-behaviour]]
+
+## Seismic devices (as cited in [[li2003-ecc-review]], p. 224–225)
+- Coupling beams and dampers (Fukuyama 1999, 2002), self-centring frames (Fischer & Li 2003b), and
+  unbonded post-tensioned bridge piers with ECC hinges (Yoon & Billington 2002).
 
 ## Related
 - [[impact-resistance]] · [[hshdc]] · [[strain-rate-effects]]

@@ -266,3 +266,6 @@ Observed (Interpreted):
 - [ ] Dynamic summary (p. 10): "OPC, the dynamic strength of the HDC grows faster" — garbled; conflicts with p. 9 statement that HSC dynamic strength grows slower than NC.
 - [ ] UHDCC expanded as "ultra-high-toughness" on p. 19 vs "ultra-high ductility" in ref. [119] title.
 - [ ] Funding line names "Hydraulic Ductile Concrete" project (XBY-PTKJ-2022-12) — possible third expansion of "HDC".
+
+## Primary sources now ingested (2026-10-20)
+- Li L. 2021 sulfate study → [[li2021-hdc-sulfate-dry-wet]]: this review's summary fits the 5% series only.

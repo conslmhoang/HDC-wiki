@@ -3,8 +3,8 @@ type: concept
 slug: steady-state-cracking
 aliases: [flat crack, Griffith vs steady-state crack, notch insensitivity, failure mechanism map, K-tilde]
 tags: [micromechanics, theory, history]
-sources: [li1992-steady-state-multiple-cracking]
-updated: 2026-10-16
+sources: [li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria]
+updated: 2026-10-20
 ---
 
 # Steady-State (Flat) Cracking: the 1992 foundation
@@ -54,8 +54,10 @@ Table 1 model cases (OPC, Gm = 100 J/m²), V_f^crit:
 > the later PSH indices. This is an interpretation, not stated by either paper.
 
 ## Historical line
-Li & Leung 1992 (K̃–c̃ framework, G_r ≥ 10 G_tip) → Kanda & Li 1998 (J-integral form,
-J_tip ≤ J′b, thresholds of 1.2 and 3) → used in all ingested ECC/HDC papers. → [[strain-hardening]]
+Li & Leung 1992 (K̃–c̃ framework, G_r ≥ 10 G_tip) → Kanda & Li 1998b (J-integral form,
+J_tip ≤ J′b, saturation thresholds 1.2 and 3 for pull-out type) → Kanda & Li 2006 (1.3 and 2.7 for
+rupture type, first-crack model extended to fiber rupture; [[kanda2006-psh-design-criteria]], Eqs. 5–11)
+→ used in all ingested ECC/HDC papers. → [[strain-hardening]]
 
 ## Related
 - [[strain-hardening]] · [[fiber-bridging]] · [[multiple-cracking]] · [[size-effect]]

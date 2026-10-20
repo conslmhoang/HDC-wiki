@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: micromechanical-parameters
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # Micromechanical Parameters — Master Table
@@ -24,6 +24,9 @@ Links: [[fiber-matrix-interface]], [[strain-hardening]], [[fiber-bridging]].
 | same | PVA-ECC oil 1.2% | same | 1.11 | 1.61 | 1.15 | — | — | — | 5 | — | 2.92 | 24.2–38.1 | 1.51 (computed here) | 4.84–7.62 | same |
 | [[li1992-steady-state-multiple-cracking]] | model: OPC matrix (Em 20 GPa) | steel / glass / carbon / PP | 7 / 0.3 / 8 / 0.7 | n/a | n/a | — | n/a | — | 100 (Gm) | — | — | — | — | — | Table 1; V_f^crit 3.6 / 0.4 / 0.6 / 2.9% ⚠️ |
 | same | Spectra PE in HS concrete (Green 1989 data) | PE, Vf 0.6% | 1.0 (assumed) | n/a | n/a | — | n/a | 0.63 (assumed) | 20 | — | — | — | — | — | Table 2; mode A, no multiple cracking |
+| [[yang2008-ecc-fiber-bridging-law]] | M45 + 0.1 / 0.5 / 2% PVA | PVA 39 µm, 1.2% oil | 1.91 / 1.58 / 1.31 | 1.24 / 1.13 / 1.08 | 0.63 / 0.60 / 0.58 | 0.2 (assumed) | — | n.r. | n.r. | model ≈0.35 / ≈1.7 / 6.7 (≈5 weakest plane) | — | n.r. | — | — | Tables 2–3; Figs. 12–14 |
+| [[kanda2006-psh-design-criteria]] | 40PVA-27 / 40PVA-42 | PVA 40 µm, 2% | 2.21 | — (τs 31.3 MPa) | — | 0.5 | — | 0.33 / 0.23 | n.r. | n.r. | 2.47 / 1.85 | n.r. | 1.32 / 1.31 (test) | ≈2.4–2.5 / ≈3.0 | Tables 3–4; Figs. 15–16 |
+| same | 14PVA-27 / 14PE-27 | PVA 14 µm 1.5% / PE 14 µm 2% | 4.35 / 0.66 | — (τs 33.6) / 0 | — | 0.5 | — | 0.33 | n.r. | n.r. | 3.99 / 2.25 | n.r. | 1.16 / 1.44 (test) | ≈1.1 / ≈3.0 | same |
 
 The full Table 5 (11 mixes) is on the source page [[su2023-rubber-modified-hshdc]].
 

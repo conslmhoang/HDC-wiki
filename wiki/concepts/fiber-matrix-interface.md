@@ -3,8 +3,8 @@ type: concept
 slug: fiber-matrix-interface
 aliases: [interfacial bond, frictional bond, chemical bond, snubbing, slip hardening, inclination hardening, fiber pullout model]
 tags: [micromechanics, interface]
-sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review]
-updated: 2026-10-06
+sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature]
+updated: 2026-10-20
 ---
 
 # Fiber/Matrix Interface Properties
@@ -40,7 +40,8 @@ These parameters govern single-fiber pullout and therefore [[fiber-bridging]].
   | µ (N/(m·rad)) | 386 | 553 | +43% |
 
   The interface is fairly rate-insensitive because PE has no chemical bond. → [[strain-rate-effects]]
-- β for ECC is about 0.6 (Wang & Li 2007, as cited in [[ranade2015-hshdc-tensile-rate-effects]], p. 98).
+- β for ECC is about 0.6 (Wang & Li 2007, as cited in [[ranade2015-hshdc-tensile-rate-effects]], p. 98),
+  now confirmed primarily: β 0.58–0.63 for 1.2%-oiled PVA in the M45 fly-ash matrix ([[yang2008-ecc-fiber-bridging-law]], Table 3).
   Li 2002 measured **β = 1.15–2.31** for PVA in a w/c 0.45 matrix. This is a refinement, since
   fiber, oiling and matrix differ.
 - **PVA interface tailoring** ([[li2002-pva-ecc-interface-tailoring]], Table 3):
@@ -65,6 +66,18 @@ These parameters govern single-fiber pullout and therefore [[fiber-bridging]].
 - Measured interface data now exist for PE in the Michigan matrix
   ([[ranade2015-hshdc-tensile-rate-effects]]) and for PVA in a normal matrix
   ([[li2002-pva-ecc-interface-tailoring]]). GDUT, Xi'an and Tongji HSHDC/UHDC still lack pullout data. → [[gaps]]
+
+## Further interface data (2026-10-20 ingest)
+- **Same fiber, different matrix** (1.2%-oiled PVA, 2%): M45 with FA/C 1.2 gives τ0 1.31, Gd 1.08, β 0.58
+  ([[yang2008-ecc-fiber-bridging-law]]); w/c 0.45 without FA gives τ0 1.11, Gd 1.61, β 1.15 ([[li2002-pva-ecc-interface-tailoring]]).
+  Fly ash and matrix change β by about 2×.
+- **Bond falls as Vf rises** in M45 (0.1 → 0.5 → 2%: τ0 1.91 → 1.58 → 1.31 MPa), attributed to air content ([[yang2008-ecc-fiber-bridging-law]], Table 3).
+- PVA slip hardening comes from abrasion and jamming in the matrix tunnel, so fibers debond from both
+  sides (two-way pull-out). PE, PP and smooth steel have β ≈ 0 or < 0 ([[yang2008-ecc-fiber-bridging-law]], p. 184).
+- Too much bond causes rupture: τ_i 4.25–4.35 MPa with 14 µm PVA gave only 0.26–0.55% strain;
+  plug pull-out (fiber leaves with a matrix block) is not covered by theory ([[kanda2006-psh-design-criteria]], Table 3, p. 66).
+- Chinese HDC papers claim temperature exposure lowers chemical bond and raises friction, but cite a
+  thesis rather than measuring it ([[chai2023-hdc-ambient-temperature]], §3.4.3).
 
 ## Related
 - [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]]

@@ -2,12 +2,12 @@
 type: synthesis
 slug: review-outline
 status: draft
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # Literature Review — Outline
 
-Scope: 11 papers. The human decided not to collect more. Legend: ✅ = primary data; 🟡 = review or
+Scope: 16 papers (13 more on the reading list are not yet obtained). Legend: ✅ = primary data; 🟡 = review or
 second-hand only.
 
 1. **Introduction & terminology** ✅
@@ -35,13 +35,13 @@ second-hand only.
    - cracking → [[crack-width]]
    - data → [[mechanical-results]]
 6. **Dynamic & impact behaviour** ✅ → [[strain-rate-effects]], [[impact-resistance]], [[fatigue]]
-7. **Durability & high temperature** 🟡 (3 reviews)
+7. **Durability & temperature** 🟡/✅ (3 reviews + Li 2021 sulfate + Chai 2023 −30 to 60 °C)
    → [[durability]], [[permeability]], [[self-healing]], [[shrinkage]], [[high-temperature-behaviour]]
 8. **Test methods** ✅
    → [[dogbone-uniaxial-tension]], [[single-fiber-pullout-test]], [[notched-beam-three-point-bending]], [[impact-test]]
 9. **Structural applications** 🟡
    → [[masonry-wall-retrofit]], [[rc-member-strengthening]], [[unreinforced-hdc-structures]],
-   [[3d-printed-hdc]], [[extreme-loading-applications]]
+   [[3d-printed-hdc]], [[extreme-loading-applications]], [[repair-and-field-applications]]
 10. **Sustainability** 🟡 → [[fly-ash]], [[ggbfs]], [[crumb-rubber]]
 11. **Research gaps & future directions** → [[gaps]]
 12. **Conclusions**

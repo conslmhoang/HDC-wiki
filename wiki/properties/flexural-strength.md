@@ -3,8 +3,8 @@ type: property
 slug: flexural-strength
 aliases: [MOR, nominal flexural strength, f_n, bending]
 tags: [flexure]
-sources: [ye2021-uhdc-flexural-size-effect, yang2024-hshdc-uniaxial-tension, zhang2022-hshdcc-review]
-updated: 2026-10-16
+sources: [ye2021-uhdc-flexural-size-effect, yang2024-hshdc-uniaxial-tension, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature]
+updated: 2026-10-20
 ---
 
 # Flexural Strength
@@ -32,6 +32,10 @@ Always state the test type: notched or unnotched, and three- or four-point loadi
 - With 2% fiber, PE gives 88% more flexural strength than steel (Zhou 2018, as cited).
 - Deflection-hardening in bending does **not** prove tensile strain-hardening. → [[strain-hardening]]
 - There are no uniform flexural test methods; specimen sizes vary widely (Table 6).
+
+## Chinese PVA-HDC thin plates ([[chai2023-hdc-ambient-temperature]], Table 8)
+- 15 × 75 × 300 mm plates: 12.23 / 13.08 / 14.08 / 14.65 / 15.64 MPa at −30 / 0 / 20 / 40 / 60 °C;
+  deflection-hardening with multiple cracks; deflection peaks at 0 °C (5.01 mm). Span not stated ⚠️.
 
 ## Related
 - [[notched-beam-three-point-bending]] · [[size-effect]] · [[tensile-strain-capacity]]

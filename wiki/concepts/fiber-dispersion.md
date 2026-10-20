@@ -3,8 +3,8 @@ type: concept
 slug: fiber-dispersion
 aliases: [fiber distribution, fiber orientation, effective fiber volume, fiber agglomeration]
 tags: [variability, processing]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc]
-updated: 2026-10-06
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, chai2023-hdc-ambient-temperature, yang2008-ecc-fiber-bridging-law]
+updated: 2026-10-20
 ---
 
 # Fiber Dispersion & Orientation
@@ -25,7 +25,12 @@ set the section-to-section variation in bridging capacity, and therefore min(σ0
   dispersion ([[su2023-rubber-modified-hshdc]], p. 7, 9). → [[crumb-rubber]], [[fresh-properties]]
 
 ## Conflicts & open questions
-- No ingested source measures dispersion in the Chinese HSHDC/UHDC mixes. → [[gaps]]
+- Chinese PVA-HDC: dispersion coefficient α = 0.91 from 60 fluorescence images ([[chai2023-hdc-ambient-temperature]], §3.2, Eq. 1).
+  No ingested source measures dispersion in the Chinese HSHDC/UHDC mixes. → [[gaps]]
+
+## Plane-to-plane variation
+- Yang et al. infer ±25% variation of bridging Vf from σ_tu, without measuring it; 2-D random
+  orientation is justified when specimen thickness (13 mm) ≈ fiber length (12 mm) ([[yang2008-ecc-fiber-bridging-law]], p. 187, 191).
 
 ## Related
 - [[fiber-bridging]] · [[fresh-properties]] · [[strain-hardening]]
