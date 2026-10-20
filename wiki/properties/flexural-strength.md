@@ -3,8 +3,8 @@ type: property
 slug: flexural-strength
 aliases: [MOR, nominal flexural strength, f_n, bending]
 tags: [flexure]
-sources: [ye2021-uhdc-flexural-size-effect, yang2024-hshdc-uniaxial-tension, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, chai2019-hdcc-freeze-thaw-carbonation-flexure, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, ivaniuk2022-printable-shcc-design, jin2019-hvfa-shcc-structural, kanakubo2006-dfrcc-tensile-test-method, kanda2003-sprayed-ecc, ozbay2013-ecc-self-healing-sustained-load, qian2007-shcc-inverse-tensile-strain, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, sun2019-modified-pva-fiber-ecc, wang2023-ecc-frost-damage, zhang2022-ecc-carbonation-sustained-load, zhong2019-ecc-freeze-thaw, zhou2023-hsecc-elevated-temperature]
-updated: 2026-10-20
+sources: [ye2021-uhdc-flexural-size-effect, yang2024-hshdc-uniaxial-tension, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, chai2019-hdcc-freeze-thaw-carbonation-flexure, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, ivaniuk2022-printable-shcc-design, jin2019-hvfa-shcc-structural, kanakubo2006-dfrcc-tensile-test-method, kanda2003-sprayed-ecc, ozbay2013-ecc-self-healing-sustained-load, qian2007-shcc-inverse-tensile-strain, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, sun2019-modified-pva-fiber-ecc, wang2023-ecc-frost-damage, zhang2022-ecc-carbonation-sustained-load, zhong2019-ecc-freeze-thaw, zhou2023-hsecc-elevated-temperature, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Flexural Strength
@@ -71,6 +71,19 @@ Always state the test type: notched or unnotched, and three- or four-point loadi
   Flexural toughness fell from about 92 to 33–61 kN·mm after 15 cycles (Fig. 8 ⚠️ read). → [[carbonation]]
 - **Recycled fine aggregate** raises flexural strength (+2.17 to +22.5% in 3-pt; 11.89 vs 9.41 MPa in plates)
   ([[gao2020-hdcc-recycled-fine-aggregate]], §3.2, Table 5). → [[recycled-fine-aggregate]]
+
+## Round-5 evidence (2026-10-21)
+| Source | Material (authors' term) | Test / specimen | Age | Strength (MPa) | Note |
+|---|---|---|---|---|---|
+| [[yun2013-shcc-freeze-thaw]] Table 3, Figs. 5–6 | SHCC, hybrid PVA+PE 1.5 vol.% | flexural prisms (geometry n.r. ⚠️), before vs after 300 F-T cycles (ASTM C666 B) | 39 d ⚠️ / after cycles | MOR 11.25 → 12.44; 15.39 → 13.44 (roughly unchanged) | multiple cracking before F-T, **single crack** after 300 cycles; F-T steepens ascending branch and lowers deflection at peak → [[freeze-thaw]] |
+| [[pourfalah2018-ecc-high-temperature]] §3.3, Fig. 10 | PVA-ECC / HECC (PVA + steel) | 4-pt, 170 × 40 × 20 mm prisms, 150 mm span, 40 mm constant-moment zone, **tested hot** 20–600 °C | 28 d | only loads reported, not stresses | ECC deflection capacity ≈ 3× at 60 °C, deflection-softening from 150 °C, brittle from 200 °C; HECC peak load ≈ 2× ECC at 100–600 °C; crack number ≈ 15–23 → 1 from 150 °C → [[high-temperature-behaviour]] |
+
+- ⚔️ minor: F-T made the flexural ascending branch steeper in hybrid SHCC ([[yun2013-shcc-freeze-thaw]], Fig. 5), while
+  [[wang2023-ecc-frost-damage]] reports larger mid-span deflection after 300 cycles and Sahmaran 2012 (as cited by Yun)
+  lower stiffness. Materials and protocols differ (ASTM C666 B vs A).
+- ⚔️ minor: 20 → 60 °C bending peak load falls when tested hot ([[pourfalah2018-ecc-high-temperature]], Fig. 10b) but
+  PVA-HDC flexural strength rises 14.08 → 15.64 MPa when tested after cooling ([[chai2023-hdc-ambient-temperature]]);
+  in-situ vs residual testing is the likely reason. → [[gaps]]
 
 ## Related
 - [[notched-beam-three-point-bending]] · [[size-effect]] · [[tensile-strain-capacity]] · [[four-point-bending-inverse-analysis]] · [[fatigue]]

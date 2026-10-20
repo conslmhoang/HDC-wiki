@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mechanical-results
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Mechanical Results — Master Table
@@ -78,6 +78,22 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | 9 / 10 (S/B 0.24 / 0.48) | n.s. | 51.96 / 56.01 | — | — | — | — | — | — | Table 3; ε0 0.648 / 0.556% |
 | [[deng2018-hdc-short-columns]] | HDC (2% PVA) | n.s. | 65.7 (f_cu, 100 mm cube) | direct tension, geometry n.s. ⚠️ | 5.73 | 6.14 | ≈1.0 | — (multiple cracks, Fig. 1b) | — | p. 2, Fig. 1, Table 4 |
 | same | Concrete (RC1 control) | n.s. | 68.9 (f_cu, 100 mm cube) | — | — | — | — | — | — | Table 4 |
+| [[deng2017-rc-column-hdc-jacket]] | HDC (Japanese PVA) | n.r. | f_cu 60.35 (100 mm cube) | not reported | ≈ 5.3 (Fig. ⚠️) | 6.12 | ≈ 3.0 ultimate (end of curve, Fig. ⚠️); peak strain n.r. | n.r. | — | Table 5, Fig. 1a |
+| same | HDC-2 (Chinese PVA) | n.r. | f_cu 61.29 (100 mm cube) | not reported | ≈ 4.0–4.5 (Fig. ⚠️) | 4.84 | ≈ 1.2 ultimate (Fig. ⚠️) | n.r. | — | Table 5, Fig. 1a |
+| [[deng2019-urm-shaking-table-hdc]] | HDC (overlay) | 28 (cubes); tension age n.r. | f_cu 61.15 (100 mm cube) | 15 mm plate, DBJ61/T112-2016, n = 3 | ≈ 5.2–5.8 (Fig. ⚠️) | 5.83 (mean) | 1.0 ultimate (curves end 0.86–1.0%, Fig. ⚠️) | n.r. | — | p. 3, Table 3, Fig. 6a |
+| [[deng2020-aac-wall-hdc-retrofit]] | HDC (1.7% PVA) | ≈ 60 ("two months"), air-cured | f_cu 49.80 (100 mm cube) | dogbone, 15 × 50 mm section | ≈ 3.25 (Fig. ⚠️) | 3.89 | ≈ 1.2 at peak; failure ≈ 1.24 (Fig. ⚠️) | n.r. | — | Table 3, Fig. 3 |
+| [[li2021-hdc-beam-shear]] | HDC (PVA 2%) | 28 | 70.55 (f_cu, 70.7 mm cube) | dogbone, 15 mm thick, 50 mm wide (Fig. 2, geometry ⚠️) | n.r. (≈ 4.5–5 from Fig. 1 ⚠️) | 5.83 (5.68 in Concl. 1 ⚔️) | 0.968 (basis n.s. ⚠️) | — | — | §2.1, Fig. 1 |
+| same | RC control C50 (concrete, not HDC) | 28 | 75.77 (f_cu, 100 mm cube) | — | — | — | — | — | — | §2.1 |
+| [[zhang2022-hdc-basalt-textile-tension]] | M1-1.5 (plain HDC) | 28 | 56.2 (f_cu, 100 mm cube) | XAUAT dogbone 350 mm, 50 × 15 mm | 3.07 | 3.89 | 0.12 (peak) | — | — | Tables 3, 8 |
+| same | M1-2 | 28 | 52.0 (f_cu) | same | 4.35 | 5.44 | 0.34 (peak) | — | — | Tables 3, 8 |
+| same | M2-1 | 28 | 32.0 (f_cu) | same | 2.04 | 2.35 | 0.29 (peak) | — | — | Tables 3, 8 |
+| same | M2-1.5 | 28 | 38.1 (f_cu) | same | 2.75 | 3.45 | 0.28 (peak) | — | — | Tables 3, 8 |
+| same | M2-2 | 28 | 33.3 (f_cu) | same | 3.10 | 4.23 | 0.45 (peak) | — | — | Tables 3, 8 |
+| same | B1M1-2 (TR-HDC, 1 basalt layer) | 28 | 52.0 (f_cu) | same + basalt grid ν 0.42% | 4.43 | 6.11 | 1.51 (peak) | — | — | Table 8 |
+| same | B3M1-2 (3 layers) | 28 | 52.0 | same + grid ν 1.26% | 4.36 | 9.73 | 2.13 (peak) | — | — | Table 8 |
+| same | B1M2-2 | 28 | 33.3 | same + grid ν 0.42% | 3.75 | 5.83 | 1.64 (peak) | — | — | Table 8 |
+| same | B3M2-2 | 28 | 33.3 | same + grid ν 1.26% | 2.67 | 10.02 | 2.48 (peak) | — | — | Table 8 |
+| same | B3M2-0 (TRC, no PVA; not HDC) | 28 | 30.2 | same + grid ν 1.26% | 2.19 | 6.82 | 3.79 (textile slip) | — | — | Table 8 |
 | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] | Eco-HDCC, 0 cycles | 28 | 43.4 (100 mm cube; age assumed ⚠️) | not tested | — | — | — | — | 14.31 (4-pt, 100×100×400 prism; δ_u 2.70 mm) | §2.1, Table 4 |
 | same | preload 0, 15 F–T+carb. cycles | ≈148 (28 + 120 d exposure) | — | not tested | — | — | — | no crack | 11.55 (−19.3%; δ_u 2.01 mm) | Table 4 |
 | same | preload 0.3, 15 cycles | ≈148 | — | not tested | — | — | — | no crack | 11.52 (−19.5%; δ_u 2.05) | Table 4 |
@@ -129,6 +145,11 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | S-0 unreinforced member, ρs 0 | 28+ ⚠️ | — | prism 50 × 200 × 900 mm, 100 mm Pi-gauges | 3.9–4.2 (computed P_cr/A) | 4.7–5.0 (computed P_u/A) | 0.23–0.24 (avg) | — (spacing 12–14 mm) | — | Table 3, Fig. 5 |
 | same | S-1, ρs 0.3% (D6) | 28+ ⚠️ | — | same, reinforced | 4.1–4.2 (computed, incl. bar) | 6.4–6.5 (nominal incl. bar, computed) | 1.58–1.60 (avg) | — (spacing 4.5–4.6 mm) | — | Table 3 |
 | same | S-2…S-4, ρs 0.6–1.2% | 28+ ⚠️ | — | same | 3.6–4.0 (computed) | 7.3–10.4 nominal incl. steel (computed) | 1.49–1.82 | — (spacing 3.3–4.0 mm) | — | Table 3 |
+| [[lepech2009-ecc-water-permeability]] | ECC M45 pre-strained 3% | 14 | — | plate 300 × 75 × 12 mm, 180 mm gauge | ≈ 3.8 (Fig. ⚠️) | ≈ 4.7 (Fig. ⚠️; test stopped at 3%) | > 3 (capacity not reached) | 63 ± 10 (unloaded; avg/max undefined); loaded 40–70 | — | Table 5; Fig. 3c; p. 749 |
+| same | PVA-ECC M45 (Fig. 1) | n.s. | — | n.s. | ≈ 3.5 (⚠️) | ≈ 5 (⚠️) | ≈ 4 (⚠️; abstract "> 4%") | ≈ 50–60 plateau (⚠️) | — | Fig. 1 |
+| [[yang2009-ecc-self-healing-wet-dry]] | ECC M45, virgin | f'c at 28; tension at ≈ 180 | ≈ 60 | coupon 230 × 76 × 13 mm, 0.0025 mm/s | ≈ 3.5–4 (Fig. ⚠️) | ≈ 4.0–4.4 (Fig. ⚠️) | ≈ 3 (stated "about 3%") | ≈ 60 (steady state, stated); max residual 50–90 | — | p. 384–385; Table 2; Figs. 9–10 |
+| same | ECC M45, healed 10 × CR1 | ≈ 180 + 20 | — | same | < virgin | ≈ virgin (Fig. ⚠️) | 1.7–3.1 (reload, residual strain excluded) | — | — | p. 388; Fig. 9 |
+| same | ECC M45, healed 10 × CR2 | ≈ 180 + 20 | — | same | < virgin | up to ≈ 5.3 (Fig. ⚠️) | 0.8–2.2 (reload) | — | — | p. 388; Fig. 10 |
 | [[vanzijl2010-shcc-durability]] | Ref.1 PVA (Adendorff) | n.r. | — | n.r. | — | 4.26 ± 0.42 | 4.70 ± 0.65 | 50 ± 14 (at 3%, 0.001/s) | — | Table 1 |
 | same | Ref.2 PE (Kobayashi) | n.r. | — | n.r. | 3.0 | 4.3 | 4.3 | 28 ± 18 | — | Table 1 |
 | same | Ref.3 PVA oil 0.5% | n.r. | — | n.r. | 3.45 ± 0.14 | 3.92 ± 0.15 | 1.64 ± 0.60 | 45 ± 19 | — | Table 1 |
@@ -142,12 +163,27 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | SHCC @10 s⁻¹ | n.s. | — | same, high-rate MTS | — | 7.81 | 0.68 | — | — | Table 2 |
 | same | SHCC @25 s⁻¹ | n.s. | — | same | — | 12.08 | 0.86 | — | — | Table 2 |
 | same | SHCC @50 s⁻¹ | n.s. | — | same | — | 11.93 | 1.79 (no multiple cracking) | — | — | Table 2 |
+| [[yun2013-shcc-freeze-thaw]] | 45-PVA1.30+PE0.20 (0 F-T) | 39 ⚠️ (14 per text); air-cured 65% RH | 48.80 | JSCE dumbbell | 1.68 | 3.77 | ≈ 0.4–0.65 at peak (Fig. 9b ⚠️; text Fig. 10: SH to ≈ 2.4) | n.r. | 11.25 | Table 3; Figs. 9b, 10 |
+| same | 45-PVA1.30+PE0.20 (300 F-T) | 151 | 46.73 | JSCE dumbbell | 1.85 | 4.68 | ≈ 0.85 (Fig. 9b ⚠️) | n.r. | 12.44 | Table 3; Figs. 9b, 10 |
+| same | 45-PVA0.75+PE0.75 (0 F-T) | 39 ⚠️ | 43.95 | JSCE dumbbell | n.r. | 2.35 | ≈ 0.47 (Fig. 8a ⚠️) | n.r. | 15.39 | Table 3; Fig. 8a |
+| same | 45-PVA0.75+PE0.75 (300 F-T) | 151 | 46.73 | JSCE dumbbell | n.r. | 3.16 | n.r. | n.r. | 13.44 | Table 3 |
+| same | 55-PVA1.30+PE0.20 (0 F-T) | 39 ⚠️ | 39.94 | JSCE dumbbell | n.r. | 2.89 | n.r. | n.r. | 12.36 | Table 3 |
+| same | 55-PVA1.30+PE0.20 (300 F-T) | 151 | 45.80 | JSCE dumbbell | n.r. | 3.55 | n.r. | n.r. | 12.38 | Table 3 |
+| same | 55-PVA0.75+PE0.75 (0 F-T) | 39 ⚠️ | 35.73 | JSCE dumbbell | n.r. | 2.95 | n.r. | n.r. | 12.16 | Table 3 |
+| same | 55-PVA0.75+PE0.75 (300 F-T) | 151 | 34.08 | JSCE dumbbell | n.r. | 3.57 | n.r. | n.r. | 10.80 | Table 3 |
 | [[ozbay2013-ecc-self-healing-sustained-load]] | ECC-1 | 28 | 69.3 (50 mm cube) | none (4-pt bending 360×50×75, span 304) | — | — | — | about 60 unloaded / about 115 loaded (at 2.5 mm defl.) | 12.40 (MOR; defl. 4.95 mm) | Table 3 |
 | same | ECC-2 | 28 | 46.1 | same | — | — | — | about 40 unloaded / about 85 loaded | 10.07 (defl. 6.01 mm) | Table 3 |
 | same | ECC-1 pre-cracked, 90 d water, no load / sustained 60% | 28+90 | — | same | — | — | — | n.r. (5–11 / 7–14 cracks left) | 12.1 / 11.8 | Table 4 |
 | same | ECC-2 pre-cracked, 90 d water, no load / sustained | 28+90 | — | same | — | — | — | n.r. (2–7 / 4–11 cracks) | 11.3 / 11.1 | Table 4 |
 | [[paul2014-r-shcc-chloride-corrosion]] | FS-SHCC | 14 (tension); 28 (f_cu) | 24 (100 mm cube) | dumbbell 30×16 mm, 80 mm gauge | 2.04 | 2.67 | 2.93 (ultimate) | 24–36 (R/SHCC beams, Table 3) | — | Table 2, Table 3, p. 344 |
 | same | CS-SHCC | 14; 28 | 23 (cube) | same | 2.46 | 2.76 | 1.52 (CoV 103.7%) | 22–38 (beams) | — | Table 2, Table 3 |
+| [[choi2016-pe-alkali-activated-slag-composite]] | M26 | 28 | 54.8 (50 mm cube) | JSCE dogbone 30 × 13 mm, 80 mm gauge | 4.87 | 13.06 | 7.50 | 88.9 (computed, at end of loading) | — | Tables 5, 7, 8 |
+| same | M30 | 28 | 49.0 | same | 4.61 | 11.46 | 6.33 | 106.9 | — | Tables 5, 7, 8 |
+| same | M34 | 28 | 42.3 | same | 3.92 | 7.64 | 5.35 | 109.8 | — | Tables 5, 7, 8 |
+| same | M38 | 28 | 36.3 | same | 3.37 | 5.06 | 4.58 | 99.3 | — | Tables 5, 7, 8 |
+| [[pourfalah2018-ecc-high-temperature]] | ECC @20 °C | 28 | 38.8 (50 mm cube) | dogbone, 80 mm gauge, 30 × 13 mm | 2.75 | 3.85 | 3.5 (at peak) | ≈ 50 (bending) | n.r. (load only, ≈ 1300–1400 N peak, Fig. 10b ⚠️) | Tables 4–5; §4.3 |
+| same | H6ECC @20 °C | 28 | 40.1 | same | 2.89 | 4.36 | 3.0 | ≈ 40 (bending) | n.r. | Tables 4–5 |
+| same | H13ECC @20 °C | 28 | 45 | same | 3.32 | 4.71 | 2.5 | ≈ 40 (bending) | n.r. | Tables 4–5 |
 | [[wang2023-ecc-frost-damage]] | ECC, 0 F-T cycles | 28 | 46.8 | not described | — | 4.21 | 5.24 ("ultimate") | — | 18.6 (4-pt, 40×40×160) | Table 4; §3.2 |
 | same | ECC, 300 F-T cycles | 28 + F-T | — | — | — | — | — | — | 16.6 | §3.2, Fig. 7 |
 | same | Normal concrete W/C 0.5 | 28 | 42.92 | not described | — | 2.98 | 0.01 | — | — | Table 4 |

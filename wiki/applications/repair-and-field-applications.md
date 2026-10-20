@@ -3,8 +3,8 @@ type: application
 slug: repair-and-field-applications
 aliases: [link slab, bridge deck, repair, field application, sprayed ECC, sprayed HPFRCC, surface protection, overlay]
 tags: [application, field, repair]
-sources: [li2003-ecc-review, chai2023-hdc-ambient-temperature, kunieda2006-hpfrcc-japan-applications, kanda2003-sprayed-ecc, wang2019-rc-beam-ecc-shear-strengthening, kunieda2010-uhp-shcc-steel-reinforcement, xue2023-shcc-structural-review, chai2019-hdcc-freeze-thaw-carbonation-flexure, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact]
-updated: 2026-10-20
+sources: [li2003-ecc-review, chai2023-hdc-ambient-temperature, kunieda2006-hpfrcc-japan-applications, kanda2003-sprayed-ecc, wang2019-rc-beam-ecc-shear-strengthening, kunieda2010-uhp-shcc-steel-reinforcement, xue2023-shcc-structural-review, chai2019-hdcc-freeze-thaw-carbonation-flexure, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, deng2017-rc-column-hdc-jacket, lepech2009-ecc-water-permeability, yang2009-ecc-self-healing-wet-dry]
+updated: 2026-10-21
 ---
 
 # Repair, Link Slabs and Field Use
@@ -67,6 +67,20 @@ that paper). → [[rc-member-strengthening]]
   resistance (Mahmoud 2020), permanent formwork PDCC (Leung & Cao 2010), roughened interface and thicker layer reduce
   delamination (Wang 2020).
 
+## Retrofit motivation and exposure notes (2026-10-21)
+- **Low-cost seismic retrofit (China):** a 15 mm HDC overlay is proposed as a cheap, fast retrofit for village URM
+  shop-houses in SW China, where ferrocement and FRP are judged too costly ([[deng2019-urm-shaking-table-hdc]], p. 1);
+  AAC walls in rural China are mostly unconfined, FRP retrofits suffer debonding and other methods are costly or
+  disruptive ([[deng2020-aac-wall-hdc-retrofit]], p. 1). Lab evidence only → [[masonry-wall-retrofit]].
+- **Pre-earthquake column strengthening:** few reports use fibre-reinforced cementitious composites; ferrocement
+  results come from small-scale columns ([[deng2017-rc-column-hdc-jacket]], p. 2). → [[rc-member-strengthening]]
+- **Water-retaining structures:** permeation (constant head) is mainly relevant to deep underwater or water-retaining
+  structures; cracked ECC at 1.5% strain is ≈ 5 orders less permeable than reinforced mortar with code-level
+  (300–350 µm) cracks ([[lepech2009-ecc-water-permeability]], p. 744, 750). Design codes set no permeability or
+  loaded-crack-width limits, and service-life models (Life-365) assume uncracked concrete (p. 745, 749). → [[permeability]]
+- **Exposed surfaces:** wet–dry cycling (rain / sun) heals ECC cracks "reasonably robustly", but hot drying (55 °C)
+  heals less than room-air drying ([[yang2009-ecc-self-healing-wet-dry]], Abstract, Figs. 7, 12). → [[self-healing]]
+
 ## Earlier points (2003 review and Chinese design work)
 - **Bridge-deck link slab:** an ECC strip in a concrete sandwich reached 1.3% overall tensile strain while the concrete
   stayed uncracked (Zhang et al. 2002, as cited in [[li2003-ecc-review]], Fig. 12); a full-scale test showed feasibility
@@ -87,6 +101,8 @@ that paper). → [[rc-member-strengthening]]
 
 ## Conflicts & open questions
 - No primary field monitoring paper is in the corpus; long-term field data (> 24 months) are missing. → [[gaps]]
+- The XAUAT retrofit studies (columns, URM, AAC) are all laboratory tests; no field-applied HDC retrofit is
+  documented in the corpus.
 - Experimental proof that ECC's smaller COD slows rebar corrosion is lacking; larger-scale tests of sprayed ECC retrofit
   are needed ([[kanda2003-sprayed-ecc]], p. 279, 281).
 - Gaps stated by [[kunieda2006-hpfrcc-japan-applications]] (§4): quantitative required performance (how much ductility
@@ -94,4 +110,4 @@ that paper). → [[rc-member-strengthening]]
 
 ## Related
 - [[rc-member-strengthening]] · [[durability]] · [[extreme-loading-applications]] · [[crack-width]] ·
-  [[interface-bond]] · [[freeze-thaw]] · [[carbonation]]
+  [[interface-bond]] · [[freeze-thaw]] · [[carbonation]] · [[masonry-wall-retrofit]] · [[permeability]] · [[self-healing]]

@@ -3,8 +3,8 @@ type: concept
 slug: fiber-matrix-interface
 aliases: [interfacial bond, frictional bond, chemical bond, snubbing, slip hardening, inclination hardening, fiber pullout model]
 tags: [micromechanics, interface]
-sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, gao2020-hdcc-recycled-fine-aggregate, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage]
-updated: 2026-10-20
+sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, gao2020-hdcc-recycled-fine-aggregate, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, lepech2009-ecc-water-permeability]
+updated: 2026-10-21
 ---
 
 # Fiber/Matrix Interface Properties
@@ -115,5 +115,16 @@ These parameters govern single-fiber pullout and therefore [[fiber-bridging]].
 > (chloride ↓, hot water ↑), so the "just right" interface of a new ECC may drift in service. Almost all round-4
 > bond claims rest on SEM, not on pull-out tests. → [[single-fiber-pullout-test]]
 
+## Round-5 interface evidence (2026-10-21)
+- **Freeze–thaw**: SEM shows F-T microcracks in the fibre–matrix ITZ of hybrid PVA + PE SHCC frozen from 14 d; the ITZ was
+  still porous at 14 d and dense at 28 d, so hydraulic pressure in a young ITZ is blamed ([[yun2013-shcc-freeze-thaw]],
+  Fig. 13, §3.5). First primary image of the F-T interface damage that [[wang2023-ecc-frost-damage]] inferred. → [[freeze-thaw]]
+- **Moderate heat**: up to 100 °C, lower PVA modulus and weaker chemical bond are said to lengthen debonding and widen cracks
+  (mechanism inferred); PVA switches from rupture to full pull-out at 150 °C (pull-out length 500 → 6000 µm); steel bond
+  rises with thermal expansion up to 400 °C ([[pourfalah2018-ecc-high-temperature]], §4.3, Figs. 12, 14).
+  → [[high-temperature-behaviour]]
+- **M45 bond model limits**: the pull-out model behind σ(δ) ignores two-way pull-out and matrix spalling, so J′b is
+  underestimated; J′b/J_tip ≈ 1.08 is a lower bound ([[lepech2009-ecc-water-permeability]], p. 749).
+
 ## Related
-- [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]] · [[fiber-surface-treatment]] · [[interface-bond]]
+- [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]] · [[fiber-surface-treatment]] · [[interface-bond]] · [[high-temperature-behaviour]]

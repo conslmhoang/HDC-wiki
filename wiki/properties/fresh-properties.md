@@ -3,8 +3,8 @@ type: property
 slug: fresh-properties
 aliases: [rheology, workability, slump, plastic viscosity, yield stress]
 tags: [fresh, processing]
-sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, sun2019-modified-pva-fiber-ecc, kanda2003-sprayed-ecc, yuan2020-nshsdc-beam-strengthening]
-updated: 2026-10-20
+sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, sun2019-modified-pva-fiber-ecc, kanda2003-sprayed-ecc, yuan2020-nshsdc-beam-strengthening, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw]
+updated: 2026-10-21
 ---
 
 # Fresh Properties & Rheology
@@ -44,8 +44,17 @@ updated: 2026-10-20
 - **Air voids:** HPMC may raise air voids in printed SHCC, and high air content lowers ductility
   ([[chavesfigueiredo2020-printed-shcc]], Sects. 3.5–3.6). → [[fiber-dispersion]], [[3d-printed-hdc]]
 
+## Round 5 evidence (2026-10-21)
+- **Viscosity control for PE in an alkali-activated slag paste**: HRWRA 0.024 → 0.002 and VMA 0 → 0.0003 (by binder
+  mass) as W/B rose 0.26 → 0.38, tuned after Li & Li 2013; hardened densities within 0.5% of theoretical, so no
+  unintended pores ([[choi2016-pe-alkali-activated-slag-composite]], Table 1, §2.1, §3.1). No rheology numbers given.
+  → [[alkali-activated-binder]], [[viscosity-modifying-admixtures]]
+- **Air content in hybrid PVA+PE SHCC**: 10.0–13.1% without deliberate air entrainment; the mix with more PE (0.75%)
+  had 13.1% vs 10.4% at W/B 0.45, with lower f'c; PE multifilament is hard to disperse
+  ([[yun2013-shcc-freeze-thaw]], Table 3, p. 13–14). → [[pe-fiber]], [[hybrid-fiber]]
+
 > Synthesis: no round-4 source links a measured rheological parameter to fiber dispersion or ε_tu. The fresh-state data
 > are process-specific (spraying, printing) and use different tests, so they cannot be compared directly.
 
 ## Related
-- [[fiber-dispersion]] · [[mix-designs]] · [[viscosity-modifying-admixtures]] · [[3d-printed-hdc]]
+- [[fiber-dispersion]] · [[mix-designs]] · [[viscosity-modifying-admixtures]] · [[3d-printed-hdc]] · [[alkali-activated-binder]]

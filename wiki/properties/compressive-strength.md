@@ -3,8 +3,8 @@ type: property
 slug: compressive-strength
 aliases: [f'c, fc, uniaxial compression]
 tags: [compression]
-sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, sun2019-modified-pva-fiber-ecc, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhou2023-hsecc-elevated-temperature, kunieda2010-uhp-shcc-steel-reinforcement]
-updated: 2026-10-20
+sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, sun2019-modified-pva-fiber-ecc, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhou2023-hsecc-elevated-temperature, kunieda2010-uhp-shcc-steel-reinforcement, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Compressive Strength
@@ -95,9 +95,31 @@ Always record the specimen type and size and the age.
 - **Rubber:** crumb rubber lowers f'c in normal PVA-ECC too; optimum 2.5% CR + 2% PVA
   ([[mohammed2020-cr-ecc-elevated-temperature]]). → [[crumb-rubber]]
 
+## Round-5 evidence (2026-10-21)
+| Source | Material (authors' term) | Specimen | Age | f'c (MPa) |
+|---|---|---|---|---|
+| [[deng2017-rc-column-hdc-jacket]] Table 5 | XAUAT HDC, Japanese / Chinese PVA; bar-mesh mortar; column concrete | 100 mm cube | n.r. | 60.35 / 61.29; mortar 66.68; concrete 45.40 |
+| [[deng2019-urm-shaking-table-hdc]] Table 3 | XAUAT HDC, 2% PVA | 100 mm cube | 28 d | 61.15 |
+| [[deng2020-aac-wall-hdc-retrofit]] Table 3 | XAUAT HDC, 1.7% PVA, air-cured | 100 mm cube | ≈ 60 d | 49.80 |
+| [[li2021-hdc-beam-shear]] §2.1 | HDC 2% PVA (FA/C 1.0) / C50 concrete | 70.7 mm cube / 100 mm cube | 28 d | 70.55 / 75.77 |
+| [[zhang2022-hdc-basalt-textile-tension]] Table 3 | XAUAT HDC Type I (FA/C 1.1) / Type II (HVFA, FA/C 3.25), 0–2% PVA | 100 mm cube | 28 d | 52–58 / 30–38 |
+| [[choi2016-pe-alkali-activated-slag-composite]] Table 5 | cementless AAS + 1.75% PE, W/B 0.26 → 0.38 | 50 mm cube | 28 d | 54.8 → 36.3; first-crack/f'c ≈ 9.2% |
+| [[pourfalah2018-ecc-high-temperature]] Table 5 | PVA-ECC / H6ECC / H13ECC (PVA + steel), **tested hot** at 20 / 200 / 400 / 600 °C | 50 mm cube | 28 d | ECC 38.8 / 36.15 / 35.1 / 29.2; H6 40.1 / 38.45 / 32 / 27.2; H13 45 / 38.5 / 32.8 / 29.5 |
+| [[yun2013-shcc-freeze-thaw]] Table 3, Fig. 4 | hybrid PVA+PE SHCC, W/B 0.45 (PVA/PE 1.30/0.20 vs 0.75/0.75) | n.r. | 39 d ⚠️ | 48.80 vs 43.95; ratio after 300 F-T cycles ≥ 1 in 3 of 4 mixes (ageing to 151 d confounded) |
+
+- **Fibre origin** does not change f_cu (60.35 vs 61.29 MPa, Japanese vs Chinese PVA) ([[deng2017-rc-column-hdc-jacket]], Table 5).
+- **HVFA** (FA/C 3.25) lowers f_cu to 30–38 MPa vs 52–58 MPa at FA/C 1.1 ([[zhang2022-hdc-basalt-textile-tension]], Table 3). → [[fly-ash]]
+- **More PE** in a PVA+PE hybrid lowers f'c (−10%) and raises air content (13.1 vs 10.4%); W/B 0.45 → 0.55 lowers f'c
+  ≈ 19% ([[yun2013-shcc-freeze-thaw]], Table 3, §3.1). → [[hybrid-fiber]]
+- **Hot (in-situ) compression:** f'c −10% (ECC) at 400 °C and −25 to −35% at 600 °C; compressive E 40.2 → 19.4 GPa
+  (ECC); no spalling to 600 °C ([[pourfalah2018-ecc-high-temperature]], Table 5, §4.2). → [[high-temperature-behaviour]]
+- **Cementless binder:** alkali-activated GGBS + PE reaches 54.8 MPa without cement ([[choi2016-pe-alkali-activated-slag-composite]]). → [[alkali-activated-binder]]
+- **Same XAUAT matrix, different results:** f_cu 61.15 MPa (2% PVA, 28 d) vs 49.80 MPa (1.7% PVA, air-cured ≈ 2 months)
+  ([[deng2019-urm-shaking-table-hdc]]; [[deng2020-aac-wall-hdc-retrofit]]) — different Vf and curing, not a conflict.
+
 > Synthesis: XAUAT PVA-HDC prism strength (50–64 MPa) sits in the same band as other Chinese PVA-HDC
 > (Chai 2023 prism 43.1 MPa; Li 2021 cube 45.8 MPa) and normal PVA-ECC (40–70 MPa). Fibers add compressive
 > **deformability and residual capacity**, not strength.
 
 ## Related
-- [[hshdc]] · [[uhpc-vhsc]] · [[mechanical-results]] · [[compressive-constitutive-model]]
+- [[hshdc]] · [[uhpc-vhsc]] · [[mechanical-results]] · [[compressive-constitutive-model]] · [[alkali-activated-binder]] · [[high-temperature-behaviour]]

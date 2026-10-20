@@ -3,8 +3,8 @@ type: concept
 slug: uhdc
 aliases: [UHDC, ultra-high ductile concrete, UHDCC, ultra-high ductility cementitious composites]
 tags: [material-family, pe-fiber, tongji]
-sources: [ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, sui2018-uhp-ecc-flexural-fatigue]
-updated: 2026-10-20
+sources: [ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, sui2018-uhp-ecc-flexural-fatigue, choi2016-pe-alkali-activated-slag-composite]
+updated: 2026-10-21
 ---
 
 # UHDC: Ultra-High Ductile Concrete
@@ -45,5 +45,13 @@ bars under ISO and Chinese codes ([[ye2021-uhdc-flexural-size-effect]], p. 2).
 > matrix. High strain (> 8%) is also reported in a very-high-strength PE matrix, consistent with the "trade-off
 > is not fundamental" row in [[gaps]]. Fiber and interface design, not f'c alone, controls ε_tu.
 
+- **Cementless alkali-activated slag + PE** (Chonnam / Michigan): 1.75 vol.% PE 18 mm × 12 µm, no aggregate, W/B 0.26,
+  f'c 54.8 MPa, σ_tu 13.06 MPa and ε 7.50% at 28 d (JSCE dogbone) ([[choi2016-pe-alkali-activated-slag-composite]], Tables 5, 7). Not called UHDC
+  or ECC by the authors. Like UHDC, it combines a moderate-strength matrix with fine PE, but its σ_tu is far higher.
+  → [[alkali-activated-binder]]
+
+> Synthesis (round 5): three PE composites now reach ≥ 7.5% at very different f'c: UHDC (≈ 37 MPa), alkali-activated
+> slag (≈ 55 MPa, [[choi2016-pe-alkali-activated-slag-composite]]) and UHP-ECC (≈ 121 MPa). Matrix strength alone does not set the ductility class.
+
 ## Related
-- [[terminology-hdc-ecc-shcc]] · [[hshdc]] · [[pe-fiber]] · [[size-effect]]
+- [[terminology-hdc-ecc-shcc]] · [[hshdc]] · [[alkali-activated-binder]] · [[pe-fiber]] · [[size-effect]]

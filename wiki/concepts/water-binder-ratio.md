@@ -3,8 +3,8 @@ type: concept
 slug: water-binder-ratio
 aliases: [W/B, w/cm, water-cement ratio]
 tags: [design-variable]
-sources: [yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, zhao2022-ecc-tension-damage-model, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, sun2019-modified-pva-fiber-ecc, ivaniuk2022-printable-shcc-design, zhong2019-ecc-freeze-thaw, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, zhou2023-hsecc-elevated-temperature, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, mohammed2020-cr-ecc-elevated-temperature]
-updated: 2026-10-20
+sources: [yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, zhao2022-ecc-tension-damage-model, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, sun2019-modified-pva-fiber-ecc, ivaniuk2022-printable-shcc-design, zhong2019-ecc-freeze-thaw, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, zhou2023-hsecc-elevated-temperature, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, mohammed2020-cr-ecc-elevated-temperature, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, deng2017-rc-column-hdc-jacket, li2021-hdc-beam-shear, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Water/Binder Ratio
@@ -21,7 +21,9 @@ updated: 2026-10-20
   Explanation: a W/B that is too low raises the bond (Gd, τ0) so fibers rupture; one that is too high
   weakens the bond so fibers slip. From 0.14 to 0.18, σcr falls 13.7%. → [[fiber-matrix-interface]]
 - High vs low W/B affects the freeze–thaw response of hybrid SHCC (Yun 2013, as cited in
-  [[he2024-hdc-research-advances]], p. 13). → [[durability]]
+  [[he2024-hdc-research-advances]], p. 13). Now primary: W/B 0.45 → 0.55 lowers f'c ≈ 19% and increases the ductility
+  loss after 300 F-T cycles ([[yun2013-shcc-freeze-thaw]], §3.1, Conclusion 3). ⚠️ The paper's text says higher W/B gave
+  higher tensile strength (Fig. 7), but its Table 3 shows the reverse at 0 cycles (3.77 vs 2.89 MPa). → [[freeze-thaw]]
 
 ## Further evidence (2026-10-20 ingest)
 - Paste + SF composites: w/c 0.27 → 0.42 raises ε_cu from 0.26 to 0.55% (14 µm PVA) and from 1.03 to
@@ -57,5 +59,23 @@ updated: 2026-10-20
   against the trend in [[zhao2022-ecc-tension-damage-model]] (0.24 → 0.28: ε ×4) and [[chai2023-hdc-ambient-temperature]].
   The ranges and ages differ (7 d vs ≥ 28 d). → [[gaps]]
 
+## Round 5 evidence (2026-10-21)
+| Source | Term / fiber | W/B (mass) | Effect | Age |
+|---|---|---|---|---|
+| [[choi2016-pe-alkali-activated-slag-composite]] Table 7 | cementless alkali-activated slag + 1.75% PE, no aggregate | 0.26 → 0.30 → 0.34 → 0.38 | f'c 54.8 → 36.3 MPa; σ_tu 13.06 → 5.06 MPa (−61.3%); ε 7.50 → 4.58% (−38.9%); **lower W/B more ductile**, most and narrowest cracks at 0.26 | 28 d |
+| [[yun2013-shcc-freeze-thaw]] Table 3 | hybrid PVA + PE SHCC 1.5% | 0.45 vs 0.55 | f'c −19%; more ductility loss after F-T | 14–39 d ⚠️ / 151 d |
+
+- Other matrices: XAUAT PVA-HDC W/B 0.29 with FA/C 1.0 ([[deng2017-rc-column-hdc-jacket]], Table 1; [[li2021-hdc-beam-shear]],
+  Table 1); Michigan M45 0.25 computed ([[yang2009-ecc-self-healing-wet-dry]]; [[lepech2009-ecc-water-permeability]]);
+  Heriot-Watt ECC 0.28 derived ([[pourfalah2018-ecc-high-temperature]]).
+- ⚔️ Choi 2016 joins [[sun2019-modified-pva-fiber-ecc]] on the "lower W/B is more ductile" side, against
+  [[zhao2022-ecc-tension-damage-model]] and [[chai2023-hdc-ambient-temperature]]. The Choi matrix is cementless, has no
+  aggregate and uses PE (no chemical bond), so the bond-weakening argument for high W/B in PVA systems does not apply; a
+  stronger matrix there raises PE friction and bridging strength (σ_tu ×2.6). → [[alkali-activated-binder]], [[gaps]]
+
+> Synthesis (round 5): the W/B effect on ductility depends on the fibre–matrix pair. With hydrophilic PVA, a higher W/B
+> weakens an over-strong bond and helps (Zhao, Chai, Kanda). With hydrophobic PE in a toughness-limited matrix (no sand),
+> a lower W/B helps (Choi). Optima appear where both effects meet (Xi'an HSHDC 0.16).
+
 ## Related
-- [[mix-designs]] · [[fly-ash]] · [[strain-hardening]] · [[freeze-thaw]] · [[compressive-constitutive-model]] · [[viscosity-modifying-admixtures]]
+- [[mix-designs]] · [[fly-ash]] · [[strain-hardening]] · [[freeze-thaw]] · [[compressive-constitutive-model]] · [[viscosity-modifying-admixtures]] · [[alkali-activated-binder]]

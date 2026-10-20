@@ -3,8 +3,8 @@ type: property
 slug: compressive-constitutive-model
 aliases: [compressive stress-strain curve, compressive toughness, W_cu, compressive damage model, Weibull damage model, compressive deformability]
 tags: [compression, modelling, toughness]
-sources: [deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, tabrizikahou2022-masonry-ecc-sma-retrofit]
-updated: 2026-10-20
+sources: [deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, tabrizikahou2022-masonry-ecc-sma-retrofit, deng2017-rc-column-hdc-jacket, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Compressive Stress–Strain Behaviour, Toughness and Constitutive Models
@@ -59,6 +59,13 @@ XAUAT PVA-HDC (PVA 12 mm × 39 µm), 100 × 100 × 300 mm prisms, W/B 0.29, FA 5
 - More fiber lowers m and raises η (more enclosed energy).
 - Fit (mean R): new model 0.984; Li & Liu 2014 rational model 0.983; Xu 2009 polynomial 0.958. Only the new
   model reproduces the residual plateau; the others decay to zero (Fig. 7).
+
+## Round-5 additions (2026-10-21)
+- XAUAT HDC with Japanese or Chinese PVA: compressive peak strain ≈ 0.6% for both fibres (Fig. 1b read ⚠️), within the
+  0.56–0.80% band above; the authors credit high compressive strain plus tensile strain hardening for the ductility of
+  HDC-jacketed columns ([[deng2017-rc-column-hdc-jacket]], p. 2, p. 7, Fig. 1b). → [[rc-member-strengthening]]
+- Hot compression: elastic modulus of PVA-ECC falls 40.2 → 19.4 GPa from 20 to 600 °C
+  ([[pourfalah2018-ecc-high-temperature]], Table 5). → [[high-temperature-behaviour]]
 
 ## Other uses in the wiki
 - FE input for ECC in Abaqus CDP: compression to 62.78 MPa at inelastic strain 0.017

@@ -3,8 +3,8 @@ type: concept
 slug: fiber-dispersion
 aliases: [fiber distribution, fiber orientation, effective fiber volume, fiber agglomeration]
 tags: [variability, processing]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, chai2023-hdc-ambient-temperature, yang2008-ecc-fiber-bridging-law, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, kanakubo2006-dfrcc-tensile-test-method, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, zhong2019-ecc-freeze-thaw, shumuye2022-slag-fa-pe-ecc]
-updated: 2026-10-20
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, chai2023-hdc-ambient-temperature, yang2008-ecc-fiber-bridging-law, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, kanakubo2006-dfrcc-tensile-test-method, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, zhong2019-ecc-freeze-thaw, shumuye2022-slag-fa-pe-ecc, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw]
+updated: 2026-10-21
 ---
 
 # Fiber Dispersion & Orientation
@@ -61,5 +61,12 @@ set the section-to-section variation in bridging capacity, and therefore min(σ0
 - Spherical fly ash aids fiber dispersion (authors' claim, [[shumuye2022-slag-fa-pe-ecc]], Sect. 3.5.1). → [[fly-ash]]
 - Viscosity-modifying admixtures are used partly to keep fibers suspended → [[viscosity-modifying-admixtures]].
 
+## Round-5 evidence (2026-10-21)
+- **Viscosity control for PE**: HRWRA and VMA tuned per W/B after Li & Li 2013 in a cementless alkali-activated slag
+  paste; measured densities within 0.5% of theoretical → no unintended pores; all four mixes strain-hardened
+  ([[choi2016-pe-alkali-activated-slag-composite]], §2.1, §3.1). → [[alkali-activated-binder]], [[viscosity-modifying-admixtures]]
+- **PE multifilament** is hard to disperse in PVA + PE hybrids, raising air content (up to 13.1%) and lowering f'c
+  ([[yun2013-shcc-freeze-thaw]], p. 13–14, Table 3). → [[hybrid-fiber]]
+
 ## Related
-- [[fiber-bridging]] · [[fresh-properties]] · [[strain-hardening]] · [[3d-printed-hdc]] · [[viscosity-modifying-admixtures]] · [[dogbone-uniaxial-tension]]
+- [[fiber-bridging]] · [[fresh-properties]] · [[strain-hardening]] · [[3d-printed-hdc]] · [[viscosity-modifying-admixtures]] · [[dogbone-uniaxial-tension]] · [[alkali-activated-binder]]

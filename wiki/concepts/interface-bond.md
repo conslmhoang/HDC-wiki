@@ -3,8 +3,8 @@ type: concept
 slug: interface-bond
 aliases: [substrate bond, overlay bond, ECC-concrete interface, slant shear, interlayer bond, interlayer strength, rebar-ECC bond, bond-slip, delamination, debonding]
 tags: [interface, repair, strengthening, 3d-printing, rebar, structural]
-sources: [yuan2020-nshsdc-beam-strengthening, wang2019-rc-beam-ecc-shear-strengthening, xue2023-shcc-structural-review, tabrizikahou2022-masonry-ecc-sma-retrofit, kunieda2006-hpfrcc-japan-applications, li2003-ecc-review, yang2024-hshdc-uniaxial-tension, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, wang2023-ecc-frost-damage, lee2021-hsdc-wall-emi-impact, kunieda2010-uhp-shcc-steel-reinforcement]
-updated: 2026-10-20
+sources: [yuan2020-nshsdc-beam-strengthening, wang2019-rc-beam-ecc-shear-strengthening, xue2023-shcc-structural-review, tabrizikahou2022-masonry-ecc-sma-retrofit, kunieda2006-hpfrcc-japan-applications, li2003-ecc-review, yang2024-hshdc-uniaxial-tension, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, wang2023-ecc-frost-damage, lee2021-hsdc-wall-emi-impact, kunieda2010-uhp-shcc-steel-reinforcement, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, zhang2022-hdc-basalt-textile-tension]
+updated: 2026-10-21
 ---
 
 # Interface Bond (HDC/ECC to substrate, interlayer, and rebar)
@@ -66,6 +66,9 @@ ASTM C882, 100 × 100 × 300 mm prisms, 28 d, mean of 3; LS = as-cast (low rough
 | [[wang2019-rc-beam-ecc-shear-strengthening]], §3.1 | RC beam sides | chiselled, saturated-surface-dry, interface agent (0.85 cement + 0.05 SF + 0.1 expansive agent + 0.3 water, by mass); ECC sprayed | 40 mm layers all debonded; 20 mm partly |
 | [[yuan2020-nshsdc-beam-strengthening]], §2.2.2 | NSC beams | chiselled | no delamination |
 | [[xue2023-shcc-structural-review]], §4.2 | RC beams | retarder wash-out roughening | debonding after layer crack localisation (10, 30 mm) |
+| [[deng2017-rc-column-hdc-jacket]], p. 2–3 | RC columns (30 mm four-sided jacket) | cover gouged off, surface wetted, HDC cast | no jacket–concrete bond failure before peak load (visual only) |
+| [[deng2019-urm-shaking-table-hdc]], p. 4, 8 | brick URM walls (15 mm overlay) | surface only cleaned of dust and loose material; Ø8 corner bars | no overlay detachment up to 1.171 g (shake table); no bond test |
+| [[deng2020-aac-wall-hdc-retrofit]], p. 4 | AAC block walls (15 mm strips / layer) | n.r. (cast on wall); some strips anchored with bars into wall and foundation | spalled strips carried AAC fragments → bond exceeded block tensile strength; unanchored strips debonded at the base (compression concentration); anchorage prevented it |
 | [[tabrizikahou2022-masonry-ecc-sma-retrofit]] | URM wall (FE) | epoxy/resin-bonded precast sheets (modelled) | interface law dominates energy |
 
 ### Interlayer bond in 3D-printed SHCC
@@ -106,13 +109,24 @@ Central pull-out, HRB335 Ø12 mm, bond length 7d (84 mm), 0.5 mm/min ([[wang2023
 > - The only quantitative substrate-bond data are slant shear values for one Korean steel + PE mix. Direct-tension
 >   (pull-off) or shear bond tests for PVA-ECC/HDC on concrete are absent from the corpus.
 
+- **Weak substrates (refinement, 2026-10-21):** on AAC the bond limit lies in the substrate, not the interface, so
+  strips need mechanical anchorage rather than better surface preparation ([[deng2020-aac-wall-hdc-retrofit]], p. 4).
+  As cited there: SHCC bonds to masonry without bonding agents (Mechtcherine et al. 2011, p. 2). → [[masonry-wall-retrofit]]
+- **Textile–matrix bond:** PVA fibres are claimed to improve yarn–matrix bond in basalt-textile HDC (not measured);
+  with ≥ 1.5% PVA the grid ruptures instead of slipping ([[zhang2022-hdc-basalt-textile-tension]], §3.1, §4.2). → [[textile-reinforced-hdc]]
+
+> Synthesis (2026-10-21): the XAUAT structural tests (columns, brick, AAC) all used simple preparation and reported
+> no interface failure before peak — but only by visual observation. None measures bond strength, so these results
+> show that bond was *sufficient* in those tests, not how much margin there was.
+
 ## Conflicts & open questions
 - ⚔️ Printed SHCC interlayer: stronger than bulk first crack ([[chavesfigueiredo2020-printed-shcc]]) vs weaker in
   flexure ([[ivaniuk2022-printable-shcc-design]]).
 - ⚔️ "ECC repairs avoid delamination" (Lim & Li 1997 via [[li2003-ecc-review]]) vs debonding of all 40 mm sprayed
   layers ([[wang2019-rc-beam-ecc-shear-strengthening]]) and of 10/30 mm layers ([[xue2023-shcc-structural-review]]).
   Different loading (repair under shrinkage vs structural shear/flexure).
-- Open: no pull-off or direct-shear bond data for PVA-ECC/HDC on concrete; no bond-slip law for rebar in HDC;
+- Open: no pull-off or direct-shear bond data for PVA-ECC/HDC on concrete, brick or AAC (XAUAT jacket and overlay
+  studies give visual evidence only); no bond-slip law for rebar in HDC;
   no test of bond durability (wet–dry, freeze–thaw) for overlays.
 
 ## Related

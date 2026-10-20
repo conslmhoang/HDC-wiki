@@ -3,8 +3,8 @@ type: property
 slug: chloride-and-corrosion
 aliases: [chloride ingress, chloride diffusion, reinforcement corrosion, rebar corrosion, R/SHCC, anti-spalling, corrosion cracking]
 tags: [durability, chloride, corrosion, transport]
-sources: [bu2022-ecc-chloride-crack-width, paul2014-r-shcc-chloride-corrosion, vanzijl2010-shcc-durability, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, wang2023-ecc-frost-damage, homma2009-frcc-self-healing, ma2021-ecc-durability-review, he2024-hdc-research-advances, li2003-ecc-review]
-updated: 2026-10-20
+sources: [bu2022-ecc-chloride-crack-width, paul2014-r-shcc-chloride-corrosion, vanzijl2010-shcc-durability, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, wang2023-ecc-frost-damage, homma2009-frcc-self-healing, ma2021-ecc-durability-review, he2024-hdc-research-advances, li2003-ecc-review, lepech2009-ecc-water-permeability]
+updated: 2026-10-21
 ---
 
 # Chloride Ingress and Reinforcement Corrosion
@@ -40,7 +40,10 @@ suction (wet–dry exposure), and the resulting corrosion of embedded steel. "R/
   ([[vanzijl2010-shcc-durability]], p. 265).
 - **Macro-cell → micro-cell**: in finely cracked HPFRCC/SHCC, rebar corrosion is micro-cell (slow) rather than
   macro-cell (fast) (Hiraishi 2005, as cited in [[kunieda2006-hpfrcc-japan-applications]], p. 24; JSCE 2004 for
-  cracks < 40 µm, as cited in [[kunieda2010-uhp-shcc-steel-reinforcement]], §1).
+  cracks < 40 µm, as cited in [[kunieda2010-uhp-shcc-steel-reinforcement]], §1). Wide, widely spaced cracks in
+  RC promote macro-cell corrosion (Raupach 2001, as cited in [[lepech2009-ecc-water-permeability]], p. 749).
+- **Service-life models ignore cracking**: Life-365 assumes uncracked concrete, and codes set no limit on
+  permeability or loaded crack width ([[lepech2009-ecc-water-permeability]], p. 745, 749). → [[permeability]]
 - **Steel fibres corrode at cracks**: steel cords on crack faces corroded within 3 d of water immersion;
   in PE + steel hybrid FRCC corrosion stayed at the outer face ([[homma2009-frcc-self-healing]], Fig. 16).
   → [[hybrid-fiber]]

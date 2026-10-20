@@ -3,8 +3,8 @@ type: concept
 slug: strain-hardening
 aliases: [pseudo strain-hardening, PSH, tensile strain-hardening, strain-hardening criteria, PSH index]
 tags: [micromechanics, design-theory]
-sources: [kanda2006-psh-design-criteria, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, deng2018-hdc-short-columns, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, homma2009-frcc-self-healing, tabrizikahou2022-masonry-ecc-sma-retrofit]
-updated: 2026-10-20
+sources: [kanda2006-psh-design-criteria, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, deng2018-hdc-short-columns, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, homma2009-frcc-self-healing, tabrizikahou2022-masonry-ecc-sma-retrofit, choi2016-pe-alkali-activated-slag-composite, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Tensile Strain-Hardening & the PSH Criteria
@@ -153,6 +153,22 @@ and the saturation thresholds came later: 1.2 / 3 (Kanda & Li 1998b, pull-out ty
 > with higher strain, but processing (printing, spraying, member thickness, strain rate) can remove hardening even
 > when the micromechanical indices pass. The PSH indices are necessary, not sufficient, at member scale.
 
+## Round-5 evidence (2026-10-21)
+- **"Stress performance index" ≠ PSH strength index.** [[choi2016-pe-alkali-activated-slag-composite]] reports σ_tu/σ_fc 1.50–2.68 (rising with
+  crack count, 46–67 cracks) and calls it a "stress performance index", but it uses the measured peak tensile stress, not
+  the bridging capacity σ0 (Kanda & Li). Values are not comparable with σ0/σ_fc rows in [[micromechanical-parameters]].
+  No aggregate was used, to keep matrix toughness low (§2.1). → [[alkali-activated-binder]]
+- **Strain hardening survives some exposures but not others**: kept after 300 F-T cycles in hybrid PVA + PE SHCC, with
+  slightly lower strain and loss of flexural multiple cracking ([[yun2013-shcc-freeze-thaw]], Figs. 6, 8); kept on
+  reloading after wet–dry self-healing (ε 1.7–3.1% / 0.8–2.2%, [[yang2009-ecc-self-healing-wet-dry]], p. 388); lost in hot
+  bending from 150 °C (one crack, PVA pull-out) ([[pourfalah2018-ecc-high-temperature]], Fig. 10d). → [[freeze-thaw]],
+  [[self-healing]], [[high-temperature-behaviour]]
+- **Fiber grade switches the ductility class** in the same XAUAT HDC mix: ≈ 3.0% (Japanese PVA, 1600 MPa) vs ≈ 1.2%
+  (Chinese PVA, 1200 MPa) ([[deng2017-rc-column-hdc-jacket]], Fig. 1a ⚠️ read). XAUAT tests HDC tension per the Shaanxi
+  standard DBJ61/T112-2016 ([[deng2019-urm-shaking-table-hdc]], p. 3). → [[pva-fiber]]
+- **Short fibres + textile**: with ≥ 1.5% PVA, basalt-textile-reinforced HDC shows multiple cracking up to peak, although
+  plain HDC dogbones reach only 0.12–0.45% ([[zhang2022-hdc-basalt-textile-tension]], §3.1, Table 8). → [[textile-reinforced-hdc]]
+
 ## Conflicts & open questions
 - ⚔️ The PSH criteria do not fully predict the brittle failure of short-fiber mixes → [[gaps]]
 - ⚔️ PSH strength threshold: 1.2 (1998b) / 1.3 (2006) vs 1.45 (as quoted by [[jin2019-hvfa-shcc-structural]]) → [[gaps]]
@@ -162,4 +178,4 @@ and the saturation thresholds came later: 1.2 / 3 (Kanda & Li 1998b, pull-out ty
 - Kanda & Li 1998b (the pull-out thresholds) has not been ingested.
 
 ## Related
-- [[multiple-cracking]] · [[fiber-bridging]] · [[tensile-strain-capacity]] · [[micromechanical-parameters]] · [[steady-state-cracking]] · [[recycled-fine-aggregate]]
+- [[multiple-cracking]] · [[alkali-activated-binder]] · [[fiber-bridging]] · [[tensile-strain-capacity]] · [[micromechanical-parameters]] · [[steady-state-cracking]] · [[recycled-fine-aggregate]]

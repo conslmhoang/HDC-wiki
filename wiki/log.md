@@ -168,3 +168,38 @@ Append-only. Format: `## YYYY-MM-DD — <operation> — <subject>`, followed by 
   orientation); 3 rows refined (strain-rate ε and failure mode by mechtcherine2011; F-T citation note); PVA
   melting partly resolved. Under-studied areas rewritten for the 50-source corpus.
 - Updated index (34 sources + 10 pages, grouped by lineage) and review-outline (scope 50 papers).
+
+## 2026-10-21 — ingest new — 10 sources (round 5, reaching 60)
+- **How sources were obtained:** the human downloaded 9 ScienceDirect PDFs by hand (a CAPTCHA blocked automated
+  download and was not bypassed). Choi 2016 was added as a replacement for Wang 2007 (ACI), which is paywalled.
+- **New sources (10):**
+  - XAUAT structures and TR-HDC: deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc,
+    deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension.
+  - Durability and temperature: yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability,
+    yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature.
+  - Cementless composite: choi2016-pe-alkali-activated-slag-composite.
+- **New pages (2):** materials/textile-reinforced-hdc, materials/alkali-activated-binder.
+- **Updated:** about 40 topic pages by the structures and durability-materials integration groups (applications,
+  shear, tension, crack width, self-healing, permeability, freeze–thaw, high temperature, fibres, binders, W/B).
+- **Key corrections:**
+  - Permeability: reinforced mortar at ≈ 500 µm is **4.46 × 10⁻⁴ m/s** (Lepech & Li 2009, Table 5), not 10⁻⁵ m/s as
+    quoted via ma2021; 10⁻⁵ (2.58 × 10⁻⁵) is the 300 µm value. The "0.10–0.15 mm" threshold attributed to Lepech & Li
+    2009 is a mis-citation; their 100 µm is a design target from concrete (Wang 1997), not measured on ECC.
+  - Healing thresholds: Yang 2009's < 50 / 50–150 / > 150 µm limits were measured on a 0.5% PVA tension-softening
+    mortar, not ECC; the "< 60 µm" value is Reinhardt & Jooss (via ma2021), not Yang 2009.
+  - Yun citation resolved: Yun 2013 (Compos. B 52) and Yun 2011 (Cold Reg. Sci. Technol. 67) are two different papers.
+  - "Deng & Zhang 2018" row: he2024 most likely refers to Deng, Zhang & Li 2018 (Eng. Struct. 160, ECC-jacketed short
+    columns, not ingested), not to deng2018-hdc-short-columns; probably resolved.
+  - XAUAT PVA-HDC strain spread: ≈ 3.0% (Japanese PVA, Deng 2017) vs ≈ 1.0% (Deng 2018, 2019; Li 2021) vs
+    0.34–0.45% (plain HDC in Zhang 2022, below the 0.5% bar), same nominal fibre; raised by both groups, merged into
+    one conflict row.
+  - Deng 2019 shake-table test is now primary; masonry retrofit and RC column jacketing now have primary data.
+- **Datasets:** +60 rows: mix-designs 91 → 113 (+22), mechanical-results 180 → 216 (+36),
+  micromechanical-parameters 24 → 26 (+2). Dataset conflicts: M45 HRWR 7.51 (lepech2009) vs 17 kg/m³ (yang2009);
+  li2021 σ_tu 5.83 vs 5.68 MPa (internal).
+- **gaps:** 64 conflict rows (was 51): 13 new after merging duplicates (XAUAT strain spread, permeability at 500 µm,
+  0.10–0.15 mm mis-citation, origin of 100 µm, static vs flowing water, ε_tu and stiffness after F-T, code
+  conservatism, shear design philosophy, PVA modulus, PVA at 200 °C, M45 HRWR, li2021 σ_tu); 12 rows updated, incl.
+  Yun 2011/2013 resolved and Deng & Zhang 2018 probably resolved. Under-studied areas updated for the 60-source corpus.
+- Updated index (10 sources + 2 pages; new groups for XAUAT structures and cementless composites) and review-outline
+  (scope 60 papers; applications chapter now ✅).

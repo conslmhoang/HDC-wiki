@@ -3,8 +3,8 @@ type: concept
 slug: multiple-cracking
 aliases: [multiple microcracking, saturated cracking, crack number, crack density]
 tags: [mechanism]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kunieda2010-uhp-shcc-steel-reinforcement, kunieda2006-hpfrcc-japan-applications, mechtcherine2011-shcc-high-strain-rate, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, qian2007-shcc-inverse-tensile-strain, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, wang2019-rc-beam-ecc-shear-strengthening, xue2023-shcc-structural-review, zhao2022-ecc-tension-damage-model]
-updated: 2026-10-20
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kunieda2010-uhp-shcc-steel-reinforcement, kunieda2006-hpfrcc-japan-applications, mechtcherine2011-shcc-high-strain-rate, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, qian2007-shcc-inverse-tensile-strain, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, wang2019-rc-beam-ecc-shear-strengthening, xue2023-shcc-structural-review, zhao2022-ecc-tension-damage-model, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, choi2016-pe-alkali-activated-slag-composite, lepech2009-ecc-water-permeability, yang2009-ecc-self-healing-wet-dry, zhang2022-hdc-basalt-textile-tension]
+updated: 2026-10-21
 ---
 
 # Multiple Cracking
@@ -93,5 +93,18 @@ Multiple cracking at member scale is generally **less** than in dogbone tests.
 > restraint) show that dogbone crack counts overstate member-level multiple cracking. Steel reinforcement or a
 > debonded zone restores distributed cracking. Use dogbone ε_tu only as an upper bound for members. → [[size-effect]]
 
+## Round-5 evidence (2026-10-21)
+| Source | Condition | Cracks | Note |
+|---|---|---|---|
+| [[choi2016-pe-alkali-activated-slag-composite]] Table 8 | alkali-activated slag + 1.75% PE, W/B 0.26–0.38, 80 mm gauge | 46–67 cracks; spacing 1.20–2.25 mm; computed avg width 88.9–109.8 µm | most and narrowest cracks at lowest W/B |
+| [[lepech2009-ecc-water-permeability]] Tables 3, 5 | ECC M45 at 1.5 / 2 / 3% | 47 / 59 / 87 cracks; spacing 2–5 mm; 50–63 µm unloaded | typical ≈ 60 µm width reached at ≈ 1% strain, then new cracks form (p. 745, Fig. 1) |
+| [[yang2009-ecc-self-healing-wet-dry]] Table 2 | ECC M45 at 0.3–3% | 5–39 cracks per 100 mm; residual max 50–90 µm | after healing, re-cracks follow healed paths and some form beside them (Figs. 15–17) |
+| [[yun2013-shcc-freeze-thaw]] Figs. 6, 11 | hybrid PVA + PE SHCC, 300 F-T cycles | fewer, less spread cracks in tension; **single crack** in flexure after F-T | more PE → more fine cracks before F-T |
+| [[pourfalah2018-ecc-high-temperature]] Fig. 10d | PVA-ECC, hot bending | ≈ 15–23 cracks at 20 °C → one crack from 150 °C | steel hybrid limits crack width |
+| [[zhang2022-hdc-basalt-textile-tension]] §3.1 | basalt textile + PVA-HDC | crack spacing ≈ grid spacing (25 mm); with ≥ 1.5% PVA multiple cracking up to peak, no spalling | → [[textile-reinforced-hdc]] |
+
+> Synthesis: exposure (frost, heat) removes multiple cracking before it removes strength: F-T and 150 °C both reduce the
+> crack count while σ_tu or load is largely kept. Crack count is therefore a sensitive damage indicator. → [[durability]]
+
 ## Related
-- [[strain-hardening]] · [[crack-width]] · [[fiber-bridging]] · [[digital-image-correlation]] · [[interface-bond]]
+- [[strain-hardening]] · [[crack-width]] · [[fiber-bridging]] · [[digital-image-correlation]] · [[interface-bond]] · [[durability]] · [[textile-reinforced-hdc]]

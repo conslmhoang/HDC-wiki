@@ -3,8 +3,8 @@ type: material
 slug: pva-fiber
 aliases: [polyvinyl alcohol fiber, PVA]
 tags: [fiber, synthetic, hydrophilic]
-sources: [li2002-pva-ecc-interface-tailoring, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ranade2015-hshdc-tensile-rate-effects, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, yang2008-ecc-fiber-bridging-law, li2021-hdc-sulfate-dry-wet, chai2023-hdc-ambient-temperature, li2003-ecc-review, kanda2006-psh-design-criteria, chai2019-hdcc-freeze-thaw-carbonation-flexure, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, herbert2013-ecc-self-healing-natural-environment, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, kanakubo2006-dfrcc-tensile-test-method, mechtcherine2011-shcc-high-strain-rate, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, paul2014-r-shcc-chloride-corrosion, qian2007-shcc-inverse-tensile-strain, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, zhong2019-ecc-freeze-thaw, zhou2023-hsecc-elevated-temperature, chavesfigueiredo2020-printed-shcc, bu2022-ecc-chloride-crack-width]
-updated: 2026-10-20
+sources: [li2002-pva-ecc-interface-tailoring, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ranade2015-hshdc-tensile-rate-effects, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, yang2008-ecc-fiber-bridging-law, li2021-hdc-sulfate-dry-wet, chai2023-hdc-ambient-temperature, li2003-ecc-review, kanda2006-psh-design-criteria, chai2019-hdcc-freeze-thaw-carbonation-flexure, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, herbert2013-ecc-self-healing-natural-environment, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, kanakubo2006-dfrcc-tensile-test-method, mechtcherine2011-shcc-high-strain-rate, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, paul2014-r-shcc-chloride-corrosion, qian2007-shcc-inverse-tensile-strain, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, zhong2019-ecc-freeze-thaw, zhou2023-hsecc-elevated-temperature, chavesfigueiredo2020-printed-shcc, bu2022-ecc-chloride-crack-width, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # PVA Fiber
@@ -55,7 +55,8 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 - ⚔️ PVA-ECC ε rate sensitivity: a decrease (Yang & Li 2014; Mechtcherine) vs no significant change
   (Boshoff & van Zijl 2007), as cited in [[yu2018-ecc-direct-tensile-review]], p. 349. → [[gaps]]
 - Chinese PVA-HDC primary data now exist from two groups outside Deng's: [[chai2023-hdc-ambient-temperature]] (tension,
-  compression, flexure) and [[li2021-hdc-sulfate-dry-wet]] (compression only). The Deng (XAUAT) PVA-HDC papers are still missing.
+  compression, flexure) and [[li2021-hdc-sulfate-dry-wet]] (compression only). Update 2026-10-21: XAUAT (Deng group)
+  PVA-HDC papers are now ingested — see "Round 5" below.
 
 ## Further PVA data (2026-10-20 ingest)
 | Source | Product | d (µm) | L (mm) | σ_f (MPa) | E (GPa) | Note |
@@ -156,5 +157,47 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 - ⚔️ Age effect: REC-15 ECC fell from 3.21 to 1.39% between 7 and 28 d ([[sun2019-modified-pva-fiber-ecc]], Table 11), far
   below Michigan PVA-ECC at 28 d (about 4–5%). The matrix and curing differ, so this is not a direct conflict. → [[gaps]]
 
+## Round 5 additions (2026-10-21)
+
+### Fiber properties reported
+| Source | Product | d (µm) | L (mm) | σ_f (MPa) | E (GPa) | Elong. (%) | Note |
+|---|---|---|---|---|---|---|---|
+| [[deng2017-rc-column-hdc-jacket]] Table 2 | "Japanese" PVA | 39 (printed "mm" ⚠️) | 12 | 1600 | 40 | — | XAUAT HDC |
+| same | "Chinese" PVA | 39 | 12 | 1200 | 32 | — | same mix |
+| [[deng2019-urm-shaking-table-hdc]] Table 2 | n.r. | 39 | 12 | 1600 | **32** ⚠️ | 7 | 2% PVA HDC overlay; 32 vs 40 GPa for the same strength class in deng2017 / deng2018 |
+| [[deng2020-aac-wall-hdc-retrofit]] | n.r. | n.r. | n.r. | n.r. | n.r. | n.r. | 1.7 vol.% |
+| [[li2021-hdc-beam-shear]] Table 2 | n.r. | 39 | 12 | 1600 | 40 | 7.0 | 1.3 g/cm³ (printed "g/mm³") |
+| [[zhang2022-hdc-basalt-textile-tension]] Table 2 | n.r. (XAUAT) | 39 | 12 | 1600 | 40 | 7 | 1.3 g/cm³, L/d ≈ 310 |
+| [[lepech2009-ecc-water-permeability]] Table 2 | 1.2 wt% oil (M45) | 39 | 12 | 1620 nominal / 1092 apparent | 42.8 | 6.0 | 26 kg/m³ |
+| [[yang2009-ecc-self-healing-wet-dry]] Table 1 | Kuralon-II REC-15 | n.r. | 12 | n.r. | n.r. | n.r. | M45, 26 kg/m³ |
+| [[yun2013-shcc-freeze-thaw]] §2.1 | n.r. | 40 | 12 | 1600 | 40 | — | hybrid with PE |
+| [[pourfalah2018-ecc-high-temperature]] Table 3 | n.r. | 40 | 12 | 1600 | 14 ⚠️ | — | ρ 1300 kg/m³; E looks low |
+
+### Fiber grade decides HDC ductility (XAUAT)
+- Same nominal XAUAT mix (FA/C 1.0, W/B 0.29), same 12 mm × 39 µm geometry: **Japanese PVA** (1600 MPa, 40 GPa) gave
+  σ_tu 6.12 MPa and ultimate strain ≈ 3.0%; **Chinese PVA** (1200 MPa, 32 GPa) gave 4.84 MPa and ≈ 1.2%; i.e. the
+  Japanese fiber gave +26.4% σ_tu and "about 150% higher" ultimate strain
+  ([[deng2017-rc-column-hdc-jacket]], Tables 2, 5, Fig. 1a ⚠️ strains read from figure). In column jackets the
+  Japanese-fiber HDC dissipated 45% more energy at Δu (p. 8). → [[rc-member-strengthening]]
+- ⚔️ Same nominal mix and same 1600 MPa / 40 GPa fiber: ≈ 3.0% ([[deng2017-rc-column-hdc-jacket]], Fig. 1a) vs
+  ≈ 1.0% ([[deng2018-hdc-short-columns]], Fig. 1) and 1.0% ([[deng2019-urm-shaking-table-hdc]], Table 3) and 0.968%
+  ([[li2021-hdc-beam-shear]], §2.1), with σ_tu ≈ 5.8–6.1 MPa in all. Plain XAUAT PVA-HDC dogbones in
+  [[zhang2022-hdc-basalt-textile-tension]] reach only 0.12–0.45% at 1.5–2% PVA (Table 8; matrix with SF and "mineral
+  powder"). Batch, specimen, strain basis (ultimate vs at peak) and matrix differ; reason unknown. → [[gaps]],
+  [[tensile-strain-capacity]]
+- 1.7% PVA XAUAT HDC, air-cured ≈ 2 months: f_tu 3.89 MPa, ≈ 1.2% ([[deng2020-aac-wall-hdc-retrofit]], Table 3, Fig. 3).
+- In textile-reinforced HDC, PVA ≥ 1.5% makes the basalt grid rupture instead of slipping; PVA is claimed (not
+  measured) to improve yarn–matrix bond ([[zhang2022-hdc-basalt-textile-tension]], §3.1, §4.2). → [[textile-reinforced-hdc]]
+
+### Exposure behaviour (primary)
+- **Heat (hot tests)**: PVA ruptures below 150 °C, pulls out fully at 150 °C (pull-out length 500 → 6000 µm from
+  20 to 150 °C), looks burned at 200 °C and is absent at 400 °C ([[pourfalah2018-ecc-high-temperature]], Fig. 12).
+  → [[high-temperature-behaviour]]
+- **Freeze–thaw**: a higher hydrophilic PVA share in PVA+PE hybrids is linked to larger ductility loss after 300
+  cycles (not measured mechanistically) ([[yun2013-shcc-freeze-thaw]], Conclusion 3). This supports, directionally,
+  the second-hand "PVA loses more ε than PE" (Yun 2011, as cited in [[ma2021-ecc-durability-review]]). → [[freeze-thaw]]
+- **Self-healing**: oiled-PVA ECC M45 recovered 87–100% resonant frequency after 10 wet–dry cycles
+  ([[yang2009-ecc-self-healing-wet-dry]], Fig. 7). → [[self-healing]]
+
 ## Related
-- [[pe-fiber]] · [[hybrid-fiber]] · [[fiber-matrix-interface]] · [[fiber-surface-treatment]] · [[terminology-hdc-ecc-shcc]] · [[recycled-fine-aggregate]] · [[freeze-thaw]]
+- [[pe-fiber]] · [[hybrid-fiber]] · [[fiber-matrix-interface]] · [[fiber-surface-treatment]] · [[terminology-hdc-ecc-shcc]] · [[recycled-fine-aggregate]] · [[freeze-thaw]] · [[high-temperature-behaviour]] · [[textile-reinforced-hdc]]

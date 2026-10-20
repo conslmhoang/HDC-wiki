@@ -1,13 +1,13 @@
 ---
 type: dataset
 slug: micromechanical-parameters
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Micromechanical Parameters — Master Table
 
 Links: [[fiber-matrix-interface]], [[strain-hardening]], [[fiber-bridging]].
-Rows marked "assumed" or "model input" are analysis inputs, not measurements. The [[chavesfigueiredo2020-printed-shcc]] J values come from a flexural stress–CMOD method and are not comparable with single-crack J′b.
+Rows marked "assumed" or "model input" are analysis inputs, not measurements. The [[chavesfigueiredo2020-printed-shcc]] J values come from a flexural stress–CMOD method and are not comparable with single-crack J′b. The [[choi2016-pe-alkali-activated-slag-composite]] row is a macroscopic σ_tu/σ_fc index, not a micromechanical σ0/σ_fc ratio.
 
 | Source | Material | Fiber | τ0 (MPa) | Gd (J/m²) | β | f | µ (N/(m·rad)) | Km (MPa√m) | J_tip (J/m²) | σ0 (MPa) | σ_fc (MPa) | J′b (J/m²) | PSH_strength | PSH_energy | Location |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -32,6 +32,8 @@ Rows marked "assumed" or "model input" are analysis inputs, not measurements. Th
 | same | PVA-ECC model, w/c 0.42 | same | 3.31 | n.r. (τs 20.7 MPa) | n.r. | 0.5 | n.r. | 0.23 | — | — | — | — | — | Fig. 2 | Table 2 |
 | same | PVA-ECC model, w/c 0.62 | same | 2.63 | n.r. (τs 4.55 MPa) | n.r. | 0.5 | n.r. | 0.13 | — | — | — | — | — | Fig. 2 | Table 2 |
 | same | chosen design, w/c 0.32 | same | — | — | — | — | — | — | — | — | — | — | — | about 2.0 (J′b/J_tip; ≥ 2.7 needs w/c ≥ 0.44) | p. 270–271, Fig. 2 |
+| [[lepech2009-ecc-water-permeability]] | ECC M45 (14 d) | PVA 39 µm × 12 mm, 1.2% oil | n.r. | n.r. | n.r. | n.r. | n.r. | n.r. (measured, value not given) | n.r. | n.r. | n.r. | n.r. | n.r. | ≈ 1.08 (lower bound) | p. 749 |
+| [[choi2016-pe-alkali-activated-slag-composite]] | AAS-PE M26 / M30 / M34 / M38 (macroscopic index only) | PE 12 µm × 18 mm, 1.75% | — | — | — | — | — | — | — | — | 4.87 / 4.61 / 3.92 / 3.37 (measured first crack) | — | 2.68 / 2.49 / 1.95 / 1.50 (σ_tu/σ_fc, macroscopic, not σ0/σ_fc) | — | §3.3, Table 7 |
 | [[jin2019-hvfa-shcc-structural]] | parametric model input (generic SHCC, Yang 2008 model) | PVA 39 µm, 12 mm, 2%, E_f 22 GPa, f_f 1092 MPa | 1.0 (assumed) | 1.5 (assumed) | n.r. | n.r. | — | varied (Fig. 1g) | n.r. | Fig. 1 | n.r. | Fig. 1 | target > 1.45 (as cited) | target > 3 | Table 1; Fig. 1 |
 | [[chavesfigueiredo2020-printed-shcc]] | printed XVA3PVA20 (notched-beam stress–CMOD integrals, not single-crack J′b; units suspect ⚠️) | PVA 2% | — | — | — | — | — | — | 16.37 "kJ/m²" as printed ⚠️ | — | — | J_b 430.74 "kJ/m²" ⚠️ | — | ≈26 (J_b/J_tip, computed) | Table 3 |
 | same | printed YVA4PVA20-S05 (same method ⚠️) | PVA 2% | — | — | — | — | — | — | 7.11 ⚠️ | — | — | J_b 260.94 ⚠️ | — | ≈37 (computed) | Table 3 |

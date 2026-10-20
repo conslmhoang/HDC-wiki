@@ -3,8 +3,8 @@ type: property
 slug: tensile-strain-capacity
 aliases: [tensile ductility, ε_tu, εp, ε_cu, strain capacity, peak strain]
 tags: [tension, ductility, key-property]
-sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, zhao2022-ecc-tension-damage-model, deng2018-hdc-short-columns, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, sun2019-modified-pva-fiber-ecc, wang2023-ecc-frost-damage, xue2023-shcc-structural-review, shumuye2022-slag-fa-pe-ecc, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, sui2018-uhp-ecc-flexural-fatigue]
-updated: 2026-10-20
+sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, zhao2022-ecc-tension-damage-model, deng2018-hdc-short-columns, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, sun2019-modified-pva-fiber-ecc, wang2023-ecc-frost-damage, xue2023-shcc-structural-review, shumuye2022-slag-fa-pe-ecc, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, sui2018-uhp-ecc-flexural-fatigue, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Tensile Strain Capacity (ε_tu)
@@ -40,7 +40,13 @@ so check this before comparing. → [[dogbone-uniaxial-tension]]
 - **Strain rate:** ε falls from 4.2% to about 2.9% between 10⁻⁴ and 0.1 s⁻¹, then plateaus. It
   tracks crack width. → [[strain-rate-effects]]
 - **Freeze–thaw:** ε_tu drops more than σ_tu (Yun 2013, as cited in [[he2024-hdc-research-advances]],
-  p. 13). → [[durability]]
+  p. 13). Now primary: hybrid PVA+PE SHCC dumbbells still strain-harden after 300 ASTM C666 (B) cycles; σ_t shows no
+  distinct change, ε "slightly decreases", more at W/B 0.55 and higher PVA share ([[yun2013-shcc-freeze-thaw]],
+  Figs. 8–9, Concl. 3; values only as scatter points, 2 specimens). → [[freeze-thaw]], [[durability]]
+- **Fibre origin:** same XAUAT mix, Japanese vs Chinese PVA: ≈ 3.0 vs ≈ 1.2% ultimate
+  ([[deng2017-rc-column-hdc-jacket]], Fig. 1a). → [[pva-fiber]]
+- **Hybrid steel fibre:** replacing part of the PVA with steel lowers ε at peak (3.5 → 3.0 / 2.5%) and raises σ_tu
+  ([[pourfalah2018-ecc-high-temperature]], Table 4). → [[hybrid-fiber]]
 
 > Synthesis: Across sources, ε_tu falls as matrix strength rises:
 > - UHDC (f'c about 37 MPa): up to 9.45%
@@ -152,5 +158,43 @@ Same PVA-DFRCC mix, four tension methods ([[kanakubo2006-dfrcc-tensile-test-meth
 > Sun 2019 1.39%, printed SHCC 0.15–0.31%) fall well below the ECC "> 3%" convention but above the 0.5% HDC bar
 > (except printed SHCC). → [[terminology-hdc-ecc-shcc]]
 
+## Round-5 evidence (2026-10-21, 10-source ingest)
+| Source | Material (authors' term) | Curing / age | ε (%) | σ_tu (MPa) | Note |
+|---|---|---|---|---|---|
+| [[deng2017-rc-column-hdc-jacket]] Table 5, Fig. 1a | XAUAT HDC, 2% **Japanese** PVA (1600 MPa, 40 GPa), FA/C 1.0, W/B 0.29 | n.r. | **≈ 3.0 ultimate** ⚔️ (end of curve, read ⚠️) | 6.12 | strain at peak n.r.; specimen geometry n.r. |
+| same | same mix, 2% **Chinese** PVA (1200 MPa, 32 GPa) | n.r. | ≈ 1.2 ultimate (read ⚠️) | 4.84 | "about 150% higher" strain with Japanese fibre |
+| [[deng2019-urm-shaking-table-hdc]] Table 3, Fig. 6a | XAUAT HDC, 2% PVA, same proportions | 28 d cubes; tension age n.r. | ≈ 1.0 ultimate (curves end 0.86–1.0%, read ⚠️) | 5.83 (mean of 3) | 15 mm plates, DBJ61/T112-2016; curves may reuse [[deng2018-hdc-short-columns]] data ⚠️ |
+| [[deng2020-aac-wall-hdc-retrofit]] Table 3, Fig. 3 | XAUAT HDC ("also referred to as ECC"), 1.7% PVA | air-cured ≈ 2 months | ≈ 1.2 at peak (read ⚠️) | 3.89 | dogbone 15 × 50 mm |
+| [[li2021-hdc-beam-shear]] §2.1, Fig. 1 | HDC (Henan / XAUAT), 2% PVA, FA/C 1.0, W/B 0.29 | 28 d | 0.968 (basis n.s. ⚠️) | 5.83 (5.68 in Concl. 1 ⚠️) | dogbone 15 × 50 mm |
+| [[zhang2022-hdc-basalt-textile-tension]] Tables 3, 8 | plain XAUAT HDC M1 (FA/C 1.1, SF + "mineral powder"), 1.5 / 2% PVA | 28 d std | **0.12 / 0.34** at peak ⚔️ | 3.89 / 5.44 | below the JC/T 2461 0.5% bar |
+| same | plain HDC M2 (HVFA, FA/C 3.25), 1 / 1.5 / 2% PVA | 28 d std | 0.29 / 0.28 / **0.45** at peak | 2.35 / 3.45 / 4.23 | — |
+| same, Table 8 | TR-HDC: + 1–3 basalt grid layers (ν 0.42–1.26%), 2% PVA | 28 d | 1.51–2.48 at peak | 5.83–10.02 | textile-governed → [[textile-reinforced-hdc]] |
+| [[choi2016-pe-alkali-activated-slag-composite]] Tables 5, 7 | cementless alkali-activated GGBS + 1.75% PE (18 mm × 12 µm), W/B 0.26 → 0.38 | 28 d ⚠️ | **7.50** → 4.58 (basis n.s. ⚠️) | 13.06 → 5.06 | f'c 54.8 → 36.3 MPa; JSCE dogbone, 80 mm gauge → [[alkali-activated-binder]] |
+| [[pourfalah2018-ecc-high-temperature]] Table 4 | Heriot-Watt PVA-ECC / HECC (1.75% PVA + 0.75% steel 6 / 13 mm) | 28 d | 3.5 / 3.0 / 2.5 at peak | 3.85 / 4.36 / 4.71 | JSCE dogbone, 80 mm gauge |
+| [[yang2009-ecc-self-healing-wet-dry]] p. 388 | M45 PVA-ECC pre-strained 2–3%, healed by wet–dry cycles | 6 months + cycles | 1.7–3.1 (room-air drying) / 0.8–2.2 (55 °C drying) on reloading | — | healed ECC regains strain hardening → [[self-healing]] |
+| [[yun2013-shcc-freeze-thaw]] Fig. 9b | hybrid PVA+PE SHCC (1.5% total), 0 vs 300 F-T cycles | 14 d start | ≤ ≈ 1 (scatter points ⚠️; Fig. 10 shows ≈ 2.4–2.6% for a virgin mix) | no distinct change | JSCE dumbbell, n = 2 |
+
+- ⚔️ **XAUAT PVA-HDC, same nominal mix (593 C / 593 FA / 427 sand / 2% PVA 12 mm × 39 µm):** ≈ 3.0% ultimate
+  ([[deng2017-rc-column-hdc-jacket]], Japanese PVA) vs ≈ 1.0% ([[deng2018-hdc-short-columns]], Fig. 1;
+  [[deng2019-urm-shaking-table-hdc]], Fig. 6a) and 0.968% ([[li2021-hdc-beam-shear]]), with nearly equal σ_tu
+  (6.12 vs 6.14 / 5.83 MPa). The 2018 fibre properties (1600 MPa, 40 GPa) match the Japanese fibre. Reason not
+  given (batch, specimen geometry, strain definition). → [[gaps]]
+- ⚔️ **Plain XAUAT PVA-HDC with SF + "mineral powder" matrix:** 0.34–0.45% at peak at 2% PVA
+  ([[zhang2022-hdc-basalt-textile-tension]], Table 8) vs ≈ 1.0% for the FA-only matrix above. Matrix (W/B ≈ 0.30–0.32
+  computed, SF), strain basis (peak vs ultimate) and specimen all may differ. Another "HDC" below the JC/T 2461 0.5% bar,
+  like printed SHCC (0.15–0.31%). → [[terminology-hdc-ecc-shcc]], [[gaps]]
+- **Cementless AAS-PE (Choi 2016)** reaches 7.50% with σ_tu 13.06 MPa at only f'c 54.8 MPa (σ_tu/f'c 23.8%), and lower
+  W/B is more ductile (W/B 0.26 → 0.38: ε −38.9%, σ_tu −61.3%) ([[choi2016-pe-alkali-activated-slag-composite]],
+  §3.3, Table 7). → [[water-binder-ratio]]
+- In textile composites, adding PVA reduces peak strain (B3M1: 2.65 → 1.96–2.13%) by suppressing textile slip
+  ([[zhang2022-hdc-basalt-textile-tension]], §4.2).
+
+> Synthesis: the XAUAT "HDC" family now spans ≈ 0.3% to ≈ 3.0% for nominally similar 2% PVA mixes across five
+> papers. Values cluster at ≈ 1.0% (Deng 2018, Deng 2019, Li 2021, Deng 2020 ≈ 1.2%), with one high outlier
+> (Deng 2017, Japanese PVA ≈ 3.0%) and one low set (Zhang 2022, 0.34–0.45%). Fibre origin is the only stated
+> variable (Deng 2017). Because most XAUAT strains are figure-read and their basis (peak vs end of curve) is not
+> always stated, "≈ 1% for Chinese PVA-HDC" is a cluster, not a material constant. The Choi 2016 AAS-PE result adds
+> to the evidence that the strength–ductility "trade-off" is not fundamental.
+
 ## Related
-- [[strain-hardening]] · [[crack-width]] · [[tensile-toughness]] · [[mechanical-results]] · [[four-point-bending-inverse-analysis]] · [[recycled-fine-aggregate]]
+- [[alkali-activated-binder]] · [[textile-reinforced-hdc]] · [[strain-hardening]] · [[crack-width]] · [[tensile-toughness]] · [[mechanical-results]] · [[four-point-bending-inverse-analysis]] · [[recycled-fine-aggregate]]

@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mix-designs
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Mix Designs — Master Table
@@ -10,7 +10,7 @@ One row per mix. **Check the Units column**: sources give ratios to cement, frac
 kg/m³. Each row must cite its source.
 The review [[he2024-hdc-research-advances]] gives no complete mixes, so it has no rows here.
 The FE study [[tabrizikahou2022-masonry-ecc-sma-retrofit]] reports no mix, so it has no rows either.
-Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC papers, then JACT papers, then others by year.
+Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC papers, then JACT papers, then others by year. Round 5 (2026-10-21): the Xi'an HDC rows (deng2017, deng2019, deng2020, li2021 beam shear, zhang2022 basalt textile) follow [[deng2018-hdc-short-columns]]; the other round-5 rows are slotted by year.
 
 | Source | Mix ID | Term | Cement | FA | Slag/other | Sand | Max sand size (mm) | W/B | SP | Fiber | L (mm) | d (µm) | Vf (vol.%) | Units | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -44,6 +44,13 @@ Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC
 | same | 7 / 8 | HDC | P·O 42.5R | 60% / 40% | n.r. | S/B 0.36 | n.r. | 0.29 | n.r. | PVA | 12 | 39 | 2.0 | ratios | FA series; Table 2 |
 | same | 9 / 10 | HDC | P·O 42.5R | 50% | n.r. | S/B 0.24 / 0.48 | n.r. | 0.29 | n.r. | PVA | 12 | 39 | 2.0 | ratios | sand series; Table 2 |
 | [[deng2018-hdc-short-columns]] | HDC | HDC (XAUAT) | binder 1186 (cement + FA, split n.r.) | in binder, n.r. | 0 | river sand 427 | n.r. | 0.29 (computed 344/1186) | water reducer 8 | PVA | 12 | 39 (printed "0.39 µm" ⚠️) | 2.0 (26 kg/m³) | kg/m³ | f_cu 65.7 MPa; S/B 0.36 computed; Table 1 |
+| [[deng2017-rc-column-hdc-jacket]] | HDC (Japanese PVA) | HDC (XAUAT) | 593 | 593 | — | 427 (river sand) | n.r. | 0.29 (computed 344/1186, mass) | HRWR 8 | PVA, Japan (1600 MPa, 40 GPa) | 12 | 39 (unit printed "mm" ⚠️) | 2 | kg/m³ | FA/C 1.0; same proportion as [[deng2018-hdc-short-columns]]; curing n.r.; Tables 1–2 |
+| same | HDC-2 (Chinese PVA) | HDC (XAUAT) | 593 | 593 | — | 427 (river sand) | n.r. | 0.29 (computed, mass) | HRWR 8 | PVA, China (1200 MPa, 32 GPa) | 12 | 39 ⚠️ | 2 | kg/m³ | curing n.r.; Tables 1–2 |
+| [[deng2019-urm-shaking-table-hdc]] | HDC (overlay) | HDC (XAUAT) | 1 | 1 | — | 0.72 | n.r. | 0.29 (computed 0.58/2, mass) | HRWR 8 kg/m³ | PVA (1600 MPa, 32 GPa) | 12 | 39 | 2 | mass ratio to cement | = 593/593/427/344 base mix; curing n.r.; p. 3, Table 2 |
+| [[deng2020-aac-wall-hdc-retrofit]] | HDC (AAC retrofit) | HDC (= ECC, XAUAT) | 593 | 593 | — | 427 (fine silica sand) | n.r. | 0.29 (computed, mass) | 8 | PVA (props n.r.) | n.r. | n.r. | 1.7 | kg/m³ | water spray 1 wk then air, tested ≈ 2 months; Table 2 |
+| [[li2021-hdc-beam-shear]] | HDC | HDC (Henan Univ. Tech. / XAUAT) | 0.50 (P·O 42.5) | 0.50 (Grade I) | 0 | 0.36 (river sand) | 1.18 | 0.29 | n.r. | PVA (1600 MPa, 40 GPa) | 12 | 39 | 2.0 | mass ratio to binder | FA/C 1.0; text 1 : 1 : 0.72 : 0.58 (C : FA : S : W); curing n.r.; Table 1, §2.1 |
+| [[zhang2022-hdc-basalt-textile-tension]] | Type I (M1) | HDC / TR-HDC (XAUAT) | 447 | 494 | "mineral powder" 177 ⚠️; SF 59 | 424 (fine silica sand) | n.r. | 0.30 (computed 353/1177, binder incl. mineral powder + SF) | 8 | PVA (1600 MPa, 40 GPa) | 12 | 39 | 0 / 1.5 / 2 | kg/m³ | FA/C 1.1; + 0–3 basalt grids (ν 0.42–1.26%); std curing 28 d; Table 1 |
+| same | Type II (M2) | HDC / TR-HDC (XAUAT) | 235 | 764 | "mineral powder" 177 ⚠️ | 424 | n.r. | 0.32 (computed 376/1176) | 8 | PVA | 12 | 39 | 0 / 0.5 / 1 / 1.5 / 2 | kg/m³ | FA/C 3.25 (HVFA); Table 1 |
 | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] | Eco-HDCC | Eco-HDCC (Southeast Univ.) | 496 | 744 (Class F) | 0 | 372 (river sand) | 1.18 | 0.30 (computed, mass) | 1 (PCE powder) | PVA (domestic, ≥ 1250 MPa, 30 GPa) | 12 | 39 | 2.0 (26 kg/m³ ÷ ρ 1300, converted) | kg/m³ ⚠️ (Table 2 headed "mass ratio") | FA/C 1.50; f'c 43.4 MPa; 28 d at 23 °C / 95% RH; Table 1–2 |
 | [[gao2020-hdcc-recycled-fine-aggregate]] | 25R00–25R20 | R-HDCC (Zhengzhou) | 831.6 | 356.4 (Grade I) | 0 | 475.2 (recycled fine aggregate, 100%) | 1.18 | 0.25 | 12.1 | PVA (≥ 1250 MPa, > 30 GPa) | 12 | 40 | 0 / 0.5 / 1.0 / 1.5 / 2.0 | kg/m³ | FA/C 0.43; agg/B 0.4; bending + compression series; Table 3 |
 | same | 25N00–25N20 | N-HDCC | 831.6 | 356.4 | 0 | 475.2 (river sand) | 1.18 | 0.25 | 12.1 | PVA | 12 | 40 | 0–2.0 | kg/m³ | Table 3 |
@@ -67,15 +74,30 @@ Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC
 | same | FRCC(PE) | FRCC (strain-softening) | 0.85 | 0 | SF 0.15 | 0.45 | 0.18 | 0.45 | 0.09 | PE (E 73 GPa, 2580 MPa) | 6 | 12 | 1.5 | ratio to binder | Table 1–2 |
 | same | HFRCC | FRCC (hybrid) | 0.85 | 0 | SF 0.15 | 0.45 | 0.18 | 0.45 | 0.09 | PE + steel cord | 6 / 32 | 12 / 400 | 0.75 + 0.75 | ratio to binder | Table 1–2 |
 | [[kunieda2010-uhp-shcc-steel-reinforcement]] | UHP-SHCC | UHP-SHCC (Nagoya) | 1243 (low-heat PC) | 0 | SF 223; expansion agent 20; air reducer 2.98 | 149 (quartz) | 0.2 | 0.20 | 14.9 | PE | 6 | 12 | 1.5 (14.6 kg/m³) | kg/m³ | wet towels 4 weeks; Table 2, §3.2 |
+| [[lepech2009-ecc-water-permeability]] | ECC M45 | ECC | 578 | 694 (Class F) | — | 462 (silica, avg 100 µm) | 0.2 | 0.25 (computed, mass) | 7.51 (HRWR) | PVA, 1.2 wt% oil | 12 | 39 | n.r. (26 kg/m³; density not given) | kg/m³ | FA/C 1.20 (computed); fiber 1620 MPa nominal / 1092 MPa apparent, 42.8 GPa; HRWR 17 in [[yang2009-ecc-self-healing-wet-dry]] for "M45" ⚔️; Tables 1–2 |
+| same | Mortar (R/M control) | reinforced mortar (reference, not HDC) | 614 | 0 | — | 1534 (Ottawa) | n.r. | 0.35 (computed w/c) | — | none (steel mesh ρ 1.9–2.9%) | — | — | 0 | kg/m³ | Tables 1, 3 |
+| [[yang2009-ecc-self-healing-wet-dry]] | ECC (M45) | ECC | 578 | 694 (Class F) | — | 462 (110 µm average) | n.r. | 0.25 (computed, mass) | 17 (PCE HRWR) | PVA Kuralon-II REC-15 | 12 | n.r. | n.r. (26 kg/m³; density not given) | kg/m³ | FA/C 1.20 (computed); 6-month air cure; HRWR 7.51 in [[lepech2009-ecc-water-permeability]] ⚔️; Table 1, p. 384 |
+| same | Single-crack mortar | PVA mortar (tension-softening, not SH) | 578 | 694 | — | 462 | n.r. | 0.25 (computed) | 17 | PVA | n.r. | n.r. | 0.5 | kg/m³ | "same as Table 1 except fiber"; p. 385 |
 | [[vanzijl2010-shcc-durability]] | Ref.1 (Adendorff 2010, as cited) | SHCC | 1.0 | 1.18 | — | 0.85 | n.r. | water/C 0.85 (≈0.39 W/B computed) | n.r. | PVA (Ef 40 GPa) | 12 | 40 | 2.0 | mass ratio to cement | Table 1 |
 | same | Ref.2 (Kobayashi 2010, as cited) | SHCC/HPFRCC | 1.0 | 0 | — | 0.37 | n.r. | water/C 0.32 | n.r. | PE (Ef 88 GPa) | 12 | 12 ⚠️ | 1.5 | mass ratio | Table 1 |
 | same | Ref.3–5 (Li 2001, as cited) | ECC | 1.0 | 0 | — | 1.2 | n.r. | 0.45 | n.r. | PVA oil 0.5/0.8/0.8% (Ef 42.5 GPa) | 12 | 39 | 2.0/2.0/2.5 | mass ratio | Table 1; primary = Li, Wang & Wu 2001 ACI MJ |
 | same | Ref.6 (Wang & Li 2006, as cited) | ECC | 1.0 | 1.2 | — | 0.8 | n.r. | water/C 0.51 (≈0.23 W/B computed) | n.r. | PVA oil 1.2% (Ef 25.8 GPa) | 12 | 39 | 2.0 | mass ratio | Table 1 (M45-type) |
 | [[mechtcherine2011-shcc-high-strain-rate]] | SHCC (TU Dresden) | SHCC | 505.00 (CEM 42.5 R-HS) | 613.54 | SAP 2.02; VA 3.20 | quartz 534.22 | 0.20 | 0.29 (computed: water 324.01 / binder 1118.54, by mass) | 16.58 (PCE) | PVA Kuraray K-II REC15 | 12 | 40 | 2.2 | kg/m³ | FA/C 1.21 (computed); sealed, room temp.; Table 1 |
+| [[yun2013-shcc-freeze-thaw]] | 45-PVA1.30+PE0.20 | SHCC | balance of binder | 35.0% of binder | silica fume (n.r.); acrylic polymer 5.0% of cement | silica sand, S/B 0.50 | 0.12 (105–120 µm) | 0.45 | 1.2 (SP/binder, unit n.r. ⚠️) | PVA + PE | 12 / 12 | 40 / 12 | 1.30 + 0.20 | mass ratios | air 10.4%; Table 1 |
+| same | 45-PVA0.75+PE0.75 | SHCC | same | 35.0% | same | same | 0.12 | 0.45 | 1.2 ⚠️ | PVA + PE | 12 / 12 | 40 / 12 | 0.75 + 0.75 | mass ratios | air 13.1%; Table 1 |
+| same | 55-PVA1.30+PE0.20 | SHCC | same | 35.0% | same | same | 0.12 | 0.55 | 1.2 ⚠️ | PVA + PE | 12 / 12 | 40 / 12 | 1.30 + 0.20 | mass ratios | air 10.4%; Table 1 |
+| same | 55-PVA0.75+PE0.75 | SHCC | same | 35.0% | same | same | 0.12 | 0.55 | 1.2 ⚠️ | PVA + PE | 12 / 12 | 40 / 12 | 0.75 + 0.75 | mass ratios | air 10.0%; Table 1 |
 | [[ozbay2013-ecc-self-healing-sustained-load]] | ECC-1 | ECC | 558 (CEM I 42.5) | 669 (Class F; FA/C 1.2) | 0 | 446 (silica) | 0.4 | 0.27 | 5.1 | PVA, 1.2% oil | 8 ⚠️ | 39 | ≈ 2.0 (26 kg/m³, ρ 1300 assumed) | kg/m³ | Table 1; 7 d moist + air to 28 d |
 | same | ECC-2 | ECC (HVFA) | 375 | 823 (FA/C 2.2) | 0 | 435 | 0.4 | 0.27 | 3.0 | PVA, 1.2% oil | 8 ⚠️ | 39 | ≈ 2.0 | kg/m³ | Table 1 |
 | [[paul2014-r-shcc-chloride-corrosion]] | FS-SHCC | SHCC | 392 (CEM I 52.5) | 674 | VA 1.00; AE 0.54 | 553 | 0.30 | 0.37 (computed; w/c 1.0) | 1.99 | PVA (1600 MPa, 40 GPa) | 12 | 40 | ≈2.0 (26 kg/m³, density 1.3 assumed ⚠️) | kg/m³ | Table 1; FA/C 1.72 |
 | same | CS-SHCC | SHCC | 392 | 674 | VA 1.00; AE 0.54 | 553 (natural coarse) | 1.7 | 0.37 (computed) | 1.99 | PVA | 12 | 40 | ≈2.0 ⚠️ | kg/m³ | Table 1 |
+| [[choi2016-pe-alkali-activated-slag-composite]] | M26 | PE alkali-activated slag composite (cementless) | 0 | 0 | 1 (GGBS + Ca(OH)₂ 8.38% + Na₂SO₄ 3.35% of GGBS) | 0 | — | 0.26 | 0.024 (+ antifoamer 0.001) | PE (2700 MPa, 88 GPa) | 18 | 12 | 1.75 | mass ratio to binder | no aggregate; 2 d sealed + water 23 °C; Table 1 |
+| same | M30 | same | 0 | 0 | 1 | 0 | — | 0.30 | 0.009 | PE | 18 | 12 | 1.75 | mass ratio to binder | Table 1 |
+| same | M34 | same | 0 | 0 | 1 | 0 | — | 0.34 | 0.004 (+ VMA 0.0001) | PE | 18 | 12 | 1.75 | mass ratio to binder | Table 1 |
+| same | M38 | same | 0 | 0 | 1 | 0 | — | 0.38 | 0.002 (+ VMA 0.0003) | PE | 18 | 12 | 1.75 | mass ratio to binder | Table 1 |
+| [[pourfalah2018-ecc-high-temperature]] | ECC | ECC | 454 | 817 | — | 273 (silica sand) | n.r. (avg 0.12) | 0.28 (derived) | HRWR 4.5 | PVA | 12 | 40 | 2.0 (derived from 26 kg/m³) | kg/m³ | FA/C 1.80; water 356; Tables 2–3 |
+| same | H6ECC | HECC | 451 | 817 | — | 273 | n.r. (avg 0.12) | 0.28 (derived 354/1268) | HRWR 4.5 | PVA + straight steel | 12 / 6 | 40 / 150 | 1.75 + 0.75 | kg/m³ | steel 58.86 kg/m³; Tables 2–3 |
+| same | H13ECC | HECC | 451 | 817 | — | 273 | n.r. (avg 0.12) | 0.28 (derived) | HRWR 4.5 | PVA + straight steel | 12 / 13 | 40 / 150 | 1.75 + 0.75 | kg/m³ | Tables 2–3 |
 | [[wang2023-ecc-frost-damage]] | ECC | ECC (PVA) | 550 | 650 (Class F) | — | 550 | 0.3 | 0.33 | n.r. | PVA (Kuraray) 1600 MPa, 42 GPa | 8 | 39 | 2.0 (26 kg/m³ ÷ 1.3 g/cm³, converted) | kg/m³ | FA/C 1.18; Table 1, 3 |
 | [[zhou2023-hsecc-elevated-temperature]] | PO | HSECC (Guangzhou; SH not shown) | 520 (P.O. 42.5) | 624 (Class F) | 0 | quartz 915 | n.r. (≈1 from Fig. 2 ⚠️) | 0.20 | 10.296 (PCE) | PVA (Kuraray) | 12 | 15 ⚠️ | 2.0 | kg/m³ | water 229; FA/C 1.2; Table 3 |
 | same | PS-I | HSECC hybrid | 520 | 624 | 0 | 915 | n.r. | 0.20 | 10.296 | PVA + Cu-coated steel | 12 / 13 | 15 / 220 | 1.5 + 0.5 | kg/m³ | Table 3 |

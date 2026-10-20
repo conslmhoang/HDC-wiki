@@ -3,8 +3,8 @@ type: concept
 slug: steady-state-cracking
 aliases: [flat crack, Griffith vs steady-state crack, notch insensitivity, failure mechanism map, K-tilde]
 tags: [micromechanics, theory, history]
-sources: [li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, qian2007-shcc-inverse-tensile-strain, kunieda2010-uhp-shcc-steel-reinforcement, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, su2023-rubber-modified-hshdc]
-updated: 2026-10-20
+sources: [li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, qian2007-shcc-inverse-tensile-strain, kunieda2010-uhp-shcc-steel-reinforcement, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, su2023-rubber-modified-hshdc, lepech2009-ecc-water-permeability]
+updated: 2026-10-21
 ---
 
 # Steady-State (Flat) Cracking: the 1992 foundation
@@ -68,5 +68,11 @@ rupture type, first-crack model extended to fiber rupture; [[kanda2006-psh-desig
 - Later papers still cite the J-integral form (J′b/J_tip > about 2.7–3), not G_r ≥ 10 G_tip
   ([[kanda2003-sprayed-ecc]], p. 270; [[jin2019-hvfa-shcc-structural]], §2.2). → [[strain-hardening]]
 
+## Durability use of the design rule (2026-10-21)
+- Lepech & Li set the design target δ0 < 100 µm (crack opening at the peak of the bridging curve) so that steady-state
+  cracks stay below the water-permeability threshold; that 100 µm value comes from single cracks in concrete (Wang et al.
+  1997, as cited), not from ECC ([[lepech2009-ecc-water-permeability]], p. 745–746). M45 cracks were ≈ 60 µm, reached at
+  ≈ 1% strain, after which new cracks form instead of widening (Fig. 1). → [[permeability]]
+
 ## Related
-- [[strain-hardening]] · [[fiber-bridging]] · [[multiple-cracking]] · [[size-effect]]
+- [[strain-hardening]] · [[fiber-bridging]] · [[multiple-cracking]] · [[size-effect]] · [[permeability]]

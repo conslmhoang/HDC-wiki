@@ -3,8 +3,8 @@ type: concept
 slug: tensile-constitutive-model
 aliases: [tensile stress-strain model, trilinear model, bilinear model, constitutive law, damage model, JSCE HPFRCC model]
 tags: [modelling, tension]
-sources: [yang2024-hshdc-uniaxial-tension, ranade2017-hshdc-impact-resistance, chai2023-hdc-ambient-temperature, zhao2022-ecc-tension-damage-model, kanakubo2006-dfrcc-tensile-test-method, kunieda2006-hpfrcc-japan-applications, qian2007-shcc-inverse-tensile-strain, wang2019-rc-beam-ecc-shear-strengthening, tabrizikahou2022-masonry-ecc-sma-retrofit, deng2018-hdc-compressive-constitutive]
-updated: 2026-10-20
+sources: [yang2024-hshdc-uniaxial-tension, ranade2017-hshdc-impact-resistance, chai2023-hdc-ambient-temperature, zhao2022-ecc-tension-damage-model, kanakubo2006-dfrcc-tensile-test-method, kunieda2006-hpfrcc-japan-applications, qian2007-shcc-inverse-tensile-strain, wang2019-rc-beam-ecc-shear-strengthening, tabrizikahou2022-masonry-ecc-sma-retrofit, deng2018-hdc-compressive-constitutive, zhang2022-hdc-basalt-textile-tension, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear]
+updated: 2026-10-21
 ---
 
 # Tensile Constitutive Models
@@ -64,6 +64,16 @@ Kanakubo lists six σ–ε forms by number of unknowns ([[kanakubo2006-dfrcc-ten
 - CDP parameters used for ECC: dilation 35°, eccentricity 0.1, f_b0/f_c0 1.07, K 0.6667, viscosity 0.0005 (§5.1).
 - The model is for monotonic tension; a cyclic version is listed as future work (Concl. 5).
 
+## Textile-reinforced HDC (TR-HDC) ([[zhang2022-hdc-basalt-textile-tension]], §6, Eqs. 3–17)
+- **≤ 1% PVA (TRC-like):** ACK-type trilinear model retained (Eqs. 3–8).
+- **1.5–2% PVA:** bilinear model. E1 by rule of mixtures; cracking stress σ_cr = 0.896·E1·σ_t/E_HDC (HDC cracking
+  stress taken as 89.6% of its tensile strength); peak stress σ_T = α·f_t,b·A_t/A_m with
+  α = 0.005·e^(2.2√(β/ν)) + 0.53 (β = PVA vol.% 0–2, ν = textile ratio 0.42–1.26%; exponent printed "2..2" ⚠️);
+  peak strain from a Eurocode-2 crack-width relation with k_t 0.6 and layer factor μ = 1 / 0.85 / 0.65 for
+  1 / 2 / 3 grid layers (Eqs. 1–2, 9–17).
+- Empirical; fitted to 25 mm basalt grids only; the authors call for more textile types and fibre contents (§5, §6.2).
+  → [[textile-reinforced-hdc]]
+
 ## Sectional and design uses
 - **Inverse analysis:** the Maalej & Li (1994) sectional model with bilinear tension and compression underlies
   Qian's master curve; the neutral axis settles at 0.86–0.91 of the depth from the tension face once
@@ -79,6 +89,12 @@ Kanakubo lists six σ–ε forms by number of unknowns ([[kanakubo2006-dfrcc-ten
   ([[tabrizikahou2022-masonry-ecc-sma-retrofit]], Tables 4–5). This ignores the strain-hardening branch that
   the models above capture. ⚔️ with the material definition of ECC (σ_tu about 3–5 MPa with hardening). → [[masonry-wall-retrofit]]
 
+- **Masonry overlays:** XAUAT design formulas use the HDC tensile strength times overlay area directly:
+  V = V_ME + 0.7 f_dt·b·h ([[deng2019-urm-shaking-table-hdc]], Eq. 8); V_HDC = 0.44·α_HDC·f_tu·t′·x, α_HDC 0.53
+  ([[deng2020-aac-wall-hdc-retrofit]], Eqs. 12–14). → [[masonry-wall-retrofit]]
+- **HDC beams in shear:** modified ACI/EN formulas credit HDC through the ratio η = (f_t/f_c)_HDC/(f_t/f_c)_concrete,
+  not through a tensile σ–ε law ([[li2021-hdc-beam-shear]], Eqs. 6–9). → [[shear-behaviour]]
+
 > Synthesis: design codes (JSCE draft) and most FE studies use simple bilinear or trilinear laws, which are
 > enough for strength but under-predict deformation at peak (Zhao: 0.57× with trilinear). Because measured
 > ε_tu itself depends strongly on the test specimen ([[tensile-strain-capacity]]), the ultimate-strain
@@ -89,4 +105,4 @@ Kanakubo lists six σ–ε forms by number of unknowns ([[kanakubo2006-dfrcc-ten
   [[compressive-constitutive-model]].
 
 ## Related
-- [[dogbone-uniaxial-tension]] · [[tensile-strain-capacity]] · [[tensile-toughness]] · [[compressive-constitutive-model]]
+- [[dogbone-uniaxial-tension]] · [[tensile-strain-capacity]] · [[tensile-toughness]] · [[compressive-constitutive-model]] · [[textile-reinforced-hdc]]

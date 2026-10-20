@@ -3,8 +3,8 @@ type: concept
 slug: hshdc
 aliases: [HSHDC, high-strength high-ductility concrete, high strength-high ductility concrete, R-HSHDC, HS-ECC, PE-HSHDC, PVA-HSHDC, HSDC, NSHSDC, UHP-ECC, UHP-SHCC]
 tags: [material-family, high-strength]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, kunieda2010-uhp-shcc-steel-reinforcement, zhou2023-hsecc-elevated-temperature]
-updated: 2026-10-20
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, kunieda2010-uhp-shcc-steel-reinforcement, zhou2023-hsecc-elevated-temperature, choi2016-pe-alkali-activated-slag-composite]
+updated: 2026-10-21
 ---
 
 # HSHDC: High-Strength High-Ductility Concrete (four lineages)
@@ -109,9 +109,16 @@ Full rows are in [[mix-designs]] and [[mechanical-results]].
 > the ingested papers; the Korean HSDC must be cited as "ductility claimed, not shown" until refs 12–13 of
 > [[yuan2020-nshsdc-beam-strengthening]] are ingested.
 
+## Comparison with a cementless PE composite (2026-10-21)
+- [[choi2016-pe-alkali-activated-slag-composite]] (co-authored by Ranade and Li) quotes Michigan HSHDC as f'c 166 MPa, first crack 8.3 MPa, σ_tu
+  14.5 MPa, ε 3.4% (Ranade et al. 2013, as cited, §1), and compares σ_tu/f'c: 23.8% for its alkali-activated slag + PE
+  composite (M26) vs 8.7% for HSHDC (§3.3). The AAS composite (55 MPa) is **not** high-strength; it shows that HSHDC-level
+  σ_tu (13 MPa) does not need an HSHDC-level matrix. → [[alkali-activated-binder]], [[uhdc]]
+- First-crack 8.3 MPa here vs 8.1 MPa in [[ranade2015-hshdc-tensile-rate-effects]] (Table 2): minor.
+
 ## Conflicts & open questions
 - ⚔️ Quasi-static ε_tu of Michigan HSHDC: 3.4% vs 4.2%, plus 3.5% at 14 d in the 2011 version
-  (as cited in [[zhang2022-hshdcc-review]]) → [[tensile-strain-capacity]], [[gaps]]
+  (as cited in [[zhang2022-hshdcc-review]]); 3.4% is quoted again in [[choi2016-pe-alkali-activated-slag-composite]] (via Ranade 2013) → [[tensile-strain-capacity]], [[gaps]]
 - No study compares the four lineages directly, or tests their durability.
 - Tensile strain capacity of the Korean HSDC/NSHSDC is not shown in the ingested papers.
 

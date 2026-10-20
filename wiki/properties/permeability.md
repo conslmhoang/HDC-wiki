@@ -3,8 +3,8 @@ type: property
 slug: permeability
 aliases: [water permeability, transport properties, chloride diffusion, capillary absorption, sorptivity]
 tags: [durability, transport]
-sources: [ma2021-ecc-durability-review, homma2009-frcc-self-healing, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage, zhang2022-ecc-carbonation-sustained-load, bu2022-ecc-chloride-crack-width, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, chai2019-hdcc-freeze-thaw-carbonation-flexure]
-updated: 2026-10-20
+sources: [ma2021-ecc-durability-review, homma2009-frcc-self-healing, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage, zhang2022-ecc-carbonation-sustained-load, bu2022-ecc-chloride-crack-width, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, chai2019-hdcc-freeze-thaw-carbonation-flexure, lepech2009-ecc-water-permeability, yang2009-ecc-self-healing-wet-dry]
+updated: 2026-10-21
 ---
 
 # Permeability and Transport in Cracked ECC
@@ -12,20 +12,51 @@ updated: 2026-10-20
 Part of the [[durability]] hub. Chloride-specific data: [[chloride-and-corrosion]]. CO₂: [[carbonation]].
 
 ## Quantitative evidence
-### Water permeability vs pre-strain
-Lepech & Li 2009, as cited in [[ma2021-ecc-durability-review]] (Table 2, p. 5):
+### Water permeability vs pre-strain (primary since 2026-10-21)
+[[lepech2009-ecc-water-permeability]] (ECC M45, PVA 39 µm × 12 mm at 26 kg/m³ (vol.% not given), FA/C 1.20, W/B 0.25 computed; pre-strained in
+tension at 14 d, constant-head permeation; Table 5). Values were first quoted second-hand via
+[[ma2021-ecc-durability-review]] (Table 2, p. 5) and are **confirmed** by the primary paper:
 
-| Pre-strain | Avg crack width | No. of cracks | k (m/s) |
-|---|---|---|---|
-| 0 (uncracked) | — | — | 8.18 × 10⁻¹² |
-| 1.5% | 50 ± 10 µm | 47 | 1.95 × 10⁻¹⁰ |
-| 2% | 52 µm | 59 | 3 × 10⁻¹⁰ |
-| 3% | 63 µm | 87 | 7.74 × 10⁻¹⁰ |
+| Pre-strain | Crack width (unloaded) | No. of cracks | k (m/s) | k per crack (m/s) |
+|---|---|---|---|---|
+| 0 (uncracked) | — | — | 8.18 × 10⁻¹² | — |
+| 1.5% | 50 ± 10 µm | 47 | 1.95 × 10⁻¹⁰ | 4.15 × 10⁻¹² |
+| 2% | 52 µm | 59 | 3.00 × 10⁻¹⁰ | 5.08 × 10⁻¹² |
+| 3% | 63 ± 10 µm | 87 | 7.74 × 10⁻¹⁰ (± 1.9 × 10⁻¹⁰) | 8.90 × 10⁻¹² |
 
-- Per crack, permeability stays about 10⁻¹² m/s, so the pre-strain level has little effect.
-- Reinforced mortar goes from 10⁻¹¹ to 10⁻⁵ m/s as cracks widen from 0 to 500 µm (p. 5).
-- Cracks < 100 µm have little effect on permeability (Wang 1997, as cited, p. 3); water-permeability threshold
-  0.10–0.15 mm (Lepech & Li 2009, as cited in [[paul2014-r-shcc-chloride-corrosion]], p. 341).
+- Correction: the widths were labelled "Avg crack width" on this page (following ma2021); the primary paper
+  does not say whether they are averages or maxima (Fig. 5 axis says "maximum") ⚠️ unverified.
+- **These are post-healing asymptotes.** Initial k of cracked ECC was ≈ 10⁻⁸–10⁻⁷ m/s, about 2 orders higher,
+  and fell over ≈ 20–30 d of flow by self-healing ([[lepech2009-ecc-water-permeability]], Fig. 7 ⚠️ read). → [[self-healing]]
+- Per crack, k stays about 10⁻¹² m/s (≈ uncracked), so the pre-strain level has little effect (Table 5, Fig. 6).
+  Divide k by crack number to compare with single-crack data (p. 749).
+- **Steel-mesh reinforced mortar control** (w/c 0.35, ρ 1.9–2.9%) (Table 5):
+
+  | Crack width | k (m/s) |
+  |---|---|
+  | uncracked | 4.58 × 10⁻¹¹ |
+  | 150 µm | 3.02 × 10⁻⁸ |
+  | 240 µm | 7.97 × 10⁻⁶ |
+  | 300 µm | 2.58 × 10⁻⁵ |
+  | 500 ± 50 µm | **4.46 × 10⁻⁴** |
+
+  ⚔️ Correction: this page earlier said (via [[ma2021-ecc-durability-review]], p. 5) "10⁻¹¹ to 10⁻⁵ m/s from 0 to
+  500 µm". The primary value at ≈ 500 µm is 4.46 × 10⁻⁴ m/s; 10⁻⁵ is the 300 µm value. Either ma2021 misreported or
+  the wiki misread. → [[gaps]]
+- ECC at 1.5% strain is ≈ 5 orders below mortar with 300–350 µm cracks (the ACI / AASHTO service range) (p. 750).
+- Permeation needs a constant head, so it matters mainly for deep underwater or water-retaining structures;
+  absorption and diffusion were not studied (p. 744).
+- **The "100 µm threshold".** Lepech & Li 2009 take 100 µm as a *design target* from Wang et al. 1997 (single
+  cracks in concrete: k ≈ sound concrete below 100 µm; 1.0 × 10⁻¹¹ → 1.0 × 10⁻⁴ m/s from 100 to 500 µm, as cited,
+  p. 745) and set δ0 < 100 µm in ECC design (p. 746). It was **not measured on ECC**, which was tested only at 50–63 µm.
+  Cracks < 100 µm have little effect on permeability (Wang 1997, also as cited in [[ma2021-ecc-durability-review]], p. 3).
+- ⚔️ "Water-permeability threshold 0.10–0.15 mm (Lepech & Li 2009, as cited in [[paul2014-r-shcc-chloride-corrosion]],
+  p. 341)": the 0.10–0.15 mm range is **not found** in the primary paper, which gives 100 µm (from Wang 1997); its
+  reinforced mortar at 150 ± 15 µm already has k = 3.02 × 10⁻⁸ m/s, ≈ 3 orders above uncracked. Treat 0.15 mm as
+  a mis-citation. → [[gaps]]
+- Single-crack **tension-softening** PVA mortar (0.5 vol.%) after 10 wet–dry cycles: ≈ 10⁻¹⁰ m/s uncracked,
+  ≈ 10⁻⁸ at 100 µm, ≈ 10⁻⁶ at 200 µm, ≈ 3 × 10⁻⁶ m/s at 300 µm; < 50 µm cracks return to ≈ uncracked k
+  ([[yang2009-ecc-self-healing-wet-dry]], Fig. 5 ⚠️ read). Not ECC.
 
 ### Water permeability vs crack width (primary, [[homma2009-frcc-self-healing]], FRCC, not strain-hardening)
 - Falling-head plate test: k broadly follows the parallel-plate cube law k ∝ a·w³, but scatters below
@@ -68,6 +99,10 @@ Lepech & Li 2009, as cited in [[ma2021-ecc-durability-review]] (Table 2, p. 5):
 
 ## Conflicts & open questions
 - Transport-mode-dependent crack-width thresholds: see ⚔️ in [[chloride-and-corrosion]] and [[gaps]].
+- ⚔️ Reinforced-mortar k at 500 µm: 10⁻⁵ (ma2021) vs 4.46 × 10⁻⁴ m/s (primary). ⚔️ 0.10–0.15 mm threshold
+  (paul2014) not in the cited paper. Both above.
+- Open: is the "100 µm" threshold valid for multiple fine cracks in ECC? No ECC was tested between 63 and 100 µm
+  ([[lepech2009-ecc-water-permeability]]). Codes set no permeability or loaded-crack-width limits (p. 745, 749).
 - Open: permeability of cracked PE-HSHDC/UHDC; permeability under sustained load (cracks ≈2× wider,
   [[ozbay2013-ecc-self-healing-sustained-load]]).
 

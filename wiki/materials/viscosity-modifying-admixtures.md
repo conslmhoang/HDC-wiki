@@ -3,8 +3,8 @@ type: material
 slug: viscosity-modifying-admixtures
 aliases: [VMA, HPMC, hydroxypropyl methylcellulose, cellulose ether, starch ether, viscosity agent, SAP, superabsorbent polymer]
 tags: [admixture, fresh, printing, processing]
-sources: [chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, sun2019-modified-pva-fiber-ecc, bu2022-ecc-chloride-crack-width, homma2009-frcc-self-healing, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc]
-updated: 2026-10-20
+sources: [chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, sun2019-modified-pva-fiber-ecc, bu2022-ecc-chloride-crack-width, homma2009-frcc-self-healing, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc, choi2016-pe-alkali-activated-slag-composite]
+updated: 2026-10-21
 ---
 
 # Viscosity-Modifying Admixtures (HPMC, cellulose and starch ethers; SAP)
@@ -46,6 +46,12 @@ listed here as a related polymer admixture with a different purpose (internal cu
 - Effect of starch and cellulose ethers on the shrinkage of printed SHCC is unknown (stated gap,
   [[ivaniuk2022-printable-shcc-design]], Conclusions). → [[shrinkage]], [[gaps]]
 - HPMC dosage bases are unclear in [[chavesfigueiredo2020-printed-shcc]] and [[sun2019-modified-pva-fiber-ecc]] ⚠️.
+
+## Alkali-activated binder (2026-10-21)
+- In a cementless alkali-activated slag + 1.75% PE composite, VMA (0–0.0003) and HRWRA (0.024 → 0.002, by binder mass)
+  were tuned per W/B (0.26–0.38) after the Li & Li 2013 viscosity-control approach, to keep PE uniformly dispersed;
+  hardened densities were within 0.5% of theoretical ([[choi2016-pe-alkali-activated-slag-composite]], Table 1, §2.1, §3.1).
+  → [[alkali-activated-binder]], [[fiber-dispersion]]
 
 ## Related
 - [[fresh-properties]] · [[fiber-dispersion]] · [[3d-printed-hdc]] · [[water-binder-ratio]] · [[heat-curing]] · [[mix-designs]]

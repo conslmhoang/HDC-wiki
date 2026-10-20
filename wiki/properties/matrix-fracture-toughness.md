@@ -3,8 +3,8 @@ type: property
 slug: matrix-fracture-toughness
 aliases: [Km, K_IC, matrix toughness, J_tip, crack tip toughness]
 tags: [fracture, matrix]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, chavesfigueiredo2020-printed-shcc, mechtcherine2011-shcc-high-strain-rate]
-updated: 2026-10-20
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, chavesfigueiredo2020-printed-shcc, mechtcherine2011-shcc-high-strain-rate, lepech2009-ecc-water-permeability, choi2016-pe-alkali-activated-slag-composite]
+updated: 2026-10-21
 ---
 
 # Matrix Fracture Toughness (Km) & J_tip
@@ -64,6 +64,15 @@ the two. On an Ashby chart UHDC sits near metals, bamboo and wood
 - **Artificial flaws:** superabsorbent polymer (2.02 kg/m³) is added to TU Dresden SHCC partly to introduce
   micro-defects that trigger multiple cracking ([[mechtcherine2011-shcc-high-strain-rate]], p. 52). This is a
   flaw-size lever, not a Km lever. → [[multiple-cracking]]
+
+## Round-5 additions (2026-10-21)
+- **ECC M45 (14 d)**: Km was measured but its value is not given; the energy margin J′b/J_tip ≈ 1.08 is stated as a
+  **lower bound**, because the pull-out model behind σ(δ) ignores two-way pull-out and matrix spalling
+  ([[lepech2009-ecc-water-permeability]], p. 749). → [[micromechanical-parameters]]
+- **No aggregate to keep Km low**: the cementless alkali-activated slag + PE composite uses no sand at all
+  ([[choi2016-pe-alkali-activated-slag-composite]], §2.1); Km not measured. Lower W/B (0.26) still gave the highest ε
+  (7.50%) and σ_fc (4.87 MPa), so the strength–toughness penalty of a denser matrix was outweighed by bridging
+  (Table 7). → [[alkali-activated-binder]], [[water-binder-ratio]]
 
 ## Related
 - [[strain-hardening]] · [[fracture-process-zone]] · [[micromechanical-parameters]]

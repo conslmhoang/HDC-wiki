@@ -3,8 +3,8 @@ type: material
 slug: fly-ash
 aliases: [FA, Class F fly ash, high-volume fly ash, HVFA]
 tags: [binder, pozzolan, sustainability]
-sources: [yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, ozbay2013-ecc-self-healing-sustained-load, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, shumuye2022-slag-fa-pe-ecc, zhong2019-ecc-freeze-thaw, herbert2013-ecc-self-healing-natural-environment, zhang2022-ecc-carbonation-sustained-load, chai2019-hdcc-freeze-thaw-carbonation-flexure, mohammed2020-cr-ecc-elevated-temperature, zhou2023-hsecc-elevated-temperature, gao2020-hdcc-recycled-fine-aggregate, kanda2003-sprayed-ecc, mechtcherine2011-shcc-high-strain-rate, paul2014-r-shcc-chloride-corrosion, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, bu2022-ecc-chloride-crack-width, ivaniuk2022-printable-shcc-design, chavesfigueiredo2020-printed-shcc]
-updated: 2026-10-20
+sources: [yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, ozbay2013-ecc-self-healing-sustained-load, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, shumuye2022-slag-fa-pe-ecc, zhong2019-ecc-freeze-thaw, herbert2013-ecc-self-healing-natural-environment, zhang2022-ecc-carbonation-sustained-load, chai2019-hdcc-freeze-thaw-carbonation-flexure, mohammed2020-cr-ecc-elevated-temperature, zhou2023-hsecc-elevated-temperature, gao2020-hdcc-recycled-fine-aggregate, kanda2003-sprayed-ecc, mechtcherine2011-shcc-high-strain-rate, paul2014-r-shcc-chloride-corrosion, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, bu2022-ecc-chloride-crack-width, ivaniuk2022-printable-shcc-design, chavesfigueiredo2020-printed-shcc, deng2017-rc-column-hdc-jacket, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
+updated: 2026-10-21
 ---
 
 # Fly Ash
@@ -85,6 +85,19 @@ updated: 2026-10-20
 | [[ivaniuk2022-printable-shcc-design]] §2.1 | printable SHCC | CEM I/FA/microsilica 60/25/15 and 70/15/15 | 0.212–0.250 | |
 | [[chavesfigueiredo2020-printed-shcc]] | printed SHCC, mix Y | 30% FA | 0.50 | the FA mix was outperformed by the slag mix X |
 
+### Round 5 dosages (2026-10-21)
+| Source | Term | FA/C (mass) | W/B | Note |
+|---|---|---|---|---|
+| [[deng2017-rc-column-hdc-jacket]] Table 1 | HDC (XAUAT) | **1.0** (593 + 593 kg/m³) | 0.29 | resolves the "FA share" of the 1186 kg/m³ binder in [[deng2018-hdc-short-columns]] if the mix is the same (proportions identical) |
+| [[li2021-hdc-beam-shear]] Table 1 | HDC | 1.0 (FA/B 0.5, Grade I) | 0.29 | f_cu 70.55 MPa |
+| [[zhang2022-hdc-basalt-textile-tension]] Table 3 | HDC / TR-HDC | Type I 1.1; Type II (HVFA) 3.25 | ≈ 0.30–0.32 (computed) | Type II: higher TRC strain, lower peak stress; f_cu 52–58 (I) vs 30–38 MPa (II), 100 mm cubes, 28 d; similar capacity at 1.5–2% PVA (§4.3, Table 8) |
+| [[yang2009-ecc-self-healing-wet-dry]] Table 1; [[lepech2009-ecc-water-permeability]] Table 1 | ECC M45 | 1.20 (Class F) | 0.25 (computed) | HRWR 17 vs 7.51 kg/m³ for the "same" M45 ⚠️ |
+| [[yun2013-shcc-freeze-thaw]] Table 1 | SHCC (hybrid PVA + PE) | 35% of binder | 0.45 / 0.55 | with silica fume and acrylic polymer |
+| [[pourfalah2018-ecc-high-temperature]] Table 2 | ECC / HECC | **1.80** (SV80 FA) | 0.28 (derived) | hot tests to 600 °C |
+
+- The XAUAT "HDC" family (Deng group) uses FA/C 1.0, lower than the Michigan M45 (1.2) and the high-FA mixes above.
+  → [[terminology-hdc-ecc-shcc]]
+
 > Synthesis: two independent PVA datasets ([[jin2019-hvfa-shcc-structural]], [[qian2007-shcc-inverse-tensile-strain]]) show
 > ε_tu rising from about 2% to about 3.5% as FA/C goes from about 1.2–2.4 to about 3, with f'c falling about 30%.
 > Jin's FA/C 4.4 suggests the gain levels off or reverses above about 3. The frost optimum is lower (35% replacement,
@@ -95,4 +108,4 @@ updated: 2026-10-20
   clearly support "FA raises ductility" for PE-ECC. → [[gaps]]
 
 ## Related
-- [[silica-fume]] · [[ggbfs]] · [[uhdc]] · [[mix-designs]] · [[water-binder-ratio]] · [[freeze-thaw]] · [[carbonation]]
+- [[silica-fume]] · [[ggbfs]] · [[alkali-activated-binder]] · [[uhdc]] · [[mix-designs]] · [[water-binder-ratio]] · [[freeze-thaw]] · [[carbonation]]

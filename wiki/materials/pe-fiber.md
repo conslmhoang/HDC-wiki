@@ -3,8 +3,8 @@ type: material
 slug: pe-fiber
 aliases: [UHMWPE fiber, polyethylene fiber, PE]
 tags: [fiber, synthetic, hydrophobic]
-sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, li1992-steady-state-multiple-cracking, homma2009-frcc-self-healing, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review]
-updated: 2026-10-20
+sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, li1992-steady-state-multiple-cracking, homma2009-frcc-self-healing, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw]
+updated: 2026-10-21
 ---
 
 # UHMWPE (PE) Fiber
@@ -57,6 +57,8 @@ Melting-point values differ between sources (about 124–150 °C), probably beca
 | [[sui2018-uhp-ecc-flexural-fatigue]] Table 3 | UHP-ECC | 25 | 12 (from L/d 480) | 2900 | 116 | 2.42 | 0.97 | 2 |
 | [[yuan2020-nshsdc-beam-strengthening]] Table 4; [[lee2021-hsdc-wall-emi-impact]] | NSHSDC / HSDC (hybrid) | 31 | 12 | 2900 | 100 | — | 0.97 | 0.5 (+ 1.0 steel) |
 | [[ivaniuk2022-printable-shcc-design]] §2.1 | printable SHCC (Dyneema SK60) | n.r. | 6 | — | — | — | — | 1.5 |
+| [[choi2016-pe-alkali-activated-slag-composite]] Table 3 | PE alkali-activated slag composite (cementless) | 12 | 18 (L/d 1500) | 2700 | 88 | — | 0.97 | 1.75 |
+| [[yun2013-shcc-freeze-thaw]] §2.1 | SHCC (hybrid with PVA) | 12 | 12 | — | — | — | — | 0.20 or 0.75 (+ PVA) |
 
 ### Behaviour
 - **PE in normal-strength matrices.** PE-ECC with 60% SCM (f'c about 41–55 MPa) strain-hardens with ε about
@@ -75,7 +77,13 @@ Melting-point values differ between sources (about 124–150 °C), probably beca
   tearing ([[sui2018-uhp-ecc-flexural-fatigue]], Figs. 11–12). → [[fatigue]]
 - **Slag and bond.** SEM shows more hydration products on PE in slag mixes; the authors claim a stronger bond (not
   measured) ([[shumuye2022-slag-fa-pe-ecc]], Sect. 3.5.1). → [[ggbfs]]
+- **PE in a cementless alkali-activated slag matrix** (no aggregate, W/B 0.26–0.38): ε 4.58–7.50% and σ_tu 5.06–13.06 MPa
+  at f'c 36.3–54.8 MPa, 28 d ([[choi2016-pe-alkali-activated-slag-composite]], Tables 5, 7). PE was chosen because it is
+  hydrophobic and stronger than PVA; the authors contrast ≤ 4.5% for PVA in alkali-activated slag (as cited, §1).
+  → [[alkali-activated-binder]], [[uhdc]]
+- **PE in hybrids with PVA**: PE multifilament is hard to disperse, raises air content (13.1 vs 10.4%) and lowers f'c,
+  but gives more fine cracks before F-T ([[yun2013-shcc-freeze-thaw]], Table 3, Fig. 11, p. 13–14). → [[hybrid-fiber]], [[freeze-thaw]]
 - PE is non-conductive; in the Korea Univ. hybrid, EMI shielding comes from the steel fibers ([[lee2021-hsdc-wall-emi-impact]], §3.1). → [[hybrid-fiber]]
 
 ## Related
-- [[pva-fiber]] · [[hybrid-fiber]] · [[fiber-matrix-interface]] · [[fiber-geometry]] · [[hshdc]] · [[uhdc]] · [[self-healing]]
+- [[pva-fiber]] · [[hybrid-fiber]] · [[fiber-matrix-interface]] · [[fiber-geometry]] · [[hshdc]] · [[uhdc]] · [[self-healing]] · [[alkali-activated-binder]]

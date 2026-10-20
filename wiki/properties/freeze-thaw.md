@@ -3,8 +3,8 @@ type: property
 slug: freeze-thaw
 aliases: [frost resistance, frost damage, freeze-thaw cycles, salt scaling, F-T]
 tags: [durability, freeze-thaw]
-sources: [zhong2019-ecc-freeze-thaw, wang2023-ecc-frost-damage, chai2019-hdcc-freeze-thaw-carbonation-flexure, vanzijl2010-shcc-durability, ma2021-ecc-durability-review, he2024-hdc-research-advances, herbert2013-ecc-self-healing-natural-environment, mechtcherine2011-shcc-high-strain-rate]
-updated: 2026-10-20
+sources: [zhong2019-ecc-freeze-thaw, wang2023-ecc-frost-damage, chai2019-hdcc-freeze-thaw-carbonation-flexure, vanzijl2010-shcc-durability, ma2021-ecc-durability-review, he2024-hdc-research-advances, herbert2013-ecc-self-healing-natural-environment, mechtcherine2011-shcc-high-strain-rate, yun2013-shcc-freeze-thaw]
+updated: 2026-10-21
 ---
 
 # Freeze–Thaw Resistance
@@ -14,7 +14,8 @@ Part of the [[durability]] hub. Related: [[carbonation]] (coupled exposure), [[s
 ## Definition
 Resistance to repeated freezing and thawing of pore water, measured by relative dynamic modulus (RDEM),
 mass loss / scaling, and residual mechanical properties after cycling. Standard rapid tests in the
-wiki: ASTM C666 (procedure A, in water), GB/T 50082 (China), ASTM C672 and RILEM CDF (de-icing salt scaling).
+wiki: ASTM C666 (procedure A, freeze and thaw in water; procedure B, freeze in air and thaw in water,
+used by [[yun2013-shcc-freeze-thaw]]), GB/T 50082 (China), ASTM C672 and RILEM CDF (de-icing salt scaling).
 
 ## Key points
 - **ECC/SHCC/HDCC far outlast plain concrete and fibre-free mortar in rapid F-T tests**, in every primary
@@ -32,14 +33,18 @@ wiki: ASTM C666 (procedure A, in water), GB/T 50082 (China), ASTM C672 and RILEM
 - **Salt scaling is the exception**: by RILEM CDF, SHCC scaled 2.2 kg/m² after 28 cycles, above the
   1.5 kg/m² limit, i.e. "insufficient" by this method; by ASTM C672 SHCC (FA/C up to 2.2, also pre-cracked)
   was acceptable after 50 cycles (both in [[vanzijl2010-shcc-durability]], p. 267).
-- **No primary tensile data after F-T**: all primary studies here measure flexure, RDEM, mass or bond.
-  The claim that PVA-ECC loses ε_tu after F-T remains second-hand only (see below).
+- **Tension after F-T (primary since 2026-10-21)**: [[yun2013-shcc-freeze-thaw]] is the first primary uniaxial
+  tension study after F-T in the wiki. Hybrid PVA+PE SHCC dumbbells still strain-harden after 300 cycles; tensile
+  strength shows no distinct loss, strain capacity "slightly decreases", more so at W/B 0.55 and with a higher PVA
+  share (Figs. 8–9, Conclusion 3). Caveats: 2 specimens per point, ε read from scatter plots, age confounded
+  (0 cycles ≈ 14 or 39 d ⚠️ vs 300 cycles = 151 d). The PVA-only ECC claim (Yun 2011) is still second-hand.
 
 ## Quantitative evidence: primary studies
 | Source (term) | Protocol | Plain reference | Fibre composite | Note |
 |---|---|---|---|---|
 | [[zhong2019-ecc-freeze-thaw]] (ECC, PVA 13 mm; Taguchi L25) | GB/T 50082 / ASTM C666 in water, 100×100×400 prisms, to final failure | fibre-free mixes: IF/PF/UF = 25/50/75 cycles | best L25 mix 225/350/475; optimum (FA 35%, S/B 0.5, W/B 0.25, PVA 1.5 vol.%) measured 225/375/500 cycles | Table 4, Table 9; no tension test, SH not shown |
 | [[wang2023-ecc-frost-damage]] (ECC, PVA 8 mm, 2 vol.%, FA/C 1.18, W/B 0.33; σ_tu 4.21 MPa, ε 5.24% at 28 d) | GB/T 50082, −18 to +5 °C, 300 cycles | W/C 0.5 concrete failed (RDEM 60%) at 42 cycles; ECC matrix at 84 | RDEM > 95%, mass loss < 2% after 300 cycles; 4-pt bending 18.6 → 16.6 MPa (−11%) | §3.1–3.2, Figs. 5–7 |
+| [[yun2013-shcc-freeze-thaw]] (SHCC, hybrid PVA 40 µm + PE 12 µm, both 12 mm, 1.5 vol.% total; W/B 0.45 / 0.55; FA 35% of binder; air 10–13%) | ASTM C666 **B**, +4 to −18 °C, 3.5 h/cycle, start at 14 d, 300 cycles | none | σ_tu (JSCE dumbbell) 3.77 → 4.68, 2.35 → 3.16, 2.89 → 3.55, 2.95 → 3.57 MPa (0 → 300 cycles); ε at peak e.g. ≈ 0.4–0.65 → ≈ 0.85% ⚠️ (Fig. 9b); MOR 11.25 → 12.44, 15.39 → 13.44, 12.36 → 12.38, 12.16 → 10.80 MPa; f'c ratio ≥ 1 in 3 of 4 mixes | Table 3, Figs. 4–11; flexural prisms showed **multiple cracking before and a single crack after** 300 cycles (Fig. 6); ascending flexural branch steeper, lower deflection at peak (Fig. 5); SEM: ITZ microcracks (Fig. 13) |
 | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] (Eco-HDCC, domestic PVA 12 mm, FA/C 1.50, W/B 0.30) | coupled: 1 cycle = 4 d water + 10 F-T (+4/−18 °C) + 2 d at 60 °C + 9.7 h at 20% CO₂; 15 cycles (= 150 F-T) | not tested | flexural strength −19 to −33%, ultimate deflection −24 to −50% after 15 cycles; deflection hardening kept but shortened | Table 4, Figs. 6–7; age confounded (0 cycles ≈ 28 d, 15 cycles ≈ 148 d) |
 
 Rebar bond after F-T ([[wang2023-ecc-frost-damage]], Tables 6–7): rebar–ECC 18.22 → 16.14 MPa after 300
@@ -56,7 +61,10 @@ Moved here from [[durability]] (2026-10-20), unchanged:
 - Fibre-free mortar failed at 210 cycles (10.7% mass loss); 2% PVA-ECC survived 300 cycles with 8% mass
   loss (Sahmaran 2012, as cited in [[ma2021-ecc-durability-review]], p. 4).
 - PVA-ECC loses more ε than PE-ECC after 200 cycles (Yun 2011, as cited, p. 4).
-- Hybrid PVA+PE SHCC loses more ε_tu than σ_tu (Yun 2013, as cited in [[he2024-hdc-research-advances]], p. 13).
+- ~~Hybrid PVA+PE SHCC loses more ε_tu than σ_tu (Yun 2013, as cited in [[he2024-hdc-research-advances]], p. 13).~~
+  Now primary: see [[yun2013-shcc-freeze-thaw]] above; the he2024 summary is supported.
+- Yun 2011 (Yun, Kim, Lee & Rokugo, *Cold Regions Sci. Technol.* 67:49–57) is a **separate** paper from Yun 2013
+  (ref. [24] in [[yun2013-shcc-freeze-thaw]], p. 20); not ingested.
 - With de-icing salt, ECC keeps ε > 3% after 50 cycles (Sahmaran & Li 2007, as cited in
   [[ma2021-ecc-durability-review]], p. 5).
 - Silica fume and slag improve frost resistance of high-volume FA ECC (Liu 2018; Özbay 2013, as cited
@@ -82,15 +90,24 @@ Moved here from [[durability]] (2026-10-20), unchanged:
   ([[zhong2019-ecc-freeze-thaw]], Figs. 10–11).
 - **Transport after F-T**: capillary coefficient, chloride and carbonation rise with cycles, less in ECC than
   in the matrix ([[wang2023-ecc-frost-damage]], §3.3–3.5). → [[permeability]], [[carbonation]], [[chloride-and-corrosion]]
+- **W/B and fibre mix in hybrids**: W/B 0.55 lowers f'c ≈ 19% vs 0.45 and gives more ductility loss after F-T;
+  a higher hydrophilic PVA share (1.30 PVA + 0.20 PE) is linked to larger loss (not measured mechanistically)
+  ([[yun2013-shcc-freeze-thaw]], §3.1, Conclusion 3). → [[hybrid-fiber]]
+- **ITZ age at first freezing**: F-T starting at 14 d produced ITZ microcracks, attributed to hydraulic pressure in a
+  still-porous ITZ (dense at 28 d) ([[yun2013-shcc-freeze-thaw]], Fig. 13, §3.5). → [[fiber-matrix-interface]]
+- **Multiple cracking lost**: 300 cycles reduced the number and spread of cracks in tension and flexure
+  ([[yun2013-shcc-freeze-thaw]], Figs. 6, 11, Conclusion 4). → [[multiple-cracking]]
 - **SAP** is used in one SHCC partly to improve frost resistance ([[mechtcherine2011-shcc-high-strain-rate]], p. 52); not tested there.
 - **Self-healing under natural frost**: outdoor PVA-ECC (winter to −11.7 °C) kept healing, though recovery
   was lowest after autumn–winter exposure ([[herbert2013-ecc-self-healing-natural-environment]], Figs. 7–8). → [[self-healing]]
 
 > Synthesis: three independent primary studies (HIT, Qingdao, Southeast University) agree that PVA-ECC/HDCC
-> survives 300+ rapid F-T cycles where plain concrete fails at 40–110 cycles. What is still missing is
-> **tensile** evidence: no primary study measures ε_tu or crack width in uniaxial tension after F-T, so the
-> key HDC property (strain hardening) after frost is known only second-hand (Yun 2011; Li 2003 as cited).
-> Coupled exposures (F-T + carbonation + drying) are more damaging than F-T alone.
+> survives 300+ rapid F-T cycles where plain concrete fails at 40–110 cycles. Tensile evidence is now thin
+> but primary: one hybrid PVA+PE SHCC kept strain hardening and strength after 300 cycles but lost some strain
+> capacity and its flexural multiple cracking ([[yun2013-shcc-freeze-thaw]]). This mirrors the flexural
+> losses in [[wang2023-ecc-frost-damage]] and [[chai2019-hdcc-freeze-thaw-carbonation-flexure]]: F-T attacks
+> ductility (the interface) more than strength. No PVA-only ECC or HDC has been tested in tension after F-T in
+> the corpus. Coupled exposures (F-T + carbonation + drying) are more damaging than F-T alone.
 
 ## Conflicts & open questions
 - ⚔️ **Durability factor of non-air-entrained concrete**: 20 (Li 2008, as cited in [[ma2021-ecc-durability-review]], p. 4)
@@ -99,8 +116,17 @@ Moved here from [[durability]] (2026-10-20), unchanged:
 - ⚔️ (minor) Effect of F-T on HDCC deflection: rises up to 150 cycles (single F-T, Chai & Fei 2018 as cited) vs
   falls monotonically (coupled exposure, [[chai2019-hdcc-freeze-thaw-carbonation-flexure]]); [[wang2023-ecc-frost-damage]]
   reports larger mid-span deflection after 300 cycles. Exposure-type dependent.
-- Open: ε_tu and crack width in direct tension after F-T; F-T of PE-based HSHDC; salt scaling (CDF fails).
+- ⚔️ (refinement) ε_tu ≈ 3% retained after 300 cycles (PVA-ECC, procedure A; Li et al. 2003, as cited in
+  [[vanzijl2010-shcc-durability]], p. 267) vs loss of multiple cracking and ε at peak ≤ ≈ 1% (hybrid SHCC,
+  procedure B, [[yun2013-shcc-freeze-thaw]]). Different materials and protocols. → [[gaps]]
+- ⚔️ (minor) Flexural stiffness after 300 cycles: steeper ascending branch ([[yun2013-shcc-freeze-thaw]], Fig. 5)
+  vs lower stiffness (Sahmaran 2012, as cited there, p. 15–16) and larger deflection ([[wang2023-ecc-frost-damage]]).
+- ✅ Resolved: "Yun 2013 (he2024) vs Yun 2011 (ma2021)" are two different papers, not a mis-citation.
+- To verify ([[yun2013-shcc-freeze-thaw]]): virgin test age 14 vs 39 d; Fig. 10 strain ≈ 2.4% vs Fig. 9b ≤ 1%;
+  text says higher W/B → higher σ_t but Table 3 shows the reverse.
+- Open: crack width in direct tension after F-T; PVA-only ECC/HDC in tension after F-T; F-T of PE-based HSHDC;
+  salt scaling (CDF fails).
 - ⚠️ Zhong 2019 prints the F-T temperatures inverted ("highest −18 °C, lowest 4 °C"); UF criterion undefined.
 
 ## Related
-- [[durability]] · [[carbonation]] · [[chloride-and-corrosion]] · [[permeability]] · [[self-healing]] · [[flexural-strength]] · [[pva-fiber]] · [[fly-ash]] · [[gaps]]
+- [[durability]] · [[carbonation]] · [[chloride-and-corrosion]] · [[permeability]] · [[self-healing]] · [[flexural-strength]] · [[pva-fiber]] · [[fly-ash]] · [[hybrid-fiber]] · [[multiple-cracking]] · [[gaps]]

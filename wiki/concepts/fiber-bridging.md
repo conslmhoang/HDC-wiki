@@ -3,8 +3,8 @@ type: concept
 slug: fiber-bridging
 aliases: [crack bridging, σ-δ relation, bridging law, scale-linking model, complementary energy]
 tags: [micromechanics, constitutive]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, jin2019-hvfa-shcc-structural, zhao2022-ecc-tension-damage-model, kunieda2010-uhp-shcc-steel-reinforcement, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, mechtcherine2011-shcc-high-strain-rate]
-updated: 2026-10-20
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, jin2019-hvfa-shcc-structural, zhao2022-ecc-tension-damage-model, kunieda2010-uhp-shcc-steel-reinforcement, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, mechtcherine2011-shcc-high-strain-rate, li2021-hdc-beam-shear, pourfalah2018-ecc-high-temperature, zhang2022-hdc-basalt-textile-tension]
+updated: 2026-10-21
 ---
 
 # Fiber Bridging & the σ–δ Relation
@@ -92,5 +92,14 @@ The bridging stress σ that fibers carry across a crack, as a function of the cr
 > shear-crack control of HDC. The tensile strain capacity becomes the limit on confinement
 > ([[deng2018-hdc-compressive-constitutive]]), which links compressive design models to the PSH indices.
 
+## Round-5 evidence (2026-10-21)
+- **Shear in reinforced HDC beams**: fibre bridging across inclined cracks keeps beams carrying load after the critical
+  crack and lets stirrups yield fully ([[li2021-hdc-beam-shear]], §3.3–3.4). → [[shear-behaviour]]
+- **Temperature**: bridging switches from PVA rupture (< 150 °C) to pull-out (150 °C) and is gone by 400 °C; steel in HECC
+  keeps bridging to 600 °C, ≈ 2× ECC bending load ([[pourfalah2018-ecc-high-temperature]], Figs. 12, 14). → [[high-temperature-behaviour]]
+- **Short fibres + textile**: in basalt-textile HDC with 2% PVA, the efficiency factor α > 1 (1.10 / 1.07) at one layer
+  suggests that short fibres carry load in addition to the grid ([[zhang2022-hdc-basalt-textile-tension]], Table 8).
+  → [[textile-reinforced-hdc]]
+
 ## Related
-- [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]] · [[compressive-constitutive-model]]
+- [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]] · [[compressive-constitutive-model]] · [[textile-reinforced-hdc]]

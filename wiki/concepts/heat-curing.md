@@ -3,8 +3,8 @@ type: concept
 slug: heat-curing
 aliases: [curing regime, elevated temperature curing, standard curing, ambient curing]
 tags: [curing, processing]
-sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, mechtcherine2011-shcc-high-strain-rate, zhao2022-ecc-tension-damage-model, gao2020-hdcc-recycled-fine-aggregate, chai2019-hdcc-freeze-thaw-carbonation-flexure, kanda2003-sprayed-ecc, bu2022-ecc-chloride-crack-width, herbert2013-ecc-self-healing-natural-environment, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, sun2019-modified-pva-fiber-ecc, shumuye2022-slag-fa-pe-ecc, jin2019-hvfa-shcc-structural, vanzijl2010-shcc-durability, chavesfigueiredo2020-printed-shcc]
-updated: 2026-10-20
+sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, mechtcherine2011-shcc-high-strain-rate, zhao2022-ecc-tension-damage-model, gao2020-hdcc-recycled-fine-aggregate, chai2019-hdcc-freeze-thaw-carbonation-flexure, kanda2003-sprayed-ecc, bu2022-ecc-chloride-crack-width, herbert2013-ecc-self-healing-natural-environment, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, sun2019-modified-pva-fiber-ecc, shumuye2022-slag-fa-pe-ecc, jin2019-hvfa-shcc-structural, vanzijl2010-shcc-durability, chavesfigueiredo2020-printed-shcc, yang2009-ecc-self-healing-wet-dry, choi2016-pe-alkali-activated-slag-composite]
+updated: 2026-10-21
 ---
 
 # Curing Regimes (heat vs ambient)
@@ -60,5 +60,13 @@ updated: 2026-10-20
 > Heat curing therefore remains unnecessary for strength. Age matters for ductility, though: the 7-d to 28-d loss in
 > [[sun2019-modified-pva-fiber-ecc]] means ε_tu values must always be read with their curing age.
 
+## Round-5 evidence (2026-10-21)
+- **Hot drying in wet–dry cycles (not curing)**: 55 °C oven drying (CR2) raised the ultimate strength but lowered the strain
+  capacity of healed ECC M45 compared with room-air drying (CR1), and gave less self-healing (RF 77–90% vs 87–100%); the
+  authors suggest extra hydration and a stronger bond ([[yang2009-ecc-self-healing-wet-dry]], p. 388–389, Fig. 7).
+  This mirrors the bond-strengthening effect of heat curing on PVA. → [[self-healing]]
+- **No heat curing needed** for a 7.5% / 13 MPa PE composite: the cementless alkali-activated slag composite was cured 2 d
+  sealed and then in water at 23 ± 3 °C ([[choi2016-pe-alkali-activated-slag-composite]], §2.1). → [[alkali-activated-binder]]
+
 ## Related
-- [[hshdc]] · [[mix-designs]] · [[fly-ash]] · [[hybrid-fiber]] · [[pva-fiber]]
+- [[hshdc]] · [[mix-designs]] · [[fly-ash]] · [[hybrid-fiber]] · [[pva-fiber]] · [[self-healing]]
