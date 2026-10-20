@@ -1,6 +1,7 @@
-# Never publish the original papers (copyright)
-raw/**/*.pdf
-raw/**/*.PDF
+# Never publish the original sources (copyright): everything in raw/ except the README files
+raw/**/*.*
+!raw/README.md
+!raw/**/.gitkeep
 # Local tool settings
 .obsidian/
 wiki/.obsidian/
