@@ -7,3 +7,5 @@ raw/**/*.*
 wiki/.obsidian/
 .claude/
 __pycache__/
+# Personal presentation notes
+presentation/
