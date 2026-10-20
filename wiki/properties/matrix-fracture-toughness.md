@@ -3,7 +3,7 @@ type: property
 slug: matrix-fracture-toughness
 aliases: [Km, K_IC, matrix toughness, J_tip, crack tip toughness]
 tags: [fracture, matrix]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria]
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, chavesfigueiredo2020-printed-shcc, mechtcherine2011-shcc-high-strain-rate]
 updated: 2026-10-20
 ---
 
@@ -49,6 +49,21 @@ the two. On an Ashby chart UHDC sits near metals, bamboo and wood
   Km 0.33 / 0.23 MPa√m and σ_mu 1.60 / 1.12 MPa). It is "too large": uncorrected σ_fc is 45% too high,
   and a 0.8 factor brings the error within 10% ([[kanda2006-psh-design-criteria]], Eq. 12, Fig. 12, p. 67–70).
 - No flaw-size distribution is measured; a random, interacting-flaw model is needed (p. 68). → [[gaps]]
+
+## Round-4 additions (2026-10-20)
+| Source | Matrix | Km (MPa√m) | Note |
+|---|---|---|---|
+| [[kanda2003-sprayed-ecc]] Table 2 | sprayable ECC matrices, w/c 0.27 / 0.42 / 0.62 | 0.33 / 0.23 / 0.13 (**assumed**, not measured) | Em 23 / 15.9 / 9.4 GPa |
+| [[chavesfigueiredo2020-printed-shcc]] Table 3 | printed PVA-SHCC X / Y (flexural-CMOD method) | — | J_tip 16.37 / 7.11 and J_b 430.74 / 260.94, printed as "kJ/m²" ⚠️ (probably J/m²); J_b > J_tip in both |
+
+- **Model trend:** J′b/J_tip falls parabolically as Km rises ([[jin2019-hvfa-shcc-structural]], Fig. 1g, Yang 2008
+  bridging model with assumed inputs). Raising W/B and FA/C is claimed to lower Km and bond (§2.2, not measured).
+  → [[fly-ash]]
+- Chaves Figueiredo's J values come from notched-beam flexural stress–CMOD integrals, not the standard
+  single-crack J′b, so they are not comparable with [[micromechanical-parameters]] rows.
+- **Artificial flaws:** superabsorbent polymer (2.02 kg/m³) is added to TU Dresden SHCC partly to introduce
+  micro-defects that trigger multiple cracking ([[mechtcherine2011-shcc-high-strain-rate]], p. 52). This is a
+  flaw-size lever, not a Km lever. → [[multiple-cracking]]
 
 ## Related
 - [[strain-hardening]] · [[fracture-process-zone]] · [[micromechanical-parameters]]

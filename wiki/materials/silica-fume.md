@@ -3,8 +3,8 @@ type: material
 slug: silica-fume
 aliases: [microsilica, SF]
 tags: [binder, pozzolan, ultra-fine]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review]
-updated: 2026-10-16
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, homma2009-frcc-self-healing, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, zhao2022-ecc-tension-damage-model]
+updated: 2026-10-20
 ---
 
 # Silica Fume (Microsilica)
@@ -26,5 +26,18 @@ updated: 2026-10-16
 - Silica fume and slag improve the frost resistance of high-volume FA ECC (as cited in
   [[ma2021-ecc-durability-review]], p. 5). → [[durability]]
 
+
+## Further SF dosages (2026-10-20, round 4 ingest)
+| Source | Term | SF dosage | Note |
+|---|---|---|---|
+| [[homma2009-frcc-self-healing]] Tables 1–2 | FRCC | 0.15 of binder | W/B 0.45 |
+| [[kunieda2010-uhp-shcc-steel-reinforcement]] Table 2 | UHP-SHCC | 223 kg/m³ (with 1243 kg/m³ low-heat PC) | W/B 0.20, f'c 95 MPa |
+| [[sui2018-uhp-ecc-flexural-fatigue]] Table 1 | UHP-ECC | 150 kg/m³ | with GGBS 750 kg/m³ |
+| [[yuan2020-nshsdc-beam-strengthening]] Table 2; [[lee2021-hsdc-wall-emi-impact]] Table 1 | NSHSDC / HSDC | 0.25 of cement (+ silica filler 0.30) | W/B 0.172, f'c ≈ 122–123 MPa, room-cured |
+| [[ivaniuk2022-printable-shcc-design]] §2.1 | printable SHCC | 15% of binder (as suspension) | W/B definition with suspension water ⚠️ |
+| [[zhao2022-ecc-tension-damage-model]] Table 1 | ECC | 0.073 of cement | FA/C 2.0 |
+
+- None of these sources varies SF alone, so they add dosages but no SF-effect data.
+
 ## Related
-- [[mix-designs]] · [[hshdc]] · [[fly-ash]]
+- [[mix-designs]] · [[hshdc]] · [[fly-ash]] · [[ggbfs]] · [[hybrid-fiber]]

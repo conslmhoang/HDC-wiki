@@ -3,8 +3,8 @@ type: concept
 slug: uhdc
 aliases: [UHDC, ultra-high ductile concrete, UHDCC, ultra-high ductility cementitious composites]
 tags: [material-family, pe-fiber, tongji]
-sources: [ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances]
-updated: 2026-10-06
+sources: [ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, sui2018-uhp-ecc-flexural-fatigue]
+updated: 2026-10-20
 ---
 
 # UHDC: Ultra-High Ductile Concrete
@@ -34,6 +34,16 @@ bars under ISO and Chinese codes ([[ye2021-uhdc-flexural-size-effect]], p. 2).
 > ductility (9.45%) than PE in the very-high-strength Michigan matrix (3.4–4.2%). This fits the
 > micromechanics view that a lower matrix toughness makes the energy criterion easier to satisfy.
 > → [[strain-hardening]]
+
+## Comparable ultra-ductile PE composites (2026-10-20 ingest)
+- **UHP-ECC** (Shenzhen / PolyU): PE 2 vol.% in a GGBS + SF + limestone-powder matrix, W/B about 0.14,
+  f'c 120.7 MPa (90 d), σ_tu up to 12 MPa and ε > 8% (abstract and Fig. 4 only; test age not stated ⚠️)
+  ([[sui2018-uhp-ecc-flexural-fatigue]], Table 1, abstract). It reaches UHDC-level strain in a matrix about
+  3× stronger than UHDC (36–38 MPa). → [[hshdc]], [[fatigue]]
+
+> Synthesis: UHP-ECC weakens the earlier synthesis that very high ductility needs a low-strength, high-FA
+> matrix. High strain (> 8%) is also reported in a very-high-strength PE matrix, consistent with the "trade-off
+> is not fundamental" row in [[gaps]]. Fiber and interface design, not f'c alone, controls ε_tu.
 
 ## Related
 - [[terminology-hdc-ecc-shcc]] · [[hshdc]] · [[pe-fiber]] · [[size-effect]]

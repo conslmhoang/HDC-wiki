@@ -3,7 +3,7 @@ type: concept
 slug: fiber-bridging
 aliases: [crack bridging, σ-δ relation, bridging law, scale-linking model, complementary energy]
 tags: [micromechanics, constitutive]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review]
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, jin2019-hvfa-shcc-structural, zhao2022-ecc-tension-damage-model, kunieda2010-uhp-shcc-steel-reinforcement, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, mechtcherine2011-shcc-high-strain-rate]
 updated: 2026-10-20
 ---
 
@@ -63,5 +63,34 @@ The bridging stress σ that fibers carry across a crack, as a function of the cr
 - Validated with single-crack tests at 0.1% and 0.5% fiber, assuming 2-D orientation ([[yang2008-ecc-fiber-bridging-law]], Fig. 12).
 - The σ–δ curve is "the most fundamental property" linking material and structural design ([[li2003-ecc-review]], p. 217–218).
 
+## Parametric trends and member effects (2026-10-20 ingest)
+- **Model sensitivities** (Yang 2008 model with assumed τ0 1.0 MPa, Gd 1.5 J/m², PVA 2%;
+  [[jin2019-hvfa-shcc-structural]], Fig. 1): J′b/J_tip falls linearly with Gd, falls steeply then gently with τ0,
+  and falls parabolically with Km; σ0 is nearly insensitive to Gd. → [[fiber-matrix-interface]]
+- ⚔️ **Vf vs peak stress.** The bridging models give σ0 ∝ Vf ([[yang2008-ecc-fiber-bridging-law]]; [[jin2019-hvfa-shcc-structural]], Fig. 1a),
+  but in a FA-rich PVA-ECC σ_p stayed flat (3.10 / 2.96 / 3.23 MPa) from 1% to 2% PVA while ε_p rose 0.51 → 2.00%
+  ([[zhao2022-ecc-tension-damage-model]], Table 3). The matrix differs; σ_p may be flaw- or rupture-controlled
+  there. → [[gaps]]
+- **Rate:** PVA pull-out peak force roughly doubles from 10⁻⁵ to 10 s⁻¹, while single-fiber strength rises only
+  1456 → 1674 MPa ([[mechtcherine2011-shcc-high-strain-rate]], Fig. 13, Table 3). Bridging in PVA composites is
+  therefore interface-limited at high rate. → [[strain-rate-effects]]
+- **Steel reinforcement adds to bridging, not to cracking:** one D6 bar in a 50 × 200 mm UHP-SHCC section adds about
+  1.01 MPa to the nominal bridging strength but only about 0.07 MPa to the cracking strength
+  ([[kunieda2010-uhp-shcc-steel-reinforcement]], Fig. 3). This raises the strength margin and restores multiple
+  cracking in thick members. → [[multiple-cracking]]
+
+## Bridging under compression and shear (XAUAT HDC)
+- Bridging across vertical splitting cracks acts as **lateral confinement**. A Mander-type model with
+  σ_t = f_t = 5.7 MPa predicts a peak strain of 0.0079 vs 0.0080 measured ([[deng2015-hdc-compressive-toughness]], Eqs. 5–6, p. 5–6).
+- Lateral restraint delays longitudinal cracks; once the lateral strain exceeds the HDC ultimate tensile strain,
+  fibers pull out or rupture and a major crack forms ([[deng2018-hdc-compressive-constitutive]], p. 3, Fig. 3).
+  → [[compressive-constitutive-model]]
+- Bridging across diagonal cracks sustains the shear strength of cracked HDC columns and slows stiffness
+  degradation ([[deng2018-hdc-short-columns]], p. 8, Conclusion 5). → [[shear-behaviour]]
+
+> Synthesis: the same σ–δ law that governs tensile hardening also explains the compressive toughness and
+> shear-crack control of HDC. The tensile strain capacity becomes the limit on confinement
+> ([[deng2018-hdc-compressive-constitutive]]), which links compressive design models to the PSH indices.
+
 ## Related
-- [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]]
+- [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]] · [[compressive-constitutive-model]]

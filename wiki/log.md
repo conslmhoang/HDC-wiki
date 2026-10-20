@@ -118,3 +118,53 @@ Append-only. Format: `## YYYY-MM-DD — <operation> — <subject>`, followed by 
   "no primary durability study" and "no Chinese PVA-HDC primary data" statements.
 - Updated about 20 topic pages and 3 datasets (+18 rows); gaps: 3 conflicts resolved or refined, 4 new.
 
+
+## 2026-10-21 — ingest new — 34 sources (round 4, toward the 50-paper target)
+- **How sources were obtained:**
+  - Wiley/Hindawi PDFs (incl. the 3 Deng/XAUAT papers) downloaded through the human's Chrome with university access.
+  - 13 JACT PDFs from J-STAGE.
+  - 18 MDPI papers as full-text XML from Europe PMC (CC BY).
+  - ScienceDirect was blocked by a CAPTCHA loop (not bypassed), so the 10 ScienceDirect/ACI papers on the reading
+    list are still missing.
+- **New sources (34):**
+  - Chinese HDC/HDCC and XAUAT: deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive,
+    deng2018-hdc-short-columns, chai2019-hdcc-freeze-thaw-carbonation-flexure, gao2020-hdcc-recycled-fine-aggregate.
+  - Korea Univ. HSDC/NSHSDC: yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact.
+  - JACT: kanda2003-sprayed-ecc, kanakubo2006-dfrcc-tensile-test-method, kunieda2006-hpfrcc-japan-applications,
+    qian2007-shcc-inverse-tensile-strain, homma2009-frcc-self-healing, kunieda2010-uhp-shcc-steel-reinforcement,
+    vanzijl2010-shcc-durability, mechtcherine2011-shcc-high-strain-rate, ozbay2013-ecc-self-healing-sustained-load,
+    paul2014-r-shcc-chloride-corrosion, wang2023-ecc-frost-damage, zhou2023-hsecc-elevated-temperature.
+  - MDPI and others: herbert2013-ecc-self-healing-natural-environment, sui2018-uhp-ecc-flexural-fatigue,
+    jin2019-hvfa-shcc-structural, sun2019-modified-pva-fiber-ecc, wang2019-rc-beam-ecc-shear-strengthening,
+    zhong2019-ecc-freeze-thaw, chavesfigueiredo2020-printed-shcc, mohammed2020-cr-ecc-elevated-temperature,
+    bu2022-ecc-chloride-crack-width, ivaniuk2022-printable-shcc-design, shumuye2022-slag-fa-pe-ecc,
+    tabrizikahou2022-masonry-ecc-sma-retrofit, zhang2022-ecc-carbonation-sustained-load,
+    zhao2022-ecc-tension-damage-model, xue2023-shcc-structural-review.
+- **New pages (10):**
+  - properties: freeze-thaw, carbonation, chloride-and-corrosion, compressive-constitutive-model, shear-behaviour
+  - materials: recycled-fine-aggregate, hybrid-fiber, viscosity-modifying-admixtures
+  - test methods: four-point-bending-inverse-analysis
+  - concepts: interface-bond
+- **Restructured/rewritten:** durability (now a hub), crack-width; about 40 other topic pages updated by the
+  theory, materials, mechanical, durability and tests-apps integration groups.
+- **Key corrections:**
+  - Chloride crack-width threshold is **exposure-dependent**: 100 µm ≈ uncracked under immersion (Bu 2022), but
+    50–100 µm (and < 50 µm) cracks carry chloride to rebar within hours under wet–dry cycles (Paul 2014); the
+    55–80 µm value is second-hand.
+  - Repair page: field crack-width data now exist, but only second-hand (Kunieda & Rokugo 2006: ≤ 50 µm at
+    10 months, ≤ 120 µm at 24 months on an ASR wall).
+  - PVA melting: onset 230 °C by primary TG (Zhou 2023); "273 °C" has no support.
+  - Fourth HSHDC-type lineage: Korea Univ. steel + PE hybrid (HSDC/NSHSDC, ≈ 122–123 MPa); its tensile ductility
+    is not shown in the ingested papers.
+  - Kanakubo 2006 JCI round robin: the same PVA-DFRCC gives 2.70% strain at peak (thin plate) down to 0.07%
+    (Ø70 dogbone); thickness effects conflict with Rokugo 2007 (as cited). Bending inverse methods depend on the
+    chosen tension reference.
+  - "ε_tu" naming: some papers report post-peak strain; the wiki compares strain at peak only.
+  - Several "ECC/HDC" papers report no tension test (labelled on their source pages, not relabelled).
+- **Datasets:** +202 rows: mix-designs 22 → 91 (+69), mechanical-results 54 → 180 (+126),
+  micromechanical-parameters 17 → 24 (+7). Fatigue S–N, field crack widths and member results stay on source pages.
+- **gaps:** 51 conflict rows (was 19): 32 new after merging duplicates across groups (e.g. chloride threshold,
+  Kanakubo vs Rokugo thickness effect, JSCE 2008 vs JC/T 2461, delamination, printed SHCC interlayer and fiber
+  orientation); 3 rows refined (strain-rate ε and failure mode by mechtcherine2011; F-T citation note); PVA
+  melting partly resolved. Under-studied areas rewritten for the 50-source corpus.
+- Updated index (34 sources + 10 pages, grouped by lineage) and review-outline (scope 50 papers).

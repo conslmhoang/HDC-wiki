@@ -1,17 +1,18 @@
 ---
 type: concept
 slug: hshdc
-aliases: [HSHDC, high-strength high-ductility concrete, high strength-high ductility concrete, R-HSHDC, HS-ECC, PE-HSHDC, PVA-HSHDC]
+aliases: [HSHDC, high-strength high-ductility concrete, high strength-high ductility concrete, R-HSHDC, HS-ECC, PE-HSHDC, PVA-HSHDC, HSDC, NSHSDC, UHP-ECC, UHP-SHCC]
 tags: [material-family, high-strength]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review]
-updated: 2026-10-06
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, kunieda2010-uhp-shcc-steel-reinforcement, zhou2023-hsecc-elevated-temperature]
+updated: 2026-10-20
 ---
 
-# HSHDC: High-Strength High-Ductility Concrete (three lineages)
+# HSHDC: High-Strength High-Ductility Concrete (four lineages)
 
 ## Definition
 A strain-hardening cementitious composite that targets **high compressive strength and high tensile
-ductility together**. Three research groups use the name for different materials.
+ductility together**. Three research groups use the name "HSHDC" for different materials, and a fourth
+(Korea Univ.) uses "HSDC/NSHSDC" for a steel + PE hybrid (added 2026-10-20, see below).
 ⚔️ See [[terminology-hdc-ecc-shcc]].
 
 ## Lineages compared
@@ -69,10 +70,50 @@ Full rows are in [[mix-designs]] and [[mechanical-results]].
 >
 > Report the lineage whenever you quote HSHDC values.
 
+## Fourth lineage: Korea University (Yoon) HSDC / NSHSDC (2026-10-20 ingest)
+| | Korea Univ. (Yoon) |
+|---|---|
+| Sources | [[yuan2020-nshsdc-beam-strengthening]] ("NSHSDC", no-slump); [[lee2021-hsdc-wall-emi-impact]] ("HSDC", same mix) |
+| Binder | cement + SF + silica filler + silica sand; W/B 0.172 |
+| Fiber | **hybrid**: 1.0 vol.% straight steel (19.5 mm × 0.2 mm) + 0.5 vol.% PE (12 mm × 31 µm) → [[hybrid-fiber]], [[pe-fiber]] |
+| Curing | room temperature (20 °C, 60% RH), no heat |
+| f'c | 123.4 MPa ([[yuan2020-nshsdc-beam-strengthening]], Table 5); 122.3 MPa ([[lee2021-hsdc-wall-emi-impact]]), 28 d |
+| σ_t | 9.7 MPa direct tension ([[yuan2020-nshsdc-beam-strengthening]], Table 5) |
+| ε_tu | **not reported** in either paper; "> 2.9%" quoted from the group's earlier papers ([[yuan2020-nshsdc-beam-strengthening]], §1) ⚠️ |
+
+- Steel is kept at 1.0 vol.% so that PE drives strain hardening; UHPFRC typically uses > 1.5% steel
+  ([[lee2021-hsdc-wall-emi-impact]], §1).
+- The authors claim about 76% higher σ_t and 53.7% lower ε than typical PVA-ECC (Li et al. 2001, as cited in
+  [[yuan2020-nshsdc-beam-strengthening]], §1).
+- Uses: room-cured, shape-holding jackets for NSC beams (+8% to +40% peak load; no jacket delaminated)
+  ([[yuan2020-nshsdc-beam-strengthening]], Table 8) → [[rc-member-strengthening]], [[interface-bond]]; 5–20 mm
+  skins on NC panels for impact and EMI shielding ([[lee2021-hsdc-wall-emi-impact]]) → [[impact-resistance]].
+- Partly closes the "bond to existing concrete" gap: slant shear τ up to 21.4 MPa at 28 d
+  ([[yuan2020-nshsdc-beam-strengthening]], Table 7). → [[interface-bond]]
+
+## Other high-strength strain-hardening composites (not called HSHDC)
+| Term | Group | f'c (MPa) | σ_tu (MPa) | ε (%) | Fiber | Meets HSHDCC bar (> 100 MPa, > 3%)? | Source |
+|---|---|---|---|---|---|---|---|
+| UHP-ECC | Shenzhen / PolyU | 102.8 (28 d) / 120.7 (90 d), 100 mm cube | up to 12 | > 8 (abstract) | PE | yes | [[sui2018-uhp-ecc-flexural-fatigue]], abstract, Fig. 4 |
+| UHP-SHCC | Nagoya (Kunieda) | 95 (Ø50 cylinder, 28 d) | 6.5 | 1.5 (dumbbell, at ultimate load) | PE 1.5%, 6 mm × 12 µm | no | [[kunieda2010-uhp-shcc-steel-reinforcement]], §2, Table 3 |
+| HSECC | Zhou 2023 | 83.1 | not tested | not tested; softens in bending | PVA + steel | no (not strain hardening) | [[zhou2023-hsecc-elevated-temperature]] |
+
+- UHP-SHCC loses strain hardening in unreinforced 50 mm-thick tension members (ε about 85% lower than dumbbells),
+  and light steel reinforcement (ρs 0.3%) restores it ([[kunieda2010-uhp-shcc-steel-reinforcement]], Table 3).
+  → [[multiple-cracking]], [[size-effect]]
+- UHP-ECC crack width < 160 µm in tension ([[sui2018-uhp-ecc-flexural-fatigue]], Fig. 5), within the
+  80–200 µm band noted for PE-based HSHDC. → [[crack-width]], [[fatigue]]
+
+> Synthesis: the four lineages now differ in **fiber system** as well as curing: Michigan, GDUT and Xi'an use
+> mono-PE (or PVA), Korea Univ. uses steel + PE. Only Michigan, GDUT and Xi'an report tensile strain capacity in
+> the ingested papers; the Korean HSDC must be cited as "ductility claimed, not shown" until refs 12–13 of
+> [[yuan2020-nshsdc-beam-strengthening]] are ingested.
+
 ## Conflicts & open questions
 - ⚔️ Quasi-static ε_tu of Michigan HSHDC: 3.4% vs 4.2%, plus 3.5% at 14 d in the 2011 version
   (as cited in [[zhang2022-hshdcc-review]]) → [[tensile-strain-capacity]], [[gaps]]
-- No study compares the three lineages directly, or tests their durability.
+- No study compares the four lineages directly, or tests their durability.
+- Tensile strain capacity of the Korean HSDC/NSHSDC is not shown in the ingested papers.
 
 ## Related
-- [[terminology-hdc-ecc-shcc]] · [[uhdc]] · [[uhpc-vhsc]] · [[mix-designs]] · [[mechanical-results]]
+- [[terminology-hdc-ecc-shcc]] · [[uhdc]] · [[uhpc-vhsc]] · [[hybrid-fiber]] · [[interface-bond]] · [[mix-designs]] · [[mechanical-results]]

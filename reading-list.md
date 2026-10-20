@@ -72,3 +72,9 @@
 - E3 — Crossref query match (Compos B 52:11–20)
 - E4 — Crossref DOI record (CC BY 4.0)
 - F1 — Crossref DOI record (single author listed)
+
+## Status (2026-10-21)
+
+- **Obtained and ingested:** C1 Deng 2015, C2 Deng 2018 (compressive), D4 Deng 2018 (short columns) via Wiley with university access; C5 Chai 2023 and E4 Li 2021 (Europe PMC XML).
+- **Still missing** (ScienceDirect blocked automated access with a repeating CAPTCHA; ACI not attempted): C3 Wang 2007, C4 Zhang 2022, D1 Deng 2019, D2 Deng 2020, D3 Deng 2017, D5 Li 2021 (AEJ), E1 Yang 2009, E2 Lepech 2009, E3 Yun 2013, F1 Pourfalah 2018. Download them by hand into `raw/papers/` with the suggested filenames, then say "ingest new".
+- **Added beyond this list** to reach 50 sources: 13 JACT papers from J-STAGE and 18 open-access MDPI papers (CC BY) from Europe PMC. See `wiki/index.md` → Sources.

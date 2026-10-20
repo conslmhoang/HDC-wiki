@@ -3,8 +3,8 @@ type: test-method
 slug: single-fiber-pullout-test
 aliases: [SFP test, fiber pullout test]
 tags: [micromechanics, interface, test]
-sources: [ranade2015-hshdc-tensile-rate-effects, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review]
-updated: 2026-10-16
+sources: [ranade2015-hshdc-tensile-rate-effects, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, mechtcherine2011-shcc-high-strain-rate]
+updated: 2026-10-20
 ---
 
 # Single-Fiber Pullout Test
@@ -35,6 +35,14 @@ Michigan HSHDC, 6 rates from 9 µm/s to 0.9 m/s, 25 specimens per rate (150 in t
   - PVA in a 24 MPa matrix mostly ruptured;
   - PE in an about 140 MPa matrix plateaued or hardened.
   - Direct single-fiber tension DIFs exceed in-situ pull-out DIFs.
+
+## High-rate PVA setup (Mechtcherine 2011)
+- PVA (Kuraray K-II REC15) in the TU Dresden SHCC matrix, **1 mm embedment**. Quasi-static at 0.01 µm/s;
+  high-speed piezo device at 10⁴ µm/s, max stroke 80 µm, 50 N ([[mechtcherine2011-shcc-high-strain-rate]], p. 54–55).
+- Pull-out peak force about ×2 from 10⁻⁵ to 10 s⁻¹ equivalent; matrix residue on high-rate fibres suggests
+  partly cohesive interphase failure (Figs. 13–15, p. 60).
+- The full high-speed pull-out curve was not recorded (80 µm stroke), and which fibre displacement rate matches
+  the crack-plane rate in the composite is an open question (p. 60–61). → [[strain-rate-effects]]
 
 ## Related
 - [[fiber-matrix-interface]] · [[pe-fiber]] · [[strain-rate-effects]]

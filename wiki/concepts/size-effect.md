@@ -3,8 +3,8 @@ type: concept
 slug: size-effect
 aliases: [flexural size effect, Bažant size effect law, SEL, Weibull size effect, Type-I, Type-II]
 tags: [fracture, scaling]
-sources: [ye2021-uhdc-flexural-size-effect, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, yu2018-ecc-direct-tensile-review]
-updated: 2026-10-16
+sources: [ye2021-uhdc-flexural-size-effect, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, yu2018-ecc-direct-tensile-review, kunieda2010-uhp-shcc-steel-reinforcement, kanakubo2006-dfrcc-tensile-test-method, xue2023-shcc-structural-review, kanda2003-sprayed-ecc]
+updated: 2026-10-20
 ---
 
 # Size Effect
@@ -48,5 +48,30 @@ SEL fits, notched three-point bending, d = 40–150 mm ([[ye2021-uhdc-flexural-s
   to imperfections, fiber orientation, end effects and stress singularities. A size-independent
   constitutive model is needed ([[yu2018-ecc-direct-tensile-review]], p. 348, 359).
 
+## Tension members: a strong thickness / size effect (2026-10-20)
+| Source | Material | Small specimen | Large specimen | Change |
+|---|---|---|---|---|
+| [[kunieda2010-uhp-shcc-steel-reinforcement]] §4.1, Table 3, Fig. 5 | UHP-SHCC (PE 1.5%, f'c 95 MPa) | 13 × 30 mm dumbbell: ε 1.5%, strain hardening | 50 × 200 × 900 mm unreinforced member: ε 0.23–0.24%, brittle | ε about −85%, σ about −30% |
+| [[kanakubo2006-dfrcc-tensile-test-method]] Tables 6–9 | PVA-DFRCC, same mix | 30 × 13 mm plate: ε 2.70% | Ø70 dogbone 0.07%; Ø100 cylinder 0.32% | > 30× (shape, casting and end conditions also differ) |
+
+- **Mechanisms proposed** ([[kunieda2010-uhp-shcc-steel-reinforcement]], §2, Fig. 2):
+  - strain capacity is set by the overlap between the matrix-cracking-strength and bridging-strength
+    distributions along the member; a larger volume widens the bridging distribution and lowers its mean
+    (weakest-link view);
+  - fiber orientation is about 2-D in 13 mm dumbbells but 3-D in 50 mm members. → [[fiber-dispersion]]
+- Small reinforcement (D6, ρs 0.3%) restores distributed cracking and 1.5–1.8% strain (Table 3).
+- Similar member-level losses: thin bonded strengthening layers over a substrate crack do not reach dogbone
+  ductility ([[xue2023-shcc-structural-review]], Section 4.1.2); cut-outs from 150 mm thick sprayed ECC lose
+  deflection capacity vs thin moulded prisms ([[kanda2003-sprayed-ecc]], Fig. 11 ⚠️).
+
+> Synthesis: in **flexure** UHDC-2 shows no size effect up to 150 mm (Ye 2021), but in **direct tension**
+> PE UHP-SHCC shows a large thickness effect between 13 and 50 mm (Kunieda 2010). The two are different modes
+> and materials; the tension result matters most for design because dogbone ε_tu feeds the constitutive
+> models. → [[tensile-strain-capacity]], [[tensile-constitutive-model]]
+
+- ⚔️ "Thickness 13 / 30 / 50 mm has negligible effect" for PVA-ECC (Rokugo 2007, as cited in
+  [[yu2018-ecc-direct-tensile-review]], p. 348) vs −85% strain at 50 mm for PE UHP-SHCC
+  ([[kunieda2010-uhp-shcc-steel-reinforcement]]). Fiber type, matrix strength and specimen width differ. → [[gaps]]
+
 ## Related
-- [[flexural-strength]] · [[notched-beam-three-point-bending]] · [[fracture-process-zone]] · [[uhdc]]
+- [[flexural-strength]] · [[notched-beam-three-point-bending]] · [[fracture-process-zone]] · [[uhdc]] · [[tensile-strain-capacity]]

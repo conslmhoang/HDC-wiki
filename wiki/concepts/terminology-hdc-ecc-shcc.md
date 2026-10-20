@@ -1,9 +1,9 @@
 ---
 type: concept
 slug: terminology-hdc-ecc-shcc
-aliases: [HDC, ECC, SHCC, HSHDC, UHDC, UHTCC, UHS-UHDCC, high ductility concrete, high ductile concrete, highly ductile concrete, bendable concrete]
+aliases: [HDC, HDCC, Eco-HDCC, ECC, SHCC, HPFRCC, DFRCC, FRCC, UHP-SHCC, UHP-ECC, HSECC, HSDC, NSHSDC, PDCC, HSHDC, UHDC, UHTCC, UHS-UHDCC, high ductility concrete, high ductile concrete, highly ductile concrete, bendable concrete]
 tags: [scope, terminology]
-sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, ma2021-ecc-durability-review, zhang2022-hshdcc-review, li2003-ecc-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, kanda2006-psh-design-criteria]
+sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, ma2021-ecc-durability-review, zhang2022-hshdcc-review, li2003-ecc-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, kanda2006-psh-design-criteria, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chai2019-hdcc-freeze-thaw-carbonation-flexure, gao2020-hdcc-recycled-fine-aggregate, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2006-hpfrcc-japan-applications, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, zhou2023-hsecc-elevated-temperature, qian2007-shcc-inverse-tensile-strain, vanzijl2010-shcc-durability, mechtcherine2011-shcc-high-strain-rate, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, homma2009-frcc-self-healing, zhang2022-ecc-carbonation-sustained-load, wang2019-rc-beam-ecc-shear-strengthening, mohammed2020-cr-ecc-elevated-temperature, bu2022-ecc-chloride-crack-width, zhong2019-ecc-freeze-thaw]
 updated: 2026-10-20
 ---
 
@@ -79,5 +79,52 @@ The standard itself has not been ingested ⚠️. It is far looser than the ECC 
 > crack width < 100 µm) and the Chinese HDC standard (≥ 0.5%, ≤ 200 µm). A material can be "HDC"
 > under JC/T 2461 with one-sixth of ECC's ductility. State which bar is meant.
 
+## Further terms (2026-10-20, round 4 ingest)
+| Term | Meaning as used | Group | Fiber | Strain hardening shown in the paper? | Source |
+|---|---|---|---|---|---|
+| **HDC** ("high ductile fiber reinforced concrete") | XAUAT's own name for ECC, adopted "to facilitate the application of ECC in concrete structures"; earliest XAUAT use in the wiki | XAUAT (Deng Mingke) | PVA | no tensile test in the paper | [[deng2015-hdc-compressive-toughness]], p. 1 |
+| **HDC** | an HPFRCC "just like" ECC, with pseudo strain hardening and multiple cracking | XAUAT | PVA | no (compression only) | [[deng2018-hdc-compressive-constitutive]], p. 1 |
+| **HDC** | FRCC "like" ECC/HPFRCC with "excellent tensile strain-hardening behavior" | XAUAT | PVA | yes, but ε_tu ≈ 1.0% (passes JC/T 2461, not the ECC > 3% convention) | [[deng2018-hdc-short-columns]], p. 1–2, Fig. 1 |
+| **HDCC / Eco-HDCC** | high ductility cementitious composites; "Eco-" = domestic PVA + river sand; HDCC = average ultimate tensile strain > 0.5% and average crack width < 200 µm, **attributed to JSCE 2008** | Southeast Univ. (Chai) | PVA | no (flexure only) | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]], p. 126 |
+| **HDCC (R-/N-HDCC)** | PVA composite "characterized by strain hardening and multiple cracking" with "strain capacity of 3–5%" (uncited) | Zhengzhou Univ. | PVA | yes for R-HDCC at ≥ 1.5% fiber; N-HDCC at 2% reaches only 1.68% at peak | [[gao2020-hdcc-recycled-fine-aggregate]], §1, Table 6 |
+| **NSHSDC / HSDC** | no-slump high-strength high-ductility concrete (2020); "HSDC" for the same mix (2021); 1.0% steel + 0.5% PE, f'c ≈ 122–123 MPa, room-cured | Korea Univ. (Yoon) | steel + PE | **no** in either paper; ε > 2.9% quoted from the group's earlier papers | [[yuan2020-nshsdc-beam-strengthening]], §1, Table 5; [[lee2021-hsdc-wall-emi-impact]], §1 → [[hshdc]], [[hybrid-fiber]] |
+| **FRCC ⊃ DFRCC ⊃ HPFRCC** | JCI class chain: DFRCC = multiple cracking in bending (may not harden in tension); HPFRCC = strain hardening with multiple cracking in uniaxial tension; ECC (Li 1993) is "one type" of HPFRCC | JCI 2003 (as cited) | — | — | [[kunieda2006-hpfrcc-japan-applications]], p. 19, Fig. 3; [[kanakubo2006-dfrcc-tensile-test-method]], p. 3 |
+| **FRCC** | fibre reinforced cementitious composites; FRCC(PE) is strain-**softening** | Homma et al. | PE, steel cord | **no** | [[homma2009-frcc-self-healing]], p. 224 |
+| **UHP-SHCC** | between ordinary SHCC and UHPFRC; f'c 95 MPa, PE 1.5%, ε ≈ 1.5% in dumbbells | Nagoya Univ. (Kunieda) | PE | yes (dumbbells); lost in unreinforced 50 mm-thick members | [[kunieda2010-uhp-shcc-steel-reinforcement]], §1, Fig. 1, Table 3 |
+| **UHP-ECC** | f'c 120.7 MPa (90 d cube), σ_tu up to 12 MPa, ε > 8% (abstract) | Shenzhen / PolyU | PE | yes (Fig. 4) | [[sui2018-uhp-ecc-flexural-fatigue]], abstract |
+| **HSECC** | "high strength PVA-ECC", PVA + copper-coated steel, f'c 83.1 MPa | Zhou et al. | PVA + steel | **no**: no tension test; prisms soften after peak at all temperatures | [[zhou2023-hsecc-elevated-temperature]], Fig. 10 |
+| **CR-ECC** | crumb-rubber ECC | Mohammed et al. | PVA | **no** (compression, acid, sulphate only) | [[mohammed2020-cr-ecc-elevated-temperature]] |
+| **SHCC** ("also referred to as ECC") | TU Dresden, TU Delft/TU/e usage | Europe | PVA, PE | yes; printed PVA-SHCC only 0.15–0.31% | [[mechtcherine2011-shcc-high-strain-rate]], p. 51; [[chavesfigueiredo2020-printed-shcc]], §1, Table 5; [[ivaniuk2022-printable-shcc-design]], §1 |
+| **SHCC = HPFRCC** | SHCC "also referred to as" HPFRCC (Naaman & Reinhardt 1996); ECC = representative SHCC with ε > 3%, w < 80 µm, Vf ≤ 2%; the authors also group Ductal (0.5%) with SHCCs ⚠️ | Michigan / Japan | PVA | yes (bending inverse) | [[qian2007-shcc-inverse-tensile-strain]], p. 235 |
+| **SHCC vs UHPFRC** (two HPFRCC classes) | SHCC f'c 25–60 MPa, ε > 3%, durability by crack control; UHPFRC 180–240 MPa, low–moderate strain, durability by dense matrix | RILEM TC 208-HFC | — | review | [[vanzijl2010-shcc-durability]], p. 261 |
+| **PDCC, PP-ECC** | pseudo-ductile cementitious composites; PP-fibre ECC; listed as related terms | review | — | — | [[xue2023-shcc-structural-review]], Table 1 |
+| **ECC = SHCC = UHTCC** | stated synonyms | Shandong Univ. | PVA | not tested | [[zhang2022-ecc-carbonation-sustained-load]] |
+
+- Four ECC classes by strength/ductility (low/low, low/high, high/low, high/high) are used as a literature map
+  ([[sui2018-uhp-ecc-flexural-fatigue]], Fig. 1). Conventional PVA-ECC f'c is "generally ≤ 50 MPa" (as cited there).
+- Wang 2019 calls ECC "ultra-high tensile strength" while measuring σ_tu 4.84 MPa; do not adopt the phrase
+  ([[wang2019-rc-beam-ecc-shear-strengthening]], §2).
+- "UHP" and "HS" prefixes are inconsistent: UHP-SHCC is 95 MPa and about 1.5% ([[kunieda2010-uhp-shcc-steel-reinforcement]]),
+  below Zhang's HSHDCC bar (> 100 MPa, > 3%); UHP-ECC (120.7 MPa, > 8%) meets it ([[sui2018-uhp-ecc-flexural-fatigue]]).
+
+⚔️ **Origin of the 0.5% / 200 µm definition.** The same Southeast Univ. group attributes the HDCC threshold
+(> 0.5% average ultimate strain, < 200 µm average crack width) to **JSCE 2008** in
+[[chai2019-hdcc-freeze-thaw-carbonation-flexure]] (p. 126) and to the Chinese standard **JC/T 2461-2018** in
+[[chai2023-hdc-ambient-temperature]] (§1). Neither document has been ingested ⚠️. The Chinese standard may have
+adopted the JSCE values; this is not shown by either paper. → [[gaps]]
+
+> Synthesis: the round-4 sources add three points.
+> 1. XAUAT's "HDC" is explicitly a renaming of ECC for structural use ([[deng2015-hdc-compressive-toughness]]),
+>    but measured XAUAT PVA-HDC reaches only about 1% strain ([[deng2018-hdc-short-columns]]). The name
+>    signals intent, not ECC-level ductility.
+> 2. The JCI chain FRCC ⊃ DFRCC ⊃ HPFRCC gives a clean way to place materials that harden only in bending
+>    (DFRCC) or soften in tension (FRCC), e.g. [[homma2009-frcc-self-healing]], [[zhou2023-hsecc-elevated-temperature]]
+>    and Ductal in [[qian2007-shcc-inverse-tensile-strain]]. Use it when a paper's label overstates its evidence.
+> 3. Many papers carry an HDC/HDCC/ECC/SHCC label without any tensile test: [[chai2019-hdcc-freeze-thaw-carbonation-flexure]],
+>    [[deng2015-hdc-compressive-toughness]], [[deng2018-hdc-compressive-constitutive]], [[zhou2023-hsecc-elevated-temperature]],
+>    [[yuan2020-nshsdc-beam-strengthening]], [[lee2021-hsdc-wall-emi-impact]], [[mohammed2020-cr-ecc-elevated-temperature]],
+>    [[bu2022-ecc-chloride-crack-width]], [[zhong2019-ecc-freeze-thaw]]. Record their data as "label only,
+>    strain hardening not shown".
+
 ## Related
-- [[hshdc]] · [[uhdc]] · [[strain-hardening]] · [[review-outline]] · [[gaps]]
+- [[hshdc]] · [[uhdc]] · [[uhpc-vhsc]] · [[strain-hardening]] · [[hybrid-fiber]] · [[3d-printed-hdc]] · [[review-outline]] · [[gaps]]

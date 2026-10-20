@@ -3,7 +3,7 @@ type: concept
 slug: multiple-cracking
 aliases: [multiple microcracking, saturated cracking, crack number, crack density]
 tags: [mechanism]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law]
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kunieda2010-uhp-shcc-steel-reinforcement, kunieda2006-hpfrcc-japan-applications, mechtcherine2011-shcc-high-strain-rate, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, qian2007-shcc-inverse-tensile-strain, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, wang2019-rc-beam-ecc-shear-strengthening, xue2023-shcc-structural-review, zhao2022-ecc-tension-damage-model]
 updated: 2026-10-20
 ---
 
@@ -58,5 +58,40 @@ Crack number rises with fiber length and rubber content ([[su2023-rubber-modifie
   inferred as δ_peak/ε_cu. A ratio > 2 means saturated cracking is "rarely expected" ([[kanda2006-psh-design-criteria]], Eqs. 15–16, p. 69).
 - M45 PVA-ECC: average crack spacing about 1 mm, crack width constant at about 60 µm after 1% strain ([[yang2008-ecc-fiber-bridging-law]], p. 181, 188).
 
+## Material-level observations (2026-10-20 ingest)
+- **Rate:** in PVA-SHCC, crack density falls as the rate rises to 10⁻² s⁻¹; at ≥ 10 s⁻¹ there is **no visible
+  multiple cracking** although strain rises again ([[mechtcherine2011-shcc-high-strain-rate]], p. 58–59). This
+  contrasts with Michigan PE-HSHDC, where crack count stays about constant ([[ranade2015-hshdc-tensile-rate-effects]]).
+  → [[strain-rate-effects]]
+- **Fiber content:** at 0.5% PVA, bridging is below cracking strength and no multiple cracking forms
+  ([[gao2020-hdcc-recycled-fine-aggregate]], §3.3). The authors claim finer recycled-sand particles promote
+  multiple cracking by "crack trapping" (CT shows smaller, narrower void sizes, Fig. 14). → [[recycled-fine-aggregate]]
+- **Fly ash:** crack saturation in bending increases with FA/C ([[qian2007-shcc-inverse-tensile-strain]], Fig. 12).
+  Artificial flaws of prescribed size give more saturated cracking (Wang & Li 2004, as cited there, p. 235). → [[fly-ash]]
+- **Slag:** σ_tu/σ_fc 2.02–4.23 in slag/FA PE-ECC; more slag and longer curing reduce hardening and widen cracks
+  ([[shumuye2022-slag-fa-pe-ecc]], Table 4, §3.2). → [[ggbfs]]
+- **Flexure (DIC):** UHP-ECC beams show the first crack at 58% of peak, 18 cracks at 72%, and saturation near span/30
+  ([[sui2018-uhp-ecc-flexural-fatigue]], Fig. 9). → [[fatigue]]
+- **Damage stages in tension:** elastic → hardening with dispersed stable damage → softening with unstable damage;
+  the main crack forms near the grips ([[zhao2022-ecc-tension-damage-model]], §3.2, Fig. 4). → [[tensile-constitutive-model]]
+- **XAUAT PVA-HDC:** serrated hardening plateau with multiple parallel cracks in direct tension
+  ([[deng2018-hdc-short-columns]], Fig. 1).
+
+## Member-level multiple cracking (2026-10-20 ingest)
+Multiple cracking at member scale is generally **less** than in dogbone tests.
+
+| Source | Member | Observation |
+|---|---|---|
+| [[kunieda2010-uhp-shcc-steel-reinforcement]], Table 3 | UHP-SHCC tension members 50 × 200 × 900 mm | unreinforced: 43 cracks, spacing 12 mm, ε 0.24%; with D6 bars (ρs 0.3%): 119 cracks, spacing 4.6 mm, ε 1.58% |
+| same, Figs. 15–17, §4.4 | same | above ρs 0.6% crack number and spacing hardly change; distributed cracking needs P_u ≥ about 1.5 P_cr; steel carries 18.5% (ρs 0.3%) to 49.8% (1.2%) of load at yield |
+| [[xue2023-shcc-structural-review]], §3.1, 4.1.2 | SHCC beams and strengthening layers | fewer cracks than in dogbones; thin layers crack only over the existing RC crack ("zero-span" mode), 50 mm layers show distributed bending cracks |
+| [[kunieda2006-hpfrcc-japan-applications]], p. 22–23, Fig. 9 | HPFRCC repair over a substrate crack | bonding to the substrate constrains the overlay and may concentrate cracking; an unbonded zone widens the cracked region (Kunieda 2004, as cited) → [[interface-bond]] |
+| [[deng2018-hdc-short-columns]], Fig. 6 | XAUAT HDC short columns in shear | dense network of fine diagonal cracks instead of X-shaped macro-cracks → [[shear-behaviour]] |
+| [[wang2019-rc-beam-ecc-shear-strengthening]], Fig. 7 | RC beams with sprayed ECC side layers | more, closer-spaced cracks than RC controls; no widths given → [[rc-member-strengthening]] |
+
+> Synthesis: three independent observations (Kunieda 2010 thickness, Xue 2023 thin layers, Kunieda 2006 substrate
+> restraint) show that dogbone crack counts overstate member-level multiple cracking. Steel reinforcement or a
+> debonded zone restores distributed cracking. Use dogbone ε_tu only as an upper bound for members. → [[size-effect]]
+
 ## Related
-- [[strain-hardening]] · [[crack-width]] · [[fiber-bridging]] · [[digital-image-correlation]]
+- [[strain-hardening]] · [[crack-width]] · [[fiber-bridging]] · [[digital-image-correlation]] · [[interface-bond]]

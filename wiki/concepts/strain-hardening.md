@@ -3,7 +3,7 @@ type: concept
 slug: strain-hardening
 aliases: [pseudo strain-hardening, PSH, tensile strain-hardening, strain-hardening criteria, PSH index]
 tags: [micromechanics, design-theory]
-sources: [kanda2006-psh-design-criteria, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review]
+sources: [kanda2006-psh-design-criteria, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, deng2018-hdc-short-columns, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, homma2009-frcc-self-healing, tabrizikahou2022-masonry-ecc-sma-retrofit]
 updated: 2026-10-20
 ---
 
@@ -103,11 +103,63 @@ and the saturation thresholds came later: 1.2 / 3 (Kanda & Li 1998b, pull-out ty
 > very large PSH_energy values (> 100) in the GDUT mixes suggest that the strength criterion and the
 > embedment length are the real controls on PE-based HSHDC.
 
+## Round-4 evidence (2026-10-20 ingest)
+| Source | Material | Index / criterion | Value | Strain hardening? |
+|---|---|---|---|---|
+| [[deng2018-hdc-short-columns]], p. 2 | XAUAT PVA-HDC | σ_tu/σ_fc | 6.14/5.73 ≈ 1.07 (computed by the ingest) | yes, serrated plateau at 5.5–6.6 MPa, but "ultimate tensile strain" only ≈ 1% (Fig. 1) |
+| [[shumuye2022-slag-fa-pe-ecc]], Table 4 | slag/FA PE-ECC, 28 d | σ_tu/σ_fc | 2.02–4.23 | yes, ε about 2.0–3.5% |
+| [[kanda2003-sprayed-ecc]], Fig. 2, p. 270–271 | sprayed PVA-ECC design, w/c 0.32 | J′b/J_tip (model) | about 2.0 (≥ 2.7 needs w/c ≥ 0.44) | yes, still strain-hardened |
+| [[chavesfigueiredo2020-printed-shcc]], Table 3 | printed PVA-SHCC | J_b > J_tip (flexural-CMOD method) | satisfied for both mixes (units ⚠️) | weak: ε 0.15–0.31% at peak (35 d) |
+| [[gao2020-hdcc-recycled-fine-aggregate]], §3.3 | HDCC, 0.5% PVA | first-cracking strength criterion (Li 2001, as cited) | bridging < cracking strength | **no** multiple cracking |
+| [[kunieda2010-uhp-shcc-steel-reinforcement]], §1 | UHP-SHCC | post-cracking strength > cracking strength (Matsumoto & Mihashi 2002, as cited) | met in dumbbells | yes in dumbbells; **no** in unreinforced 50 mm members |
+
+- ⚔️ **A third strength threshold.** [[jin2019-hvfa-shcc-structural]] (§2.2) quotes PSH targets of
+  **σ0/σ_fc > 1.45** and J′b/J_tip > 3 for PVA-SHCC, attributed to Kanda & Li 1998. The wiki records 1.2
+  (Kanda & Li 1998b, pull-out type) and 1.3 (Kanda & Li 2006, rupture type) from [[kanda2006-psh-design-criteria]].
+  Jin's 1.45 may be a mis-quote or a different index; the original 1998 paper is not ingested ⚠️. Jin does not
+  compute the indices for his own mixes. → [[gaps]]
+- **Energy margin 2.7 confirmed independently:** Kanda & Li 2002 (Japanese, as cited in
+  [[kanda2003-sprayed-ecc]], p. 270) suggest J′b/J_tip ≈ 2.7 for "matured" PSH, the same as the 2006 rupture-type
+  threshold. Kanda 2003 nevertheless chose w/c 0.32 at about 2.0 for sprayability and still got strain hardening.
+- **XAUAT PVA-HDC sits just above 1.** Its stress index (≈ 1.07, below every published threshold) is consistent
+  with its modest ε_tu ≈ 1% ([[deng2018-hdc-short-columns]]).
+- **Meeting J_b > J_tip is not enough in printed SHCC:** both printed mixes pass the energy check yet reach only
+  0.15–0.31% strain. The authors blame air voids, less water and HPMC ([[chavesfigueiredo2020-printed-shcc]],
+  §3.4.1, 3.6). → [[3d-printed-hdc]], [[viscosity-modifying-admixtures]]
+- **Slag and age reduce the hardening margin** in PE-ECC (more slag, longer curing → less strain hardening, except
+  SF-5-55) ([[shumuye2022-slag-fa-pe-ecc]], §3.2). ⚠️ The text and the reported strains disagree on which mix is most
+  ductile (see that source page). → [[ggbfs]]
+- **Conceptual statistical model** ([[kunieda2010-uhp-shcc-steel-reinforcement]], Fig. 2): strain capacity is set by
+  the overlap of the matrix-cracking-strength and bridging-strength distributions along the member. Distributed
+  cracking needs P_u ≥ about 1.5 P_cr (§4.4). Light steel (ρs 0.3%) restores hardening in thick members
+  (ε 1.58 vs 0.24%, Table 3). → [[multiple-cracking]], [[size-effect]]
+- **Artificial flaws** with a prescribed size distribution give more saturated cracking and more consistent ε_tu
+  (Wang & Li 2004, as cited in [[qian2007-shcc-inverse-tensile-strain]], p. 235). This is the practical form of
+  the flaw-size condition of [[steady-state-cracking]].
+- ⚔️ **Bond vs ductility (recycled fine aggregate).** Gao 2020 infers *higher* PVA bond in R-HDCC (SEM: stripped
+  fiber surfaces, Fig. 16) together with *higher* ductility (ε_tp 4.76% vs 1.68% at 2% PVA, Table 6), against the
+  low-bond rule of [[li2002-pva-ecc-interface-tailoring]] (oiling lowers bond and raises ε 0.99 → 4.88%). No
+  pull-out data exist; a possible reason is that the river-sand N-HDCC has bond *below* the optimum, or that RFA
+  acts through finer flaws ("crack trapping") rather than bond ([[gao2020-hdcc-recycled-fine-aggregate]], §3.3, Fig. 14).
+  → [[recycled-fine-aggregate]], [[fiber-matrix-interface]], [[gaps]]
+- **Strain hardening can vanish at high rate.** PVA-SHCC shows no visible multiple cracking at ≥ 10 s⁻¹
+  ([[mechtcherine2011-shcc-high-strain-rate]], p. 58–59). → [[strain-rate-effects]]
+- **Materials that do not strain-harden:** FRCC(PE) in [[homma2009-frcc-self-healing]] is strain-softening; the
+  "ECC" in the FE model of [[tabrizikahou2022-masonry-ecc-sma-retrofit]] softens from 1.45 MPa (Table 5). Do not
+  use them as HDC evidence. → [[terminology-hdc-ecc-shcc]]
+
+> Synthesis: the strength index now has three quoted thresholds (1.2, 1.3, 1.45), and the measured values span
+> 1.07 (XAUAT PVA-HDC, ≈ 1%) to 4.2 (slag/FA PE-ECC, 2–3.5%). Across the round-4 sources, higher σ_tu/σ_fc goes
+> with higher strain, but processing (printing, spraying, member thickness, strain rate) can remove hardening even
+> when the micromechanical indices pass. The PSH indices are necessary, not sufficient, at member scale.
+
 ## Conflicts & open questions
 - ⚔️ The PSH criteria do not fully predict the brittle failure of short-fiber mixes → [[gaps]]
+- ⚔️ PSH strength threshold: 1.2 (1998b) / 1.3 (2006) vs 1.45 (as quoted by [[jin2019-hvfa-shcc-structural]]) → [[gaps]]
+- ⚔️ Higher bond with higher ductility in R-HDCC ([[gao2020-hdcc-recycled-fine-aggregate]]) vs the low-bond design rule → [[gaps]]
 - Papers in the corpus quote "1.2 and 3" for all fiber types. Kanda & Li 2006 restrict those to
   pull-out type fibers. Check which set a paper uses before comparing.
 - Kanda & Li 1998b (the pull-out thresholds) has not been ingested.
 
 ## Related
-- [[multiple-cracking]] · [[fiber-bridging]] · [[tensile-strain-capacity]] · [[micromechanical-parameters]]
+- [[multiple-cracking]] · [[fiber-bridging]] · [[tensile-strain-capacity]] · [[micromechanical-parameters]] · [[steady-state-cracking]] · [[recycled-fine-aggregate]]

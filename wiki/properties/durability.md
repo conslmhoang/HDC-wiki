@@ -1,63 +1,45 @@
 ---
 type: property
 slug: durability
-aliases: [freeze-thaw, sulfate attack, wet-dry cycles, chloride ingress, carbonation, acid attack, abrasion]
-tags: [durability]
-sources: [ma2021-ecc-durability-review, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, li2021-hdc-sulfate-dry-wet, li2003-ecc-review, chai2023-hdc-ambient-temperature]
+aliases: [sulfate attack, wet-dry cycles, acid attack, abrasion, leaching, ageing, durability hub]
+tags: [durability, hub]
+sources: [ma2021-ecc-durability-review, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, li2021-hdc-sulfate-dry-wet, li2003-ecc-review, chai2023-hdc-ambient-temperature, vanzijl2010-shcc-durability, zhong2019-ecc-freeze-thaw, wang2023-ecc-frost-damage, chai2019-hdcc-freeze-thaw-carbonation-flexure, zhang2022-ecc-carbonation-sustained-load, bu2022-ecc-chloride-crack-width, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, homma2009-frcc-self-healing, herbert2013-ecc-self-healing-natural-environment, ozbay2013-ecc-self-healing-sustained-load, zhou2023-hsecc-elevated-temperature, mohammed2020-cr-ecc-elevated-temperature, sun2019-modified-pva-fiber-ecc]
 updated: 2026-10-20
 ---
 
-# Durability (overview)
+# Durability (hub)
 
-> Mostly second-hand, from three reviews. The first primary durability study is [[li2021-hdc-sulfate-dry-wet]] (sulfate +
-> dry–wet, compression only).
-> Sub-pages: [[permeability]] · [[self-healing]] · [[shrinkage]] · [[fatigue]] · [[high-temperature-behaviour]]
+> Restructured 2026-10-20. The wiki now has primary studies for most exposures; earlier this page relied
+> mostly on three reviews. Second-hand values stay marked "as cited". Freeze–thaw, carbonation and chloride
+> content moved to their own pages (unchanged, with new primary data added there).
 
-## Why ECC/HDC is durable
+## Why ECC/HDC is expected to be durable
 - ECC keeps average crack widths below about 100 µm even at 3–12% strain (Fig. 5 compilation in
   [[ma2021-ecc-durability-review]], p. 2–4). Many fine cracks let water and chloride in only slowly,
   and fine cracks heal. → [[crack-width]], [[permeability]], [[self-healing]]
+- SHCC durability rests on **crack control**; UHPFRC durability rests on a **dense matrix**
+  ([[vanzijl2010-shcc-durability]], p. 261). → [[uhpc-vhsc]]
+- Caveats from primary data: *maximum* crack width (300–400 µm at 3% strain) far exceeds the average
+  (50–65 µm) ([[vanzijl2010-shcc-durability]], Fig. 4b ⚠️ read); cracks under sustained load are about 2×
+  the unloaded width ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3). Design should use the crack-width
+  distribution, not the average ([[vanzijl2010-shcc-durability]], p. 269).
 
-## Freeze–thaw
-- Durability factor > 100 for ECC vs 20 for non-air-entrained concrete (Li 2008, as cited in
-  [[ma2021-ecc-durability-review]], p. 4).
-- Fiber-free mortar failed at 210 cycles (10.7% mass loss); 2% PVA-ECC survived 300 cycles with 8%
-  mass loss (Sahmaran 2012, as cited, p. 4).
-- PVA-ECC loses more ε than PE-ECC after 200 cycles (Yun 2011, as cited, p. 4).
-- Hybrid PVA+PE SHCC loses more ε_tu than σ_tu (Yun 2013, as cited in [[he2024-hdc-research-advances]], p. 13).
-- With de-icing salt, ECC keeps ε > 3% after 50 cycles (Sahmaran & Li 2007, as cited, p. 5).
-- Silica fume and slag improve frost resistance of high-volume FA ECC (Liu 2018; Özbay 2013).
-- Mechanism: the microcracks relieve ice-expansion stress (p. 4).
-
-## Sulfate, chloride, acid, carbonation
-- **Sulfate:**
-  - 200 d in sulfate or sulfate+chloride: tensile strength rose, ε stayed > 2%, cracks stayed < 50 µm
-    (Liu 2017, as cited in [[ma2021-ecc-durability-review]], p. 5).
-  - f'c rises up to 30 sulfate wet–dry cycles, then falls (Li L. 2021, as cited in [[he2024-hdc-research-advances]], p. 11–12).
-- **Chloride:**
-  - lowers first-crack strength and interface bond (Li & Li 2011, as cited, p. 5);
-  - diffusion grows only linearly with pre-damage in ECC (p. 6) → [[permeability]];
-  - thresholds for significant ingress: 55–80 µm (Jang 2011) and ≥ 90 µm (Wu 2017), as cited in
-    [[he2024-hdc-research-advances]], p. 10.
-- **Acid:**
-  - acid mine drainage: first-crack strength −23.7%, σ_tu −17.8%, ε −36.5% (Wu 2020, as cited, p. 7);
-  - 3% H₂SO₄ for 6 weeks: mass loss > 8% (Turk 2017, as cited).
-- **Carbonation:** about 0.8 mm depth after 28 d at 20% CO₂ (Zhang W. 2018, as cited, p. 9).
-- **Abrasion:**
-  - Metakaolin is the best binder substitute.
-  - Fiber ranking: steel > PVA 8 mm > PVA 12 mm; PE does not help (as cited, p. 7–8).
-
-## Long-term ageing
-- Ductility and self-healing decline with age because of the continuing pozzolanic reaction
-  ([[ma2021-ecc-durability-review]], p. 9).
-- PVA-ECC ε peaks early, then falls to about 3% at 180 d. PE-ECC shows no ε loss from 28 d to 1 yr
-  ([[yu2018-ecc-direct-tensile-review]], p. 352).
-
-## Gaps stated ([[ma2021-ecc-durability-review]], p. 9–10)
-- Almost all data are at 28 d; long-age data are missing.
-- Very little durability data exist for **high-strength / high-ductility ECC**, i.e. HSHDC and UHDC.
-- Coupled exposures, fiber durability, field validation and the ECC–substrate interface need study.
-→ [[gaps]]
+## Exposure hub
+| Exposure | Primary sources (term) | Key finding | Page |
+|---|---|---|---|
+| Freeze–thaw (rapid, in water) | [[zhong2019-ecc-freeze-thaw]] (ECC); [[wang2023-ecc-frost-damage]] (ECC) | PVA-ECC survives 300–500 cycles; plain concrete/mortar fails at 25–84 cycles; W/B is the dominant mix factor | [[freeze-thaw]] |
+| Freeze–thaw + carbonation (coupled) | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] (Eco-HDCC) | flexural strength −19 to −33%, deflection −24 to −50% after 15 coupled cycles; deflection hardening kept | [[freeze-thaw]], [[carbonation]] |
+| Salt scaling | none (as cited in [[vanzijl2010-shcc-durability]]) | RILEM CDF 2.2 kg/m² > 1.5 limit (fails); ASTM C672 acceptable | [[freeze-thaw]] |
+| Carbonation | [[zhang2022-ecc-carbonation-sustained-load]] (ECC); [[wang2023-ecc-frost-damage]] | 4.8 mm (unloaded) to 9.9 mm (δ_T 0.6) at 28 d, 20% CO₂; ⚔️ vs ≈13 mm and 0.8 mm (as cited) | [[carbonation]] |
+| Chloride ingress | [[bu2022-ecc-chloride-crack-width]] (ECC); [[paul2014-r-shcc-chloride-corrosion]] (SHCC) | immersion: ≤ 100 µm ≈ uncracked; wet–dry: even 20–50 µm avg cracks carry Cl⁻ to rebar in hours | [[chloride-and-corrosion]] |
+| Rebar corrosion / spalling | [[paul2014-r-shcc-chloride-corrosion]]; [[kanda2003-sprayed-ecc]] (ECC, tapered-pin test) | corrosion rate ≈ mortar but localised pitting; corrosion cracks much finer, no spalling | [[chloride-and-corrosion]] |
+| Sulfate + dry–wet | [[li2021-hdc-sulfate-dry-wet]] (HDC); [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC) | HDC loses 50% f_cu vs concrete 76% (saturated, 150 cycles) | this page |
+| Acid | [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC) | 5% H₂SO₄: slight weight gain (gypsum / ettringite) | this page |
+| Water / capillary transport | [[homma2009-frcc-self-healing]] (FRCC); [[wang2023-ecc-frost-damage]] | k ∝ w³; healing restores k for small cracks; F-T raises capillary coefficient | [[permeability]] |
+| Self-healing | [[homma2009-frcc-self-healing]]; [[herbert2013-ecc-self-healing-natural-environment]]; [[ozbay2013-ecc-self-healing-sustained-load]] (ECC) | CaCO₃ seals < 100 µm; outdoor RF 90–96% in 1 week; sustained load cuts healing | [[self-healing]] |
+| Elevated temperature / fire | [[zhou2023-hsecc-elevated-temperature]] (HSECC); [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC); [[chai2023-hdc-ambient-temperature]] (HDC, −30 to 60 °C) | PVA melts from 230 °C; no explosive spalling to 800–1000 °C | [[high-temperature-behaviour]] |
+| Shrinkage | none primary (all as cited) | ECC 1200–1800 µε at 28 d | [[shrinkage]] |
+| Fatigue | see page | — | [[fatigue]] |
 
 ## Sulfate attack with dry–wet cycles: primary data ([[li2021-hdc-sulfate-dry-wet]])
 - **Protocol**: 0 / 5 / 10% / saturated Na₂SO₄; one cycle = 48 h immersion + 1 h air + 23 h oven at 50 °C;
@@ -71,10 +53,73 @@ updated: 2026-10-20
 - **Refines the He 2024 summary** ("rises to 30 cycles, falls after 105"): this fits the 5% series only;
   at 10% f_cu dips at 60 and peaks at 105 cycles; in saturated solution it falls from 60 cycles.
 - **Not tested**: tension, crack width, mass or XRD after exposure. The strain-hardening of this "HDC" is not shown.
+- CR-ECC in 5% Na₂SO₄: crumb rubber reduces length change; several specimens shrank
+  ([[mohammed2020-cr-ecc-elevated-temperature]], Fig. 10; SH not shown). → [[crumb-rubber]]
+
+## Sulfate, acid, abrasion, leaching, ASR (mostly second-hand)
+- **Sulfate (as cited):**
+  - 200 d in sulfate or sulfate+chloride: tensile strength rose, ε stayed > 2%, cracks stayed < 50 µm
+    (Liu 2017, as cited in [[ma2021-ecc-durability-review]], p. 5).
+  - f'c rises up to 30 sulfate wet–dry cycles, then falls (Li L. 2021, as cited in [[he2024-hdc-research-advances]], p. 11–12).
+  - Sulfate attack on SHCC had not been studied experimentally as of 2010 ([[vanzijl2010-shcc-durability]], p. 266).
+- **Acid:**
+  - acid mine drainage: first-crack strength −23.7%, σ_tu −17.8%, ε −36.5% (Wu 2020, as cited in [[ma2021-ecc-durability-review]], p. 7);
+  - 3% H₂SO₄ for 6 weeks: mass loss > 8% (Turk 2017, as cited);
+  - 5% H₂SO₄, 1 month: slight weight *gain* in CR-ECC; largest loss at 2.5% CR + 1% PVA
+    ([[mohammed2020-cr-ecc-elevated-temperature]], Sections 3.4, Fig. 9) — primary, compression-type specimens only.
+- **Abrasion (as cited, p. 7–8):** metakaolin is the best binder substitute; fiber ranking steel > PVA 8 mm >
+  PVA 12 mm; PE does not help.
+- **Leaching** (NH₄NO₃ 3–6 mol/L, 70 d): matrix toughness and MOR down almost 50% (as cited in
+  [[vanzijl2010-shcc-durability]], p. 265–266).
+- **ASR**: ASTM C1260, no expansion of an M45-type SHCC after 30 d; high FA makes ASR unlikely (as cited,
+  p. 266). PVA keeps nearly full strength after 14 d in 80 °C alkaline water and loses ≤ 5% after > 1 yr in
+  dilute acids (p. 266). → [[pva-fiber]]
+- **Field (as cited in [[kunieda2006-hpfrcc-japan-applications]], p. 29)**: sprayed HPFRCC on an ASR-damaged
+  retaining wall stayed uncracked to 7 months, cracks ≤ 0.05 mm at 10 months and ≤ 0.12 mm at 24 months vs
+  repair mortar 0.2 / 0.3 mm. → [[repair-and-field-applications]]
+
+## Combined mechanical + environmental loading
+- Sustained flexural load (60% of ultimate, 90 d) leaves *uncracked* ECC flexural properties unchanged
+  ([[ozbay2013-ecc-self-healing-sustained-load]], Table 4, p. 178), but on pre-cracked ECC it doubles crack
+  width and cuts healing → [[self-healing]].
+- Sustained stress accelerates carbonation even below first cracking ([[zhang2022-ecc-carbonation-sustained-load]]) → [[carbonation]].
+- Combined loads (frost + chloride, mechanical + chemical) accelerate deterioration and were not studied for
+  SHCC as of 2010; only a fraction of ε_tu should be used in service-life design in aggressive environments
+  ([[vanzijl2010-shcc-durability]], p. 268–269, Table 2).
+
+## Long-term ageing
+- Ductility and self-healing decline with age because of the continuing pozzolanic reaction
+  ([[ma2021-ecc-durability-review]], p. 9).
+- PVA-ECC ε peaks early, then falls to about 3% at 180 d. PE-ECC shows no ε loss from 28 d to 1 yr
+  ([[yu2018-ecc-direct-tensile-review]], p. 352).
+- Hot-water ageing 26 wk: ε_tu about 4.5 → 2.75%, σ_tu up, chemical bond about +50%; claimed equivalent to
+  > 70 yr service (as cited in [[vanzijl2010-shcc-durability]], p. 268). → [[fiber-matrix-interface]]
+- PVA-ECC strain at 28 d is 43–54% of the 7-d value; a peak "at about 10 d" is claimed without citation
+  ([[sun2019-modified-pva-fiber-ecc]], §3.2).
+- Refinement: in 12 months outdoors, healing recovery *increased* for cracks made at 7 d
+  ([[herbert2013-ecc-self-healing-natural-environment]]); healing of cracks made at late age is untested.
 
 ## Other durability notes
 - Tight cracks may delay corrosion, but "further research is needed to directly confirm" it ([[li2003-ecc-review]], p. 225).
+  Primary tests now exist → [[chloride-and-corrosion]].
 - Chinese PVA-HDC pore structure refines after 8 h at 60 °C: critical pore 62.4 → 50.3 nm ([[chai2023-hdc-ambient-temperature]], Fig. 18).
 
+> Synthesis: primary studies confirm the reviews' headline (PVA-ECC/HDC far outlasts plain concrete under
+> freeze–thaw and sulfate) but add three cautions: (1) carbonation of high-FA ECC is faster than the
+> reviews suggested; (2) under wet–dry chloride, fine cracks do not stop chloride reaching steel — the
+> benefit is in corrosion *cracking* and spalling, not initiation; (3) almost no study measures uniaxial
+> tension after exposure, so retention of strain hardening is rarely shown. Many "ECC" in durability papers
+> do not demonstrate strain hardening at all (Zhong 2019, Zhang 2022, Bu 2022, Zhou 2023, Mohammed 2020).
+
+## Gaps
+Stated in [[ma2021-ecc-durability-review]], p. 9–10:
+- Almost all data are at 28 d; long-age data are missing.
+- Very little durability data exist for **high-strength / high-ductility ECC**, i.e. HSHDC and UHDC. Still
+  true: all new primary studies concern PVA-ECC/HDC with f'c ≤ about 90 MPa.
+- Coupled exposures, fiber durability, field validation and the ECC–substrate interface need study.
+Stated in [[vanzijl2010-shcc-durability]], p. 263–269: tolerable crack-width distribution per environment;
+time-dependent crack width under sustained load; limit strains for service-life design; early-age cracking
+of large elements. → [[gaps]]
+
 ## Related
-- [[crack-width]] · [[permeability]] · [[self-healing]] · [[shrinkage]] · [[fatigue]] · [[high-temperature-behaviour]]
+- [[freeze-thaw]] · [[carbonation]] · [[chloride-and-corrosion]] · [[crack-width]] · [[permeability]] · [[self-healing]] · [[shrinkage]] · [[fatigue]] · [[high-temperature-behaviour]] · [[repair-and-field-applications]]

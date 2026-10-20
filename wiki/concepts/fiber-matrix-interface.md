@@ -3,7 +3,7 @@ type: concept
 slug: fiber-matrix-interface
 aliases: [interfacial bond, frictional bond, chemical bond, snubbing, slip hardening, inclination hardening, fiber pullout model]
 tags: [micromechanics, interface]
-sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature]
+sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, gao2020-hdcc-recycled-fine-aggregate, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage]
 updated: 2026-10-20
 ---
 
@@ -79,5 +79,41 @@ These parameters govern single-fiber pullout and therefore [[fiber-bridging]].
 - Chinese HDC papers claim temperature exposure lowers chemical bond and raises friction, but cite a
   thesis rather than measuring it ([[chai2023-hdc-ambient-temperature]], §3.4.3).
 
+## Round-4 interface evidence (2026-10-20 ingest)
+**Measured or model-input values**
+
+| Source | Fiber / matrix | Frictional bond | Chemical bond | Other | Note |
+|---|---|---|---|---|---|
+| [[kanda2003-sprayed-ecc]], Table 2 (after Kiyota et al. 2002) | PVA 12 mm × 40 µm in cement, w/c 0.27 / 0.42 / 0.62 | τi 3.14 / 3.31 / 2.63 MPa | τs 21.6 / 20.7 / 4.55 MPa (a bond **strength**, not Gd) | f 0.5, f′ 0.39, apparent fiber strength 1070 MPa | chemical bond falls sharply at high w/c |
+| [[jin2019-hvfa-shcc-structural]], Table 1 | generic PVA-SHCC model | τ0 1.0 MPa (assumed) | Gd 1.5 J/m² (assumed) | — | parametric only |
+
+**Effects on bond (mostly inferred, not measured)**
+
+| Factor | Effect on bond | Evidence | Source |
+|---|---|---|---|
+| Strain rate (PVA) | pull-out peak force about ×2 from 10⁻⁵ to 10 s⁻¹ (1 mm embedment); failure shifts from adhesive to partly cohesive in the interphase | measured, single-fiber pull-out | [[mechtcherine2011-shcc-high-strain-rate]], Figs. 13–15 |
+| W/B and FA/C ↑ | bond and Km ↓ | authors' claim, not measured | [[jin2019-hvfa-shcc-structural]], §2.2 |
+| Recycled fine aggregate | bond ↑ (fiber surface filaments stripped vs smooth in N-HDCC) | SEM only | [[gao2020-hdcc-recycled-fine-aggregate]], Fig. 16 → [[recycled-fine-aggregate]] |
+| Slag (PE-ECC) | bond ↑, more hydrates adhered to PE, possible rupture | SEM only | [[shumuye2022-slag-fa-pe-ecc]], §3.5.1 → [[ggbfs]] |
+| VAE emulsion on PVA | bond ↓ (acidic film retards hydration near fiber, weaker ITZ); slip scratches on fibers | SEM + composite tests | [[sun2019-modified-pva-fiber-ecc]], §3.2, Figs. 11–12 → [[fiber-surface-treatment]] |
+| Boric anhydride on PVA | bond ↓ too far; long intact pull-out | SEM + composite tests | [[sun2019-modified-pva-fiber-ecc]], Figs. 11–12 |
+| Chloride cycling (10 × [5 d sat. NaCl + 2 d 50 °C]) | PVA chemical bond significantly ↓, frictional slightly ↑; Km unchanged | measured (Kabele 2006/2007, as cited) | [[vanzijl2010-shcc-durability]], p. 265 → [[chloride-and-corrosion]] |
+| Hot water | chemical bond about +50%, frictional unchanged | measured (Li 2004a, as cited) | [[vanzijl2010-shcc-durability]], p. 268 |
+| Freeze–thaw (300 cycles) | PVA bond ↓ → more pull-out, fewer ruptures | inferred from flexure | [[wang2023-ecc-frost-damage]], §3.2 → [[freeze-thaw]] |
+
+- **Mechanism of the PVA chemical bond:** PVA –C–OH groups hydrogen-bond with matrix –OH; untreated PVA fibers
+  carry hydrates and neck at break ([[sun2019-modified-pva-fiber-ecc]], §3.2, Fig. 11).
+- **Model sensitivities:** J′b/J_tip falls linearly with Gd and steeply, then gently, with τ0
+  ([[jin2019-hvfa-shcc-structural]], Fig. 1c–f). → [[fiber-bridging]]
+- ⚔️ **Higher bond, higher ductility?** RFA raised the (inferred) bond and also ε_tp at Vf ≥ 1%, but at 0.5% fiber the
+  higher bond coincided with fiber rupture and lower ductility ([[gao2020-hdcc-recycled-fine-aggregate]], §3.3).
+  This runs against the low-bond rule of [[li2002-pva-ecc-interface-tailoring]]; see [[strain-hardening]] and [[gaps]].
+
+> Synthesis: the PVA rate sensitivity now has a primary measurement ([[mechtcherine2011-shcc-high-strain-rate]]),
+> confirming that PVA composites are interface-governed at high rate, whereas PE-HSHDC is fiber-governed
+> ([[ranade2015-hshdc-tensile-rate-effects]]). Durability exposures move the PVA chemical bond in both directions
+> (chloride ↓, hot water ↑), so the "just right" interface of a new ECC may drift in service. Almost all round-4
+> bond claims rest on SEM, not on pull-out tests. → [[single-fiber-pullout-test]]
+
 ## Related
-- [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]]
+- [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]] · [[fiber-surface-treatment]] · [[interface-bond]]

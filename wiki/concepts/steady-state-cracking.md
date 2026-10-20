@@ -3,7 +3,7 @@ type: concept
 slug: steady-state-cracking
 aliases: [flat crack, Griffith vs steady-state crack, notch insensitivity, failure mechanism map, K-tilde]
 tags: [micromechanics, theory, history]
-sources: [li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria]
+sources: [li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, qian2007-shcc-inverse-tensile-strain, kunieda2010-uhp-shcc-steel-reinforcement, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, su2023-rubber-modified-hshdc]
 updated: 2026-10-20
 ---
 
@@ -58,6 +58,15 @@ Li & Leung 1992 (K̃–c̃ framework, G_r ≥ 10 G_tip) → Kanda & Li 1998b (J-
 J_tip ≤ J′b, saturation thresholds 1.2 and 3 for pull-out type) → Kanda & Li 2006 (1.3 and 2.7 for
 rupture type, first-crack model extended to fiber rupture; [[kanda2006-psh-design-criteria]], Eqs. 5–11)
 → used in all ingested ECC/HDC papers. → [[strain-hardening]]
+
+## Later echoes of the flaw-size condition (2026-10-20 ingest)
+- **Artificial flaws** of prescribed size improve crack saturation and make ε_tu more consistent (Wang & Li 2004,
+  as cited in [[qian2007-shcc-inverse-tensile-strain]], p. 235). This is a design use of the c̃ > c̃_mc condition.
+- **Statistical overlap model:** strain capacity is set by how the distribution of matrix cracking strength
+  overlaps the distribution of bridging strength along the member ([[kunieda2010-uhp-shcc-steel-reinforcement]], Fig. 2).
+  It replaces the single critical flaw with a flaw population, as Kanda & Li 2006 requested.
+- Later papers still cite the J-integral form (J′b/J_tip > about 2.7–3), not G_r ≥ 10 G_tip
+  ([[kanda2003-sprayed-ecc]], p. 270; [[jin2019-hvfa-shcc-structural]], §2.2). → [[strain-hardening]]
 
 ## Related
 - [[strain-hardening]] · [[fiber-bridging]] · [[multiple-cracking]] · [[size-effect]]
