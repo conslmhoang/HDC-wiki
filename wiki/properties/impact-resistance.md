@@ -4,7 +4,7 @@ slug: impact-resistance
 aliases: [drop-weight impact, repeated impact, punching resistance, peak contact force, PCF]
 tags: [dynamic, extreme-loading]
 sources: [ranade2017-hshdc-impact-resistance, he2024-hdc-research-advances, lee2021-hsdc-wall-emi-impact, mechtcherine2011-shcc-high-strain-rate, xue2023-shcc-structural-review]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Impact Resistance
@@ -36,16 +36,20 @@ Unreinforced 300 × 300 × 25 mm slabs, 16.04 kg drop weight, 75 mm head, up to 
 ## Strengthening skins on concrete panels ([[lee2021-hsdc-wall-emi-impact]])
 Korea Univ. "HSDC" (hybrid steel + PE fiber, 1.5 vol.%, f'c about 122–123 MPa, σ_t 9.7 MPa, room-cured;
 strain hardening not shown in this paper ⚠️) as 5 / 10 / 20 mm layers on 100 mm NC panels; 100 kg drop
-weight, height 200 mm + 100 mm per blow (§3.2.1, Figs. 8–11):
+weight, height 200 mm + 100 mm per blow up to 1100 mm (blow 10), then repeated at 1100 mm (§3.2.1, pp. 9–11; Figs. 8–11; Fig. 9 x-axis, p. 10):
 
 | Panel | Layers | Result |
 |---|---|---|
-| H5S / H10S / H20S | single (one face) | failed at blow 2 / 4–5 / 4–5 by scabbing of the unstrengthened bottom face |
-| H5D / H10D / H20D | double (both faces) | H20D total reaction force 2.2× H5D and 1.6× H10D |
+| H5S / H10S / H20S | single (one face) | text: failed at blow 2 / 4–5 / 4–5 by scabbing of the unstrengthened bottom face (p. 9). Figures disagree: Fig. 8 plots H10S to blow 5 and H20S to blow 6; Figs. 11/12 label other counts ⚠️ |
+| H5D / H10D / H20D | double (both faces) | H20D total reaction force 2.2× H5D and 1.6× H10D (p. 10); peak reaction ≈ 38.5 kN (H20D) vs ≈ 26 kN (H5D) (read from Fig. 9) |
+| D1-HSDC (full 100 mm HSDC) | — | ≈ 57 kN peak reaction, survived 16–17 blows, ≈ 515 J (read from Figs. 9, 11) |
 
-- Total imparted energy to failure rises with HSDC thickness; H20D > 5× H5S (Fig. 11).
+- Total imparted energy to failure rises with HSDC thickness (printed labels, Fig. 11, p. 12): H5S 19.0, H10S 68.3, H20S 96.8,
+  H5D 86.7, H10D 90.2, H20D 114.9 J; H20D = 6.0× H5S and +32.5% over H5D (the text's "3.5% larger" is a typo). "Total imparted
+  energy" is not defined; 19 J is far below the ≈ 196 J potential energy of one 200 mm drop ⚠️ ([[lee2021-hsdc-wall-emi-impact]]).
 - Crack widths in H20D: about 0.05 mm after blow 1, 0.70 / 1.10 mm after blows 4 / 5; H5D and H10D 5.0 / 5.5 mm
-  (crack-width units printed inconsistently ⚠️). → [[crack-width]]
+  (units are mm per the Fig. 9d axes; the text's "m" is a typo; pp. 10–11). → [[crack-width]]
+- Post-impact SE decrease (Fig. 12, p. 12): H20S ≈ 7%, H20D 24.7%, H10S ≈ 16%, H10D ≈ 26%, H5D ≈ 28%, H5S ≈ 44%.
 - These are composite panels with HDC-type skins, not reinforced members; they partly address the
   "members under impact" gap.
 

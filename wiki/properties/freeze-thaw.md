@@ -22,9 +22,12 @@ used by [[yun2013-shcc-freeze-thaw]]), GB/T 50082 (China), ASTM C672 and RILEM C
   study in the wiki (table below). No primary study reports early failure of a PVA-ECC.
 - **Damage is a process, not an end state**: two statistically detected "leaps" precede final failure,
   IF (micro-crack initiation) and PF (macro-crack network); stages stable → unstable → yield
-  ([[zhong2019-ecc-freeze-thaw]], §3.3–3.4, Mann–Kendall test).
+  ([[zhong2019-ecc-freeze-thaw]], §3.3–3.4, pp. 8–14, Mann–Kendall test). One cycle lasts ≈ 240 min; specimen centre ≈ −18 to +4 °C,
+  fluid ≈ −23 to +14 °C (read from Fig. 10, p. 12).
 - **Fibres change the failure mode**: fibre-free mortar scaled at IF; PVA mixes did not scale until PF
-  ([[zhong2019-ecc-freeze-thaw]], Figs. 12–13). Proposed mechanism: microcracks relieve ice-expansion stress
+  ([[zhong2019-ecc-freeze-thaw]], Fig. 15 (IF) and Fig. 13 (PF), pp. 13–14; corrected 2026-10-21 — the earlier "Fig. 12" was XML numbering; Fig. 12 shows UF).
+  Mix 9 flexural stress ≈ 12.2 (0) → 11.7 (IF, 200) → 9.8 (PF, 300) → 2.3 MPa (UF, 400 cycles) (read from Fig. 14, p. 14);
+  at the last cycle flexural loss ≈ 68% (fibre-free Mix 6) vs ≈ 75–85% (fibre mixes), DME loss ≈ 60% vs ≈ 44–54% (Fig. 8, p. 7). Proposed mechanism: microcracks relieve ice-expansion stress
   and fibres bridge them (as cited in [[ma2021-ecc-durability-review]], p. 4).
 - **Fibre–matrix bond is the weak link after F-T**: F-T is said to lower PVA–matrix bond, giving more
   pull-out and fewer fibre ruptures ([[wang2023-ecc-frost-damage]], §3.2, inferred, not measured) and to
@@ -76,18 +79,19 @@ Moved here from [[durability]] (2026-10-20), unchanged:
 ## Influencing factors / relationships
 - **W/B** is the largest factor for ultimate F-T failure (38.47% of variance), then V_PVA (32.70%) and FA
   (21.63%); S/B insignificant. All indices fall as W/B rises 0.25 → 0.50 ([[zhong2019-ecc-freeze-thaw]],
-  Table 8, Fig. 16). → [[water-binder-ratio]]
+  Table 8, p. 18; Fig. 16, pp. 15–16). → [[water-binder-ratio]]
 - **PVA content**: 0.5–2.0 vol.% delays all failure indices, with a slight drop at 2.0% blamed on poor
   dispersion; V_PVA explains 39.02% (IF) and 48.60% (PF) of variance ([[zhong2019-ecc-freeze-thaw]],
-  §3.5, Tables 6–7). → [[pva-fiber]], [[fiber-dispersion]]
-- **Fly ash**: ground FA up to 35% of binder is best; PF/UF rise again at 52.5% and fall at 70% (too little
-  CH) ([[zhong2019-ecc-freeze-thaw]], §3.5). The paper notes that other studies found FA can hinder frost
+  §3.5, pp. 15–17; Tables 6–7, p. 18). → [[pva-fiber]], [[fiber-dispersion]]
+- **Fly ash** (mass fraction of binder, confirmed by Fig. 3, p. 4): ground FA up to 35% of binder is best and 70% is
+  worst (too little CH) ([[zhong2019-ecc-freeze-thaw]], §3.5, pp. 15–17). The text claims PF/UF show an "obvious rise" at 52.5% (p. 16), but
+  Fig. 16c–d show level A4 (52.5%) below A3 (35%) and above only A2 and A5 ⚠️ — treat the 52.5% rise as the authors' claim only. The paper notes that other studies found FA can hinder frost
   resistance; fineness may explain the difference. → [[fly-ash]]
 - **Pre-cracking** (preload 0.5–0.7 of peak) widens cracks to 20–30 µm and increases the flexural loss
   under coupled exposure; preload ≤ 0.3 differs little from unloaded ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]], Table 4, §3.4).
 - **Pore structure**: harmless pores (< 20 nm) vanish and 50–200 nm and > 200 nm pores grow with coupled
   cycles ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]], Fig. 5); freezable water η jumps at IF and PF
-  ([[zhong2019-ecc-freeze-thaw]], Figs. 10–11).
+  ([[zhong2019-ecc-freeze-thaw]], Figs. 10–11, pp. 12–13; Mix 9 η ≈ 5.1 → 6.1 at IF → 8.2, and ≈ 13.7 → 18 at PF → 33, read from Fig. 11).
 - **Transport after F-T**: capillary coefficient, chloride and carbonation rise with cycles, less in ECC than
   in the matrix ([[wang2023-ecc-frost-damage]], §3.3–3.5). → [[permeability]], [[carbonation]], [[chloride-and-corrosion]]
 - **W/B and fibre mix in hybrids**: W/B 0.55 lowers f'c ≈ 19% vs 0.45 and gives more ductility loss after F-T;
@@ -99,7 +103,7 @@ Moved here from [[durability]] (2026-10-20), unchanged:
   ([[yun2013-shcc-freeze-thaw]], Figs. 6, 11, Conclusion 4). → [[multiple-cracking]]
 - **SAP** is used in one SHCC partly to improve frost resistance ([[mechtcherine2011-shcc-high-strain-rate]], p. 52); not tested there.
 - **Self-healing under natural frost**: outdoor PVA-ECC (winter to −11.7 °C) kept healing, though recovery
-  was lowest after autumn–winter exposure ([[herbert2013-ecc-self-healing-natural-environment]], Figs. 7–8). → [[self-healing]]
+  was lowest after autumn–winter exposure ([[herbert2013-ecc-self-healing-natural-environment]], Figs. 7–8, pp. 2841–2842; mean T ≈ 0.5 °C in the 3–6-month interval, Fig. 8). → [[self-healing]]
 
 > Synthesis: three independent primary studies (HIT, Qingdao, Southeast University) agree that PVA-ECC/HDCC
 > survives 300+ rapid F-T cycles where plain concrete fails at 40–110 cycles. Tensile evidence is now thin

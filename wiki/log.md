@@ -203,3 +203,53 @@ Append-only. Format: `## YYYY-MM-DD — <operation> — <subject>`, followed by 
   Yun 2011/2013 resolved and Deng & Zhang 2018 probably resolved. Under-studied areas updated for the 60-source corpus.
 - Updated index (10 sources + 2 pages; new groups for XAUAT structures and cementless composites) and review-outline
   (scope 60 papers; applications chapter now ✅).
+
+## 2026-10-21 — re-ingest — 20 sources from PDF (XML replaced)
+- **Why:** the human asked for the publisher PDFs. The 20 sources had been ingested from Europe PMC XML, which has no
+  page numbers and no figure data (values printed only in figures, bar labels and legends were missing).
+- **How:** PDFs fetched with Europe PMC's getPdf service; each title checked against its source page; the old XML files
+  moved to `raw/xml-archive/` (superseded copies, not used as sources); `raw_file:` now points to the PDF. Each source page
+  was re-checked line by line against its PDF.
+- **Sources (20):** chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, gao2020-hdcc-recycled-fine-aggregate,
+  lee2021-hsdc-wall-emi-impact, bu2022-ecc-chloride-crack-width, zhang2022-ecc-carbonation-sustained-load,
+  zhong2019-ecc-freeze-thaw, herbert2013-ecc-self-healing-natural-environment, chavesfigueiredo2020-printed-shcc,
+  ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, tabrizikahou2022-masonry-ecc-sma-retrofit,
+  jin2019-hvfa-shcc-structural, sun2019-modified-pva-fiber-ecc, zhao2022-ecc-tension-damage-model,
+  shumuye2022-slag-fa-pe-ecc, yuan2020-nshsdc-beam-strengthening, wang2019-rc-beam-ecc-shear-strengthening,
+  sui2018-uhp-ecc-flexural-fatigue, mohammed2020-cr-ecc-elevated-temperature.
+- **Results:** no tabulated value on any of the 20 pages was wrong. Page numbers were added throughout, and about 300
+  values were added from figures (marked ≈ / read), e.g. Jin 2019 f'c, E and flexural data (Figs. 8, 14), Mohammed 2020
+  residual f'c 24–1000 °C (Fig. 3), Sui 2018 tension curves (Fig. 4), Lee 2021 EMI SE and impact data (Figs. 5–12),
+  Gao 2020 f_c and 3-pt flexural strength (Fig. 9), Tabrizikahou 2022 peak forces (Fig. 25).
+- **Corrections:**
+  - Lee 2021: post-impact SE loss 7.1% / 24.7% are H20S / H20D (both 20 mm skins); thinner skins lost more
+    (H5S ≈ 44%), not less; "3.5%" is 32.5%; crack widths in mm.
+  - Mohammed 2020: at 1000 °C the 0% CR mix keeps ≈ 16 MPa (only CR mixes ≈ 11–13 MPa); the claimed acid weight gain
+    is contradicted by Fig. 8 (losses 0.2–7.3% in 12 of 13 mixes).
+  - Sui 2018: the tension data are at 90 d (ε ≈ 6.9–8.8%, σ_tu ≈ 11.1–12.4 MPa, read from Fig. 4).
+  - Yuan 2020: Table 7 failure modes are primary / secondary, the same for LS and HS at each angle (not LS / HS).
+  - Chai 2023: "ultimate tensile strain" is strain at peak stress (Fig. 1).
+  - Sun 2019: "ultimate tensile strain" is strain at the end of the curve incl. softening; the VAE and W/B effects lie
+    within the Fig. 6 scatter.
+  - Jin 2019: bending tests at 7 and 90 d only (not 7 / 28 / 90 d).
+  - Zhong 2019: surface scaling at IF is Fig. 15 (not Fig. 12); the "rise at FA 0.525" claim is not borne out by Fig. 16.
+  - Herbert 2013: the 24 / 30 µm crack widths carry ref. [29] (Sahmaran & Li 2009) and may not be measured on these
+    specimens; fibre manufacturer not named.
+  - Also: Li 2021 saturated sulfate HDC falls after 30 cycles (not 60); Shumuye 2022 strain at peak (28 d), flexural
+    "kN" almost certainly N; Wang 2019 ε ≈ 0.9–1.9% at peak and truss model uses σ_t 4.0 MPa; Zhao 2022 damage-model
+    units confirmed (MPa, %).
+- **Propagated pages** (topic and dataset updates by the parallel integration groups, per the per-source reports):
+  extreme-loading-applications, impact-resistance, impact-test, crack-width, high-temperature-behaviour, durability,
+  crumb-rubber, compressive-strength, flexural-strength, tensile-strain-capacity, tensile-constitutive-model,
+  shear-behaviour, interface-bond, rc-member-strengthening, masonry-wall-retrofit, 3d-printed-hdc, fiber-dispersion,
+  self-healing, freeze-thaw, carbonation, permeability, chloride-and-corrosion, fly-ash, pva-fiber, water-binder-ratio,
+  fiber-geometry, fiber-surface-treatment, dogbone-uniaxial-tension, four-point-bending-inverse-analysis,
+  mechanical-results, mix-designs.
+- **gaps:** 73 conflict rows (was 64): 9 new — 8 internal inconsistencies of single sources (Mohammed acid weight,
+  Zhang ">2-fold" pore reduction ≈ 1.4× and sustained-load values, Zhong FA 0.525, Shumuye kN vs N, Zhao V3R2
+  constants, Xue Fig. 1 vs text, Tabrizikahou energy ≈ 500× too large, Bu D decline 5% vs ≈ 20–25%) and 1 resolved
+  wiki misreading (Lee SE loss vs skin thickness); 13 rows updated (ε naming, FE "ECC", PSH 1.45, Shumuye slag now a
+  confirmed text–data conflict, W/B–ductility weakened, ductility vs age, printed fibre orientation and interlayer,
+  carbonation, healing vs age, sulfate trend, Chai and Mohammed temperature rows).
+- **index:** gaps count; one-liners of sun2019 and shumuye2022 (strain basis). review-outline unchanged (no chapter's
+  evidence status changed). `raw/README.md`: one line on `raw/xml-archive/`.

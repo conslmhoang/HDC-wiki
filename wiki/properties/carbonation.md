@@ -4,7 +4,7 @@ slug: carbonation
 aliases: [accelerated carbonation, carbonation depth, CO2 ingress]
 tags: [durability, carbonation, transport]
 sources: [zhang2022-ecc-carbonation-sustained-load, wang2023-ecc-frost-damage, chai2019-hdcc-freeze-thaw-carbonation-flexure, ma2021-ecc-durability-review, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Carbonation
@@ -18,24 +18,27 @@ about 20% CO₂ (GB/T 50082 conditions: 20 ± 3 °C, 70 ± 5% RH, 20 ± 3% CO₂
 
 ## Key points
 - **High-FA ECC carbonates faster than its strength suggests**: FA/C ≈ 1.2 lowers portlandite, which the
-  authors expected to worsen carbonation ([[zhang2022-ecc-carbonation-sustained-load]], §1). Both primary
+  authors expected to worsen carbonation ([[zhang2022-ecc-carbonation-sustained-load]], §1, p. 2). Both primary
   studies use FA/C 1.18–1.20 PVA-ECC.
 - **Sustained flexural stress accelerates carbonation, even below first cracking**: δ_T = 0.075 nearly
-  doubles 7-d depth (+94%) and adds +41% at 28 d ([[zhang2022-ecc-carbonation-sustained-load]], §3.1, Table 4).
+  doubles 7-d depth (+94%; text ≈ 100%) and adds +41% at 28 d ([[zhang2022-ecc-carbonation-sustained-load]], §3.1, pp. 5–6; Table 4, p. 7).
 - **The stress effect fades with time** (pores fill with CaCO₃): K_ks at δ_T 0.6 falls from 3.135 (7 d) to
-  2.075 (28 d) ([[zhang2022-ecc-carbonation-sustained-load]], Table 4).
+  2.075 (28 d) ([[zhang2022-ecc-carbonation-sustained-load]], Table 4, p. 7).
 - **K_ks rises sub-linearly with δ_T** in ECC (fibre bridging limits load-induced pore growth), unlike the
-  linear law for plain concrete ([[zhang2022-ecc-carbonation-sustained-load]], §3.2, Fig. 4).
-- **Carbonation densifies ECC**: 0.1–10 µm porosity fell more than 2×; zone-I porosity 8.70% (carbonated)
-  vs 11.57% (uncarbonated); microhardness > 100 HV in the carbonated skin vs 60–80 HV inside
-  ([[zhang2022-ecc-carbonation-sustained-load]], §3.4–3.5). Carbonation also densifies the HDCC matrix and is
+  linear law for plain concrete ([[zhang2022-ecc-carbonation-sustained-load]], §3.2, pp. 6–8; Fig. 4, p. 8). Per-period fits:
+  K_ks = 1 + 2.662 δ^0.351 (7 d, R² 0.988), 1 + 1.812 δ^0.433 (14 d, 0.976), 1 + 1.331 δ^0.463 (28 d, 0.934) (Fig. 4, p. 8).
+- **Carbonation densifies ECC**: per the text 0.1–10 µm porosity fell "more than 2×" (p. 10), but Fig. 10a shows
+  only ≈ 1.4× in zone I (≈ 2.5 vs ≈ 3.4%, read-off) ⚠️; zone-I porosity 8.70% (carbonated) vs 11.57% (uncarbonated);
+  microhardness ≈ 120–160 HV within 1 mm of the surface vs ≈ 65–85 HV inside (text: > 100 vs 60–80 HV; Fig. 11 read-off)
+  ([[zhang2022-ecc-carbonation-sustained-load]], §3.4–3.5, pp. 10–12; Fig. 10, p. 11; Fig. 11, pp. 12–13). Carbonation also densifies the HDCC matrix and is
   said to raise fibre bond ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]], p. 127, 131–133).
-- **Phenolphthalein under-reads**: TG shows partial carbonation to ≈16 mm vs the ≈10 mm colour front
-  ([[zhang2022-ecc-carbonation-sustained-load]], §3.3, Fig. 7).
+- **Phenolphthalein under-reads**: TG shows partial carbonation to ≈16 mm vs the ≈10 mm colour front; CO₂ content
+  ≈ 16 / 15.4 wt.% near the surface, ≈ 12.6 (8–12 mm), ≈ 11.9 (12–16), ≈ 11.7 wt.% (16–20 mm) (read from Fig. 7)
+  ([[zhang2022-ecc-carbonation-sustained-load]], §3.3, p. 9; Fig. 7, p. 10).
 - **Frost damage and drying accelerate carbonation**: see [[freeze-thaw]] and table below.
 
 ## Quantitative evidence
-Unloaded vs loaded PVA-ECC (W/B 0.30, FA/C 1.20), 20% CO₂ ([[zhang2022-ecc-carbonation-sustained-load]], Table 4):
+Unloaded vs loaded PVA-ECC (W/B 0.30, FA/C 1.20), 20% CO₂ ([[zhang2022-ecc-carbonation-sustained-load]], Table 4, p. 7):
 
 | Load level | δ_T | 7 d (mm) | 14 d (mm) | 28 d (mm) | K_ks 28 d |
 |---|---|---|---|---|---|
@@ -65,7 +68,7 @@ Other sources:
 - Sustained stress level δ_T and exposure time (above). → [[crack-width]]
 - Pre-cracking: preload ≥ 0.5 adds 5–6 mm at 15 coupled cycles ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]], Fig. 4b).
 - Prior frost damage: linear increase of the carbonation coefficient with F-T cycles ([[wang2023-ecc-frost-damage]], Fig. 16).
-- Fly ash content (lower CH) ([[zhang2022-ecc-carbonation-sustained-load]], §1). → [[fly-ash]]
+- Fly ash content (lower CH) ([[zhang2022-ecc-carbonation-sustained-load]], §1, p. 2). → [[fly-ash]]
 
 > Synthesis: carbonation is a real weakness of high-FA PVA-ECC rather than a strength. Two primary 28-d
 > values at ~20% CO₂ (4.8 and ≈13 mm) are 6–16× the second-hand 0.8 mm that the wiki previously quoted.
@@ -73,7 +76,7 @@ Other sources:
 > a cover or overlay over steel, carbonation depth vs cover (often 15–35 mm) is an open design question.
 
 ## Conflicts & open questions
-- ⚔️ **Carbonation depth of unloaded ECC after 28 d at ~20% CO₂**: 4.78 mm ([[zhang2022-ecc-carbonation-sustained-load]], Table 4)
+- ⚔️ **Carbonation depth of unloaded ECC after 28 d at ~20% CO₂**: 4.78 mm ([[zhang2022-ecc-carbonation-sustained-load]], Table 4, p. 7)
   vs ≈13 mm ([[wang2023-ecc-frost-damage]], Fig. 15a, read ⚠️) vs ≈0.8 mm (Zhang W. 2018, as cited in
   [[ma2021-ecc-durability-review]], p. 9). The two primary mixes are almost identical (PVA, FA/C 1.18–1.20,
   W/B 0.30–0.33, GB/T 50082), yet differ ≈2.7×. Possible reasons: preconditioning (drying), specimen size,

@@ -27,12 +27,13 @@ updated: 2026-10-21
   | Slag (% of binder) | 28 d f'c change | 7 d f'c change | First-crack σ (28 d) |
   |---|---|---|---|
   | 0 (SF-0-60) | 40.79 MPa (reference) | — | 2.25 MPa |
-  | 5 | +3.5% | +27.0% | — |
-  | 10 | +28.5% | +57.0% | 2.51–2.57 MPa (10–15%) |
+  | 5 | +3.5% (42.23 MPa, Fig. 4, p. 7) | +27.0% | — |
+  | 10 | +28.5% (52.44 MPa) | +57.0% | 2.51–2.57 MPa (10–15%) |
   | 15 | **+34.9%** (55.05 MPa) | +77.3% | same |
 
   - σ_tu stayed about 5.2–5.7 MPa (Table 4). More slag gave more and **wider** cracks; SF-15-45 had the worst crack
-    control (Sect. 3.4, Fig. 9). EDS Ca/Si fell 4.27 → 2.46 from 0 to 15% slag at 7 d (Sect. 3.5.1).
+    control (Sect. 3.4, Fig. 9). Mean crack widths ≈ 100 / 105 / 110 / 130 µm for 0 / 5 / 10 / 15% slag (≈ read from
+    the radar chart Fig. 10, p. 12). 28-d strain at peak ≈ 1.9–3.5% (Fig. 5b, p. 8). EDS Ca/Si fell 4.27 → 2.46 from 0 to 15% slag at 7 d (Sect. 3.5.1).
   - Motivation: shrinking FA supply, stable slag supply (Sect. 1).
   - ⚔️ Text vs data on ductility: see [[fly-ash]] and [[gaps]].
 - **Printed SHCC:** a slag + limestone-powder mix (X, W/B 0.40) outperformed an FA + sand mix (Y, W/B 0.50) in every

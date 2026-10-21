@@ -46,11 +46,15 @@ updated: 2026-10-21
 | [[deng2015-hdc-compressive-toughness]], [[deng2018-hdc-compressive-constitutive]] | HDC (XAUAT) | **not reported** | test age also n.r. |
 
 ### Age and curing effects on ductility and strength
-- **Ductility falls with age in PVA systems:** REC-15 ECC 3.21% at 7 d → 1.39% at 28 d ([[sun2019-modified-pva-fiber-ecc]], Table 11).
-  Strain hardening weakened with longer curing in slag PE-ECC (except SF-5-55) ([[shumuye2022-slag-fa-pe-ecc]], Sect. 3.2).
+- **Ductility falls with age in PVA systems:** REC-15 ECC 3.21% at 7 d → 1.39% at 28 d ([[sun2019-modified-pva-fiber-ecc]], Table 11, p. 16;
+  end-of-curve strain incl. softening, not at peak).
+  Strain hardening weakened with longer curing in slag PE-ECC (except SF-5-55) ([[shumuye2022-slag-fa-pe-ecc]], Sect. 3.2;
+  strain at peak ≈ 0.75–1.85% at 7 d vs ≈ 1.9–3.5% at 28 d, Fig. 5, p. 8 — so in this source strain at peak *rose* with age;
+  the authors' "weakened" refers to the hardening behaviour, not the peak strain ⚠️).
   This agrees with the earlier note that PVA-ECC ε falls to about 3% at 180 d (Lepech & Li 2006, as cited in [[pva-fiber]]).
 - **Slow strength gain with high FA:** FA/C 3.2 SHCC reaches 46.6% of 28-d f'c at 7 d and about +12% at 90 d
-  ([[jin2019-hvfa-shcc-structural]], Fig. 9). → [[fly-ash]]
+  (≈ 18.5 / ≈ 40 / ≈ 45 MPa at 7 / 28 / 90 d, read from Fig. 9, p. 12) ([[jin2019-hvfa-shcc-structural]]). Its 4-pt flexural
+  strength also rises from 7 to 90 d for all FA/C (e.g. FA3.2 13.6 → 16.7 MPa) while deflection falls (33.8 → 23 mm) (Fig. 14, p. 15). → [[fly-ash]]
 - **Hot water and bond:** hot-water exposure raised PVA chemical bond by about 50% with frictional bond unchanged
   (Li 2004a, as cited in [[vanzijl2010-shcc-durability]], p. 268). → [[fiber-matrix-interface]]
 - **Internal curing:** HPMC may act as internal curing in printed SHCC ([[chavesfigueiredo2020-printed-shcc]], Sects. 3.5–3.6);

@@ -48,7 +48,9 @@ set the section-to-section variation in bridging capacity, and therefore min(σ0
 ### 3D printing
 - Printed PVA-SHCC: µCT shows mainly **diagonal** fiber orientation, attributed to layer-pressing shear and nozzle
   movement; high air-void content hinders orientation and lowers ductility; few fibers cross the layer interface, so there
-  is no strain hardening across layers ([[chavesfigueiredo2020-printed-shcc]], Sects. 3.5–3.6, Figs. 17–18).
+  is no strain hardening across layers ([[chavesfigueiredo2020-printed-shcc]], Sects. 3.5–3.6, Figs. 17–18). Read from the
+  Fig. 17 histogram (p. 19): peaks at ≈ 40° (≈ 9% X, ≈ 8% Y) and ≈ 170°, minimum at ≈ 90° (≈ 1.5–2%), ≈ 2.5–3.5% at 0/180°.
+  Void area ≈ 12–14% in X layers, ≈ 10% at the X interface, ≈ 2–7% in Y (Figs. 15–16, pp. 17–18).
 - Printed PE-SHCC: high fiber content raises clumping risk and surface unevenness, partly solved by the mixing procedure
   and a trowelled nozzle; DIC crack patterns were read as good distribution along the print direction
   ([[ivaniuk2022-printable-shcc-design]], Sect. 2.1, Fig. 18).

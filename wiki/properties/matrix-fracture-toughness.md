@@ -54,7 +54,7 @@ the two. On an Ashby chart UHDC sits near metals, bamboo and wood
 | Source | Matrix | Km (MPa√m) | Note |
 |---|---|---|---|
 | [[kanda2003-sprayed-ecc]] Table 2 | sprayable ECC matrices, w/c 0.27 / 0.42 / 0.62 | 0.33 / 0.23 / 0.13 (**assumed**, not measured) | Em 23 / 15.9 / 9.4 GPa |
-| [[chavesfigueiredo2020-printed-shcc]] Table 3 | printed PVA-SHCC X / Y (flexural-CMOD method) | — | J_tip 16.37 / 7.11 and J_b 430.74 / 260.94, printed as "kJ/m²" ⚠️ (probably J/m²); J_b > J_tip in both |
+| [[chavesfigueiredo2020-printed-shcc]] Table 3 | printed PVA-SHCC X / Y (flexural-CMOD method) | — | J_tip 16.37 / 7.11 and J_b 430.74 / 260.94, printed as "kJ/m²" (confirmed in PDF Table 3, p. 9) ⚠️ (probably J/m²); J_b > J_tip in both; J_tip 16.37 exceeds LOP × CMOD_LOP ≈ 11.7, so the values are internally inconsistent ⚠️ |
 
 - **Model trend:** J′b/J_tip falls parabolically as Km rises ([[jin2019-hvfa-shcc-structural]], Fig. 1g, Yang 2008
   bridging model with assumed inputs). Raising W/B and FA/C is claimed to lower Km and bond (§2.2, not measured).

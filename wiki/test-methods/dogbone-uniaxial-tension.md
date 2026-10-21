@@ -116,11 +116,12 @@ T2 = 100 × 60 mm dogbone, pin–fix, H or V; T3 = Ø70 dogbone, pin–fix, V; T
 | [[qian2007-shcc-inverse-tensile-strain]] | ECC/SHCC | coupon 304.8 × 76.2 × 12.7 mm, gauge about 180 mm | glued Al plates, fixed | 0.0025 mm/s | 2 LVDTs |
 | [[mechtcherine2011-shcc-high-strain-rate]] | SHCC | dumbbell, 40 × 24 mm narrow section, 40 × 40 mm ends, 100 mm gauge | glued, fixed–fixed | 10⁻⁵ – 50 s⁻¹ | 2 LVDTs; high rate: slack adaptor, piezo force link, 250 kHz; ringing at 10 s⁻¹ (p. 52–53) |
 | [[xue2023-shcc-structural-review]] | SHCC | dumbbell 13 × 30 mm, 100 mm gauge (as JC/T 2461 per Chai 2023) | — | — | — |
-| [[wang2019-rc-beam-ecc-shear-strengthening]] | ECC (Southeast Univ.) | gauge 13 × 30 × 80 mm, n = 3 | fixed | 0.2 mm/min | 2 LVDTs |
-| [[gao2020-hdcc-recycled-fine-aggregate]] | HDCC (Zhengzhou) | dogbone, 40 × 40 mm middle section | — | 0.001 mm/s | 50 mm long. / 25 mm transv. extensometers; valid if ≥ 2 valid, deviation < 30%; Poisson 0.10–0.30 (§2.3.3, Table 6) |
+| [[wang2019-rc-beam-ecc-shear-strengthening]] | ECC (Southeast Univ.) | gauge 13 × 30 × 80 mm, n = 3 | fixed | 0.2 mm/min | 2 LVDTs; 3 curves: strain at peak ≈ 0.9 / 1.9 / 1.4%, end of curve ≈ 3.3 / 3.45 / 2.6%, peaks ≈ 4.6–5.1 MPa (read from Fig. 2, p. 3) |
+| [[gao2020-hdcc-recycled-fine-aggregate]] | HDCC (Zhengzhou) | dogbone 160 mm long, 80 mm wide ends, 40 mm thick; 40 × 40 mm central section over 50 mm (= gauge); 40 mm transitions; 15 mm grips (Fig. 1, p. 4) | — | 0.001 mm/s | 50 mm long. / 25 mm transv. extensometers; valid if ≥ 2 valid, deviation < 30%; Poisson 0.10–0.30 (§2.3.3, Table 6) |
 | [[jin2019-hvfa-shcc-structural]] | SHCC | dumbbell, 30 × 30 mm section, 80 mm gauge | — | 0.2 mm/min | LVDT |
-| [[shumuye2022-slag-fa-pe-ecc]] | PE-ECC | dogbone 80 × 30 × 13 mm | — | 0.4 mm/min | LVDTs |
-| [[sun2019-modified-pva-fiber-ecc]] | ECC | JSCE-type dumbbell, geometry n.s. | — | 0.4 mm/min | — |
+| [[shumuye2022-slag-fa-pe-ecc]] | PE-ECC | 330 mm dogbone, ends 60 mm wide; **gauge zone** 80 × 30 × 13 mm (Fig. 1, p. 5) | — | 0.4 mm/min | LVDTs; n = 3 (§2.4, pp. 4–5) |
+| [[sun2019-modified-pva-fiber-ecc]] | ECC | JSCE-type dumbbell, 330 mm long, grips 60 mm wide, test section 30 × 80 mm, R 25 mm, thickness 13 or 30 mm (Fig. 1, p. 7) | — | 0.4 mm/min | LVDT, 80 mm gauge (Fig. 1); "ultimate strain" taken at end of test incl. softening (Figs. 8–9, p. 15) |
+| [[sui2018-uhp-ecc-flexural-fatigue]] | UHP-ECC (PE) | dog-bone 330 mm long; gauge 80 × 30 mm, 13 mm thick; ends 60 mm wide (Fig. 3a, p. 4) | — | not reported ⚠️ | ε_tu ≈ 6.9–8.8% at end of hardening, σ_tu ≈ 11.5–12.4 MPa (read from Fig. 4, p. 5) |
 | [[zhao2022-ecc-tension-damage-model]] | ECC | plate 280 × 40 × 13 mm | CFRP + Al tabs | 0.2 mm/min | 120 mm extensometer + strain gauge; failure mostly near grips (§3.2) |
 | [[chavesfigueiredo2020-printed-shcc]] | printed SHCC | sawn 1-layer plates; LPA 40 × 150 mm, LPE 35 × 30 mm (not dogbones) | glued | 6.67 µstrain/s | DIC; 30 mm LPE length → gauge-length dependence |
 | [[ivaniuk2022-printable-shcc-design]] | printed SHCC | printed prisms embedded in dumbbell formwork with freshly cast ends | — | 1 mm/min | — |

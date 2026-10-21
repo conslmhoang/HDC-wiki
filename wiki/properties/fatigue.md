@@ -4,14 +4,14 @@ slug: fatigue
 aliases: [cyclic loading, fatigue life, S-N curve, tension-compression cycling, flexural fatigue]
 tags: [durability, cyclic]
 sources: [ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, sui2018-uhp-ecc-flexural-fatigue, kunieda2006-hpfrcc-japan-applications, kanakubo2006-dfrcc-tensile-test-method, xue2023-shcc-structural-review]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Fatigue & Cyclic Loading
 
 ## Primary data: flexural fatigue of PE UHP-ECC ([[sui2018-uhp-ecc-flexural-fatigue]])
 PE "UHP-ECC" (cube f'c 102.8 MPa at 28 d), 100 × 100 × 400 mm prisms, 4-pt bending, span 300 mm, static
-MOR about 22 MPa (Fig. 7), 3 beams per stress level S = σ_max/static strength:
+MOR about 22 MPa (Fig. 7, p. 6), 3 beams per stress level S = σ_max/static strength:
 
 | S | Fatigue life N (cycles) | Cracks at failure | Deformation stages |
 |---|---|---|---|
@@ -21,20 +21,26 @@ MOR about 22 MPa (Fig. 7), 3 beams per stress level S = σ_max/static strength:
 | 0.65 | 155,075–308,691 | 6 | 3 |
 | 0.5 | run-out at 2 × 10⁶ | 5 | 2 |
 
-(Table 6, Table 5, Fig. 13)
+(Tables 5–6; Fig. 13; pp. 9–13)
 
 - **S–N law:** S = 1 − 5.75 × 10⁻³ (lg N)^2.43, continuous, **no inflection point** (Eq. 2). This is the
   primary source of the "Sui 2018" model tabulated in [[ma2021-ecc-durability-review]] (Table 4). How run-outs
-  enter the regression is ⚠️ unverified.
+  enter the regression is not stated ⚠️; the Fig. 19 fitted curve ends at the run-out point (lg N 6.3, S 0.5), so run-outs
+  were probably used as failures (interpretation, Fig. 19, p. 15). Fig. 19 legend gives f_a = 22 MPa, vs literature
+  f_a 9–12 MPa (Suthiwarapirak PE 10, PVA 9; Liu PVA 12).
 - After 2 × 10⁶ cycles at S = 0.5: residual flexural strength 86%; initial stiffness 130.01 → 108.12 kN/mm
   (Sect. 3.1, Table 4).
 - Fatigue life is governed by the length of the stable stage II of deflection growth (Fig. 13).
-- **Mechanism:** high S degrades the bond (more pull-out); low S damages the fibers (rupture) (Fig. 10).
-- Fatigue crack widths grow with cycles and are larger at S = 0.8 than at 0.5 (Fig. 16). → [[crack-width]]
+- **Mechanism:** high S degrades the bond (more pull-out); low S damages the fibers (rupture). Fracture-surface area
+  pull-out / rupture (A1/A2) = 52/48% (S 0.65), 79/21% (0.8), 93/7% (0.9) (Fig. 10, p. 9).
+- Cyclic deflection range 0.25–1.0 mm at S = 0.5 vs 1.0–3.0 mm at S = 0.9 (p. 13).
+- Fatigue crack widths grow with cycles and are larger at S = 0.8 than at 0.5: S = 0.5 ≈ 40 → 110 → 130 µm,
+  S = 0.8 ≈ 70 → 130 → 150 µm over n/N 0 → 1 (read from Fig. 16, p. 13). → [[crack-width]]
+- Post-fatigue static tests (U-0.5) peak at ≈ 18–20 MPa at ≈ 1–3 mm deflection (read from Fig. 7, p. 6).
 - A high-strength matrix does **not** reduce fatigue life compared with ordinary ECC (Conclusion 1, Fig. 19).
 - Existing bilinear S–N models (Liu 2017 PVA; Suthiwarapirak 2004 PVA and PE) have an inflection at S ≈ 0.9,
   N 10²–10⁴ (as cited, Table 7). The authors link this to the inflection of the tensile crack-width vs strain
-  curve, i.e. a critical crack width (Fig. 20).
+  curve, i.e. a critical crack width (Fig. 20, p. 16: inflection at ≈ 0.6% strain, ≈ 145 µm, read-off).
 
 ## Comparison with FRC (as cited)
 - Flexural S–N of PVA-ECC and PE-ECC is **bilinear** on a semi-log plot; HPFRCC has longer lives than FRC at

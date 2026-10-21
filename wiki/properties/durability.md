@@ -34,7 +34,7 @@ updated: 2026-10-21
 | Chloride ingress | [[bu2022-ecc-chloride-crack-width]] (ECC); [[paul2014-r-shcc-chloride-corrosion]] (SHCC) | immersion: ≤ 100 µm ≈ uncracked; wet–dry: even 20–50 µm avg cracks carry Cl⁻ to rebar in hours | [[chloride-and-corrosion]] |
 | Rebar corrosion / spalling | [[paul2014-r-shcc-chloride-corrosion]]; [[kanda2003-sprayed-ecc]] (ECC, tapered-pin test) | corrosion rate ≈ mortar but localised pitting; corrosion cracks much finer, no spalling | [[chloride-and-corrosion]] |
 | Sulfate + dry–wet | [[li2021-hdc-sulfate-dry-wet]] (HDC); [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC) | HDC loses 50% f_cu vs concrete 76% (saturated, 150 cycles) | this page |
-| Acid | [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC) | 5% H₂SO₄: slight weight gain (gypsum / ettringite) | this page |
+| Acid | [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC) | 5% H₂SO₄: authors claim a slight weight gain, but Fig. 8 shows losses of 0.2–7.3% at 28 d for 12 of 13 mixes ⚠️ | this page |
 | Water / capillary transport | [[lepech2009-ecc-water-permeability]] (ECC M45); [[homma2009-frcc-self-healing]] (FRCC); [[wang2023-ecc-frost-damage]] | cracked ECC (1.5–3%) k 1.95–7.74 × 10⁻¹⁰ m/s after healing vs 4.46 × 10⁻⁴ m/s for 500 µm mortar cracks; k ∝ w³; F-T raises capillary coefficient | [[permeability]] |
 | Self-healing (incl. wet–dry) | [[yang2009-ecc-self-healing-wet-dry]] (ECC); [[homma2009-frcc-self-healing]]; [[herbert2013-ecc-self-healing-natural-environment]]; [[ozbay2013-ecc-self-healing-sustained-load]] (ECC) | CaCO₃ seals fine cracks; wet–dry RF recovery 87–100% (air dry) / 77–90% (55 °C dry); outdoor RF 90–96% in 1 week; sustained load cuts healing | [[self-healing]] |
 | Elevated temperature / fire | [[pourfalah2018-ecc-high-temperature]] (ECC/HECC, **hot** tests to 600 °C); [[zhou2023-hsecc-elevated-temperature]] (HSECC); [[mohammed2020-cr-ecc-elevated-temperature]] (CR-ECC); [[chai2023-hdc-ambient-temperature]] (HDC, −30 to 60 °C) | ductility rises to 60–100 °C, PVA pull-out from 150 °C; PVA melts from 230 °C; no explosive spalling to 600–1000 °C | [[high-temperature-behaviour]] |
@@ -43,18 +43,22 @@ updated: 2026-10-21
 
 ## Sulfate attack with dry–wet cycles: primary data ([[li2021-hdc-sulfate-dry-wet]])
 - **Protocol**: 0 / 5 / 10% / saturated Na₂SO₄; one cycle = 48 h immersion + 1 h air + 23 h oven at 50 °C;
-  up to 150 cycles; XUT PVA-HDC (FA/C 1.0, 90 d) vs ordinary concrete (28 d) (§2.1, §2.3.2).
-- **f_cu at 150 cycles** (initial 45.8 MPa): water 58.3, 5% 50.1, 10% 37.9, saturated 28.9 MPa (Table 4).
+  up to 150 cycles; XUT PVA-HDC (FA/C 1.0, 90 d) vs ordinary concrete (28 d) (§2.1, p. 3; §2.3.2, p. 4).
+- **f_cu at 150 cycles** (initial 45.8 MPa): water 58.3, 5% 50.1, 10% 37.9, saturated 28.9 MPa (Table 4, p. 6).
 - **Loss relative to the water control** at 150 cycles in saturated solution: HDC 50.3% vs concrete 76.3%;
-  in 5% solution HDC loses 4.7% at 90 cycles and 14.0% at 150 (§3.2). Corrosion coefficient K_f = 1.09
-  (5%, 150 cycles).
+  in 5% solution HDC loses 4.7% at 90 cycles and 14.0% at 150 (§3.2, p. 7). Corrosion coefficient K_f = 1.09
+  (5%, 150 cycles; §4.1, p. 8). The loss rate is δ = (f_water,n − f_sulfate,n)/f_water,n, **confirmed** by the Fig. 2 points
+  (p. 7); read from Fig. 2: HDC 5% ≈ −0.10 at 30/60 cycles (strength above the water control), HDC 10% ≈ 0.35, OC 5% ≈ 0.44,
+  OC 10% ≈ 0.61 at 150 cycles ([[li2021-hdc-sulfate-dry-wet]]). ⚠️ Fig. 2b OC 10% at 30 / 60 cycles (≈ 0.17 / ≈ 0.065) does not
+  match Table 5 (≈ 0.23 / ≈ 0.01).
 - **Mechanism**: drying micro-cracks, Na₂SO₄·10H₂O crystallisation, ettringite and gypsum filling pores
-  then cracking; PVA fibers slow crack growth (§4.2).
+  then cracking; PVA fibers slow crack growth (§4.2; Fig. 4, p. 10).
 - **Refines the He 2024 summary** ("rises to 30 cycles, falls after 105"): this fits the 5% series only;
-  at 10% f_cu dips at 60 and peaks at 105 cycles; in saturated solution it falls from 60 cycles.
+  at 10% f_cu dips at 60 and peaks at 105 cycles; in saturated solution it falls after 30 cycles (49.2 MPa at 30, 44.6 MPa at 60,
+  i.e. below the initial 45.8 MPa by 60 cycles; Table 4, p. 6). (Corrected 2026-10-21: earlier text said "falls from 60".)
 - **Not tested**: tension, crack width, mass or XRD after exposure. The strain-hardening of this "HDC" is not shown.
 - CR-ECC in 5% Na₂SO₄: crumb rubber reduces length change; several specimens shrank
-  ([[mohammed2020-cr-ecc-elevated-temperature]], Fig. 10; SH not shown). → [[crumb-rubber]]
+  ([[mohammed2020-cr-ecc-elevated-temperature]], Fig. 10, p. 11; SH not shown). → [[crumb-rubber]]
 
 ## Sulfate, acid, abrasion, leaching, ASR (mostly second-hand)
 - **Sulfate (as cited):**
@@ -65,8 +69,11 @@ updated: 2026-10-21
 - **Acid:**
   - acid mine drainage: first-crack strength −23.7%, σ_tu −17.8%, ε −36.5% (Wu 2020, as cited in [[ma2021-ecc-durability-review]], p. 7);
   - 3% H₂SO₄ for 6 weeks: mass loss > 8% (Turk 2017, as cited);
-  - 5% H₂SO₄, 1 month: slight weight *gain* in CR-ECC; largest loss at 2.5% CR + 1% PVA
-    ([[mohammed2020-cr-ecc-elevated-temperature]], Sections 3.4, Fig. 9) — primary, compression-type specimens only.
+  - 5% H₂SO₄, 28 d: the authors claim a slight weight *gain* (gypsum / ettringite; pp. 9–10, Conclusion iv), but Fig. 8 (p. 10)
+    shows weight **losses** of 0.2–7.3% for 12 of 13 mixes (e.g. M1 0.8, M6 1.6, M9 7.3%; centre-point replicates
+    M5, M9, M11–M13 scatter 4.8–7.3%); only M4 (5% CR, 2% PVA) gained ≈ 0.15% (read from Fig. 8). Largest loss at
+    2.5% CR + 1% PVA ([[mohammed2020-cr-ecc-elevated-temperature]], §3.4; Figs. 8–9, p. 10) — primary, 50 mm cubes only. ⚠️ The Table 5 model mean (−3.11)
+    has the opposite sign to the Fig. 8 bars (pp. 12–13).
 - **Abrasion (as cited, p. 7–8):** metakaolin is the best binder substitute; fiber ranking steel > PVA 8 mm >
   PVA 12 mm; PE does not help.
 - **Leaching** (NH₄NO₃ 3–6 mol/L, 70 d): matrix toughness and MOR down almost 50% (as cited in
@@ -105,7 +112,10 @@ updated: 2026-10-21
   [[lepech2009-ecc-water-permeability]], p. 749). → [[chloride-and-corrosion]]
 - Tight cracks may delay corrosion, but "further research is needed to directly confirm" it ([[li2003-ecc-review]], p. 225).
   Primary tests now exist → [[chloride-and-corrosion]].
-- Chinese PVA-HDC pore structure refines after 8 h at 60 °C: critical pore 62.4 → 50.3 nm ([[chai2023-hdc-ambient-temperature]], Fig. 18).
+- Chinese PVA-HDC pore structure refines after 8 h at 60 °C: critical pore 62.4 → 50.3 nm; share of pore volume > 200 nm
+  ≈ 51% at 20 °C → ≈ 45% at 60 °C (≈ 60% at −30 °C) ([[chai2023-hdc-ambient-temperature]], Fig. 18c, p. 16, read-off).
+  Fig. 18c is labelled "porosity" but the classes sum to ≈ 100%, so they are pore-volume shares, not specimen porosity;
+  the trend is not strictly monotonic (total intrusion highest at 0 °C, ≈ 0.30 mL/g; Fig. 18a).
 
 > Synthesis: primary studies confirm the reviews' headline (PVA-ECC/HDC far outlasts plain concrete under
 > freeze–thaw and sulfate) but add three cautions: (1) carbonation of high-FA ECC is faster than the

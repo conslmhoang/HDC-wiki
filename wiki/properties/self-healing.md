@@ -30,7 +30,7 @@ updated: 2026-10-21
   carry thinner deposits (Fig. 9).
 - **Ca²⁺ supply**: high-FA ECC still had 3.55–4.91% CH at 28 d, so calcite could form
   ([[ozbay2013-ecc-self-healing-sustained-load]], Table 5). Outdoors, Ca(OH)₂ may wash out in rain and
-  re-form ([[herbert2013-ecc-self-healing-natural-environment]], §3.1.1).
+  re-form ([[herbert2013-ecc-self-healing-natural-environment]], §3.1.1, pp. 2837–2838).
 - **Water is required**: no stiffness gain in air at 50% RH ([[ozbay2013-ecc-self-healing-sustained-load]], Fig. 6a).
 - **Refinement — water must bring carbonate**: in cracked ECC M45, 14 d of *static* water saturation gave no
   visible healing; healing appeared after ≈ 3 d of *flowing* water, and partly submerged specimens healed only
@@ -56,7 +56,7 @@ updated: 2026-10-21
 ### Recovery of properties
 | Source (term) | Exposure | Recovery |
 |---|---|---|
-| [[herbert2013-ecc-self-healing-natural-environment]] (HVFA PVA-ECC, FA/C 2.2; residual crack 24 / 30 µm at 0.5 / 1.0% pre-strain) | outdoors, Ann Arbor, 12 months, −11.7 to +32.8 °C | normalised resonant frequency 90–96% after **1 week**, then stable 95–105% for a year (Fig. 4); stiffness 62% at 3 months (0.5% pre-strain), often > 100% after 6 months; first-crack strength ≈80% at 3 months, 116% at 12 months (Fig. 6) |
+| [[herbert2013-ecc-self-healing-natural-environment]] (HVFA PVA-ECC, FA/C 2.2; residual crack 24 / 30 µm at 0.5 / 1.0% pre-strain) | outdoors, Ann Arbor, 12 months, −11.7 to +32.8 °C | normalised resonant frequency 90–96% after **1 week**, then stable 95–105% for a year (Fig. 4); RF ≈ 67% (0.5%) / ≈ 56% (1.0%) immediately after preload (Fig. 4, p. 2837); stiffness recovery at 3 / 6 / 9 / 12 months: 0.5% pre-strain 62 / ≈143 / ≈161 / ≈116%, 1.0% ≈36 / ≈98 / ≈103 / ≈150% vs unhealed controls ≈ 7 / 4% (read from Fig. 6a, p. 2840); first-crack strength 0.5% ≈77 / ≈100 / ≈98 / 116%, 1.0% ≈80 / ≈105 / ≈109 / 116% (Fig. 6b). Repeated damage (Set 1) at 9 / 12 months: stiffness 0.5% ≈22 / ≈53%, 1.0% ≈5 / ≈12% (Fig. 7a, p. 2841) |
 | same, repeated damage | reloaded 3× | RF after 3rd reloading 88% (0.5%) and 84% (1.0%); stiffness recovery 62→10% (0.5%), 37→3% (1.0%) — repeatable but decaying (Figs. 5, 7) |
 | [[ozbay2013-ecc-self-healing-sustained-load]] (PVA-ECC, FA/C 1.2 and 2.2) | 90 d water, unloaded vs 60% sustained flexural load | stiffness 87 vs 76% (ECC-1) and 95 vs 83% (ECC-2) of uncracked (Table 4, ratios computed); MOR and deflection almost fully recovered in 30 d unloaded |
 | [[homma2009-frcc-self-healing]] (FRCC) | 28 d water | strength recovery: steel cord ≈ 0 or negative (corrosion); PE 0–100%; hybrid > 100% at residual elongation < 2 mm (Eq. 6, Fig. 15) |
@@ -66,9 +66,10 @@ updated: 2026-10-21
 | [[homma2009-frcc-self-healing]] | permeability, 28 d | small cracks return to uncracked k (≈10⁻¹¹ m/s); cracks ≥ ≈370 µm stay nearly constant after 3 d; most deposition in first 3 d (Figs. 5, 10) |
 
 - Recovery > 100% includes bulk hydration; healed specimens never exceeded uncracked controls of equal
-  exposure ([[herbert2013-ecc-self-healing-natural-environment]], §3.2.1).
+  exposure ([[herbert2013-ecc-self-healing-natural-environment]], §3.2.1, pp. 2839–2840). Control RF itself rose to ≈ 112–119% within 34 weeks from continued hydration (Fig. 3, p. 2836).
 - Outdoor healing tracks mean temperature more closely than precipitation; recovery lowest after
-  autumn–winter exposure (Figs. 7–8). → [[freeze-thaw]]
+  autumn–winter exposure (Figs. 7–8, pp. 2841–2842; per 3-month interval precipitation ≈ 31 / 11 / 13.5 / 13.6 cm and
+  mean T ≈ 12 / 0.5 / 12 / 22.5 °C, read from Fig. 8). → [[freeze-thaw]]
 
 ### Second-hand (as cited in [[ma2021-ecc-durability-review]])
 - **Wet–dry cycles:** relative water permeability fell to 0 after 10 cycles (Ma 2014, p. 3). Note: this is
@@ -93,7 +94,7 @@ updated: 2026-10-21
   (ECC-1 ≈115 vs 60 µm; ECC-2 ≈85 vs 40 µm) and cuts healing; unloaded tests may overestimate in-service
   healing ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3, Conclusions). → [[crack-width]]
 - **Fly ash**: FA/C 2.2 gives more, narrower cracks and better healing than 1.2
-  ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3; [[herbert2013-ecc-self-healing-natural-environment]], §2.1). → [[fly-ash]]
+  ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3; [[herbert2013-ecc-self-healing-natural-environment]], §2.1, p. 2834 — its 24 / 30 µm widths are cited with ref. [29] ⚠️). → [[fly-ash]]
 - **Fibre count / fineness**: more, finer fibres → thicker deposits ([[homma2009-frcc-self-healing]]). → [[pe-fiber]]
 - **Exposure**: continuous water > wet–dry > CO₂-air > dry air. Wet–dry healing in ECC is "reasonably
   robust" ([[yang2009-ecc-self-healing-wet-dry]], Abstract), but hot (55 °C) drying reduces it (Fig. 7).

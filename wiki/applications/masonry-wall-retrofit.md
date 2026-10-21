@@ -85,13 +85,18 @@ or hybrid ([[tabrizikahou2022-masonry-ecc-sma-retrofit]], Sect. 2, Fig. 1).
 
 | Retrofit | Peak lateral force (kN) | Note | Location |
 |---|---|---|---|
-| URM | not stated numerically (Fig. 25) | ≈ 89% of masonry elements yielded; energy 1.52 × 10⁷ J | Figs. 14, 26 |
-| ECC 20 / 25 / 30 mm both faces (cohesive) | 113 / — / 135 | yielded elements 27 / 24 / 18%; energy 25.1 / 26.9 / 29.3 MJ | Conclusions, Table 8, Figs. 19, 25 |
-| Ni–Ti SMA only, 1.0 / 1.5 / 2.0 mm | 155 / — / 214 | ≈ 89% yielded; energy 21.5 / 23.4 / 25.1 MJ (ECC-only slightly higher) | Table 7, Fig. 16 |
-| Ni–Ti X-strips (1.5 mm) inside 25 mm ECC | **246** (highest) | ≈ 68% yielded; energy 4.74 × 10⁷ J vs URM 1.52 × 10⁷ J (about 3.1×; paper says "+318%" ⚠️) | Fig. 26 |
+| URM | **72.7** (Fig. 25 bar label) | ≈ 89% of masonry elements yielded; energy 1.52 × 10⁷ J | Fig. 25, p. 20; Figs. 14, 26 |
+| ECC 20 / 25 / 30 mm both faces (cohesive) | 113 / **122** / 135 (≈ 1.6–1.9× URM, computed) | yielded elements 27 / 24 / 18%; energy 25.1 / 26.9 / 29.3 MJ | Conclusions p. 21; Table 8; Fig. 19; Fig. 25, p. 20 |
+| Ni–Ti SMA only, 1.0 / 1.5 / 2.0 mm | 155 / **183** / 214 (≈ 2.1–2.9× URM, computed) | ≈ 89% yielded; energy 21.5 / 23.4 / 25.1 MJ (ECC-only slightly higher) | Table 7, Fig. 16; Fig. 25, p. 20 |
+| Ni–Ti X-strips (1.5 mm) inside 25 mm ECC | **246** (highest; ≈ 3.4× URM, computed) | ≈ 68% yielded; energy 4.74 × 10⁷ J vs URM 1.52 × 10⁷ J (about 3.1×; paper says "+318%" and also "more than three times", p. 20 ⚠️) | Fig. 26, p. 20 |
 
 - **Interface assumption controls the result:** dissipated energy 25–29 MJ (cohesive), 24–28 MJ (tied), 14 MJ (hard
   contact, µ = 0.4) (Table 8). → [[interface-bond]]
+- The "hysteresis raised by 116% / 117%" thickness statements (p. 21) match energy ratios 25.1/21.5 and 29.3/25.1 = 1.167,
+  i.e. "≈ 117% of" (≈ +17%), not +117% (interpretation, computed in the source page).
+- ⚠️ **Energy magnitudes look ≈ 500× too large:** the Fig. 1b loading history (amplitudes ≈ 2–15 mm, cumulative ≈ 0.37 m)
+  bounds URM energy at ≈ 3 × 10⁴ J vs the reported 1.52 × 10⁷ J (computed in [[tabrizikahou2022-masonry-ecc-sma-retrofit]], p. 4, p. 20).
+  Treat the energies as relative values only.
 - ⚠️ **Caveat:** the "ECC" input softens in tension from 1.45 MPa (Table 5). The model therefore does **not** exercise
   tensile strain hardening; results describe a tension-softening overlay, not HDC/ECC as defined in
   [[terminology-hdc-ecc-shcc]].

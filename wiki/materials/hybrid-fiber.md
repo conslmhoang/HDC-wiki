@@ -62,6 +62,9 @@ be shown in the source (CLAUDE.md §3).
   hardening, in contrast to UHPFRC with > 1.5 vol.% steel ([[lee2021-hsdc-wall-emi-impact]], §1).
 - **EMI shielding:** steel fibers above the percolation threshold form a conductive network; PE is non-conductive
   ([[lee2021-hsdc-wall-emi-impact]], §2.2, §3.1). Longer steel fibers (35 mm) shield better than 19.5 mm (as cited, Fig. 5).
+  Read from Fig. 5 (p. 7): full-depth HSDC panels ≈ 16 → 43 dB (100 mm) and ≈ 20 → 50 dB (200 mm) over 400–1400 MHz, vs
+  steel-FRC references ≈ 40–57 dB; a 20 mm HSDC skin raised a 100 mm NC panel from ≈ 4.6 to ≈ 35 dB (single) / ≈ 48.5 dB
+  (double) at 1400 MHz (Fig. 6, p. 8).
   → [[extreme-loading-applications]]
 - **Rate:** a steel/PE hybrid roughly doubled strength at high rate with unchanged ε (Maalej 2005, as cited in
   [[mechtcherine2011-shcc-high-strain-rate]], p. 51). → [[strain-rate-effects]]

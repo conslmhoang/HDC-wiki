@@ -4,7 +4,7 @@ slug: impact-test
 aliases: [drop-weight test, drop hammer, repeated impact test, incremental drop-weight test]
 tags: [dynamic, test]
 sources: [ranade2017-hshdc-impact-resistance, lee2021-hsdc-wall-emi-impact, mechtcherine2011-shcc-high-strain-rate]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Drop-Weight Impact Test
@@ -13,15 +13,16 @@ updated: 2026-10-20
 | Source | Material (authors' term) | Specimen | Impactor | Drop height | Supports | Instrumentation | Failure criterion |
 |---|---|---|---|---|---|---|---|
 | [[ranade2017-hshdc-impact-resistance]] (p. 28–29, Figs. 3–4) | HSHDC (Michigan), unreinforced | slab 300 × 300 × 25 mm, 2 per case | 16.04 kg, 75 mm (instrumented) or 50 mm hemispherical head | 0.35 / 0.70 / 1.40 m (2.30 / 3.25 / 4.60 m/s), fixed, up to 20 blows | shown only in Fig. 3c ⚠️ | 3 × 44.5 kN load cells, 2 accelerometers (±1500 g), 200 kHz, displacement by double integration, 30 fps video | almost zero rebound |
-| [[lee2021-hsdc-wall-emi-impact]] (§2.3, Fig. 4) | HSDC (Korea Univ., 1.0% steel + 0.5% PE) skins on NC | panel 300 × 300 mm, 100–300 mm thick, HSDC 5/10/20 mm on one or both faces; 1 panel per case | 100 kg, 70 mm cylinder-frustum head | 200 mm, **+100 mm per blow** until failure | clear span 250 mm, all edges fixed | 2 support load cells, laser displacement sensor at bottom centre, 200 kHz | failure (scabbing / perforation); crack count and max width per blow (method not stated) |
+| [[lee2021-hsdc-wall-emi-impact]] (§2.3, p. 5; Fig. 4, p. 6) | HSDC (Korea Univ., 1.0% steel + 0.5% PE) skins on NC | panel 300 × 300 mm, 100–300 mm thick, HSDC 5/10/20 mm on one or both faces; 1 panel per case | 100 kg, 70 mm cylinder-frustum head | 200 mm, **+100 mm per blow** up to 1100 mm (blow 10), then repeated at 1100 mm until failure (Fig. 9 x-axis, p. 10) | clear span 250 mm, all edges fixed | 2 support load cells, laser displacement sensor at bottom centre, 200 kHz | failure (scabbing / perforation); crack count and max width (mm) per blow (method not stated) |
 
 ## Key points
 - Ranade 2017: a single impact runs in three stages S1–S3, with peak contact force (PCF) at about 0.04 ms.
   PCF is sensitive to surface roughness and sampling rate ([[ranade2017-hshdc-impact-resistance]], p. 29, 31).
 - Lee 2021 uses an **incremental-height** protocol, so the output is total imparted energy to failure rather
-  than blows at a fixed energy. H20D (20 mm on both faces) took > 5× the energy of H5S
-  ([[lee2021-hsdc-wall-emi-impact]], Fig. 11). Results are not directly comparable with fixed-height tests.
-- Lee 2021 combines impact with EMI shielding measured before and after impact (§3.2.2). → [[extreme-loading-applications]]
+  than blows at a fixed energy. H20D (20 mm on both faces) took 114.9 J vs 19.0 J for H5S (6.0×) and 86.7 J for H5D
+  (printed labels, [[lee2021-hsdc-wall-emi-impact]], Fig. 11, p. 12); "total imparted energy" is not defined, and 19 J is far
+  below the ≈ 196 J of one 200 mm drop ⚠️. Results are not directly comparable with fixed-height tests.
+- Lee 2021 combines impact with EMI shielding measured before and after impact (§3.2.2, p. 12). → [[extreme-loading-applications]]
 - Hopkinson-bar spallation of SHCC at 140–180 s⁻¹ gave a strength DIF of 6.7 (Millon et al. 2010, as cited in
   [[mechtcherine2011-shcc-high-strain-rate]], p. 58). → [[strain-rate-effects]]
 

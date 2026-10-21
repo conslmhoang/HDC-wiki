@@ -4,7 +4,7 @@ slug: four-point-bending-inverse-analysis
 aliases: [4PB, four-point bending, inverse analysis, JCI-S-003-2005, UM method, moment–curvature method, FPBT, deflection hardening]
 tags: [flexure, test, inverse-analysis, quality-control, standard]
 sources: [kanakubo2006-dfrcc-tensile-test-method, qian2007-shcc-inverse-tensile-strain, zhang2022-hshdcc-review, chai2019-hdcc-freeze-thaw-carbonation-flexure, sui2018-uhp-ecc-flexural-fatigue, zhou2023-hsecc-elevated-temperature, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, ozbay2013-ecc-self-healing-sustained-load, zhang2022-ecc-carbonation-sustained-load, zhong2019-ecc-freeze-thaw, wang2023-ecc-frost-damage, chavesfigueiredo2020-printed-shcc]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Four-Point Bending and Inverse Analysis of Tensile Properties
@@ -73,12 +73,12 @@ It is used because direct tension is hard to run for quality control → [[dogbo
 | Source | Term | Specimen / span | Rate | Main output |
 |---|---|---|---|---|
 | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] | Eco-HDCC | 100 × 100 × 400 mm prism, CECS 13-2009 (span 300 mm computed, not stated ⚠️) | 0.2 mm/min | 14.31 MPa, δ_u 2.70 mm at 0 cycles; four-stage deflection-hardening curve kept after 150 F–T cycles + carbonation (Table 4, Figs. 6–7) → [[freeze-thaw]], [[carbonation]] |
-| [[sui2018-uhp-ecc-flexural-fatigue]] | UHP-ECC (PE) | 100 × 100 × 400 mm, span 300 mm, load points 100 mm apart | 1 mm/min static; 8 Hz fatigue | about 22 MPa, deflection > span/30; DIC: first crack at 58% of peak (Figs. 6–7, 9) → [[fatigue]] |
-| [[gao2020-hdcc-recycled-fine-aggregate]] | HDCC | 400 × 100 × 15 mm plate, span 300 mm | — | σ_bp up to 11.89 MPa (RFA, 2%); deflection hardening at Vf ≥ 1% (Table 5) → [[recycled-fine-aggregate]] |
-| [[jin2019-hvfa-shcc-structural]] | SHCC | 350 × 50 × 15 mm coupon | — | cracking strength falls with FA (Fig. 14) |
+| [[sui2018-uhp-ecc-flexural-fatigue]] | UHP-ECC (PE) | 100 × 100 × 400 mm, span 300 mm, load points 100 mm apart | 1 mm/min static; 8 Hz fatigue | about 22 MPa (≈ 21–22 at ≈ 9–11 mm, read from Fig. 7), deflection > span/30; DIC: first crack at 58% of peak (Figs. 6–7, 9; pp. 5–8) → [[fatigue]] |
+| [[gao2020-hdcc-recycled-fine-aggregate]] | HDCC | 400 × 100 × 15 mm plate, span 300 mm, loads 100 mm apart, 50 mm overhangs (Fig. 3a, p. 5) | 0.1 mm/min | σ_bp up to 11.89 MPa (RFA, 2%); deflection hardening at Vf ≥ 1% (Table 5) → [[recycled-fine-aggregate]] |
+| [[jin2019-hvfa-shcc-structural]] | SHCC | 350 × 50 × 15 mm coupon, span 300 mm, thirds of 100 mm (Fig. 11, p. 13) | — | 7 and 90 d only; cracking strength falls with FA (7 d 7.2 → 4.8 MPa); flexural strength 9.8–13.6 (7 d) / 13.1–16.8 MPa (90 d) (Fig. 14, p. 15) |
 | [[ozbay2013-ecc-self-healing-sustained-load]] | ECC | 360 × 50 × 75 mm, span 304 mm | — | MOR 12.4 / 10.1 MPa (FA/C 1.2 / 2.2), 28 d (Table 3) |
-| [[zhang2022-ecc-carbonation-sustained-load]] | ECC | 400 × 100 × 50 mm, span 300 mm | — | first crack 7.41, ultimate 11.41 MPa, 28 d (§2.2) |
-| [[zhong2019-ecc-freeze-thaw]] | ECC | 100 × 100 × 400 mm | 0.02 mm/s | flexure every 25 F–T cycles (§2.3, Fig. 7) |
+| [[zhang2022-ecc-carbonation-sustained-load]] | ECC | 400 × 100 × 50 mm, span 300 mm | — | first crack 7.41, ultimate 11.41 MPa, 28 d (p. 3, §2.2); third-point loading, loads 100 mm apart (Fig. 1, p. 4) |
+| [[zhong2019-ecc-freeze-thaw]] | ECC | 100 × 100 × 400 mm | 0.02 mm/s | flexure every 25 F–T cycles (§2.3); 0-cycle peak loads ≈ 12.5–31 kN across 25 mixes (read from Fig. 7, p. 6) |
 | [[wang2023-ecc-frost-damage]] | ECC | 40 × 40 × 160 mm | — | 18.6 MPa at 28 d; −11% after 300 F–T cycles (§3.2) |
 | [[chavesfigueiredo2020-printed-shcc]] | printed SHCC | printed beams (Figs. 4–6) | 1 mm/s | flexural hardening in all series; more layers → fewer cracks |
 

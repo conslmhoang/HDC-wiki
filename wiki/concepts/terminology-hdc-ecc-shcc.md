@@ -44,7 +44,7 @@ updated: 2026-10-21
 before the term ECC existed ([[li1992-steady-state-multiple-cracking]]). → [[steady-state-cracking]]
 
 **Chinese industry standard JC/T 2461-2018** defines HDC as a fiber-reinforced cementitious material with
-**ultimate tensile strain ≥ 0.50% and average crack width ≤ 200 µm** (as cited in [[chai2023-hdc-ambient-temperature]], §1, Fig. 1).
+**ultimate tensile strain ≥ 0.50% and average crack width ≤ 200 µm** (as cited in [[chai2023-hdc-ambient-temperature]], §1, p. 1; Fig. 1, p. 2; Chai's own "ultimate tensile strain" is at peak stress).
 The standard itself has not been ingested ⚠️. It is far looser than the ECC convention (> 3%, < 100 µm).
 → [[gaps]]
 
@@ -91,7 +91,7 @@ The standard itself has not been ingested ⚠️. It is far looser than the ECC 
 | **FRCC ⊃ DFRCC ⊃ HPFRCC** | JCI class chain: DFRCC = multiple cracking in bending (may not harden in tension); HPFRCC = strain hardening with multiple cracking in uniaxial tension; ECC (Li 1993) is "one type" of HPFRCC | JCI 2003 (as cited) | — | — | [[kunieda2006-hpfrcc-japan-applications]], p. 19, Fig. 3; [[kanakubo2006-dfrcc-tensile-test-method]], p. 3 |
 | **FRCC** | fibre reinforced cementitious composites; FRCC(PE) is strain-**softening** | Homma et al. | PE, steel cord | **no** | [[homma2009-frcc-self-healing]], p. 224 |
 | **UHP-SHCC** | between ordinary SHCC and UHPFRC; f'c 95 MPa, PE 1.5%, ε ≈ 1.5% in dumbbells | Nagoya Univ. (Kunieda) | PE | yes (dumbbells); lost in unreinforced 50 mm-thick members | [[kunieda2010-uhp-shcc-steel-reinforcement]], §1, Fig. 1, Table 3 |
-| **UHP-ECC** | f'c 120.7 MPa (90 d cube), σ_tu up to 12 MPa, ε > 8% (abstract) | Shenzhen / PolyU | PE | yes (Fig. 4) | [[sui2018-uhp-ecc-flexural-fatigue]], abstract |
+| **UHP-ECC** | f'c 120.7 MPa (90 d cube), σ_tu ≈ 11.5–12.4 MPa, ε ≈ 6.9–8.8% end of hardening (avg curve ≈ 11.1 MPa / 8.3%; abstract "up to 12", "> 8%") | Shenzhen / PolyU | PE | yes (Fig. 4, p. 5) | [[sui2018-uhp-ecc-flexural-fatigue]], abstract; Fig. 4 |
 | **HSECC** | "high strength PVA-ECC", PVA + copper-coated steel, f'c 83.1 MPa | Zhou et al. | PVA + steel | **no**: no tension test; prisms soften after peak at all temperatures | [[zhou2023-hsecc-elevated-temperature]], Fig. 10 |
 | **CR-ECC** | crumb-rubber ECC | Mohammed et al. | PVA | **no** (compression, acid, sulphate only) | [[mohammed2020-cr-ecc-elevated-temperature]] |
 | **SHCC** ("also referred to as ECC") | TU Dresden, TU Delft/TU/e usage | Europe | PVA, PE | yes; printed PVA-SHCC only 0.15–0.31% | [[mechtcherine2011-shcc-high-strain-rate]], p. 51; [[chavesfigueiredo2020-printed-shcc]], §1, Table 5; [[ivaniuk2022-printable-shcc-design]], §1 |
@@ -102,10 +102,10 @@ The standard itself has not been ingested ⚠️. It is far looser than the ECC 
 
 - Four ECC classes by strength/ductility (low/low, low/high, high/low, high/high) are used as a literature map
   ([[sui2018-uhp-ecc-flexural-fatigue]], Fig. 1). Conventional PVA-ECC f'c is "generally ≤ 50 MPa" (as cited there).
-- Wang 2019 calls ECC "ultra-high tensile strength" while measuring σ_tu 4.84 MPa; do not adopt the phrase
-  ([[wang2019-rc-beam-ecc-shear-strengthening]], §2).
+- Wang 2019 calls ECC "ultra-high tensile strength" while measuring σ_tu 4.84 MPa (strain at peak ≈ 0.9–1.9%, ultimate
+  ≈ 2.6–3.45%, read from Fig. 2, p. 3); do not adopt the phrase ([[wang2019-rc-beam-ecc-shear-strengthening]], §2, p. 3).
 - "UHP" and "HS" prefixes are inconsistent: UHP-SHCC is 95 MPa and about 1.5% ([[kunieda2010-uhp-shcc-steel-reinforcement]]),
-  below Zhang's HSHDCC bar (> 100 MPa, > 3%); UHP-ECC (120.7 MPa, > 8%) meets it ([[sui2018-uhp-ecc-flexural-fatigue]]).
+  below Zhang's HSHDCC bar (> 100 MPa, > 3%); UHP-ECC (120.7 MPa, ≈ 8.3% avg, Fig. 4) meets it ([[sui2018-uhp-ecc-flexural-fatigue]]).
 
 ⚔️ **Origin of the 0.5% / 200 µm definition.** The same Southeast Univ. group attributes the HDCC threshold
 (> 0.5% average ultimate strain, < 200 µm average crack width) to **JSCE 2008** in

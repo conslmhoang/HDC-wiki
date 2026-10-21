@@ -34,7 +34,7 @@ shear capacity, failure mode, and design formulas. Material-level tension is on 
 | [[deng2018-hdc-short-columns]] Tables 5–7 | 6 square 250 mm XAUAT PVA-HDC short columns vs 1 RC column, reversed cyclic load | HDC3 vs RC1 (same N, ρ_sv): P_m +24%, ductility μ 2.32 vs 1.69, ultimate drift 1/32 vs 1/55; cracking load 120–150 vs 80 kN; energy 2.8–4.4× |
 | same, p. 8 | stirrup ratio cut by 20 / 33% | P_m only −4.4 / −6.6% → HDC can replace part of the stirrups |
 | same, Table 7 | code check | P_m / V_n = 1.08–1.26 with GB 50010-2010; 1.40–2.08 with ACI 318-05 (both conservative) |
-| [[xue2023-shcc-structural-review]] Section 3.2, Fig. 3 | SHCC beam without stirrups (25 mm bar) | sudden diagonal shear failure at nominal 9.8 MPa (a/d 2) and 7.0 MPa (a/d 3); crack angle 33.5° / 28°; smooth fracture surface |
+| [[xue2023-shcc-structural-review]] Section 3.2, p. 5; Fig. 3 | SHCC beam without stirrups (25 mm bar) | sudden diagonal shear failure at nominal 9.8 MPa (a/d 2) and 7.0 MPa (a/d 3); crack angle 33.5° / 28°; smooth fracture surface |
 | [[li2021-hdc-beam-shear]] Table 4, Table 6 | 8 PVA-HDC (ε_tu 0.968%, f_cu 70.55 MPa) + 2 RC beams 120 × 180 mm **with stirrups**, a/d 1 and 2, ρ_sv 0.40–0.79% | peak 471–520 vs RC 393 kN (a/d 1); 285–354 vs 275 kN (a/d 2); V/(√f'c·bd) 1.82–2.00 vs 1.41 (a/d 1) and 1.12–1.39 vs 0.94 (a/d 2) |
 | same, Table 6, Figs. 5–6 | failure modes | HDC: direct shear (a/d 1), shear compression or shear tension (a/d 2); RC: diagonal compression with crushing and spalling |
 | same, §3.1–3.4 | cracking, deflection, steel | HDC first cracking at 70–80% of the RC cracking load; peak 1.85–3.18× the first inclined-cracking load; deflection at peak 2.72× (a/d 1) and 1.30× (a/d 2) of RC; rebar yielded at loads 12–84% higher than in RC, then > 25% further load gain |
@@ -64,17 +64,21 @@ shear capacity, failure mode, and design formulas. Material-level tension is on 
 ### Shear strengthening of RC beams without stirrups
 | Source | Strengthening | Result |
 |---|---|---|
-| [[wang2019-rc-beam-ecc-shear-strengthening]] Table 3 | sprayed PVA-ECC (σ_tu 4.84 MPa) side layers 20 / 40 mm, 150 × 300 mm beams | ultimate load +20–89%; best +89% (185 → 350 kN) at a/d 2, ρ 2.18%; +40–89% at a/d 2 vs +20–41% at a/d 3 |
+| [[wang2019-rc-beam-ecc-shear-strengthening]] Table 3, p. 7 | sprayed PVA-ECC (σ_tu 4.84 MPa) side layers 20 / 40 mm, 150 × 300 mm beams | ultimate load +20–89%; best +89% (185 → 350 kN) at a/d 2, ρ 2.18%; +40–89% at a/d 2 vs +20–41% at a/d 3 |
 | same, Sect. 3.3 | failure | still shear or debonding, never flexure; all 40 mm layers debonded; at a/d 3, 20 and 40 mm gave the same capacity |
 | same, Sect. 3.3.1 | over-strengthening | counting the ECC width lowered the effective ρ to 0.58%, below the code minimum ("0.65%" ⚠️): SA-40-2 190 kN vs SA-20-2 250 kN |
-| [[xue2023-shcc-structural-review]] Section 4.2 (as cited) | 3 mm SHCC on both sides, a/d 3 | "significant" increase (no value); contact stress plus bridging on layer cracks |
+| [[xue2023-shcc-structural-review]] Section 4.2 (as cited, ref. 28) | 3 mm SHCC on both sides, a/d 3 (d 165 mm, shear span 500, span 1000 mm) | control RC ≈ 52 kN vs SHCC-3 ≈ 66 kN (≈ +27%, computed), read from Fig. 9 (p. 10); text says only "significant"; contact stress plus bridging on layer cracks. Drawing shows a single central load although the text says four-point bending ⚠️ |
 | [[yuan2020-nshsdc-beam-strengthening]] Table 8 | Korea Univ. NSHSDC jackets (steel + PE hybrid) on 125 × 250 mm NSC beams without stirrups | bottom only: no gain (74.04 vs 75.93 kN), web failed in shear first; top + bottom +8%; 3 sides +29% (concrete crushing, no rebar yield); 4 sides +40% with **flexural** failure, energy 7.11 vs 5.73 kN·m for a stirrup-reinforced beam |
 
-### Design model: truss + arch ([[wang2019-rc-beam-ecc-shear-strengthening]], Eqs. 1, 10–11, Table 4)
+### Design model: truss + arch ([[wang2019-rc-beam-ecc-shear-strengthening]], Eqs. 1, 10–11, pp. 11–12; Table 4, p. 13)
 - V = 2(η·β·σ_t·h·t + arch term), with the ECC post-cracking tensile strength σ_t acting as a 45° tension tie
   over layer height h and thickness t. → [[tensile-constitutive-model]]
-- η = 0.6 (20 mm) or 0.4 (40 mm), an empirical bond-efficiency factor; β = −23.04ρ + 1.00 (units of ρ ⚠️);
-  concrete softening ν = 0.6; φ = 45°.
+- η = 0.6 (20 mm) or 0.4 (40 mm), an empirical bond-efficiency factor; β = −23.04ρ + 1.00 with ρ the
+  after-strengthening reinforcement ratio **as a decimal** (verified by back-calculating the a/d = 3 rows of Table 4:
+  SA-20-3 → 24 kN, SB-20-3 → 17, SA-40-3 → 33, SB-40-3 → 26, all matching; Eq. 11, p. 12);
+  concrete softening ν = 0.6 (ACI; JSCE ν = 0.7 − f_c/200 and Eurocode ν = 0.6(1 − f_c/250) also cited); φ = 45° (pp. 12–13).
+- The back-calculation works with **σ_t = 4.0 MPa** (Table 1 f_t, ≈ first-crack stress, p. 4), not the 4.84 MPa tensile strength.
+- Calculated / experimental ΔP (kN): 54/114, 24/32, 47/105, 17/25, 93/54, 33/35, 86/165, 26/26 (Table 4, p. 13).
 - Prediction/test = 68–100% at a/d 3 but only 45–52% at a/d 2 (conservative where arching dominates).
 - The authors call ν = 0.6 too conservative for ECC under biaxial tension–compression and list it as a research need.
 

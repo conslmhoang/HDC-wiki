@@ -19,7 +19,7 @@ This is different from the micro-scale fiber/matrix bond (τ0, Gd), which is cov
 
 ## Key points
 - **Bond is a first-order design parameter for overlays.** All 40 mm sprayed ECC side layers on RC beams debonded,
-  and some 20 mm layers peeled off after failure ([[wang2019-rc-beam-ecc-shear-strengthening]], §3.3.3, Fig. 7).
+  and some 20 mm layers peeled off after failure ([[wang2019-rc-beam-ecc-shear-strengthening]], §3.3.3, p. 7; Fig. 7, p. 9).
   The authors cover this with an empirical efficiency factor η (0.6 for 20 mm, 0.4 for 40 mm) in their shear model (§4.3.1)
   and advise limiting layer thickness (Conclusions). → [[rc-member-strengthening]], [[shear-behaviour]]
 - **In FE, the assumed interface law changes the result about 2×.** The dissipated energy of ECC-retrofitted masonry
@@ -42,28 +42,33 @@ This is different from the micro-scale fiber/matrix bond (τ0, Gd), which is cov
 
 ### Substrate bond: slant shear, NSHSDC on normal concrete
 ASTM C882, 100 × 100 × 300 mm prisms, 28 d, mean of 3; LS = as-cast (low roughness), HS = chiselled (high roughness)
-([[yuan2020-nshsdc-beam-strengthening]], Table 7):
+([[yuan2020-nshsdc-beam-strengthening]], Table 7, p. 7; bond strength from Fig. 7, p. 10):
 
-| Interface angle | LS τ (MPa) | HS τ (MPa) | Failure (LS / HS) |
-|---|---|---|---|
-| 30° | 16.4 | 20.9 | concrete crushing / – |
-| 45° | 14.5 | 21.4 | near-interface concrete cracking / concrete crushing |
-| 60° | 6.1 | 13.2 | near-interface cracking / interface sliding |
-| 75° | 3.1 | 5.3 | near-interface cracking / interface sliding |
+| Interface angle | LS τ (MPa) | HS τ (MPa) | LS / HS bond strength √(σ²+τ²) (MPa) | Failure (primary / secondary; same for LS and HS) |
+|---|---|---|---|---|
+| 30° | 16.4 | 20.9 | 32.8 / 41.7 | concrete crushing / – |
+| 45° | 14.5 | 21.4 | 20.6 / 30.3 | near-interface concrete cracking / concrete crushing |
+| 60° | 6.1 | 13.2 | 7.0 / 15.2 | near-interface cracking / interface sliding |
+| 75° | 3.1 | 5.3 | 4.4 / 7.5 | near-interface cracking / interface sliding |
 
-- Chiselling raises slant shear strength by about 27% (§3.1.1, Fig. 6).
+- Correction (2026-10-21, PDF re-check): the two failure entries are the **primary and secondary** modes, identical for
+  LS and HS at each angle; an earlier version of this table misread them as "LS / HS".
+
+- Chiselling raises slant shear strength by about 27% (§3.1.1, p. 8; Fig. 6).
 - High-roughness interfaces meet the ACI 546 range (14–21 MPa at 28 d) except at 75°; low-roughness ones only at
-  30–45° (Fig. 7).
-- Codes are conservative: mean τ/τ_pred 22.5 (ACI 318-19), 1.5 (AASHTO), 3.6 (CSA), 1.7 (MC2010) (Table 7).
+  30–45° (Fig. 7, p. 10).
+- Codes are conservative: mean τ/τ_pred 22.5 (ACI 318-19, range 5.5–38.3, COV 0.53), 1.5 (AASHTO, 0.6–2.7), 3.6 (CSA,
+  1.5–6.5), 1.7 (MC2010, 0.8–2.7) (Table 7, p. 7). The text (p. 10) also calls the code predictions "totally higher than
+  the test values", which contradicts τ/τ_pred > 1 ⚠️.
   ⚠️ The conclusion gives 1.27–2.17, which does not match Table 7.
-- In the beam tests, no NSHSDC jacket delaminated (substrate chiselled 40 mm bottom / 20 mm sides and top) (§3.2.1).
+- In the beam tests, no NSHSDC jacket delaminated (substrate chiselled 40 mm bottom / 20 mm sides and top) (§3.2.1, p. 11).
 - The same Korea Univ. group cast 5–20 mm HSDC skins on chiselled NC panels for impact tests
-  ([[lee2021-hsdc-wall-emi-impact]], §2.1). → [[impact-resistance]], [[hshdc]]
+  ([[lee2021-hsdc-wall-emi-impact]], §2.1, p. 3). → [[impact-resistance]], [[hshdc]]
 
 ### Substrate preparation reported
 | Source | Substrate | Preparation | Outcome |
 |---|---|---|---|
-| [[wang2019-rc-beam-ecc-shear-strengthening]], §3.1 | RC beam sides | chiselled, saturated-surface-dry, interface agent (0.85 cement + 0.05 SF + 0.1 expansive agent + 0.3 water, by mass); ECC sprayed | 40 mm layers all debonded; 20 mm partly |
+| [[wang2019-rc-beam-ecc-shear-strengthening]], §3.1, p. 4 | RC beam sides | chiselled, saturated-surface-dry, interface agent (0.85 cement + 0.05 SF + 0.1 expansive agent + 0.3 water, by mass); ECC sprayed | 40 mm layers all debonded; 20 mm partly |
 | [[yuan2020-nshsdc-beam-strengthening]], §2.2.2 | NSC beams | chiselled | no delamination |
 | [[xue2023-shcc-structural-review]], §4.2 | RC beams | retarder wash-out roughening | debonding after layer crack localisation (10, 30 mm) |
 | [[deng2017-rc-column-hdc-jacket]], p. 2–3 | RC columns (30 mm four-sided jacket) | cover gouged off, surface wetted, HDC cast | no jacket–concrete bond failure before peak load (visual only) |
@@ -74,8 +79,8 @@ ASTM C882, 100 × 100 × 300 mm prisms, 28 d, mean of 3; LS = as-cast (low rough
 ### Interlayer bond in 3D-printed SHCC
 | Source | Material | Test | Result |
 |---|---|---|---|
-| [[chavesfigueiredo2020-printed-shcc]], §3.5, Fig. 14 | printed PVA-SHCC (2 vol.%), 28 d | direct tension on 10 × 10 × 20 mm prisms across the interface; 3 vs 36 min interval | brittle, no strain hardening (few fibers cross the interface), but interface strength comparable to or above the bulk first-crack strength; interval had no significant effect; interface had the **lowest** air-void content (Figs. 15–16) |
-| [[ivaniuk2022-printable-shcc-design]], Table 3, §3.2.2 | printed PE-SHCC (1.5 vol.% 6 mm PE), 28 d | 3PB across the interlayer (D3) vs along layers (D1) | Ref: 18.5 (D3) vs 22.0 MPa (D1); lower D3 attributed to a weaker interlayer |
+| [[chavesfigueiredo2020-printed-shcc]], §3.5, Fig. 14, p. 16 | printed PVA-SHCC (2 vol.%), 28 d | direct tension on 10 × 10 × 20 mm prisms across the interface; 3 vs 36 min interval | brittle, no strain hardening (few fibers cross the interface), but interface strength comparable to or slightly above (§3.5) / "in the same range" as (Conclusions, p. 20) the bulk first-crack strength: ≈ 2.4 (X2T), ≈ 1.9 (X2TT), ≈ 1.4 (Y2T), ≈ 1.2 MPa (Y2TT) (read from Fig. 14; n = 4–6); interval had no significant effect; interface had the **lowest** air-void content (X layers ≈ 12–14%, X interface ≈ 10%; Figs. 15–16, pp. 17–18) |
+| [[ivaniuk2022-printable-shcc-design]], Table 3, p. 14, §3.2.2 | printed PE-SHCC (1.5 vol.% 6 mm PE), 28 d | 3PB across the interlayer (D3) vs along layers (D1) | Ref: 18.5 (D3) vs 22.0 MPa (D1); lower D3 attributed to a weaker interlayer |
 
 ⚔️ **Conflict:** the interlayer is *not* the weak zone in [[chavesfigueiredo2020-printed-shcc]] (which also cites
 Wolfs 2019 and Feng 2015 reporting weaker interfaces), but *is* weaker in [[ivaniuk2022-printable-shcc-design]].

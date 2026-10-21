@@ -3,52 +3,55 @@ type: source
 slug: tabrizikahou2022-masonry-ecc-sma-retrofit
 title: "Cyclic Behavior of Masonry Shear Walls Retrofitted with Engineered Cementitious Composite and Pseudoelastic Shape Memory Alloy"
 authors: [Alireza Tabrizikahou, Mieczysław Kuczma, Magdalena Łasecka-Plura, Ehsan Noroozinejad Farsangi]
-year: 2022            # Sensors 22(2), January 2022 issue; published online 10 Jan 2022 (received 14 Dec 2021, accepted 7 Jan 2022)
+year: 2022            # Sensors 22(2), January 2022 issue; published online 10 Jan 2022 (received 14 Dec 2021, accepted 7 Jan 2022) (p. 1)
 venue: "Sensors (MDPI) 22(2) (2022) 511"
 doi: "10.3390/s22020511"
-raw_file: raw/papers/Tabrizikahou2022_masonry-ECC-SMA-retrofit.xml
+raw_file: raw/papers/Tabrizikahou2022_masonry-ECC-SMA-retrofit.pdf
 material_term: "ECC (engineered cementitious composite), used as epoxy/resin-bonded (precast) sheets. No fiber type, mix or tensile strain capacity reported; ECC properties are taken second-hand from Munjal & Singh (refs 33, 34) and are modelled with a tension-SOFTENING CDP law (Table 5), i.e. strain hardening is not represented"
 study_type: numerical   # Abaqus FE only; no new experiments. Model validated against experiments of others (Singh & Munjal, ref. 35; wall geometry from Karimi et al., ref. 36)
 tags: [ecc, masonry, urm, seismic-retrofit, in-plane-cyclic, shape-memory-alloy, ni-ti, hybrid-retrofit, finite-element, abaqus, concrete-damaged-plasticity, cohesive-interface, energy-dissipation, poznan-university-of-technology]
 ingested: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # FE study of URM shear walls retrofitted with ECC sheets and Ni–Ti SMA strips (Tabrizikahou et al., 2022)
+
+> Re-checked against the publisher PDF (23 pp.) on 2026-10-21: page numbers added; peak forces of all
+> eight models now taken from the bar labels in Fig. 25 (p. 20); all table values confirmed.
 
 ## One-paragraph summary
 A purely **numerical (Abaqus) study** from Poznan University of Technology (with Kerman, Iran).
 A URM wall 1720 × 1500 × 195 mm (L × H × t) under a constant 0.2 MPa vertical pressure was pushed
 by in-plane, displacement-controlled cyclic loading, each amplitude repeated three times (Sect. 2,
-Fig. 1). Eight cases were modelled (Table 2):
+p. 4, Fig. 1). Eight cases were modelled (Table 2, p. 5):
 - an unretrofitted reference wall (URM);
 - X-shaped pseudoelastic Ni–Ti strips, 120 mm wide and 1.0, 1.5 or 2.0 mm thick, on both faces;
 - ECC sheets 20, 25 or 30 mm thick, bonded with epoxy/resin to both faces;
 - a hybrid: 1.5 mm Ni–Ti strips embedded in 25 mm ECC sheets.
 
 The masonry and the ECC are homogenised macro-models with the Concrete Damaged Plasticity (CDP) law.
-The ECC–wall bond is a cohesive surface with a stiffness of 28,000 MPa (Eq. 12, Sect. 2.2).
+The ECC–wall bond is a cohesive surface with a stiffness of 28,000 MPa (Eq. 12, Sect. 2.2, p. 10).
 
 Main results:
-- **Energy dissipation:** hybrid 4.74 × 10⁷ J vs URM 1.52 × 10⁷ J (Sect. 3, Fig. 26).
-- **Peak lateral force:** hybrid 246 kN; Ni–Ti 155 → 214 kN for 1.0 → 2.0 mm; ECC 113 → 135 kN for
-  20 → 30 mm (Sect. 4, Fig. 25).
+- **Energy dissipation:** hybrid 4.74 × 10⁷ J vs URM 1.52 × 10⁷ J (Sect. 3, p. 20, Fig. 26).
+- **Peak lateral force** (Fig. 25, p. 20): URM 72.7 kN; Ni–Ti 155 / 183 / 214 kN for 1.0 / 1.5 / 2.0 mm;
+  ECC 113 / 122 / 135 kN for 20 / 25 / 30 mm; hybrid 246 kN.
 - **Yielded wall elements:** about 89% for the URM and for every Ni–Ti case, but only 27/24/18% with
-  20/25/30 mm ECC sheets (Figs. 14, 16, 19).
+  20/25/30 mm ECC sheets (pp. 13–15, Figs. 14, 16, 19).
 - **Interface assumption:** a cohesive bond dissipates roughly twice the energy of hard contact
-  (friction 0.4) (Table 8).
+  (friction 0.4) (Table 8, p. 17).
 
 > Synthesis: this is the wiki's first **primary** masonry-retrofit source, but it is **numerical, not
 > experimental**. The "ECC" in the model has a peak tensile stress of 1.45 MPa that softens to 0.43 MPa at
-> 1.38% cracking strain (Table 5). It therefore behaves as a softening quasi-brittle material and does
+> 1.38% cracking strain (Table 5, p. 9). It therefore behaves as a softening quasi-brittle material and does
 > **not** reproduce tensile strain hardening. The results speak to "a stiff bonded cementitious overlay",
 > not specifically to ECC/HDC ductility.
 
 ## Objective / research question
 - How do Ni–Ti SMA strips, ECC sheets and their combination change the in-plane cyclic behaviour
-  (hysteresis, energy dissipation, reaction force, yielded area) of URM shear walls (Sect. 1, last paragraph)?
-- What are the effects of Ni–Ti thickness (1–6 mm, Table 7), ECC thickness (20–30 mm), and the ECC–wall
-  interaction model (cohesive, hard contact, tied; Table 8)?
+  (hysteresis, energy dissipation, reaction force, yielded area) of URM shear walls (Sect. 1, last paragraph, p. 3)?
+- What are the effects of Ni–Ti thickness (1–6 mm, Table 7, p. 15), ECC thickness (20–30 mm), and the ECC–wall
+  interaction model (cohesive, hard contact, tied; Table 8, p. 17)?
 
 ## Materials & mix design
 No mix design. ECC is defined only by FE input parameters taken from the literature.
@@ -59,15 +62,15 @@ No mix design. ECC is defined only by FE input parameters taken from the literat
 
 Units of binder quantities: n/a (no mix given)
 
-FE material inputs (Sect. 2.1; Tables 3–5):
-- **Masonry (homogenised):** E = 1450 MPa; Poisson's ratio 0.2 (assumed); tensile strength = 10% of
+FE material inputs (Sect. 2.1, pp. 6–9; Tables 3–5):
+- **Masonry (homogenised):** E = 1450 MPa; Poisson's ratio 0.2 (assumed, ref. 52); tensile strength = 10% of
   compressive (assumed, ref. 51). Compression yield stress 0.95 → 2.83 MPa at inelastic strain 0 → 0.0006.
-  Tension 0.28 MPa → 0.05 MPa at cracking strain 0.00022 (Table 5).
-- **ECC sheet:** E = 17,500 MPa (from Munjal & Singh, ref. 33).
+  Tension 0.28 MPa → 0.05 MPa at cracking strain 0.00022 (Table 5, p. 9).
+- **ECC sheet:** E = 17,500 MPa (from Munjal & Singh, ref. 33; p. 7).
   - Compression: yield stress 19.62 → 62.78 MPa at inelastic strain 0 → 0.0170 (Table 5).
   - Tension: 1.45 MPa at cracking strain 0, then 1.06 MPa at 0.0057 and 0.43 MPa at 0.0138, i.e.
     monotonic softening (Table 5).
-- **CDP parameters** (Table 4):
+- **CDP parameters** (Table 4, p. 7):
 
   | Material | Dilation angle | Eccentricity | σb0/σc0 | Kc | Viscosity |
   |---|---|---|---|---|---|
@@ -76,29 +79,32 @@ FE material inputs (Sect. 2.1; Tables 3–5):
 
 - **Ni–Ti (Pereiro-Barceló & Bonet, ref. 43; Auricchio model):**
   - E (austenite) 64,647 MPa; E (martensite) 28,125 MPa; Poisson's ratio 0.33.
-  - Transformation temperatures: Mf −49.15, Ms −31.23, As −20.75, Af −7.70 °C (Table 3).
-- ⚠️ Table 5's caption cites ref. [34] (Singh, Patil & Munjal 2017). The text attributes the ECC modulus
-  to ref. [33] (Munjal & Singh 2020) and the material characterisation to "Munjal and Singh [34]". The
-  attribution is inconsistent.
+  - Transformation temperatures: Mf −49.15, Ms −31.23, As −20.75, Af −7.70 °C (Table 3, p. 7).
+- ⚠️ Table 5's caption (p. 9) cites ref. [34] (Singh, Patil & Munjal 2017, Eng. Struct. 150). The text attributes
+  the ECC and masonry moduli to ref. [33] (Munjal & Singh 2020, JSIM; p. 7) and the Table 5 data to "Munjal and
+  Singh [34]" (p. 9), although ref. 34's first author is Singh. The attribution is inconsistent (confirmed in PDF).
 
 ## Test methods
 - **Specimen geometry:** FE wall 1720 × 1500 × 195 mm, geometry from the tests of Karimi et al. (ref. 36).
-  Ni–Ti strips 120 mm wide in an X pattern on both faces. ECC sheets cover both full faces (Table 2, Figs. 3–4).
+  Ni–Ti strips 120 mm wide in an X pattern on both faces. ECC sheets cover both full faces (Table 2, Figs. 3–4, pp. 5–6).
 - **Loading / rate:** 0.2 MPa constant vertical pressure through a rigid top surface. Lateral in-plane
-  cyclic displacement at a top reference point, rising amplitude, 3 cycles per amplitude (Fig. 1b).
-  Quasi-static. The base is fixed.
-- **Elements and mesh:** C3D8R solids for masonry and ECC with a 100 mm mesh, chosen from a 25–200 mm
-  sensitivity study (Figs. 10–12). The C3D20 alternative raised run time from 0.5 to 10.8 min with no
-  benefit (Sect. 2.3). Ni–Ti strips are S4R shells.
+  cyclic displacement at a top reference point, rising amplitude, 3 cycles per amplitude (p. 4, Fig. 1b).
+  Amplitudes ≈2, ≈3.5, 5, 10 and 15 mm over ≈2.7 s of analysis time (≈, read from Fig. 1b; the 15 mm step shows
+  only two cycles). Quasi-static. The base is fixed (p. 13).
+- **Elements and mesh:** C3D8R solids for masonry and ECC with a 100 mm mesh (510 elements), chosen from a
+  25–200 mm sensitivity study (Figs. 10–12, pp. 11–12). The C3D20 alternative raised run time from 0.5 to
+  10.8 min with no benefit (Sect. 2.3). Ni–Ti strips are S4R shells (Sect. 2.4, p. 12).
 - **Interfaces:**
-  - Ni–Ti to wall: "mortar-bonded", full transfer.
-  - ECC to wall: cohesive, Knn = Kss = Ktt = 28,000 MPa (Eqs. 11–12). Alternatives compared: hard contact
-    with friction 0.4 (ref. 54), and a tie constraint (Sect. 3, Table 8).
-- **Validation** against tests by Singh & Munjal (ref. 35), Table 6:
-  - Masonry: max load 15,480 N tested vs 15,710 N FE (+1.47%); max displacement 1.02 vs 1.01 mm.
-  - ECC: 2620 vs 2850 N (+8.8%); 15.87 vs 15.25 mm (3.91%).
-  - The validation tests are not in-plane wall tests; the paper does not describe their configuration
-    (Fig. 9) ⚠️.
+  - Ni–Ti to wall: "mortar-bonded", full transfer (p. 9).
+  - ECC to wall: cohesive, Knn = Kss = Ktt = 28,000 MPa (Eqs. 11–12, pp. 9–10). Alternatives compared: hard contact
+    with friction 0.4 (ref. 54), and a tie constraint (Sect. 3, p. 17, Table 8).
+- **Validation** against tests by Singh & Munjal (ref. 35), Table 6 and Fig. 9 (p. 11):
+  - Masonry prism: max load 15,480 N tested vs 15,710 N FE (+1.47% as printed); max displacement 1.02 vs 1.01 mm
+    (difference printed as 0.21%, but computes to ≈1.0%).
+  - ECC sheet: 2620 vs 2850 N (+8.8%); 15.87 vs 15.25 mm (3.91%).
+  - Fig. 9 labels the two validation cases "masonry prism" and "ECC sheets" (monotonic load–displacement
+    curves); the test configuration is not described ⚠️. The Introduction (p. 3) describes ref. 35 as a
+    numerical parametric study of out-of-plane wallets with openings, yet Table 6 calls it "Experimental [35]".
 - **Measurement:** n/a (numerical). Outputs: hysteresis, Mises stress, equivalent plastic strain, AC-yield
   fraction, reaction force, dissipated energy.
 - **Curing & test age:** n/a (numerical); not reported for the borrowed ECC data.
@@ -115,38 +121,42 @@ Structural results:
 
 | Model | Peak force (kN) | Dissipated energy | Yielded masonry elements | Location |
 |---|---|---|---|---|
-| URM | not stated numerically (Fig. 25) | 1.52 × 10⁷ J | ≈ 89% | Fig. 14, 26 |
-| URM-SMA-1.0 / 1.5 / 2.0 mm | 155 / — / 214 | 21.5 / 23.4 / 25.1 MJ | ≈ 89% (all) | Sect. 4; Table 7; Fig. 16 |
-| URM-ECC-20 / 25 / 30 mm (cohesive) | 113 / — / 135 | 25.1 / 26.9 / 29.3 MJ | 27 / 24 / 18% | Sect. 4; Table 8; Fig. 19 |
-| URM-SMA-ECC (1.5 mm + 25 mm) | 246 | 4.74 × 10⁷ J | ≈ 68% | Sect. 3–4; Figs. 22, 26 |
+| URM | 72.7 | 1.52 × 10⁷ J | ≈ 89% | Fig. 25 (p. 20); Fig. 26; Fig. 14 (p. 14) |
+| URM-SMA-1.0 / 1.5 / 2.0 mm | 155 / 183 / 214 | 21.5 / 23.4 / 25.1 MJ | ≈ 89% (all) | Fig. 25; Table 7 (p. 15); Fig. 16 |
+| URM-ECC-20 / 25 / 30 mm (cohesive) | 113 / 122 / 135 | 25.1 / 26.9 / 29.3 MJ | 27 / 24 / 18% | Fig. 25; Table 8 (p. 17); Fig. 19 (p. 17) |
+| URM-SMA-ECC (1.5 mm + 25 mm) | 246 | 4.74 × 10⁷ J | ≈ 68% | Fig. 25; pp. 18–20; Figs. 22, 26 |
 
 Main findings (with Table/Fig. location):
-- **Energy:** the hybrid dissipated about 3.1× the URM energy. The authors call this "+318%" (Sect. 3,
-  Conclusions), but 4.74/1.52 = 3.12, i.e. +212% ⚠️. The ECC-only walls dissipated slightly more energy than
-  the SMA-only walls (Fig. 26).
+- **Energy:** the hybrid dissipated about 3.1× the URM energy. The authors call this "+318%" (p. 18, "about
+  318%"; Conclusions, p. 21) and also "more than three times" (p. 20), but 4.74/1.52 = 3.12, i.e. +212% ⚠️. The
+  ECC-only walls dissipated slightly more energy than the SMA-only walls (p. 20, Fig. 26).
+- **Peak force:** relative to URM (72.7 kN), Ni–Ti 1.0–2.0 mm gave ≈2.1–2.9×, ECC 20–30 mm ≈1.6–1.9×, and the
+  hybrid ≈3.4× (computed from Fig. 25).
 - **Yielding:** ECC sheets cut the yielded fraction of masonry from ≈ 89% to 18–27%, and thicker sheets cut
-  it more (Fig. 19). Ni–Ti strips did not change the yielding of the masonry (Fig. 16).
+  it more (p. 15, Fig. 19). Ni–Ti strips did not change the yielding of the masonry (p. 14, Fig. 16).
 - **Thickness effects:**
   - ECC 20 → 30 mm raised peak force from 113 to 135 kN.
-  - Ni–Ti 1.0 → 2.0 mm raised it from 155 to 214 kN (Conclusions).
-  - The authors say ECC thickness has a "small effect" on hysteresis, yet also report +117% for
-    20 → 30 mm and +116% for Ni–Ti 1.0 → 2.0 mm (Conclusions) ⚠️ internally inconsistent.
-- **Interaction model** (Table 8):
+  - Ni–Ti 1.0 → 2.0 mm raised it from 155 to 214 kN (Conclusions, p. 21).
+  - The authors say ECC thickness has a "small effect" on hysteresis, yet report that hysteresis was "raised by
+    116%" (Ni–Ti 1.0 → 2.0 mm) and "117%" (ECC 20 → 30 mm) (Conclusions, p. 21). These match the dissipated-energy
+    ratios 25.1/21.5 = 1.167 and 29.3/25.1 = 1.167 (computed), so "116/117%" most likely means "116–117% **of**",
+    i.e. ≈ +17% (interpretation).
+- **Interaction model** (Table 8, p. 17):
   - Cohesive dissipates 25.1–29.3 MJ; tied 23.9–27.7 MJ; hard contact 13.9–14.2 MJ.
   - With hard contact, the 30 mm sheet doubled the maximum displacement (6.765 → 13.120 mm).
-- **Ni–Ti 1–6 mm** (Table 7): dissipated energy rose from 21.5 to 35.1 MJ, but not monotonically
+- **Ni–Ti 1–6 mm** (Table 7, p. 15): dissipated energy rose from 21.5 to 35.1 MJ, but not monotonically
   (it dipped at 4.0 mm). The maximum Mises stress in the wall stayed between 3.7 and 4.2 MPa.
 - **Hybrid stress transfer:** the ECC sheets carried higher stresses than the masonry but had low plastic
   strain because of their higher modulus. The Ni–Ti carried the highest stresses with the lowest residual
-  strain (Figs. 23–24).
+  strain (pp. 19–20, Figs. 23–24).
 
 ## Mechanisms / explanations offered by authors
 - **Ni–Ti:** pseudoelasticity (stress-induced martensitic transformation) gives high stress capacity with
-  low residual strain, and adds stiffness and damping (Sect. 1, Figs. 15, 24).
+  low residual strain, and adds stiffness and damping (Sect. 1, p. 2; p. 14, Figs. 15, 24).
 - **ECC sheets:** spread the damage and reduce the yielded masonry volume. A higher Young's modulus than
-  masonry means lower plastic strain under higher stress (Sect. 3, Fig. 23).
-- Energy dissipation scales with lateral stiffness and residual displacement (Sect. 3).
-- **Literature cited** (refs 31–35, as cited):
+  masonry means lower plastic strain under higher stress (Sect. 3, p. 19, Fig. 23).
+- Energy dissipation scales with lateral stiffness and residual displacement (Sect. 3, p. 20).
+- **Literature cited** (refs 31–35, as cited, p. 3):
   - ECC on URM out-of-plane gave +440% load capacity (Munjal & Singh 2020).
   - Walls with openings gave about 6× capacity (Singh & Munjal 2020).
   - ECC columns gave +110% stiffness, +65% strength, +45% ductility and +100% energy absorption vs RC
@@ -155,12 +165,12 @@ Main findings (with Table/Fig. location):
 ## Limitations (stated + observed)
 - **Stated:**
   - The macro-model cannot capture local crack growth in the masonry; it was used for computational
-    efficiency (Sect. 2).
-  - Ni–Ti cost limits the practical thickness, so 1.5 mm was adopted (Sect. 3).
+    efficiency (Sect. 2, p. 5).
+  - Ni–Ti cost limits the practical thickness, so 1.5 mm was adopted (Sect. 3, p. 14).
 - **Observed: no new experiments.**
   - All material data are borrowed.
-  - The validation compares only peak load and displacement against tests of a different configuration
-    (Table 6).
+  - The validation compares only peak load and displacement against element tests (masonry prism, ECC sheet)
+    of a different configuration (Table 6, Fig. 9).
   - The FE model of the hybrid system was not validated.
 - **Observed: ECC is modelled with tension softening** (1.45 → 0.43 MPa). The peak tensile stress (1.45 MPa)
   is far below typical ECC values (e.g. 4.84 MPa in [[wang2019-rc-beam-ecc-shear-strengthening]]).
@@ -170,11 +180,14 @@ Main findings (with Table/Fig. location):
   The paper shows that the interaction assumption changes the dissipated energy about 2× (Table 8).
 - **Observed: internal inconsistencies.**
   - "+318%" vs a 3.1× ratio.
-  - "small effect" vs "+117%".
-  - "1.48%" in the text vs 1.47% in Table 6.
-  - Ref. [33] vs [34] for the ECC data.
+  - "small effect" vs "+117%" (probably a ratio, see above).
+  - "1.48%" in the text (p. 13) vs 1.47% in Table 6 (computed 1.49%); masonry displacement difference 0.21%
+    printed vs ≈1.0% computed.
+  - Ref. [33] vs [34] for the ECC data; ref. [35] called experimental in Table 6 but numerical in the Introduction.
+  - Fig. 26 time axis runs to ≈3.6 s while the loading history in Fig. 1b ends at ≈2.7 s.
 - **Observed: unrealistic energy values.** Dissipated energy is in MJ (≈ 10⁷ J) for a 1.7 m wall with forces
-  of ≈ 100–250 kN. That needs tens of metres of cumulative displacement, which looks implausible ⚠️.
+  of ≈ 73–246 kN. With the Fig. 1b history (cumulative displacement ≈ 0.37 m, computed), the URM could dissipate at
+  most ≈ 72.7 kN × 0.37 m ≈ 3 × 10⁴ J — about 500× less than the reported 1.52 × 10⁷ J ⚠️.
 
 ## Relation to other work
 - **Agrees with:** the general claim that ECC overlays improve URM seismic response (Deng 2019
@@ -195,10 +208,12 @@ Main findings (with Table/Fig. location):
 - [[gaps]]
 
 ## To verify
-- [ ] "Energy increased by 318%" (Sect. 3, Conclusions) vs 4.74/1.52 × 10⁷ J = 3.12× (+212%). Check the PDF and Fig. 26.
-- [ ] Units of dissipated energy (MJ, Tables 7–8; 10⁷ J, Fig. 26) look physically too large for the forces and displacements reported.
+- [ ] "Energy increased by 318%" (p. 18; Conclusions, p. 21) vs 4.74/1.52 × 10⁷ J = 3.12× (+212%). Confirmed as
+  printed in the PDF; Fig. 26 agrees with 1.52 and ≈4.7 × 10⁷ J, so the "318%" wording is the error ⚠️.
+- [ ] Units of dissipated energy (MJ, Tables 7–8; 10⁷ J, Fig. 26) are ≈500× larger than force × cumulative
+  displacement allows (see Limitations) ⚠️ unverified.
 - [ ] Source of the ECC inputs: ref. [33] (Munjal & Singh 2020, JSIM) vs ref. [34] (Singh, Patil & Munjal 2017, Eng. Struct.). What fiber, Vf and test gave σt = 1.45 MPa?
-- [ ] Configuration of the validation tests in Table 6 (out-of-plane wallets? prisms?) and why the ECC max load is only 2620 N.
-- [ ] URM peak force value (Fig. 25 only; not stated in text).
-- [ ] Peak forces for the 1.5 mm Ni–Ti and 25 mm ECC models (Fig. 25 only).
-- [ ] "Hysteresis raised by 116% / 117%" (Conclusions): which metric?
+- [ ] Configuration of the validation tests in Table 6 ("masonry prism" and "ECC sheets" per Fig. 9, not described), why the ECC max load is only 2620 N, and whether ref. 35 is experimental.
+- Resolved 2026-10-21: URM peak force (72.7 kN) and the 1.5 mm Ni–Ti (183 kN) and 25 mm ECC (122 kN) peak
+  forces read from the bar labels in Fig. 25 (p. 20). "Hysteresis raised by 116% / 117%" — metric identified as the
+  dissipated-energy ratio (computed match; interpretation, see Key results).

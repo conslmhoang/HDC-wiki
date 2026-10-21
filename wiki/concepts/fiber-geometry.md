@@ -4,7 +4,7 @@ slug: fiber-geometry
 aliases: [fiber length, fiber diameter, aspect ratio, fiber reinforcement index, embedment length, critical fiber length, fiber content]
 tags: [design-variable]
 sources: [su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, gao2020-hdcc-recycled-fine-aggregate, zhao2022-ecc-tension-damage-model, deng2018-hdc-compressive-constitutive, zhong2019-ecc-freeze-thaw, mohammed2020-cr-ecc-elevated-temperature, homma2009-frcc-self-healing, kunieda2010-uhp-shcc-steel-reinforcement, ivaniuk2022-printable-shcc-design, ozbay2013-ecc-self-healing-sustained-load, wang2023-ecc-frost-damage, sui2018-uhp-ecc-flexural-fatigue, jin2019-hvfa-shcc-structural, yang2008-ecc-fiber-bridging-law]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Fiber Geometry & Content (length, diameter, Vf)
@@ -54,11 +54,11 @@ updated: 2026-10-20
 ### Fiber content (Vf)
 | Source | Term / fiber | Vf series | Effect |
 |---|---|---|---|
-| [[gao2020-hdcc-recycled-fine-aggregate]] §3.3–3.4, Table 6 | PVA-HDCC 12 mm × 40 µm | 0 / 0.5 / 1.0 / 1.5 / 2.0% | no deflection hardening at 0.5%; tensile SH only at ≥ 1.5% (RFA mixes). R-HDCC ε_tp +260.6% from 0.5 to 2.0%. Fits: σ_bp/f_c = 0.036 Vf + 0.069; σ_tp/f_c = 0.025 Vf + 0.026 (Eqs. 5–6, Vf in % assumed ⚠️) |
+| [[gao2020-hdcc-recycled-fine-aggregate]] §3.3–3.4, pp. 9–13; Tables 5–6 | PVA-HDCC 12 mm × 40 µm | 0 / 0.5 / 1.0 / 1.5 / 2.0% | no deflection hardening at 0.5%; tensile SH only at ≥ 1.5% (RFA mixes). R-HDCC ε_tp +260.6% from 0.5 to 2.0%. 3-pt flexural strength of 40 mm prisms (W/B 0.25) rises 9.4 → 34.3 MPa (R) and 9.2 → 28.0 MPa (N) from 0 to 2% while f_c stays ≈ 71–85 MPa (Fig. 9, p. 9). Fits: σ_bp/f_c = 0.036 Vf + 0.069; σ_tp/f_c = 0.025 Vf + 0.026 (Eqs. 5–6, Vf in %, confirmed by the axes of Figs. 18–19, p. 15). Eq. 5 uses the W/B 0.25 f_c of Fig. 9a; Eq. 6 implies an unreported f_c ≈ 39–43 MPa for the W/B 0.45 series (computed) ⚠️ |
 | [[zhao2022-ecc-tension-damage-model]] Table 3 | PVA-ECC, W/B 0.28 | 1 / 1.5 / 2% | σ_p flat (3.10 / 2.96 / 3.23 MPa); ε_p 0.51 / 0.80 / 2.00%; tensile fracture energy +217% |
 | [[deng2018-hdc-compressive-constitutive]] Table 3 | PVA-HDC (compression) | 1 / 1.5 / 2% | σ0 50.28 / 56.85 / 62.25 MPa; post-peak strain indices ε0.85 / ε0.5 / ε0.2 +33 / +40 / +63% (1 → 2%) |
-| [[zhong2019-ecc-freeze-thaw]] §3.5, Tables 6–7 | PVA 13 mm (flexure, F–T) | 0–2% | frost resistance improves to 1.5%, slightly drops at 2.0% (dispersion); Taguchi optimum 1.5% |
-| [[mohammed2020-cr-ecc-elevated-temperature]] Fig. 2 | CR-ECC (compression) | 0 / 1 / 2% | PVA a significant RSM term for f'c; optimum 2% PVA with 2.5% CR |
+| [[zhong2019-ecc-freeze-thaw]] §3.5, Tables 6–7, pp. 17–18 | PVA 13 mm (flexure, F–T) | 0–2% | frost resistance improves to 1.5%, slightly drops at 2.0% (dispersion); Taguchi optimum 1.5% |
+| [[mohammed2020-cr-ecc-elevated-temperature]] Fig. 2; Tables 4–5, pp. 12–13 | CR-ECC (compression) | 0 / 1 / 2% | PVA, PVA² and the CR × PVA interaction (p = 0.0356) are significant RSM terms for f'c; optimum 2% PVA with 2.5% CR |
 
 - ⚔️ **Vf vs peak tensile stress:** Zhao found σ_p flat from 1 to 2% PVA, while bridging models predict σ0 ∝ Vf
   ([[jin2019-hvfa-shcc-structural]], Fig. 1a; [[yang2008-ecc-fiber-bridging-law]]). The matrix differs; σ_p may be
@@ -74,7 +74,7 @@ updated: 2026-10-20
   > matrix both matter.
 - **Shorter PVA (8 mm)** is used in [[ozbay2013-ecc-self-healing-sustained-load]] ⚠️ and [[wang2023-ecc-frost-damage]];
   13 mm in [[zhong2019-ecc-freeze-thaw]]. No study isolates PVA length.
-- **PE aspect ratio:** L/d 480 (25 µm) in UHP-ECC ([[sui2018-uhp-ecc-flexural-fatigue]], Table 3).
+- **PE aspect ratio:** L/d 480 (25 µm) in UHP-ECC ([[sui2018-uhp-ecc-flexural-fatigue]], Table 3; 12 mm length computed, not stated).
 - **Hybrids:** steel + PE and PVA + steel combinations are collected in [[hybrid-fiber]].
 
 ## Related

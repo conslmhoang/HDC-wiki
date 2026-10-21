@@ -114,9 +114,16 @@ cooled, 100 mm cubes and 40×40×160 prisms (Table 5):
 
 **[[mohammed2020-cr-ecc-elevated-temperature]]** — "CR-ECC", oiled Kuraray PVA, FA/C 1.2, crumb rubber 0–5% of
 sand; 15 °C/min to 100–1000 °C, 1 h, natural cooling, 50 mm cubes, pre-dried 24 h at 60 °C:
-- **No explosive spalling in any mix up to 1000 °C**; visible deterioration only above 600 °C (Section 3.3).
-- 0% CR mix gains f'c at 100 °C, drops 34% between 400 and 500 °C; all mixes ≈11 MPa (≈20% of room
-  temperature) at 1000 °C (Section 3.2, Fig. 3 ⚠️ values from figure).
+- **No explosive spalling in any mix up to 1000 °C**; visible deterioration only above 600 °C (Section 3.3, p. 8).
+- Residual f'c (MPa, M6 0% / M3 2.5% / M4 5% CR; ≈ read from Fig. 3, p. 7, ±1 MPa, except values stated in the text):
+  24 °C ≈ 75 / 58 / 46; 100 °C ≈ 79 / 47.66 / 41.7; 400 °C ≈ 69 / 42 / 39; 500 °C ≈ 45 / 39.81 / 38;
+  800 °C ≈ 25 / 24 / 21; 1000 °C ≈ 16 / 13 / 11.
+- 0% CR mix gains f'c at 100 °C (≈ 75 → 79 MPa), drops 34% between 400 and 500 °C (text, p. 7). At 1000 °C the **CR mixes**
+  are ≈ 11–13 MPa (text: "approximately 11") and the **0% CR mix ≈ 16 MPa** — ≈ 21–24% of the 24 °C strength (text:
+  "about 20%") (Section 3.2, pp. 6–7; Fig. 3). (Corrected 2026-10-21: earlier text said "all mixes ≈ 11 MPa".)
+- Not stated in the text: both CR mixes *lose* ≈ 17% and ≈ 10% between 24 and 100 °C; the authors' 83% / 91% retention at
+  500 °C is relative to 100 °C (vs 24 °C ≈ 69% / ≈ 83%). Above ≈ 500 °C the three curves converge, so the CR penalty
+  largely disappears (Fig. 3, p. 7).
 - Crumb rubber lowers residual f'c at all temperatures but reduces visible cracking at 900 °C; CR said to
   melt at 170 °C (uncited ⚠️) and open vapour paths. → [[crumb-rubber]]
 - Caveat: pre-drying and small cubes both lower spalling risk.
@@ -142,7 +149,7 @@ Tables 5–8. Strain hardening is kept at every temperature; ε_tu peaks at 0 °
 
 ## Conflicts & open questions
 - ⚔️ (minor) Residual f'c of PVA-ECC at 400–500 °C: rises at 400 °C ([[zhou2023-hsecc-elevated-temperature]], HSECC W/B 0.20)
-  vs drops 34% between 400 and 500 °C ([[mohammed2020-cr-ecc-elevated-temperature]], normal-strength CR-ECC).
+  vs drops 34% between 400 and 500 °C ([[mohammed2020-cr-ecc-elevated-temperature]], p. 7; normal-strength CR-ECC).
   Different matrices and temperature steps; not a direct contradiction.
 - Hot vs residual f'c at 400 °C: hot f'c of normal-strength ECC −10% at 400 °C and −25% at 600 °C
   ([[pourfalah2018-ecc-high-temperature]], Table 5) — a third data point for the row above; test mode is an

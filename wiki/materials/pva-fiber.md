@@ -90,7 +90,7 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 | [[kanda2003-sprayed-ecc]] Tables 1–2 | Kuraray REC | 39 | 12 | 1620 (1070 apparent in matrix) | 43 | 6 | SG 1.3 |
 | [[mechtcherine2011-shcc-high-strain-rate]] Table 3 | Kuraray K-II REC15 | 40 nominal (38.0 measured) | 12 | 1456 → 1674 (8.3·10⁻⁴ → 1.5 s⁻¹) | — | failure strain 27.4–27.5 ⚠️ | failure strain rate-independent |
 | [[mohammed2020-cr-ecc-elevated-temperature]] Table 2 | Kuraray REC(S)15, 1.2% oil | 40 | 12 | 1600 | 41 | — | SG 1.3 |
-| [[herbert2013-ecc-self-healing-natural-environment]] §2.1 | Kuraray-type, 1.2% oil | 39 | 12 | 1600 | 42.8 | — | |
+| [[herbert2013-ecc-self-healing-natural-environment]] §2.1, p. 2834 | PVA, 1.2% oil (manufacturer not named) | 39 | 12 | 1600 | 42.8 | — | |
 | [[ozbay2013-ecc-self-healing-sustained-load]] p. 169 | 1.2% oil | 39 | **8** ⚠️ | 1620 | 42.8 | — | 8 mm is unusual |
 | [[wang2023-ecc-frost-damage]] Table 3 | Kuraray | 39 | 8 | 1600 | 42 | — | |
 | [[zhong2019-ecc-freeze-thaw]] Table 2 | Kuraray | 39 | 13 | 1600 | 42 | — | |
@@ -105,11 +105,11 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 ### Tensile performance of PVA composites (strain at peak stress unless noted)
 | Source | Term | Matrix | Vf (%) | ε at peak (%) | σ_tu (MPa) | Age |
 |---|---|---|---|---|---|---|
-| [[jin2019-hvfa-shcc-structural]] Table 5 | PVA-SHCC | FA/C 2.4 / 3.2 / 4.4, W/B 0.25 | 2 | 1.92 / **3.42** / 3.07 | 3.97–4.10 | 28 d |
+| [[jin2019-hvfa-shcc-structural]] Table 5, p. 10 | PVA-SHCC | FA/C 2.4 / 3.2 / 4.4, W/B 0.25 | 2 | 1.92 / **3.42** / 3.07 (≈ at peak, Fig. 7) | 3.97–4.10 | 28 d |
 | [[qian2007-shcc-inverse-tensile-strain]] Table 6 | PVA-ECC (SHCC) | FA/C 1.2 / 2.0 / 2.8 | n.r. | 2.1 / 3.5 / 3.7 (COV 52 / 9 / 11%) | 5.3 (FA/C 1.2) / 4.9 (2.8) | 28 d |
 | [[gao2020-hdcc-recycled-fine-aggregate]] Table 6 | R-HDCC / N-HDCC | W/B 0.45, FA 30% | 0.5–2.0 | 1.32–4.76 (R) / 0.41–1.68 (N) | 1.51–2.84 / 1.12–2.75 | 28 d |
 | [[zhao2022-ecc-tension-damage-model]] Table 3 | ECC | FA/C 2.0, W/B 0.24–0.28 | 1–2 | 0.50–2.00 | 2.96–4.57 | ≥ 35 d ⚠️ |
-| [[sun2019-modified-pva-fiber-ecc]] Tables 10–11 | ECC | W/B 0.35 | 2 | REC-15 3.21 (7 d) → 1.39 (28 d); domestic 0.46 (7 d) | about 3.3–3.5 | 7 / 28 d |
+| [[sun2019-modified-pva-fiber-ecc]] Tables 10–11, pp. 13–16 | ECC | W/B 0.35 | 2 | REC-15 3.21 (7 d) → 1.39 (28 d); domestic 0.46 (7 d) — strain at **end of curve incl. softening**, not at peak (Figs. 8–9, p. 15) | about 3.3–3.5 | 7 / 28 d |
 | [[deng2018-hdc-short-columns]] Fig. 1 | HDC (XAUAT) | FA 50%, W/B 0.29 | 2 | ≈ 1.0 | — | n.r. |
 | [[kanakubo2006-dfrcc-tensile-test-method]] Tables 6–9 | DFRCC | W/B 0.46 | 1.9 | 2.70 (thin plate) → 0.07 (Ø70 dogbone) | 5.00 → 3.38 | n.r. |
 | [[mechtcherine2011-shcc-high-strain-rate]] Table 2 | SHCC | FA/C 1.21, SAP | 2.2 | 1.49 (10⁻⁵ s⁻¹) | — | n.r. |
@@ -125,7 +125,8 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 ### Surface modification and bond
 - **VAE emulsion coating** on REC-15 (10 min ultrasonic soak) raised 7-d ε 3.21 → 4.05% (+26.2%) at unchanged σ.
   The weakly acidic film (pH 4.0–6.5) retards hydration near the fiber and weakens the ITZ, so fibers pull out
-  ([[sun2019-modified-pva-fiber-ecc]], Table 11, §3.2). Treated domestic PVA rose 0.46 → 0.97% (Table 10).
+  ([[sun2019-modified-pva-fiber-ecc]], Table 11, §3.2, pp. 15–17). Treated domestic PVA rose 0.46 → 0.97% (Table 10).
+  Caveat (PDF re-check): the 7-d VAE gain lies within the Fig. 6 error bars (S2 ≈ 2.8–5.3%, S4 ≈ 2.6–3.8%; p. 13).
   Boric-anhydride coatings over-weakened the bond (ε 2.02% with softening). → [[fiber-surface-treatment]]
 - **Rate:** PVA pull-out peak force about ×2 from 10⁻⁵ to 10 s⁻¹, with matrix residue on high-rate fibers
   ([[mechtcherine2011-shcc-high-strain-rate]], Figs. 13–15). → [[strain-rate-effects]]
@@ -154,8 +155,9 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 > ([[sun2019-modified-pva-fiber-ecc]]). Fiber product and test geometry ([[kanakubo2006-dfrcc-tensile-test-method]])
 > confound cross-paper comparison.
 
-- ⚔️ Age effect: REC-15 ECC fell from 3.21 to 1.39% between 7 and 28 d ([[sun2019-modified-pva-fiber-ecc]], Table 11), far
-  below Michigan PVA-ECC at 28 d (about 4–5%). The matrix and curing differ, so this is not a direct conflict. → [[gaps]]
+- ⚔️ Age effect: REC-15 ECC fell from 3.21 to 1.39% between 7 and 28 d ([[sun2019-modified-pva-fiber-ecc]], Table 11, p. 16), far
+  below Michigan PVA-ECC at 28 d (about 4–5%). Sun's strains are end-of-curve values (incl. softening), so at-peak values
+  would be lower still. The matrix and curing differ, so this is not a direct conflict. → [[gaps]]
 
 ## Round 5 additions (2026-10-21)
 

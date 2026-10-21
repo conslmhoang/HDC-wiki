@@ -23,22 +23,22 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 | same | GDUT PE18 | — | 88–130 |
 | [[zhang2022-hshdcc-review]] (Lei 2019; Zhou 2018, as cited) | HSHDCC | SF 0 → 40%; steel 0 → 2% | 82.6 → 69.3; 235 → 80 |
 | [[he2024-hdc-research-advances]] p. 2, 11 | HDC (generic) / UHTCC | maximum | about 100 / 100 |
-| [[herbert2013-ecc-self-healing-natural-environment]] §2.1 | HVFA PVA-ECC (FA/C 2.2) | residual, 0.5 / 1.0% tensile strain | **24 / 30** (earlier mix 36 / 44) |
+| [[herbert2013-ecc-self-healing-natural-environment]] §2.1, p. 2834 | HVFA PVA-ECC (FA/C 2.2) | residual, 0.5 / 1.0% tensile strain | **24 / 30** (earlier mix 36 / 44); the sentence carries ref. [29] (Sahmaran & Li 2009), so possibly not measured on these specimens ⚠️ |
 | [[paul2014-r-shcc-chloride-corrosion]] Table 3 | R/SHCC beams (PVA, w/c 1.0 matrix), 3.5 mm deflection | 5–18 cracks; load state not stated ⚠️ | **22–38** avg; max 50–120 (R/mortar: 139 avg, 250 max) |
 | [[ozbay2013-ecc-self-healing-sustained-load]] Table 3 | PVA-ECC FA/C 1.2 / 2.2, 2.5 mm flexural pre-deflection | unloaded vs **under sustained load** | 60 vs 115 / 40 vs 85 |
 | [[vanzijl2010-shcc-durability]] Table 1 | 6 typical SHCC | as compiled | 28–58 |
 | [[vanzijl2010-shcc-durability]] Fig. 2 (Adendorff 2010, as cited) | PVA-SHCC, 10⁻⁵–10⁻¹ s⁻¹ | 1–3% strain | about 36–59 ⚠️ (read); insensitive to rate |
 | [[kanda2003-sprayed-ecc]] Table 8 | sprayed PVA-ECC vs polymer-cement mortar | just after first crack, tapered-pin test | ECC 24–49 (mean 36) vs PCM 50–78 (mean 67) |
 | [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] §3.1, Fig. 2 | Eco-HDCC (PVA) prisms, preload 0.7 / 0.5 | 0 → 15 freeze–thaw + carbonation cycles | 28 → 30 / 20 (at 5 cycles) → 28 |
-| [[sui2018-uhp-ecc-flexural-fatigue]] Fig. 5 | PE UHP-ECC (f'c about 103 MPa) | tension | < 160; grows with fatigue cycles, more at S = 0.8 than 0.5 (Fig. 16) |
-| [[shumuye2022-slag-fa-pe-ecc]] Sect. 3.4 | PE-ECC with slag | tension | not numeric; width and number rise with slag |
+| [[sui2018-uhp-ecc-flexural-fatigue]] p. 4; Fig. 5, p. 5 | PE UHP-ECC (f'c about 103 MPa) | tension | < 160; average ≈ 80 at 0.5%, ≈ 140 at 3–4%, ≈ 160 at 7–8% strain (read from Fig. 5). Flexural fatigue: S = 0.5 ≈ 40 → 110 → 130, S = 0.8 ≈ 70 → 130 → 150 over n/N 0 → 1 (read from Fig. 16, p. 13) |
+| [[shumuye2022-slag-fa-pe-ecc]] §3.4, pp. 10–11; Fig. 10, p. 12 | PE-ECC with slag | tension, 28 d | ≈ 100 / 105 / 110 / 130 for 0 / 5 / 10 / 15% slag (read from radar chart Fig. 10, ± ≈ 10 µm); width rises with slag |
 | [[yang2009-ecc-self-healing-wet-dry]] Table 2 | M45 PVA-ECC (FA/C 1.2), 6 months old | residual **maximum** width after 0.3 / 0.5 / 1 / 2 / 3% tensile pre-strain | 50 / 70 / 60 / 60 / 90 (max); 5–39 cracks per 100 mm |
 | [[lepech2009-ecc-water-permeability]] p. 749, Table 3 | M45 PVA-ECC, 1.5–3% tensile strain | **under load**; avg vs max not stated ⚠️ | 40–70 (text); 40–80 (Table 3); spacing 2–5 mm |
 | same, Table 5 | same, after unloading (permeability specimens) | residual; avg vs max not stated ⚠️ | 50 / 52 / 63 ± 10 at 1.5 / 2 / 3% (47 / 59 / 87 cracks) |
 | same, Table 3 | steel-reinforced mortar at 1.5% | — | 125–500; spacing 5–30 mm |
 | [[choi2016-pe-alkali-activated-slag-composite]] Table 8 | cementless AAS + 1.75% PE, W/B 0.26–0.38 | **computed** = gauge elongation / crack count at end of loading | 88.9–109.8 (mean ≈ 101); spacing 1.20–2.25 mm; smallest at lowest W/B (67.3 cracks) |
 | [[pourfalah2018-ecc-high-temperature]] §4.3, Fig. 10e | PVA-ECC vs HECC (PVA + steel) small prisms, four-point bending, **tested hot** | 20 °C / 60–100 °C | ECC ≈ 50 → hundreds (text 400 / 750; Fig. ≈ 570–1070 ⚠️); HECC ≈ 40 → 70 → 200 |
-| [[lee2021-hsdc-wall-emi-impact]] §3.2.1 | NC panel with 2 × 20 mm HSDC skins (H20D) | drop-weight impact, after blow 1 / 4 / 5 | about 50 / 700 / 1100 (thinner skins 5000–5500) ⚠️ units |
+| [[lee2021-hsdc-wall-emi-impact]] §3.2.1, pp. 10–11; Fig. 9d | NC panel with 2 × 20 mm HSDC skins (H20D) | drop-weight impact, after blow 1 / 4 / 5 | about 50 / 700 / 1100 (thinner skins 5000–5500); units mm per the figure axes (text's "m" is a typo) |
 
 ## Average vs maximum crack width
 - Under monotonic and cyclic tension the **average** width of PVA-SHCC stays at about 50–65 µm up to 3% strain,
@@ -53,7 +53,7 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
   ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3): ECC-1 115 vs 60 µm (ranges 44–165 vs 27–110);
   ECC-2 85 vs 40 µm (30–103 vs 15–70).
 - Widths under load are about 15% larger than residual (Yang 2009, as cited in
-  [[herbert2013-ecc-self-healing-natural-environment]], §2.1). **Now confirmed at primary level:** "crack closure of
+  [[herbert2013-ecc-self-healing-natural-environment]], §2.1, p. 2834). **Now confirmed at primary level:** "crack closure of
   about 15%" on unloading after tensile pre-loading ([[yang2009-ecc-self-healing-wet-dry]], p. 385).
 - Unloading closes ECC cracks by about **10% (5–10 µm)** after tension ([[lepech2009-ecc-water-permeability]], p. 749).
 - Paul et al. note widths fell "significantly" on unloading ([[paul2014-r-shcc-chloride-corrosion]], p. 345).
@@ -82,7 +82,7 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 | < 40 µm | SHCC resists water/CO₂/O₂; corrosion micro-cell, not macro-cell (JSCE 2004) | [[kunieda2010-uhp-shcc-steel-reinforcement]], §1 | as cited |
 | 55–80 µm | chloride ingress becomes significant (Jang 2011) | [[he2024-hdc-research-advances]], p. 10 | **second-hand only**; not supported by the primary papers below ⚔️ |
 | ≥ 90 µm | chloride content rises (Wu 2017) | same | second-hand |
-| 100–200 µm (immersion) | 100 µm cast notch ≈ uncracked; significant at ≥ 200 µm | [[bu2022-ecc-chloride-crack-width]], Sect. 3 | **primary**, cast smooth notches |
+| 100–200 µm (immersion) | 100 µm cast notch ≈ uncracked; significant at ≥ 200 µm | [[bu2022-ecc-chloride-crack-width]], Sect. 3, p. 4 | **primary**, cast smooth notches |
 | no safe width found (wet–dry) | 50–100 µm cracks carry chloride 65–89 mm deep in 1–6 h; < 50 µm "within hours" | [[paul2014-r-shcc-chloride-corrosion]], Table 5, Abstract | **primary**, real flexural cracks (the < 50 µm claim rests on a companion paper) |
 | ≈ 300 / ≈ 350 µm | older ACI outdoor limit / AASHTO Z-factor equivalent (concrete) | [[lepech2009-ecc-water-permeability]], p. 745 | as cited (codes) |
 | 200 µm | HDC standard JC/T 2461-2018 limit on average width | [[chai2023-hdc-ambient-temperature]] (as cited) | standard |
@@ -90,8 +90,8 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 ### Chloride: the threshold depends on the exposure ⚔️
 - **Immersion / diffusion** (120 d in 3.5% NaCl): 100 µm notches gave chloride profiles not significantly
   different from uncracked ECC; 200 / 300 µm raised surface free chloride by +8.7 / +14.9% at 30 d and
-  +17.4 / +29.4% at 120 d ([[bu2022-ecc-chloride-crack-width]], Sect. 3). Caveat: single smooth cast notches
-  without fiber bridging, not multiple mechanical cracks (Sect. 2.2). As cited there: no D_eff difference for
+  +17.4 / +29.4% at 120 d ([[bu2022-ecc-chloride-crack-width]], Sect. 3, p. 4). Caveat: single smooth cast notches
+  without fiber bridging, not multiple mechanical cracks (Sect. 2.2, pp. 2–3). As cited there: no D_eff difference for
   10–50 µm cracks (Şahmaran & Li 2009); total, not maximum, crack width governs (concrete papers).
 - **Wet–dry capillary suction** (R/SHCC, w/c 1.0 matrix): 50–100 µm cracks let chloride reach 65–89 mm within
   1–6 h vs 4.5–8 mm uncracked, and rebar chloride and corroded depth showed **no correlation** with crack width
@@ -116,8 +116,9 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
   narrow the cracks. → [[strain-rate-effects]], [[crumb-rubber]], [[fiber-geometry]]
 - **Fly ash:** higher FA/C gives more and narrower cracks (43–50 vs 30–39 cracks)
   ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3, p. 171); FA/C 2.2 reaches 24–30 µm
-  ([[herbert2013-ecc-self-healing-natural-environment]], §2.1). → [[fly-ash]]
-- **Slag** widens cracks in PE-ECC ([[shumuye2022-slag-fa-pe-ecc]], Sect. 3.4). → [[ggbfs]]
+  ([[herbert2013-ecc-self-healing-natural-environment]], §2.1, p. 2834; cited with ref. [29], possibly not measured there ⚠️). → [[fly-ash]]
+- **Slag** widens cracks in PE-ECC: ≈ 100 µm (0%) → ≈ 130 µm (15% slag), read from radar Fig. 10
+  ([[shumuye2022-slag-fa-pe-ecc]], §3.4, pp. 10–11; Fig. 10, p. 12). → [[ggbfs]]
 - **Freeze–thaw + carbonation** widen existing 20–28 µm cracks slightly (to 28–30 µm), and the cracks
   accelerate carbonation (+5–6 mm front) ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]], Fig. 2, 4b).
   → [[freeze-thaw]], [[carbonation]]
@@ -134,11 +135,12 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 - **Typical development:** ECC reaches ≈ 60 µm at ≈ 1% strain, then new cracks form instead of widening
   ([[lepech2009-ecc-water-permeability]], p. 745, Fig. 1). → [[steady-state-cracking]]
 - **Fatigue:** the S–N inflection of earlier ECC models coincides with the inflection of the crack-width vs
-  strain curve, suggesting a critical crack width ([[sui2018-uhp-ecc-flexural-fatigue]], Fig. 20). → [[fatigue]]
+  strain curve, suggesting a critical crack width; Fig. 20 places the tensile inflection at ≈ 0.6% strain and ≈ 145 µm
+  (read-off) ([[sui2018-uhp-ecc-flexural-fatigue]], Fig. 20, p. 16). → [[fatigue]]
 
 > Synthesis (revised 2026-10-20): there are two crack-width "families" of **average residual** width.
 > - **PVA-ECC: about 22–90 µm** (HVFA mixes 22–40 µm: Herbert, Paul, Özbay; standard mixes 40–90 µm).
-> - **PE-based HSHDC / UHP-ECC: about 80–200 µm** (Sui 2018: < 160 µm).
+> - **PE-based HSHDC / UHP-ECC: about 80–200 µm** (Sui 2018: < 160 µm; PE-ECC with slag ≈ 100–130 µm, Shumuye 2022, radar read-off).
 >
 > Three refinements weaken the simple message "PVA-ECC stays below the thresholds": maximum widths in PVA-SHCC
 > reach 290–420 µm at 3% strain (van Zijl); widths under sustained load are about 2× residual (Özbay); and under
@@ -155,9 +157,9 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 - **Standard bar**: JC/T 2461-2018 allows an average crack width up to **200 µm** for HDC (as cited in
   [[chai2023-hdc-ambient-temperature]]; the same 0.5% / 200 µm pair is attributed to JSCE 2008 in
   [[chai2019-hdcc-freeze-thaw-carbonation-flexure]]), twice the 100 µm ECC design target. → [[terminology-hdc-ecc-shcc]]
-- Wording of the ECC bound varies: "generally not exceeding 80 µm" ([[bu2022-ecc-chloride-crack-width]], Sect. 1),
+- Wording of the ECC bound varies: "generally not exceeding 80 µm" ([[bu2022-ecc-chloride-crack-width]], Sect. 1, p. 1),
   "less than 80 µm" (Li 2003, as cited in [[qian2007-shcc-inverse-tensile-strain]], p. 235), "< 60 µm" at 3–5%
-  strain (as cited in [[herbert2013-ecc-self-healing-natural-environment]], §1), "< 100 µm" ([[ma2021-ecc-durability-review]]).
+  strain (as cited in [[herbert2013-ecc-self-healing-natural-environment]], §1, p. 2833), "< 100 µm" ([[ma2021-ecc-durability-review]]).
   Different definitions, not a real conflict.
 
 ## Conflicts & open questions

@@ -107,7 +107,7 @@ and the saturation thresholds came later: 1.2 / 3 (Kanda & Li 1998b, pull-out ty
 | Source | Material | Index / criterion | Value | Strain hardening? |
 |---|---|---|---|---|
 | [[deng2018-hdc-short-columns]], p. 2 | XAUAT PVA-HDC | σ_tu/σ_fc | 6.14/5.73 ≈ 1.07 (computed by the ingest) | yes, serrated plateau at 5.5–6.6 MPa, but "ultimate tensile strain" only ≈ 1% (Fig. 1) |
-| [[shumuye2022-slag-fa-pe-ecc]], Table 4 | slag/FA PE-ECC, 28 d | σ_tu/σ_fc | 2.02–4.23 | yes, ε about 2.0–3.5% |
+| [[shumuye2022-slag-fa-pe-ecc]], Table 4, p. 8 | slag/FA PE-ECC, 28 d | σ_tu/σ_fc | 2.02–4.23 | yes, ε about 1.9–3.5% at peak (Fig. 5b) |
 | [[kanda2003-sprayed-ecc]], Fig. 2, p. 270–271 | sprayed PVA-ECC design, w/c 0.32 | J′b/J_tip (model) | about 2.0 (≥ 2.7 needs w/c ≥ 0.44) | yes, still strain-hardened |
 | [[chavesfigueiredo2020-printed-shcc]], Table 3 | printed PVA-SHCC | J_b > J_tip (flexural-CMOD method) | satisfied for both mixes (units ⚠️) | weak: ε 0.15–0.31% at peak (35 d) |
 | [[gao2020-hdcc-recycled-fine-aggregate]], §3.3 | HDCC, 0.5% PVA | first-cracking strength criterion (Li 2001, as cited) | bridging < cracking strength | **no** multiple cracking |

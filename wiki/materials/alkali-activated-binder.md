@@ -51,7 +51,7 @@ the wiki scope because it shows tensile strain hardening with multiple cracking 
 
 ## Influencing factors / relationships
 - **W/B**: raising W/B from 0.26 to 0.38 lowered σ_tu by 61.3% and ε by 38.9%; the lowest W/B gave the most cracks
-  (67.3) and the narrowest cracks (Tables 7–8, §3.3). ⚔️ Same direction as [[sun2019-modified-pva-fiber-ecc]], opposite to
+  (67.3) and the narrowest cracks (Tables 7–8, §3.3). ⚔️ Same direction as [[sun2019-modified-pva-fiber-ecc]] (whose W/B difference lies within scatter, Fig. 6), opposite to
   [[zhao2022-ecc-tension-damage-model]] and [[chai2023-hdc-ambient-temperature]]. → [[water-binder-ratio]], [[gaps]]
 - **Fiber type**: PE (hydrophobic, no chemical bond) replaced PVA because PVA-AAS stayed at ≤ 4.5% (as cited, §1).
 - **Slag**: in cement-based PE-ECC, slag raises strength but widens cracks ([[shumuye2022-slag-fa-pe-ecc]]); the AAS

@@ -29,18 +29,20 @@ updated: 2026-10-21
 | Source | Material | Measure | Value |
 |---|---|---|---|
 | [[chavesfigueiredo2020-printed-shcc]] Sect. 2.1 | printable PVA-SHCC X / Y | bulk / shear yield stress (ram extruder, Benbow–Bridgwater) | 34.74 / 4.41 kPa (X); 34.26 / 2.49 kPa (Y) |
-| [[ivaniuk2022-printable-shcc-design]] Sect. 3.1.1 | printable PE-SHCC | flow-table spread loss after 3 h (EN 1015-3) | Ref 12.7%, starch ether 10.9%, starch + cellulose ether 5.5% |
+| [[ivaniuk2022-printable-shcc-design]] Sect. 3.1.1, p. 9 | printable PE-SHCC | flow-table spread loss after 3 h (EN 1015-3) | Ref 12.7%, starch ether 10.9%, starch + cellulose ether 5.5%; spread after strokes ≈ 20 → 180 min: Ref ≈ 14.2 → 12.4, SE ≈ 14.7 → 13.1, SE-CE ≈ 11.8 → 11.1 cm (read from Fig. 8, p. 9) |
+| same, Figs. 9–12, pp. 10–12 | Ref / SE / SE-CE | shape retention; water retention; adhesiveness | demoulded cone top/base Ref 90/104 vs SE-CE 70/100 mm (Fig. 9 labels); water retention 5 → 20 min Ref ≈ 98.9 → 98.3, SE ≈ 99.2 → 98.4, SE-CE ≈ 99.2 → 98.6% (Fig. 10); tack ≈ 3.0 / 3.4 N, cylinder pull ≈ 5.6 / 9.6 N, inclined table ≈ 11° / 21° (Ref / SE-CE; Fig. 11b, p. 11; Fig. 12b, p. 12) — read-offs |
 | [[sun2019-modified-pva-fiber-ecc]] Tables 6–7 | PVA-ECC | spread; thixotropy | 1.8% PCE + HPMC (5 × 10⁴ mPa·s): 325 mm and lowest thixotropy (9911 Pa·s⁻¹ at 1 min) |
 | [[kanda2003-sprayed-ecc]] Table 5 | sprayed ECC | table flow; air content | 174–183 mm after mixing, 162–174 mm after spraying; air 12.5–25% → 6.6–8.4% (pumping squeezes out air) |
 | [[yuan2020-nshsdc-beam-strengthening]] | NSHSDC | slump | "no-slump", shape-holding for in-situ jacketing (§1) |
 
 - **Admixtures:** cellulose ether (0.075% of binder) gave the highest water retention and longest open time; starch ether
   alone lost retention within 20 min; adding ethers forced W/B up from 0.212 to 0.250 ([[ivaniuk2022-printable-shcc-design]],
-  Fig. 10, Sect. 2.1). More or higher-viscosity HPMC raises initial viscosity; shear breaks HPMC chains
+  Fig. 10, p. 10; Sect. 2.1, p. 5). These W/B values are reproduced only if suspension water and ≈ 70% of the SP are
+  counted as water (computed in the source page; SP solids not stated ⚠️). More or higher-viscosity HPMC raises initial viscosity; shear breaks HPMC chains
   ([[sun2019-modified-pva-fiber-ecc]], §3.1). A urethane moisturizing agent (0.8% of binder) aided anti-segregation and flow
   in sprayed ECC but entrained > 20% air ([[kanda2003-sprayed-ecc]], p. 272). → [[viscosity-modifying-admixtures]]
 - **Test-method caution:** tack, cylinder-pull and inclined-table tests misranked adhesiveness of printable SHCC because of
-  bleed water ([[ivaniuk2022-printable-shcc-design]], Sect. 3.1.3).
+  bleed water ([[ivaniuk2022-printable-shcc-design]], Sect. 3.1.3, pp. 10–11).
 - **Air voids:** HPMC may raise air voids in printed SHCC, and high air content lowers ductility
   ([[chavesfigueiredo2020-printed-shcc]], Sects. 3.5–3.6). → [[fiber-dispersion]], [[3d-printed-hdc]]
 

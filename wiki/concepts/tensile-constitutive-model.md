@@ -45,16 +45,19 @@ Kanakubo lists six σ–ε forms by number of unknowns ([[kanakubo2006-dfrcc-ten
 
 ## Damage model: secant-angle damage factor ([[zhao2022-ecc-tension-damage-model]])
 - θ = arctan(σ/ε), θ0 = arctan(σ_k/ε_k); damage d = 1 − θ/θ0; σ = tan[(1 − d)·arctan(E0)]·ε (Eqs. 5–8).
-  Units inside arctan ⚠️ unverified.
+  Units: σ in MPa, ε in %, angles in radians — verified at re-ingest by recomputing Table 4 (p. 10) from Eqs. 13–15
+  with the Table 3 means. ⚠️ Table 4 V3R2 prints B −0.090, C 0.108, but recomputation gives −0.171, 0.172 (printed B
+  equals V3R3's; likely copy error).
 - Damage evolution (Eq. 9):
   - d = 0 for ε ≤ ε_k (elastic);
   - d = k(ε − ε_k)^b on the hardening branch;
   - d = Aε² + Bε + C on the softening branch, with d = 1 at ε_u.
 - Calibrated for PVA-ECC with Vf v = 1–2% and W/B r = 0.24–0.28:
   b = (1.206 − 0.213v)(2.061r + 0.436); A = (0.358 − 0.147v)(2.842r + 0.247) (Eqs. 16–17).
-- Compared with a trilinear model (elastic – linear hardening – linear softening, Eq. 20), which misses the
-  nonlinear hardening (Fig. 6).
-- FE check (ABAQUS CDP, high-strength steel wire mesh + ECC member, §5.2):
+- Compared with a trilinear model (elastic – linear hardening – linear softening, Eq. 20; labelled "Meng et al., 2017"
+  in Fig. 8, p. 15), which misses the nonlinear hardening (Fig. 6).
+- FE check (ABAQUS CDP, ECC plates reinforced with high-strength stainless steel wire **rope** (HSSWR; Ø 2.4 mm,
+  σ_st 1573 MPa; ρ 0.28–0.48%), §5.2, pp. 13–15, Table 6; load-ratio CoV 0.026):
 
   | Model | Peak load / test | Displacement at peak / test |
   |---|---|---|
@@ -79,7 +82,9 @@ Kanakubo lists six σ–ε forms by number of unknowns ([[kanakubo2006-dfrcc-ten
   Qian's master curve; the neutral axis settles at 0.86–0.91 of the depth from the tension face once
   ε_t > 1% ([[qian2007-shcc-inverse-tensile-strain]], §3.1, Fig. 8). → [[four-point-bending-inverse-analysis]]
 - **Shear design:** ECC's post-cracking tensile strength is used directly as the truss tension tie
-  (σ_t × h × t at 45°) for side layers on RC beams ([[wang2019-rc-beam-ecc-shear-strengthening]], Eq. 1).
+  (σ_t × h × t at 45°) for side layers on RC beams ([[wang2019-rc-beam-ecc-shear-strengthening]], Eq. 1). The
+  Table 4 (p. 13) predictions are reproduced with σ_t = **4.0 MPa** (Table 1 f_t, p. 4, ≈ first-crack stress), not the
+  4.84 MPa tensile strength (back-calculation at re-ingest).
   → [[shear-behaviour]]
 - **For FE impact simulation:** LS-Dyna with a plasticity-based model; HSHDC tensile rate effects
   taken from [[ranade2015-hshdc-tensile-rate-effects]]; compressive rate effects assumed equal to

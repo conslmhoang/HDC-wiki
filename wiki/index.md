@@ -8,7 +8,7 @@ updated: 2026-10-21
 The LLM reads this page first. Each entry is a wikilink to a page slug, followed by a one-line summary.
 
 ## Hubs
-- [[gaps]]: 64 conflicts (grouped by theme; incl. XAUAT strain spread, permeability and healing-threshold corrections), under-studied areas for the 60-source corpus, open questions
+- [[gaps]]: 73 conflicts (grouped by theme; incl. XAUAT strain spread, 8 internal inconsistencies of single sources found in the PDF re-ingest, permeability and healing-threshold corrections), under-studied areas for the 60-source corpus, open questions
 - [[log]]: operation history
 - [[review-outline]]: review chapters, with source coverage (✅/🟡/❌)
 - [[terminology-hdc-ecc-shcc]]: HDC ≈ ECC/SHCC; HDCC, DFRCC/HPFRCC (JCI), UHP-SHCC, HSDC; HSHDC has 4 lineages; UHDC; JSCE 2008 vs JC/T 2461 (and Shaanxi DBJ61/T112-2016) definition
@@ -49,9 +49,9 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[chai2019-hdcc-freeze-thaw-carbonation-flexure]]: Chai et al. 2019 (JACT): Eco-HDCC (JSCE 0.5% / 200 µm definition) under coupled F-T + carbonation + drying with preload; flexural strength −19–33% after 15 cycles
 - [[gao2020-hdcc-recycled-fine-aggregate]]: Gao et al. 2020 (Materials): PVA-HDCC with 100% recycled fine aggregate; higher (SEM-inferred) bond and higher ductility (ε_tp 4.76 vs 1.68% at 2%)
 - [[jin2019-hvfa-shcc-structural]]: Jin et al. 2019 (Materials): HVFA PVA-SHCC (FA/C 2.4–4.4) by micromechanics + packing; ε_tu up to 3.42% (FA/C 3.2)
-- [[sun2019-modified-pva-fiber-ecc]]: Sun et al. 2019 (Materials): PVA surface pre-treatments (VAE best); ε 3.21 → 4.05% at 7 d; ductility falls with age
+- [[sun2019-modified-pva-fiber-ecc]]: Sun et al. 2019 (Materials): PVA surface pre-treatments (VAE best); end-of-curve ε 3.21 → 4.05% at 7 d (within scatter); ductility falls with age
 - [[zhao2022-ecc-tension-damage-model]]: Zhao et al. 2022 (Materials): PVA-ECC tension vs Vf and W/B; peak stress flat with Vf; secant-angle damage model
-- [[shumuye2022-slag-fa-pe-ecc]]: Shumuye et al. 2022 (Polymers): PE-ECC with slag replacing FA; f'c +35%, strain 2.0–3.5%; text and figure disagree on slag effect
+- [[shumuye2022-slag-fa-pe-ecc]]: Shumuye et al. 2022 (Polymers): PE-ECC with slag replacing FA; f'c +35%, strain at peak 2.0–3.5% (28 d); text and figure disagree on slag effect
 
 ### XAUAT HDC structural members and retrofit
 - [[deng2017-rc-column-hdc-jacket]]: Deng & Zhang 2017 (CBM): 30 mm PVA-HDC jackets (± bar mesh) on 8 RC columns, cyclic; HDC-B fails in flexure, ductility factor 6.3–7.9 vs 2.9–3.3; HDC ≈ 3.0% (Japanese PVA) vs ≈ 1.2% (Chinese PVA)
@@ -163,7 +163,7 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 
 ## Datasets
 - [[mix-designs]]: 113 rows (some grouped)
-- [[mechanical-results]]: 216 rows
+- [[mechanical-results]]: 221 rows
 - [[micromechanical-parameters]]: 26 rows (some are assumed model inputs or macroscopic indices, labelled)
 
 ## Synthesis

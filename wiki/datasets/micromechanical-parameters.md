@@ -34,9 +34,9 @@ Rows marked "assumed" or "model input" are analysis inputs, not measurements. Th
 | same | chosen design, w/c 0.32 | same | — | — | — | — | — | — | — | — | — | — | — | about 2.0 (J′b/J_tip; ≥ 2.7 needs w/c ≥ 0.44) | p. 270–271, Fig. 2 |
 | [[lepech2009-ecc-water-permeability]] | ECC M45 (14 d) | PVA 39 µm × 12 mm, 1.2% oil | n.r. | n.r. | n.r. | n.r. | n.r. | n.r. (measured, value not given) | n.r. | n.r. | n.r. | n.r. | n.r. | ≈ 1.08 (lower bound) | p. 749 |
 | [[choi2016-pe-alkali-activated-slag-composite]] | AAS-PE M26 / M30 / M34 / M38 (macroscopic index only) | PE 12 µm × 18 mm, 1.75% | — | — | — | — | — | — | — | — | 4.87 / 4.61 / 3.92 / 3.37 (measured first crack) | — | 2.68 / 2.49 / 1.95 / 1.50 (σ_tu/σ_fc, macroscopic, not σ0/σ_fc) | — | §3.3, Table 7 |
-| [[jin2019-hvfa-shcc-structural]] | parametric model input (generic SHCC, Yang 2008 model) | PVA 39 µm, 12 mm, 2%, E_f 22 GPa, f_f 1092 MPa | 1.0 (assumed) | 1.5 (assumed) | n.r. | n.r. | — | varied (Fig. 1g) | n.r. | Fig. 1 | n.r. | Fig. 1 | target > 1.45 (as cited) | target > 3 | Table 1; Fig. 1 |
-| [[chavesfigueiredo2020-printed-shcc]] | printed XVA3PVA20 (notched-beam stress–CMOD integrals, not single-crack J′b; units suspect ⚠️) | PVA 2% | — | — | — | — | — | — | 16.37 "kJ/m²" as printed ⚠️ | — | — | J_b 430.74 "kJ/m²" ⚠️ | — | ≈26 (J_b/J_tip, computed) | Table 3 |
-| same | printed YVA4PVA20-S05 (same method ⚠️) | PVA 2% | — | — | — | — | — | — | 7.11 ⚠️ | — | — | J_b 260.94 ⚠️ | — | ≈37 (computed) | Table 3 |
+| [[jin2019-hvfa-shcc-structural]] | parametric model input (generic SHCC, Yang 2008 model) | PVA 39 µm, 12 mm, 2%, E_f 22 GPa, f_f 1092 MPa | 1.0 (assumed) | 1.5 (assumed) | n.r. | n.r. | — | varied (Fig. 1g) | n.r. | Fig. 1 | n.r. | Fig. 1 | target > 1.45 (as cited) | target > 3 (J′b/J_tip, cited from Kanda & Li 1998, p. 3) | Table 1; Fig. 1, pp. 4–5 (sweeps: Vf 0.5–2.5%, Gd 1–8 J/m², τ0 1–5 MPa, Km ≈ 8–20 MPa·mm^0.5) |
+| [[chavesfigueiredo2020-printed-shcc]] | printed XVA3PVA20 (notched-beam stress–CMOD integrals, not single-crack J′b; units suspect ⚠️) | PVA 2% | — | — | — | — | — | — | 16.37 "kJ/m²" as printed ⚠️ | — | — | J_b 430.74 "kJ/m²" ⚠️ | — | ≈26 (J_b/J_tip, computed) | Table 3, p. 9 (units confirmed as printed; magnitudes fit J/m²; J_tip > LOP × CMOD_LOP ≈ 11.7, internally inconsistent ⚠️) |
+| same | printed YVA4PVA20-S05 (same method ⚠️) | PVA 2% | — | — | — | — | — | — | 7.11 ⚠️ | — | — | J_b 260.94 ⚠️ | — | ≈37 (computed) | Table 3, p. 9 |
 
 The full Table 5 (11 mixes) is on the source page [[su2023-rubber-modified-hshdc]].
 

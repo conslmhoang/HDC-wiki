@@ -62,8 +62,9 @@ Melting-point values differ between sources (about 124–150 °C), probably beca
 
 ### Behaviour
 - **PE in normal-strength matrices.** PE-ECC with 60% SCM (f'c about 41–55 MPa) strain-hardens with ε about
-  2.0–3.5% at about 1.55 vol.% ([[shumuye2022-slag-fa-pe-ecc]], Sect. 3.2). Printed PE-SHCC reached 2–3% strain at
-  σ_tu 4.1–5.4 MPa ([[ivaniuk2022-printable-shcc-design]], Fig. 17). PE-SHCC with SF at W/B 0.22: 1.5–2.2% at
+  1.9–3.5% at peak (28 d) at about 1.55 vol.% ([[shumuye2022-slag-fa-pe-ecc]], Sect. 3.2; Fig. 5b, p. 8). Printed PE-SHCC
+  reached ≈ 2–3% strain (onset of softening; first crack ≈ 3 MPa) at σ_tu 4.1–5.4 MPa ([[ivaniuk2022-printable-shcc-design]],
+  Fig. 17, p. 15). PE-SHCC with SF at W/B 0.22: 1.5–2.2% at
   7–8 MPa (as cited in [[xue2023-shcc-structural-review]], Fig. 1).
 - **Short PE.** 6 mm × 12 µm PE at 1.5 vol.% gave **strain softening** in a W/B 0.45 matrix
   ([[homma2009-frcc-self-healing]], p. 224). The same fiber size at the same Vf strain-hardened in Nagoya UHP-SHCC

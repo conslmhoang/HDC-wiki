@@ -4,7 +4,7 @@ slug: fiber-surface-treatment
 aliases: [oil coating, oiling agent, fiber coating, plasma treatment, interface tailoring, VAE emulsion, polymer emulsion coating, boric anhydride treatment]
 tags: [interface, design-variable]
 sources: [li2002-pva-ecc-interface-tailoring, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability]
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Fiber Surface Treatment (interface tailoring)
@@ -43,6 +43,10 @@ Wuhan Univ. of Technology tested three post-treatments of PVA fibers in a W/B 0.
 | C3 | REC-15 + boric anhydride + cement slurry | — | — | **34.2** | matrix weakened |
 | S3 | REC-15 + boric anhydride + SB emulsion | 2.83 (7 d) | 2.02, **softening** | — | bond too weak |
 | G1 → G2 | domestic PVA (31 µm), untreated → treated | 2.86 → 2.79 | 0.46 → 0.97 (7 d) | — | treatment type: VAE (Table 10) or boric/SB (text) ⚠️ |
+
+Caveats from the PDF re-check (2026-10-21): ε is the strain at the **end of the curve, including the softening branch**,
+not at peak (S3 peaks at ≈ 1.0%, S4 at ≈ 2.9% at 7 d; Figs. 8–9, p. 15). The 7-d VAE gain (3.21 → 4.05%) lies within
+the Fig. 6 error bars (S4 ≈ 2.6–3.8%, S2 ≈ 2.8–5.3%; p. 13), so it is not statistically clear.
 
 - **Mechanism:** the VAE film is weakly acidic (pH 4.0–6.5), retards hydration next to the fiber and weakens the
   ITZ, so fibers pull out instead of rupturing (§3.2, Table 4). VAE-treated fibers show slip scratches; boric-treated

@@ -18,13 +18,16 @@ suction (wet–dry exposure), and the resulting corrosion of embedded steel. "R/
 ## Key points
 - **Transport mode matters more than a single crack-width threshold.**
   - Immersion (diffusion), cast notches: 100 µm ≈ uncracked; effect significant at ≥ 200 µm
-    ([[bu2022-ecc-chloride-crack-width]], Sect. 3).
+    ([[bu2022-ecc-chloride-crack-width]], Sect. 3, p. 4).
   - Wet–dry (capillary suction), real flexural cracks: 50–100 µm cracks carried chloride 65–89 mm deep
     within 1–6 h vs 4.5–8 mm uncracked ([[paul2014-r-shcc-chloride-corrosion]], Table 5); per a companion
     paper, cracks < 50 µm also reach the rebar "within hours" (Abstract, citing Paul & van Zijl 2013a).
 - **Uncracked ECC is not exceptionally dense**: D28 ≈ 35.5 × 10⁻¹² m²/s for a W/B 0.26, FA/C 1.2 PVA-ECC
-  ([[bu2022-ecc-chloride-crack-width]], Eqs. 10–12, unit printed m/s² ⚠️); D falls with age about 50%
-  (30→60 d), 30% (60→90 d), 5% (90→120 d) (Sect. 3.1.3), via hydration, FA reaction and chloride binding.
+  ([[bu2022-ecc-chloride-crack-width]], Eqs. 10–12, pp. 8–9; printed "m/s²", but m²/s is confirmed by the figure axes;
+  per-mix D28 37.71 / 35.09 / 33.76 / 35.45 × 10⁻¹² m²/s for CW-0…3, Fig. 8 legend, p. 9). Per the text, D falls with age
+  about 50% (30→60 d), 30% (60→90 d), 5% (90→120 d) (Sect. 3.1.3, p. 8), via hydration, FA reaction and chloride binding.
+  ⚠️ Fig. 7 (p. 8) bars imply ≈ 20–25% for 90→120 d (and ≈ 45–60% for 30→60 d): e.g. CW-0 D ≈ 9.6 / 3.8 / 2.5 / 1.9 × 10⁻¹² m²/s
+  at 30 / 60 / 90 / 120 d (read from Fig. 7).
   As cited there: ECC D ≈ 10–35% of same-strength concrete (Sahmaran 2011).
 - **Multiple fine cracks vs one wide crack**: chloride diffusion rises linearly with pre-deformation in ECC
   but exponentially in mortar (Sahmaran 2007, as cited in [[ma2021-ecc-durability-review]], Fig. 11, and in
@@ -56,14 +59,15 @@ suction (wet–dry exposure), and the resulting corrosion of embedded steel. "R/
 ### Chloride ingress
 | Source (term) | Exposure | Cracks | Result | Note |
 |---|---|---|---|---|
-| [[bu2022-ecc-chloride-crack-width]] (ECC, PVA 2 vol.%, W/B 0.26, FA/C 1.2) | 3.5% NaCl immersion, 30–120 d | cast notches 0 / 100 / 200 / 300 µm, 25 mm deep | 100 µm ≈ uncracked; surface free Cl⁻ +8.7 / +14.9% (200 / 300 µm) at 30 d, +17.4 / +29.4% at 120 d | Sect. 3; notches are smooth, single, unbridged; SH not shown |
+| [[bu2022-ecc-chloride-crack-width]] (ECC, PVA 2 vol.%, W/B 0.26, FA/C 1.2) | 3.5% NaCl immersion, 30–120 d | cast notches 0 / 100 / 200 / 300 µm, 25 mm deep | 100 µm ≈ uncracked; surface free Cl⁻ +8.7 / +14.9% (200 / 300 µm) at 30 d, +17.4 / +29.4% at 120 d; 0–2 mm free Cl⁻ at 120 d ≈ 0.45 / 0.46 / 0.53 / 0.58% (read from Fig. 2, p. 5; mass basis not stated ⚠️) | Sect. 3, p. 4; notches are smooth, single, unbridged; SH not shown |
 | [[paul2014-r-shcc-chloride-corrosion]] (SHCC, PVA, w/c 1.0, FA/C 1.72; ε 1.5–2.9% at 14 d) | 3.5% NaCl, 4 d dry / 3 d wet, up to 620 d | R/SHCC 5–18 cracks, avg 22–38 µm, max 50–120 µm; R/mortar avg 139, max 250 µm | rebar Cl⁻ 0.17–0.59% by binder mass at covers 15–35 mm; no correlation with cover, crack width or crack number | Table 3, Figs. 10, 17 |
 | [[wang2023-ecc-frost-damage]] (ECC, PVA) | 3% NaCl 14 d after F-T | uncracked, frost-damaged | surface Cl⁻ ≈0.5% → ≈0.7% (0 → 300 F-T cycles); matrix ≈0.65% → ≈0.9% (0 → 75) | Figs. 13–14, read ⚠️ → [[freeze-thaw]] |
 | Liu 2017, as cited in [[ma2021-ecc-durability-review]] | 200 d sulfate + chloride | — | σ_tu rose, ε > 2%, cracks < 50 µm | p. 5 (moved from [[durability]]) |
 
-Model ([[bu2022-ecc-chloride-crack-width]], Eqs. 8, 10–12; w = notch width, mm assumed ⚠️):
+Model ([[bu2022-ecc-chloride-crack-width]], Eqs. 6–8, pp. 6–7; Eqs. 10–12, pp. 8–9; w = notch width in mm and t in days, confirmed by the axes of Figs. 4, 5, 9):
 C_s = (0.49359w + 0.47297)(1 − e^(−0.03375t)); D(t′) = D28(28/t′)^n with n = −1.0976w + 1.8948.
-Error mostly < 20%; over-predicts beyond 22.5 mm depth for 0.2–0.3 mm notches (Fig. 11).
+Per-mix n (Fig. 8 legend, p. 9): 1.894 / 1.791 / 1.665 / 1.571 (CW-0…3); t′ = concrete age = exposure + 28 d (≈ 58–148 d, interpreted from Fig. 8).
+Error mostly < 20%; over-predicts beyond 22.5 mm depth for 0.2–0.3 mm notches (p. 10; Fig. 11, p. 11).
 
 ### Reinforcement corrosion (primary: [[paul2014-r-shcc-chloride-corrosion]])
 | Quantity | R/SHCC | R/mortar | Location |

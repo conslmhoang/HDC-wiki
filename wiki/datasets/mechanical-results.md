@@ -62,11 +62,11 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | 14PVA-27 / 14PVA-42 | n.s. | — | same | 3.99 / 2.92 | 4.62 / 3.32 | 0.26 / 0.55 | — | — | Table 4 |
 | same | 14PE-27 | n.s. | — | same | 2.25 | 3.25 | 5.10 | — | — | Table 4 |
 | [[yang2008-ecc-fiber-bridging-law]] | M45 2% PVA | n.r. | — | n.r. | ≈4 ⚠️ | about 5 | ≈4–4.5 ⚠️ | about 60 | — | Fig. 1 |
-| [[chai2023-hdc-ambient-temperature]] | HDC-1 @20 °C | 28 | 48.0 (100 mm cube) | dogbone, 100 mm gauge | 2.86 | 4.23 | 1.15 | n.r. | 14.08 (plate) | Tables 4–8 |
-| same | HDC-1 @−30 / 0 / 40 / 60 °C (8 h) | 28 + exposure | 46.7 / 47.1 / 50.9 / 52.7 | same | 2.79 / 1.56 / 3.28 / 2.92 | 3.74 / 3.99 / 4.46 / 4.80 | 1.34 / 1.46 / 1.23 / 1.31 | n.r. | 12.23 / 13.08 / 14.65 / 15.64 | Tables 5–8 |
-| same | HDC-2 / HDC-3 / HDC-4 | 28 | 47.8 / 50.2 / 59.0 | same | n.r. | 4.47 / 4.22 / 4.83 | 0.64 / 0.55 / 0.42 | n.r. | — | Table 4 |
-| [[li2021-hdc-sulfate-dry-wet]] | HDC, 0 cycles | 90 | 45.8 (100 mm cube) | not tested | — | — | — | — | — | Table 4 |
-| same | HDC, 150 dry–wet cycles: water / 5% / 10% / sat. Na₂SO₄ | 90 + exposure | 58.3 / 50.1 / 37.9 / 28.9 | not tested | — | — | — | — | — | Table 4 |
+| [[chai2023-hdc-ambient-temperature]] | HDC-1 @20 °C | 28 | 48.0 (100 mm cube) | dogbone, 100 mm gauge | 2.86 | 4.23 | 1.15 (at peak, Fig. 1 p. 2) | n.r. | 14.08 (4-pt plate, Fig. 6b) | Tables 4–8, pp. 6–14 |
+| same | HDC-1 @−30 / 0 / 40 / 60 °C (8 h) | 28 + exposure | 46.7 / 47.1 / 50.9 / 52.7 | same | 2.79 / 1.56 / 3.28 / 2.92 | 3.74 / 3.99 / 4.46 / 4.80 | 1.34 / 1.46 / 1.23 / 1.31 (at peak) | n.r. | 12.23 / 13.08 / 14.65 / 15.64 | Tables 5–8, pp. 8–14 |
+| same | HDC-2 / HDC-3 / HDC-4 | 28 | 47.8 / 50.2 / 59.0 | same | n.r. | 4.47 / 4.22 / 4.83 | 0.64 / 0.55 / 0.42 (at peak) | n.r. | — | Table 4, p. 6 |
+| [[li2021-hdc-sulfate-dry-wet]] | HDC, 0 cycles | 90 | 45.8 (100 mm cube) | not tested | — | — | — | — | — | Table 4, p. 6 |
+| same | HDC, 150 dry–wet cycles: water / 5% / 10% / sat. Na₂SO₄ | 90 + exposure | 58.3 / 50.1 / 37.9 / 28.9 | not tested | — | — | — | — | — | Table 4, p. 6 |
 | [[deng2015-hdc-compressive-toughness]] | 1 (matrix) | ≈300 (10 months) | 64.0 prism 100×100×300 (computed from 640.45 kN); authors' mean 63.06 | — | — | — | — | — | — | Table 3; p. 6; peak strain 0.22% |
 | same | 2 (1.0% PVA) | ≈300 | 50.3 prism (computed) | — | — | — | — | — | — | Table 3; peak compressive strain 0.74%; W_cu^0.85 0.187 N/mm² |
 | same | 3 (1.5% PVA) | ≈300 | 56.9 prism (computed) | — | — | — | — | — | — | Table 3; 0.67%; W_cu^0.85 0.198 |
@@ -99,7 +99,7 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | preload 0.3, 15 cycles | ≈148 | — | not tested | — | — | — | no crack | 11.52 (−19.5%; δ_u 2.05) | Table 4 |
 | same | preload 0.5, 15 cycles | ≈148 | — | not tested | — | — | — | 28 (single crack, surface; 20 at 5 cycles) | 11.01 (−23.1%; δ_u 1.83) | Table 4, §3.1 |
 | same | preload 0.7, 15 cycles | ≈148 | — | not tested | — | — | — | 30 (28 after preload) | 9.63 (−32.7%; δ_u 1.36) | Table 4, §3.1 |
-| [[gao2020-hdcc-recycled-fine-aggregate]] | 45R05 (RFA, 0.5%) | 28 | n.r. | dogbone, 40×40 mm section, 50 mm gauge | 1.14 | 1.51 | 1.32 (max 5.08) | n.r. | — | Table 6 |
+| [[gao2020-hdcc-recycled-fine-aggregate]] | 45R05 (RFA, 0.5%) | 28 | n.r. (W/B 0.45 series; ≈39–43 implied by Fig. 19, computed, not reported) | dogbone 160 mm long, 40×40 mm section, 50 mm gauge (Fig. 1, p. 4) | 1.14 | 1.51 | 1.32 (max 5.08) | n.r. | — | Table 6 |
 | same | 45N05 (NFA, 0.5%) | 28 | n.r. | same | 1.02 | 1.12 | 0.41 (max 4.58) | n.r. | — | Table 6 |
 | same | 45R10 | 28 | n.r. | same | 1.75 | 2.16 | 1.69 (max 9.10) | n.r. | — | Table 6 |
 | same | 45N10 | 28 | n.r. | same | 1.63 | 1.69 | 1.54 (max 5.83) | n.r. | — | Table 6 |
@@ -107,12 +107,14 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | 45N15 | 28 | n.r. | same | 1.70 | 1.99 | 1.64 (max 7.60) | n.r. | — | Table 6 |
 | same | 45R20 | 28 | n.r. | same | 2.38 | 2.84 | 4.76 (max 11.73) | n.r. | — | Table 6; SH |
 | same | 45N20 | 28 | n.r. | same | 1.57 | 2.75 | 1.68 (max 10.72) | n.r. | — | Table 6; no clear SH |
-| same | 25R20 (RFA, 2%) | 28 | Fig. 9a only ⚠️ | — | σ_bc 8.11 (bending) | — | — | n.r. | σ_bp 11.89 (4-pt, 15 mm plate, 300 mm span); δ_bp 7.67 mm | Table 5 |
-| same | 25N20 (NFA, 2%) | 28 | Fig. 9a only | — | σ_bc 7.97 | — | — | n.r. | σ_bp 9.41; δ_bp 5.12 mm | Table 5 |
-| same | 25R10 / 25N10 | 28 | Fig. 9a only | — | 6.57 / 5.58 | — | — | n.r. | 9.33 / 6.54; δ_bp 6.22 / 2.20 mm | Table 5 |
-| same | 25R15 / 25N15 | 28 | Fig. 9a only | — | 6.78 / 6.06 | — | — | n.r. | 10.43 / 7.02; δ_bp 7.58 / 4.90 mm | Table 5 |
-| [[yuan2020-nshsdc-beam-strengthening]] | NSHSDC | 28 | 123.4 (ASTM C39 cylinder) | JSCE dogbone (geometry n.s.) | — | 9.7 | — (> 2.9 quoted from refs 12–13, §1) | — | 21.9 (ASTM C1609 4-pt) | Table 5 |
-| [[lee2021-hsdc-wall-emi-impact]] | HSDC | 28 | 122.3 | direct tension (dogbone per refs 13–15) | — | 9.7 | — | — | 22.9 | Table 4 |
+| same | 25R20 (RFA, 2%) | 28 | 83.8 (40 mm prism halves, Fig. 9a) | — | σ_bc 8.11 (bending) | — | — | n.r. | σ_bp 11.89 (4-pt, 15 mm plate, 300 mm span); δ_bp 7.67 mm; 3-pt 40 mm prism 34.3 (Fig. 9b) | Table 5, p. 11; Fig. 9, p. 9 |
+| same | 25N20 (NFA, 2%) | 28 | 70.9 (Fig. 9a) | — | σ_bc 7.97 | — | — | n.r. | σ_bp 9.41; δ_bp 5.12 mm; 3-pt prism 28.0 | Table 5, p. 11; Fig. 9, p. 9 |
+| same | 25R10 / 25N10 | 28 | 84.9 / 73.5 (Fig. 9a) | — | 6.57 / 5.58 | — | — | n.r. | 9.33 / 6.54; δ_bp 6.22 / 2.20 mm; 3-pt prism 18.0 / 15.9 | Table 5, p. 11; Fig. 9, p. 9 |
+| same | 25R15 / 25N15 | 28 | 84.1 / 71.0 (Fig. 9a) | — | 6.78 / 6.06 | — | — | n.r. | 10.43 / 7.02; δ_bp 7.58 / 4.90 mm; 3-pt prism 26.8 / 22.3 | Table 5, p. 11; Fig. 9, p. 9 |
+| same | 25R05 / 25N05 | 28 | 83.2 / 78.0 (Fig. 9a) | — | 6.25 / 4.78 | — | — | n.r. | 6.47 / 4.84; δ_bp 0.12 / 0.22 mm; 3-pt prism 12.4 / 11.2 | Table 5, p. 11; Fig. 9, p. 9 |
+| same | 25R00 / 25N00 (plain mortar, no fiber) | 28 | 83.6 / 75.6 (Fig. 9a) | — | 6.19 / 4.87 | — | — | n.r. | σ_bc only (no deflection hardening); 3-pt prism 9.4 / 9.2 | Table 5, p. 11; Fig. 9, p. 9 |
+| [[yuan2020-nshsdc-beam-strengthening]] | NSHSDC | 28 | 123.4 (ASTM C39 cylinder) | JSCE dogbone (geometry n.s.) | — | 9.7 | — (> 2.9 quoted from refs 12–13, §1) | — | 21.9 (ASTM C1609 4-pt) | Table 5, p. 3; §1, p. 2 |
+| [[lee2021-hsdc-wall-emi-impact]] | HSDC | 28 | 122.3 (CV 0.1) | direct tension (dogbone per refs 13–15; geometry n.r.) | — | 9.7 (CV 1.6) | n.r. ⚠️ | — | 22.9 (CV 6.5) | Table 4, p. 3 |
 | [[kanda2003-sprayed-ecc]] | A sprayed | 28 | — | coupon 80 mm gauge, 30 × 13 mm | about 4.7 | about 6.7 | about 3.1 (ultimate) | — | MOR ≈12–17 (range over all specimens; per-mix values not tabulated) ⚠️ | Fig. 10, 11 (read off ⚠️) |
 | same | A placed | 28 | — | same | about 4.2 | about 5.0 | about 1.2 | — | within ≈12–17 range ⚠️ | Fig. 10, 11 ⚠️ |
 | same | B sprayed | 28 | — | same | about 4.4 | about 6.8 | about 2.4 | — | within ≈12–17 range ⚠️ | Fig. 10, 11 ⚠️ |
@@ -190,44 +192,47 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | [[zhou2023-hsecc-elevated-temperature]] | PO @30 / 200 / 400 / 600 / 800 °C | 28 | 83.1 / 72.7 / 84.2 / 63.7 / 41.8 | not tested | — | — | — | thermal surface cracks: none / none / 18.2 / 18.9 / 19.6 | 15.8 / 13.1 / 5.9 / 3.2 / 2.1 | Table 5 |
 | same | PS-I @30 / 200 / 400 / 600 / 800 °C | 28 | 75.1 / 86.8 / 73.8 / 58.3 / 32.7 | not tested | — | — | — | none / 17.2 / 213.0 / ≈90 ⚠️ / 271.1 | 14.3 / 15.6 / 11.8 / 6.4 / 3.9 | Table 5 |
 | same | PS-II @30 / 200 / 400 / 600 / 800 °C | 28 | 93.8 / 85.6 / 99.3 / 68.4 / 39.0 | not tested | — | — | — | none / none / 22.3 / 68.5 / 74.4 | 15.9 / 15.4 / 13.9 / 10.9 / 6.6 | Table 5 |
-| [[herbert2013-ecc-self-healing-natural-environment]] | ECC HVFA @0.5% pre-strain | 7 | — | coupon 200×76×12.5 mm | n.r. | n.r. | ≥ 0.5 (pre-strain, not capacity) | 24 (residual) | — | §2.1 |
-| same | ECC HVFA @1.0% pre-strain | 7 | — | same | n.r. | n.r. | ≥ 1.0 (pre-strain) | 30 (residual) | — | §2.1 |
-| [[sui2018-uhp-ecc-flexural-fatigue]] | UHP-ECC | 28 | 102.8 (100 mm cube) | — | — | — | — | — | — | Sect. 2.2 |
-| same | UHP-ECC | 90 (tension age n.s. ⚠️) | 120.7 (100 mm cube) | dog-bone (Fig. 3), 2 LVDTs | — | up to 12 (abstract, Fig. 4) | > 8 (abstract, Fig. 4) | < 160 (max of avg, Fig. 5) | about 22 (4-pt, 100 × 100 × 400, span 300) | Abstract; Fig. 4–5, 7 |
-| same | UHP-ECC after 2 × 10⁶ cycles at S = 0.5 | 90 | — | — | — | — | — | — | 86% of static (about 19, computed) | Sect. 3.1 |
-| [[jin2019-hvfa-shcc-structural]] | FA2.4 | 28 | > 30 (Fig. 8a) | dumbbell 30 × 30 mm, 80 mm gauge | 3.67 | 3.97 | 1.92 (basis n.s. ⚠️) | n.r. | Fig. 14b only | Table 5 |
-| same | FA3.2 | 28 | > 30 (Fig. 8a) | same | 3.34 | 4.10 | 3.42 | n.r. | Fig. 14b | Table 5 |
-| same | FA4.4 | 28 | > 30 (Fig. 8a) | same | 3.26 | 3.99 | 3.07 (high scatter) | n.r. | Fig. 14b | Table 5 |
-| same | FA3.2 compression vs age | 7 / 28 / 90 | 7 d = 46.6% of 28 d; 90 d ≈ +12% | — | — | — | — | — | — | Fig. 9; §3.3.2 |
-| [[sun2019-modified-pva-fiber-ecc]] | C0 / C1 / C2 / C3 | 28 | 44.4 / 40.6 / 42.6 / 34.2 | — | — | — | — | — | 5.7 / 18.2 / 19.1 / 12.5 (ISO 679 mortar prism) | Table 8 |
-| same | S1 (W/B 0.30) | 7 | 33.0 | JSCE dumbbell, gauge n.r. | 2.67 | 3.52 | 3.79 | n.r. | — | Table 10; §3.2 |
-| same | S4 (untreated REC-15) | 7 / 28 | n.r. | same | 2.63 / 3.2 | 3.3 / 3.3 | 3.21 / 1.39 | n.r. | — | Table 11 |
-| same | S2 (VAE REC-15) | 7 / 28 | n.r. | same | 2.67 / 3.4 | 3.33 / 3.4 | 4.05 / 2.18 | n.r. | — | Table 11 |
-| same | S3 (boric + SB) | 7 | n.r. | same | 2.5 | 2.83 | 2.02 (softening) | n.r. | — | Table 10 |
-| same | G1 / G2 (domestic PVA) | 7 | n.r. | same | 2.22 / 2.26 | 2.86 / 2.79 | 0.46 / 0.97 | n.r. | — | Table 10 |
-| [[wang2019-rc-beam-ecc-shear-strengthening]] | ECC PVA 1.5% | 28 | 55.9 (100 mm cube) | dogbone, gauge 13 × 30 × 80 mm, 0.2 mm/min | 4.05 | 4.84 | n.r. (Fig. 2 only) | n.r. | — | Sect. 2.1–2.2; Table 1 (E 24.9 GPa) |
-| [[chavesfigueiredo2020-printed-shcc]] | XVA3PVA20 printed, LPA | 35 (tension); 28 (f'c) | 44.09 (35 mm cube, load ⟂ layers); 41.93 (∥) | 1-layer sawn plate 10 × 40 × 150 mm, glued, load ∥ print path | 1.53 | 2.4 | 0.26 (at peak) | n.s. | MOR 1.84 (notched 3PB); 4PB only in Fig. 6 | Tables 2–5 |
-| same | XVA3PVA20 printed, LPE | 35 | same | 10 × 35 × 30 mm, load ⟂ print path in-plane | 1.84 | 2.41 | 0.31 (at peak) | n.s. | — | Tables 4–5 |
-| same | YVA4PVA20-S05 printed, LPA | 35; 28 | 17.66 (⟂); 15.02 (∥) | as X-LPA | 1.28 | 1.64 | 0.15 (at peak) | n.s. | MOR 0.97 (notched 3PB) | Tables 2–5 |
-| same | YVA4PVA20-S05 printed, LPE | 35 | same | as X-LPE | 1.15 | 1.65 | 0.29 (at peak) | n.s. | — | Tables 4–5 |
-| [[mohammed2020-cr-ecc-elevated-temperature]] | M3 (2.5% CR) @100 / 500 / 1000 °C | 28 | 47.66 / 39.81 / ≈11 | not tested | — | — | — | — | — | Section 3.2, Fig. 3 |
-| same | M4 (5% CR) @100 / 500 / 1000 °C | 28 | 41.7 / ≈37.9 (91%, computed) / ≈11 | not tested | — | — | — | — | — | Section 3.2 |
-| same | M6 (0% CR) @900 °C | 28 | 20 | not tested | — | — | — | — | — | Section 3.2 |
-| same | RSM mixes @24 °C | 28 | 30–75 (range) | not tested | — | — | — | — | — | Fig. 2 |
-| [[ivaniuk2022-printable-shcc-design]] | Ref (printed) | 28 (f'c, flex); tension n.s. | 83.2 / 73.0 / 82.2 (D1/D2/D3, 40 mm cube) | 600 × 40 × 20 mm prism from 1 printed layer, cast dumbbell ends, 1 mm/min | n.s. | 5.4 | ≈2–3 (Fig. 17; basis n.s.) | n.s. | 22.0 (D1) / 18.5 (D3), 3PB 160×40×40 | Tables 2–3, Fig. 17 |
-| same | SE-CE (printed) | same | 80.9 / 80.1 / 79.5 | same | n.s. | 4.1 | ≈2–3 | n.s. | 21.4 / 17.4 | Tables 2–3, Fig. 17 |
-| [[shumuye2022-slag-fa-pe-ecc]] | SF-0-60 | 28 | 40.79 (100 mm cube) | dogbone "80 × 30 × 13 mm", 0.4 mm/min | 2.25 | 5.35 | ≈2.0 (text) | n.r. | ult. load 403.48 "kN" ⚠️ | Table 4; Sect. 3.1–3.2 |
-| same | SF-5-55 | 28 | ≈42.2 (computed, +3.5%) | same | 1.23 | 5.20 | 3.5 | n.r. | 438.00 ⚠️ | same |
-| same | SF-10-50 | 28 | ≈52.4 (computed, +28.5%) | same | 2.51 | 5.70 | ≈2.9 | n.r. | 553.48 ⚠️ | same |
-| same | SF-15-45 | 28 | 55.05 | same | 2.57 | 5.18 | "similar" ⚠️ | largest (n.r.) | 543.12 ⚠️ | same |
-| same | SF-0-60 / 5-55 / 10-50 / 15-45 | 7 | +0 / +27.0 / +57.0 / +77.3% vs SF-0-60 | same | 2.21 / 1.42 / 1.88 / 1.29 | 6.57 / 4.48 / 6.59 / 5.26 | n.r. (Fig. 5a) | n.r. | 445.70 / 411.30 / 531.90 / 561.50 ⚠️ | Table 4; Sect. 3.1 |
-| [[zhang2022-ecc-carbonation-sustained-load]] | ECC (SDU) | 28 | — | none (4-pt flexure 400×100×50, span 300) | 7.41 (flexural first crack) | — | — | — | 11.41 | §2.2 |
+| [[herbert2013-ecc-self-healing-natural-environment]] | ECC HVFA @0.5% pre-strain | 7 | — | coupon 200×76×12.5 mm | n.r. | n.r. | ≥ 0.5 (pre-strain, not capacity) | 24 (residual; sentence cites ref. [29], possibly not measured here ⚠️) | — | §2.1, p. 2834 |
+| same | ECC HVFA @1.0% pre-strain | 7 | — | same | n.r. | n.r. | ≥ 1.0 (pre-strain) | 30 (residual; as above ⚠️) | — | §2.1, p. 2834 |
+| [[sui2018-uhp-ecc-flexural-fatigue]] | UHP-ECC | 28 | 102.8 (100 mm cube) | — | — | — | — | — | — | Sect. 2.2, p. 4 |
+| same | UHP-ECC | 90 (tension age n.s. ⚠️) | 120.7 (100 mm cube) | dog-bone 330 mm, gauge 80 × 30 × 13 mm (Fig. 3a), 2 LVDTs | ≈ 8–9.5 (at ≈ 0.3–0.5% strain) | ≈ 11.1 (avg curve; specimens ≈ 11.5 / 11.6 / 12.4) | ≈ 8.3 (avg curve; specimens ≈ 7.9 / 8.8 / 6.9; end of hardening) | < 160 (≈ 80 at 0.5%, ≈ 140 at 3–4%, ≈ 160 at 7–8%) | about 22 (4-pt, 100 × 100 × 400, span 300; peak ≈ 21–22 at ≈ 9–11 mm) | pp. 4–7; Figs. 3–5, 7 (read-off) |
+| same | UHP-ECC after 2 × 10⁶ cycles at S = 0.5 | 90 | — | — | — | — | — | — | 86% of static (about 19, computed; Fig. 7 post-fatigue static ≈ 18–20) | Sect. 3.1, p. 6; Fig. 7 |
+| [[jin2019-hvfa-shcc-structural]] | FA2.4 | 28 (flexure 7 / 90) | 46.7 (E 22.2 GPa; Fig. 8a, c) | dumbbell 30 × 30 mm, 80 mm gauge | 3.67 | 3.97 | 1.92 (≈ at peak, Fig. 7) | n.r. | 11.6 / 16.8 (7 / 90 d; coupon 350 × 50 × 15, span 300); cracking 7.2 / 9.6 | Table 5, p. 10; Figs. 8, 14, pp. 11–15 |
+| same | FA2.8 | 28 (flexure 7 / 90) | 41.2 (E 20.6 GPa) | not tested in tension | — | — | — | n.r. | 11.1 / 14.4; cracking 6.6 / 9.2 | Figs. 8, 14 |
+| same | FA3.2 | 28 (flexure 7 / 90) | 39.9 (E 20.3 GPa) | same as FA2.4 | 3.34 | 4.10 | 3.42 (≈ at peak) | n.r. | 13.6 / 16.7; cracking 5.5 / 9.1 | Table 5; Figs. 8, 14 |
+| same | FA3.6 | 28 (flexure 7 / 90) | 38.8 (E 19.1 GPa) | not tested in tension | — | — | — | n.r. | 9.8 / 14.5; cracking 5.2 / 8.7 | Figs. 8, 14 |
+| same | FA4.0 | 28 (flexure 7 / 90) | 37 (E 17.5 GPa) | not tested in tension | — | — | — | n.r. | 11.1 / 13.9; cracking 4.9 / 8.3 | Figs. 8, 14 |
+| same | FA4.4 | 28 (flexure 7 / 90) | 32.5 (E 15.7 GPa) | same as FA2.4 | 3.26 | 3.99 | 3.07 (≈ at peak; high scatter) | n.r. | 10.2 / 13.1; cracking 4.8 / 8.2 | Table 5; Figs. 8, 14 |
+| same | FA3.2 compression vs age | 7 / 28 / 90 | ≈ 18.5 / ≈ 40 / ≈ 45 (7 d = 46.6% of 28 d; 90 d ≈ +12%) | — | — | — | — | — | — | Fig. 9, p. 12; §3.3.2 |
+| [[sun2019-modified-pva-fiber-ecc]] | C0 / C1 / C2 / C3 | 28 | 44.4 / 40.6 / 42.6 / 34.2 | — | — | — | — | — | 5.7 / 18.2 / 19.1 / 12.5 (ISO 679 mortar prism) | Table 8, p. 11 |
+| same | S1 (W/B 0.30) | 7 | 33.0 | JSCE dumbbell 330 mm, 30 mm × (13 or 30) mm section, 80 mm gauge (Fig. 1, p. 7) | 2.67 | 3.52 | 3.79 (end of curve incl. softening, not peak; Fig. 6 bar ≈ 2.3–5.25) | n.r. | ≈ 9.7 (7 d, Fig. 5) | Table 10, p. 13; Figs. 5–6, p. 13 |
+| same | S4 (untreated REC-15) | 7 / 28 | ≈ 26.3 (7 d, Fig. 5) / n.r. | same | 2.63 / 3.2 | 3.3 / 3.3 | 3.21 / 1.39 (end of curve; 7-d peak ≈ 2.9) | n.r. | ≈ 9.3 (7 d) | Table 11, p. 16; Fig. 5 |
+| same | S2 (VAE REC-15) | 7 / 28 | ≈ 30.3 (7 d, Fig. 5) / n.r. | same | 2.67 / 3.4 | 3.33 / 3.4 | 4.05 / 2.18 (end of curve) | n.r. | ≈ 10.9 (7 d) | Table 11, p. 16; Fig. 5 |
+| same | S3 (boric + SB) | 7 | ≈ 23.7 (Fig. 5) | same | 2.5 | 2.83 | 2.02 (end of softening; peak ≈ 1.0) | n.r. | ≈ 9.4 (7 d) | Table 10, p. 13; Figs. 5, 9 |
+| same | G1 / G2 (domestic PVA) | 7 | n.r. | same | 2.22 / 2.26 | 2.86 / 2.79 | 0.46 / 0.97 (end of curve) | n.r. | — | Table 10, p. 13 |
+| [[wang2019-rc-beam-ecc-shear-strengthening]] | ECC PVA 1.5% | 28 | 55.9 (100 mm cube) | dogbone, gauge 13 × 30 × 80 mm, 0.2 mm/min | 4.05 | 4.84 (curve peaks ≈ 4.6–5.1) | ≈ 0.9–1.9 at peak (3 curves); ultimate ≈ 2.6–3.45 (read from Fig. 2) | n.r. | — | Sect. 2.1–2.2, p. 3; Fig. 2, p. 3; Table 1, p. 4 (E 24.9 GPa) |
+| [[chavesfigueiredo2020-printed-shcc]] | XVA3PVA20 printed, LPA | 35 (tension); 28 (f'c) | 44.09 (35 mm cube, load ⟂ layers); 41.93 (∥) | 1-layer sawn plate 10 × 40 × 150 mm, glued, load ∥ print path | 1.53 | 2.4 | 0.26 (at peak) | n.s. | MOR 1.84 (notched 3PB); 4PB MOR ≈ 7.0–7.5 (28 d, Fig. 6) | Tables 2–5, pp. 8–12; Fig. 6, p. 11 |
+| same | XVA3PVA20 printed, LPE | 35 | same | 10 × 35 × 30 mm, load ⟂ print path in-plane | 1.84 | 2.41 | 0.31 (at peak) | n.s. | — | Tables 4–5, p. 12 |
+| same | YVA4PVA20-S05 printed, LPA | 35; 28 | 17.66 (⟂); 15.02 (∥) | as X-LPA | 1.28 | 1.64 | 0.15 (at peak) | n.s. | MOR 0.97 (notched 3PB); 4PB MOR ≈ 3.3–3.9 (28 d, Fig. 6) | Tables 2–5, pp. 8–12; Fig. 6, p. 11 |
+| same | YVA4PVA20-S05 printed, LPE | 35 | same | as X-LPE | 1.15 | 1.65 | 0.29 (at peak) | n.s. | — | Tables 4–5, p. 12 |
+| [[mohammed2020-cr-ecc-elevated-temperature]] | M6 (0% CR) @24 / 100 / 400 / 500 / 800 / 900 / 1000 °C | 28 (+ 24 h 60 °C) | ≈ 75 / ≈ 79 / ≈ 69 / ≈ 45 / ≈ 25 / 20 / ≈ 16 (50 mm cube, residual) | not tested | — | — | — | — | — | Fig. 3, p. 7 (read-off); 900 °C text p. 7 |
+| same | M3 (2.5% CR) @24 / 100 / 400 / 500 / 800 / 1000 °C | 28 (+ 24 h 60 °C) | ≈ 58 / 47.66 / ≈ 42 / 39.81 / ≈ 24 / ≈ 13 | not tested | — | — | — | — | — | Fig. 3, p. 7 (read-off); bold values text p. 7 |
+| same | M4 (5% CR) @24 / 100 / 400 / 500 / 800 / 1000 °C | 28 (+ 24 h 60 °C) | ≈ 46 / 41.7 / ≈ 39 / ≈ 38 / ≈ 21 / ≈ 11 | not tested | — | — | — | — | — | Fig. 3, p. 7 (read-off); 41.7 text p. 7 |
+| same | RSM mixes @24 °C | 28 | 30–75 (range) | not tested | — | — | — | — | — | Fig. 2, p. 6 |
+| [[ivaniuk2022-printable-shcc-design]] | Ref (printed) | 28 (f'c, flex); tension n.s. | 83.2 / 73.0 / 82.2 (D1/D2/D3, 40 mm cube) | 600 × 40 × 20 mm prism from 1 printed layer, cast dumbbell ends, 1 mm/min | ≈ 3 (Fig. 17) | 5.4 (curve peaks ≈ 5.3–5.5) | ≈ 2.0–3.0 (onset of softening, Fig. 17; peak vs ultimate n.s. ⚠️) | n.s. | 22.0 (D1) / 18.5 (D3), 3PB 160×40×40 | Tables 2–3, p. 14; Fig. 17, p. 15 |
+| same | SE-CE (printed) | same | 80.9 / 80.1 / 79.5 | same | ≈ 3 (Fig. 17) | 4.1 (curve peaks ≈ 4.3–4.6) | ≈ 2.0–2.6 (onset of softening, Fig. 17) | n.s. | 21.4 / 17.4 | Tables 2–3, p. 14; Fig. 17, p. 15 |
+| [[shumuye2022-slag-fa-pe-ecc]] | SF-0-60 | 28 | 40.79 (100 mm cube) | dogbone 330 mm, gauge zone 80 × 30 × 13 mm (Fig. 1, p. 5), 0.4 mm/min | 2.25 | 5.35 | ≈ 2.0 at peak (text; Fig. 5b ≈ 1.9) | ≈ 100 (radar Fig. 10) | ult. load 403.48 "kN" as printed ⚠️ (3PB span 240 mm; probably N → ≈ 14–20 MPa, computed) | Table 4, p. 8; Sect. 3.1–3.2; Figs. 4–5, 10 |
+| same | SF-5-55 | 28 | 42.23 (Fig. 4) | same | 1.23 | 5.20 | 3.5 at peak (Fig. 5b ≈ 3.45) | ≈ 105 (Fig. 10) | 438.00 ⚠️ | same |
+| same | SF-10-50 | 28 | 52.44 (Fig. 4) | same | 2.51 | 5.70 | ≈ 2.9 at peak (Fig. 5b ≈ 3.0) | ≈ 110 (Fig. 10) | 553.48 ⚠️ | same |
+| same | SF-15-45 | 28 | 55.05 | same | 2.57 | 5.18 | ≈ 2.2 at peak (Fig. 5b read-off; text "similar") | ≈ 130, largest (Fig. 10) | 543.12 ⚠️ | same |
+| same | SF-0-60 / 5-55 / 10-50 / 15-45 | 7 | 29.03 / 36.88 / 45.6 / 51.48 (Fig. 4; +0 / +27.0 / +57.0 / +77.3%) | same | 2.21 / 1.42 / 1.88 / 1.29 | 6.57 / 4.48 / 6.59 / 5.26 | ≈ 1.85 / 0.75 / 1.25 / 1.5 at peak (Fig. 5a, low precision) | n.r. | 445.70 / 411.30 / 531.90 / 561.50 ⚠️ | Table 4, p. 8; Sect. 3.1; Figs. 4–5 |
+| [[zhang2022-ecc-carbonation-sustained-load]] | ECC (SDU) | 28 | — | none (4-pt flexure 400×100×50, span 300) | 7.41 (flexural first crack) | — | — | — | 11.41 | §2.2, p. 3 |
 | [[zhao2022-ecc-tension-damage-model]] | V1R3 (1%, 0.28) | ≥ 35 ⚠️ | n.r. | plate 280 × 40 × 13 mm, CFRP tabs, 120 mm gauge | 1.976 | 3.104 | 0.511 (peak); 1.895 (rupture) | n.r. | — | Table 3 |
 | same | V2R3 (1.5%, 0.28) | ≥ 35 | n.r. | same | 2.020 | 2.959 | 0.796; 2.539 | n.r. | — | Table 3 |
 | same | V3R1 (2%, 0.24) | ≥ 35 | n.r. | same | 3.440 | 4.572 | 0.503; 2.230 | n.r. | — | Table 3 (n = 3) |
 | same | V3R2 (2%, 0.25) | ≥ 35 | n.r. | same | 2.665 | 3.787 | 1.071; 2.975 | n.r. | — | Table 3 |
 | same | V3R3 (2%, 0.28) | ≥ 35 | n.r. | same | 2.447 | 3.234 | 2.000; 4.077 | n.r. | — | Table 3 |
 | same | V-V1R3 / V-V2R3 / V-V3R2 / V-V3R3 (ref 43 validation set) | n.s. | n.r. | n.s. | 2.165 / 2.483 / 2.518 / 2.542 | 2.760 / 3.063 / 3.712 / 3.349 | 0.474 / 0.864 / 1.371 / 2.010 (peak) | n.r. | — | Table 5 (data of Li K. et al. 2022, as cited) |
-| [[xue2023-shcc-structural-review]] | PE-SHCC (as cited) | n.s. | — | dumbbell 13 × 30 mm, 100 mm gauge | 4.2 | 7–8 | 1.5–2.2 (at peak) | n.s. | — | Section 2, Fig. 1 |
+| [[xue2023-shcc-structural-review]] | PE-SHCC (as cited) | n.s. | — | dumbbell 13 × 30 mm, 100 mm gauge | 4.2 | 7–8 | 1.5–2.2 (at peak; Fig. 1 B2 marker ≈ 2.6% vs text 2.2% ⚠️) | n.s. | — | Section 2, p. 3; Fig. 1 |
 
 Related: [[mix-designs]], [[tensile-strain-capacity]], [[review-outline]]

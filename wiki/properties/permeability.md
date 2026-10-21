@@ -83,12 +83,13 @@ tension at 14 d, constant-head permeation; Table 5). Values were first quoted se
   [[vanzijl2010-shcc-durability]], Fig. 5b: ECC (M45) D_eff = 24.87x + 2.04 (×10⁻¹² m²/s, x = deformation in mm);
   mortar ln D = 2.31 + 5.19x³.
 - Uncracked PVA-ECC D28 ≈ 35.5 × 10⁻¹² m²/s, decreasing with age; 100 µm notches ≈ uncracked under
-  immersion ([[bu2022-ecc-chloride-crack-width]], Eqs. 10–12, Sect. 3). → [[chloride-and-corrosion]]
+  immersion ([[bu2022-ecc-chloride-crack-width]], Eqs. 10–12, pp. 8–9; Sect. 3, p. 4). → [[chloride-and-corrosion]]
 
 ### Pore structure
-- Carbonation reduced 0.1–10 µm porosity more than 2× (zone-I porosity 8.70% carbonated vs 11.57%);
-  sustained load on uncracked ECC adds only a small > 10 µm fraction (1.28 → 1.51%), limited by fibres
-  ([[zhang2022-ecc-carbonation-sustained-load]], §3.4). → [[carbonation]]
+- Carbonation reduced 0.1–10 µm porosity "more than 2×" per the text (zone-I porosity 8.70% carbonated vs 11.57%;
+  p. 10), but Fig. 10a shows only ≈ 1.4× in zone I (≈ 2.5 vs ≈ 3.4% for L60-I-C vs L60-I-U, read-off) ⚠️;
+  sustained load on uncracked ECC adds only a small > 10 µm fraction (1.28 → 1.51%; the text's "> 100 µm" means > 10 µm
+  per the Fig. 10 classes), limited by fibres ([[zhang2022-ecc-carbonation-sustained-load]], §3.4, pp. 10–12). → [[carbonation]]
 - Coupled F-T + carbonation: pores < 20 nm vanish, 50–200 nm and > 200 nm pores grow
   ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]], Fig. 5).
 

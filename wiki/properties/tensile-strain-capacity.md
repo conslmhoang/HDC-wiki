@@ -74,14 +74,14 @@ so check this before comparing. → [[dogbone-uniaxial-tension]]
   [[yu2018-ecc-direct-tensile-review]], p. 348. → [[dogbone-uniaxial-tension]]
   - ⚔️ The primary data below (Kanakubo 2006 round robin; Kunieda 2010 members) show large shape, casting and
     thickness effects, against "negligible thickness effect" (Rokugo 2007, as cited). → [[gaps]]
-- ⚔️ Definition: some papers report a post-peak "ultimate" strain as ε_tu (Gao 2020, Zhao 2022, Kunieda 2010);
+- ⚔️ Definition: some papers report a post-peak "ultimate" strain as ε_tu (Gao 2020, Zhao 2022, Kunieda 2010, Sun 2019);
   these are not comparable with strain at peak. See below.
 
 ## Further evidence (2026-10-20 ingest)
 | Source | Material | Curing / age | ε_tu (%) | σ_tu (MPa) | Note |
 |---|---|---|---|---|---|
-| [[chai2023-hdc-ambient-temperature]] Tables 4, 6 | Chinese PVA-HDC C40 (FA/C 0.88) | 28 d std + 8 h exposure | 1.15 at 20 °C; 1.15–1.46 over −30 to 60 °C | 3.74–4.80 | dogbone, 100 mm gauge; strain basis n.s. ⚠️ |
-| same | screening W/B 0.31 / 0.25 / 0.20 | 28 d | 0.64 / 0.55 / 0.42 | 4.47 / 4.22 / 4.83 | f_cu 47.8 / 50.2 / 59.0 MPa |
+| [[chai2023-hdc-ambient-temperature]] Tables 4, 6 (pp. 6, 10) | Chinese PVA-HDC C40 (FA/C 0.88) | 28 d std + 8 h exposure | 1.15 at 20 °C; 1.15–1.46 over −30 to 60 °C | 3.74–4.80 | dogbone, 100 mm gauge; strain **at peak stress** (Fig. 1, p. 2; Fig. 7, p. 6) |
+| same | screening W/B 0.31 / 0.25 / 0.20 | 28 d | 0.64 / 0.55 / 0.42 | 4.47 / 4.22 / 4.83 | f_cu 47.8 / 50.2 / 59.0 MPa; at peak (Table 4, p. 6) |
 | [[kanda2006-psh-design-criteria]] Table 4 | paste + SF, PVA 14 / 40 µm, PE 14 µm | n.s. | 0.26–1.50 (PVA); 5.10 (PE) | 2.43–4.62 | coupon, 205 mm gauge; ultimate strain |
 | [[yang2008-ecc-fiber-bridging-law]] Fig. 1 | M45 PVA-ECC 2% | n.s. | ≈4–4.5 ⚠️ (read) | about 5 | reference mix |
 
@@ -92,22 +92,22 @@ so check this before comparing. → [[dogbone-uniaxial-tension]]
 | Source | Material (authors' term) | Curing / age | ε (%) | σ_tu (MPa) | Note |
 |---|---|---|---|---|---|
 | [[deng2018-hdc-short-columns]] p. 2, Fig. 1 | XAUAT PVA-HDC, 2%, W/B 0.29 | n.r. | ≈1.0 | 6.14 (first crack 5.73) | σ_tu/σ_fc ≈ 1.07 (computed); geometry n.r. ⚠️ |
-| [[jin2019-hvfa-shcc-structural]] Table 5 | Southeast HVFA-SHCC, PVA 2%, FA/C 2.4 / 3.2 / 4.4 | 28 d std | 1.92 / 3.42 / 3.07 | 3.97–4.10 | FA optimum ≈ 3.2; peak vs ultimate ⚠️ |
+| [[jin2019-hvfa-shcc-structural]] Table 5 | Southeast HVFA-SHCC, PVA 2%, FA/C 2.4 / 3.2 / 4.4 | 28 d std | 1.92 / 3.42 / 3.07 | 3.97–4.10 | FA optimum ≈ 3.2; labelled "ultimate" but ≈ strain at peak (curves drop right after peak, Fig. 7, p. 10; not defined in the paper) |
 | [[qian2007-shcc-inverse-tensile-strain]] Table 6 | HVFA PVA-ECC, FA/C 1.2 / 2.0 / 2.8 | 28 d | 2.1 / 3.5 / 3.7 | — | COV 52 / 9 / 11% |
 | [[zhao2022-ecc-tension-damage-model]] Table 3 | PVA-ECC (FA/C 2.0, SF), Vf 1 → 2% at W/B 0.28 | ≥ 35 d ⚠️ | ε_p 0.51 → 2.00 | about flat | ε_u (post-peak) 1.9–4.1% |
 | same | W/B 0.24 → 0.28 at 2% PVA | same | ε_p 0.50 → 2.00 | — | — |
 | [[gao2020-hdcc-recycled-fine-aggregate]] Table 6 | N-HDCC / R-HDCC (recycled fine aggregate), PVA 2%, W/B 0.45 | 28 d | **ε_tp 1.68 / 4.76** | 2.75 / 2.84 | "ε_tu" 10.72 / 11.73% is post-peak maximum strain (50 mm gauge) — **not** tensile strain capacity |
 | [[mechtcherine2011-shcc-high-strain-rate]] Table 2 | PVA-SHCC (high FA, SAP) | n.r. | 1.49 at 10⁻⁵ s⁻¹ → 0.82 (10⁻²) → 0.68 (10) → 1.79 (50 s⁻¹) | 4.54 → 11.93 | at peak; non-monotonic with rate → [[strain-rate-effects]] |
-| [[sun2019-modified-pva-fiber-ecc]] Table 11 | WUT PVA-ECC, untreated / VAE-coated REC-15 | 7 d → 28 d | 3.21 → 1.39 / 4.05 → 2.18 | — | ε −46 to −57% while first-crack strength +22–27% |
+| [[sun2019-modified-pva-fiber-ecc]] Table 11 | WUT PVA-ECC, untreated / VAE-coated REC-15 | 7 d → 28 d | 3.21 → 1.39 / 4.05 → 2.18 | — | ε −46 to −57% while first-crack strength +22–27%. "Ultimate tensile strain" = strain at **end of test incl. the softening branch**, not at peak (e.g. S4 7-d peak ≈ 2.9% vs 3.21%; S3 ≈ 1.0% vs 2.02%; Figs. 8–9, p. 15). Fig. 6 scatter is large (S4 ≈ 2.6–3.8%, S2 ≈ 2.8–5.3%), so the VAE gain lies within it (Fig. 6, p. 13) |
 | [[wang2023-ecc-frost-damage]] Table 4 | PVA-ECC (FA/C 1.18, 8 mm PVA 2%) | 28 d | 5.24 | 4.21 | test method not described ⚠️ |
-| [[shumuye2022-slag-fa-pe-ecc]] Sect. 3.2 | PE-ECC, slag 0 / 5 / 10% | 28 d | ≈2.0 / 3.5 / ≈2.9 | 5.35 / 5.20 / 5.70 | "average ultimate strain"; text says slag lowers ε, numbers disagree ⚠️ |
+| [[shumuye2022-slag-fa-pe-ecc]] §3.2, p. 8; Fig. 5b | PE-ECC, slag 0 / 5 / 10 / 15% | 28 d | ≈2.0 / 3.5 / ≈2.9 / ≈2.2 (15%: read from Fig. 5b) | 5.35 / 5.20 / 5.70 / — | "average ultimate strain" = 28-d strain **at peak stress** (Fig. 5b, p. 8); post-peak end strains ≈ 4.4–5.0%. Text says slag lowers ε, numbers disagree ⚠️ |
 | [[paul2014-r-shcc-chloride-corrosion]] Table 2 | PVA-SHCC, fine vs coarse (≤ 1.7 mm) sand | n.r. | 2.93 vs 1.52 | — | coarse sand localises earlier |
 | [[kanda2003-sprayed-ecc]] Fig. 10–11 | sprayed / placed PVA-ECC | n.r. | about 1.2–1.6 ⚠️ (read) | — | high air content |
 | [[chavesfigueiredo2020-printed-shcc]] Table 5 | 3D-printed PVA-SHCC | 35 d | **0.15–0.31** | — | below JC/T 2461's 0.5% → [[3d-printed-hdc]] |
-| [[ivaniuk2022-printable-shcc-design]] | printed PE-SHCC | n.r. | 2–3 | — | peak vs ultimate ⚠️ |
+| [[ivaniuk2022-printable-shcc-design]] p. 14; Fig. 17, p. 15 | printed PE-SHCC (Ref / SE-CE) | n.r. | 2–3 (text); ≈ 2.0–3.0 / ≈ 2.0–2.6 at **onset of softening** (read from Fig. 17) | 5.4 / 4.1 | first crack ≈ 3 MPa (Fig. 17); 2–3% appears to be strain at onset of softening ≈ peak; not defined ⚠️ |
 | [[kunieda2010-uhp-shcc-steel-reinforcement]] §3.2, Table 3 | UHP-SHCC (PE 6 mm × 12 µm, 1.5%; f'c 95 MPa), 13 × 30 mm dumbbell | 28 d | 1.5 (ultimate) | about 6.5 | reference for the members below |
 | [[xue2023-shcc-structural-review]] Fig. 1 (as cited) | PE-SHCC with SF, W/B 0.22 | — | 1.5–2.2 | 7–8 | basis ⚠️ |
-| [[sui2018-uhp-ecc-flexural-fatigue]] abstract, Fig. 4 | PE UHP-ECC | n.r. | > 8 ⚠️ | up to 12 | figure only |
+| [[sui2018-uhp-ecc-flexural-fatigue]] Fig. 4, p. 5 | PE UHP-ECC (f'c 120.7 MPa at 90 d) | presumably 90 d | ≈ 6.9–8.8 at end of hardening (specimens 1–3 ≈ 7.9 / 8.8 / 6.9; average curve ≈ 8.3), read from Fig. 4; abstract "> 8" | ≈ 11.5 / 11.6 / 12.4 (average curve ≈ 11.1), read from Fig. 4; abstract "up to 12" | first crack ≈ 8–9.5 MPa at ≈ 0.3–0.5% (read); dog-bone 330 mm, gauge 80 × 30 × 13 mm (Fig. 3a, p. 4) |
 
 As cited: ECC typically > 3%, "300 times" normal concrete (Li & Kanda 1998; Li 2001, in
 [[qian2007-shcc-inverse-tensile-strain]], p. 235); PVA-ECC with 2% fiber "almost 2%" (Shimizu 2005, in
@@ -147,7 +147,8 @@ Same PVA-DFRCC mix, four tension methods ([[kanakubo2006-dfrcc-tensile-test-meth
   §2.3.3; [[zhao2022-ecc-tension-damage-model]], §3.1.3).
 - **Scatter:** COV of ε_tu is 26–60% vs < 15% for strengths, so quality control should target strain
   ([[qian2007-shcc-inverse-tensile-strain]], p. 243).
-- **Age:** ε fell by about half from 7 to 28 d in WUT PVA-ECC ([[sun2019-modified-pva-fiber-ecc]], Table 11);
+- **Age:** ε fell by about half from 7 to 28 d in WUT PVA-ECC ([[sun2019-modified-pva-fiber-ecc]], Table 11, p. 16;
+  "ultimate" strain includes the softening branch, Figs. 8–9, p. 15);
   7-d values overstate ductility.
 
 > Synthesis: "tensile strain capacity" is a test-dependent number, not a material constant. The same PVA mix
@@ -155,7 +156,7 @@ Same PVA-DFRCC mix, four tension methods ([[kanakubo2006-dfrcc-tensile-test-meth
 > in a 50 mm thick member (Kunieda). Thin-coupon values (13–15 mm, horizontally cast) are upper bounds.
 > ⚔️ This contradicts "thickness negligible" (Rokugo 2007, as cited in [[yu2018-ecc-direct-tensile-review]]).
 > Chinese and other "HDC/HDCC/SHCC" mixes measured with ordinary materials (Deng 2018 ≈ 1.0%, N-HDCC 1.68%,
-> Sun 2019 1.39%, printed SHCC 0.15–0.31%) fall well below the ECC "> 3%" convention but above the 0.5% HDC bar
+> Sun 2019 1.39% incl. softening branch, printed SHCC 0.15–0.31%) fall well below the ECC "> 3%" convention but above the 0.5% HDC bar
 > (except printed SHCC). → [[terminology-hdc-ecc-shcc]]
 
 ## Round-5 evidence (2026-10-21, 10-source ingest)
