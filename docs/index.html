@@ -135,6 +135,25 @@ nav a.ask-nav{font-weight:600;color:var(--source)}
 mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;padding:0 1px;border-radius:2px}
 .ask-ai{margin-top:26px;padding:14px 16px;border:1px dashed var(--line);border-radius:4px;font-size:14px;color:var(--muted)}
 .ask-ai a{font-weight:600}
+
+#askthread{display:flex;flex-direction:column;gap:18px;margin:6px 0 18px}
+.bub-q{align-self:flex-end;max-width:80%;background:var(--source);color:var(--paper);padding:10px 14px;border-radius:14px 14px 4px 14px;white-space:pre-wrap}
+.bub-a{align-self:stretch;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 18px;min-width:0}
+.bub-a .who{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;font-weight:600}
+.bub-a .ans{font-family:"Source Serif 4",Georgia,serif;font-size:15.5px;line-height:1.6;overflow-wrap:anywhere}
+.bub-a .ans p{margin:0 0 10px}.bub-a .ans p:last-child{margin:0}
+.bub-a .ans ul,.bub-a .ans ol{margin:0 0 10px;padding-left:1.2em}
+.bub-a .ans li{margin:0 0 5px}
+.bub-a .ans table{border-collapse:collapse;font-family:Archivo,sans-serif;font-size:13px;display:block;overflow-x:auto;margin:8px 0}
+.bub-a .ans th,.bub-a .ans td{border:1px solid var(--line);padding:4px 7px;text-align:left}
+.bub-a .ans a.wl{text-decoration:none;border-bottom:1px solid currentColor;font-family:Archivo,sans-serif;font-size:.86em;font-weight:600}
+.bub-a .typing{color:var(--muted);font-style:italic}
+.bub-a .srcs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0 0;padding-top:10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+.bub-a .srcs a{text-decoration:none;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:2px 9px;background:var(--slab)}
+.bub-a details{margin-top:10px}
+.bub-a summary{cursor:pointer;font-size:13px;color:var(--muted)}
+.bub-a .warn{color:var(--concept);font-size:13.5px;margin:8px 0 0}
+#v-ask .askbar{position:sticky;bottom:0;background:var(--cement);padding:10px 0;margin:0}
 </style>
 </head>
 <body>
@@ -174,15 +193,16 @@ mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;
     <div class="groups" id="groups"></div>
   </div></div></section>
   <section class="view" id="v-about"><div class="page"><div class="page-inner about" id="about"></div></div></section>
-  <section class="view" id="v-ask"><div class="page"><div class="page-inner">
+  <section class="view" id="v-ask"><div class="page" id="askpage"><div class="page-inner">
     <h2>Ask the HDC wiki</h2>
-    <p class="lede">Type a question in English or Vietnamese. The wiki finds the most relevant sentences, bullets and table rows across all its notes, highlights your keywords and links each one to its note and paper.</p>
-    <form class="askbar" id="askform" autocomplete="off">
-      <input type="search" id="askq" placeholder="e.g. What crack width is safe against chloride?" aria-label="Your question">
-      <button class="go" type="submit">Ask</button>
-    </form>
+    <p class="lede">Chat with an AI that answers only from this wiki's 60 papers and 129 notes. Each answer cites the notes it used; open them to check. English or Vietnamese.</p>
     <div class="ask-ex" id="askex"></div>
-    <div class="ask-out" id="askout"></div>
+    <div id="askthread" aria-live="polite"></div>
+    <form class="askbar" id="askform" autocomplete="off">
+      <input type="search" id="askq" placeholder="Ask a question, e.g. What crack width is safe against chloride?" aria-label="Your question">
+      <button class="go" type="submit" id="askgo">Ask</button>
+    </form>
+    <p class="ask-note" id="askfoot">Answers are written by Claude (Haiku) through Puter, free for visitors (a Puter sign-in window may appear the first time). The AI can be wrong: check the cited notes.</p>
   </div></div></section>
   <section class="view" id="v-note"><div class="page"><div class="page-inner">
     <div class="note-side" id="note-side"></div>
@@ -448,30 +468,107 @@ function highlight(html, qt) {
   const re = new RegExp('(^|[^\\p{L}\\p{N}])(' + qt.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')([\\p{L}\\p{N}]*)', 'giu');
   return html.replace(/(^|>)([^<]+)/g, (m, a, t) => a + t.replace(re, (mm, pre, w, rest) => `${pre}<mark>${w}${rest}</mark>`));
 }
-function runAsk(q) {
-  const out = document.getElementById('askout');
-  q = (q || '').trim();
-  if (!q) { out.innerHTML = ''; return; }
+let puterReady = null;
+function ensurePuter() {
+  if (puterReady) return puterReady;
+  puterReady = new Promise((res, rej) => {
+    if (window.puter) return res(window.puter);
+    const sc = document.createElement('script');
+    sc.src = 'https://js.puter.com/v2/';
+    sc.onload = () => window.puter ? res(window.puter) : rej(new Error('puter missing'));
+    sc.onerror = () => { puterReady = null; rej(new Error('Could not load the AI service.')); };
+    document.head.appendChild(sc);
+  });
+  return puterReady;
+}
+const CHAT = [];
+let asking = false;
+function contextFor(q) {
   const vi = viToEn(q);
   const query = vi.text + ' ' + vi.hit.join(' ');
-  const {qt, passages, top} = askSearch(query);
-  const aiBox = `<div class="ask-ai">Want a written answer that combines these passages? <a href="${AI_URL}" target="_blank" rel="noopener">Ask Claude about this ↗</a> (opens on claude.ai; needs a JNU Claude account).</div>`;
-  if (!passages.length) {
-    out.innerHTML = `<p class="ask-note">Nothing in the wiki matches “${esc(q)}”. Try other terms, for example crack width, PVA fiber, chloride, strain capacity, fly ash.</p>` + aiBox;
+  const r = askSearch(query);
+  const lines = r.passages.map(({p}) => `[[${p.n.slug}]] (${p.n.title}${p.head ? ' > ' + p.head : ''}):\n${p.text}`);
+  let ctx = lines.join('\n\n');
+  for (const n of r.top) {
+    const extra = `\n\n=== Full note [[${n.slug}]] ${n.title} (excerpt) ===\n` + n.body.slice(0, 3500);
+    if ((ctx + extra).length > 26000) break;
+    ctx += extra;
+  }
+  return {r, ctx, vi};
+}
+const SYS = `You are the assistant of the HDC Wiki, a literature wiki on High Ductile Concrete (HDC) and related strain-hardening cementitious composites (ECC, SHCC), compiled from 60 papers. Answer ONLY from the WIKI EXCERPTS given in the user message.
+Rules:
+- After every number or claim, cite the note id in double square brackets, e.g. [[li2002-pva-ecc-interface-tailoring]], plus the table/figure/page if the excerpt gives one. Only use note ids that appear in the excerpts.
+- If excerpts disagree, give both values with their sources; never average them.
+- If the excerpts do not answer the question, say so honestly and suggest which note to read.
+- Keep each paper's own material term (HDC, ECC, SHCC, HSHDC, UHDC...).
+- Reply in the language of the question (Vietnamese question -> Vietnamese answer). Be clear and friendly like a chat assistant: a direct answer first, then 3-6 short bullets. Under 230 words unless asked for more. Markdown allowed (bullets, bold, small tables); no headings.`;
+function renderAns(text) {
+  const html = marked.parse(wl(text));
+  return html;
+}
+async function runAsk(q) {
+  q = (q || '').trim();
+  if (!q || asking) return;
+  asking = true;
+  document.getElementById('askex').hidden = true;
+  const thread = document.getElementById('askthread');
+  const qb = document.createElement('div'); qb.className = 'bub-q'; qb.textContent = q;
+  const ab = document.createElement('div'); ab.className = 'bub-a';
+  ab.innerHTML = '<p class="who">HDC Wiki assistant</p><div class="ans"><p class="typing">Searching the wiki…</p></div>';
+  thread.append(qb, ab);
+  ab.scrollIntoView({behavior: 'smooth', block: 'start'});
+  const ans = ab.querySelector('.ans');
+  const go = document.getElementById('askgo'); go.disabled = true; go.textContent = '…';
+  const {r, ctx, vi} = contextFor(q);
+  const srcIds = [...new Set(r.passages.map(x => x.p.n.slug).concat(r.top.map(n => n.slug)))].slice(0, 8);
+  const srcBar = srcIds.length ? `<div class="srcs">Notes read: ${srcIds.map(id => `<a href="#/note/${id}" style="color:${color(BY[id].type)}">${esc(BY[id].title.replace(/\s*[(:—].*$/, ''))}</a>`).join('')}</div>` : '';
+  const psgHtml = r.passages.map(({p}) => {
+    const h = p.kind === 'row' ? marked.parse(wl(p.text)) : marked.parseInline(wl(p.text));
+    return `<div class="psg" style="--c:${color(p.n.type)}"><p class="src">${dot(p.n.type)} <a href="#/note/${p.n.slug}" style="color:${color(p.n.type)}">${esc(p.n.title)}</a>${p.head ? ' › ' + esc(p.head) : ''}</p><div class="txt">${highlight(h, r.qt)}</div></div>`;
+  }).join('');
+  const details = psgHtml ? `<details><summary>Show the ${r.passages.length} wiki passages the AI read</summary>${psgHtml}</details>` : '';
+  if (!r.passages.length) {
+    ans.innerHTML = `<p>I could not find anything in the wiki about “${esc(q)}”. Try other words, for example crack width, PVA fiber, chloride, fly ash or strain capacity.</p>`;
+    asking = false; go.disabled = false; go.textContent = 'Ask'; return;
+  }
+  const hist = CHAT.slice(-4);
+  const messages = [{role: 'system', content: SYS}, ...hist,
+    {role: 'user', content: `WIKI EXCERPTS:\n${ctx}\n\nQUESTION: ${q}`}];
+  let text = '';
+  try {
+    ans.innerHTML = '<p class="typing">Thinking…</p>';
+    const puter = await ensurePuter();
+    const stream = await puter.ai.chat(messages, {model: 'claude-haiku-5-5', stream: true, max_tokens: 900});
+    for await (const part of stream) {
+      if (part && part.type === 'error') throw new Error(part.message || 'AI error');
+      const t = part?.text; if (!t) continue;
+      text += t;
+      ans.innerHTML = renderAns(text);
+    }
+    if (!text) throw new Error('empty');
+    ans.innerHTML = renderAns(text);
+    CHAT.push({role: 'user', content: q}, {role: 'assistant', content: text});
+  } catch (e) {
+    const msg = String(e?.message || e?.error?.message || e || '');
+    const why = /insufficient|402|funds|credit/i.test(msg) ? 'The free AI allowance for this browser is used up.'
+      : /429|too_many|rate/i.test(msg) ? 'Too many questions at once. Wait a few seconds and ask again.'
+      : /cancel|closed|denied|auth/i.test(msg) ? 'The AI needs the Puter sign-in window to be allowed.'
+      : 'The AI service did not answer.';
+    if (!text) ans.innerHTML = `<p>${why} Here is what the wiki says about your question instead:</p>` + psgHtml;
+    else ans.insertAdjacentHTML('beforeend', `<p class="warn">${why}</p>`);
+    asking = false; go.disabled = false; go.textContent = 'Ask';
+    ab.insertAdjacentHTML('beforeend', srcBar);
     return;
   }
-  const interp = vi.hit.length ? `<p class="ask-note">Searched with: ${esc([...new Set(vi.hit)].join(', '))}</p>` : '';
-  const cards = top.map(n => `<a class="card" href="#/note/${n.slug}" style="--c:${color(n.type)}"><span class="type">${dot(n.type)}${TLABEL[n.type] || n.type}</span><b>${esc(n.title)}</b><span>${esc((n.summary || '').slice(0, 160))}${(n.summary || '').length > 160 ? '…' : ''}</span></a>`).join('');
-  const ps = passages.map(({p}) => {
-    const html = p.kind === 'row' ? marked.parse(wl(p.text)) : marked.parseInline(wl(p.text));
-    return `<div class="psg" style="--c:${color(p.n.type)}"><p class="src">${dot(p.n.type)} <a href="#/note/${p.n.slug}" style="color:${color(p.n.type)}">${esc(p.n.title)}</a>${p.head ? ' › ' + esc(p.head) : ''}</p><div class="txt">${highlight(html, qt)}</div></div>`;
-  }).join('');
-  out.innerHTML = interp + `<h3>Most relevant notes</h3><div class="ask-top">${cards}</div><h3>What the wiki says</h3>${ps}` + aiBox;
+  ab.insertAdjacentHTML('beforeend', srcBar + details);
+  asking = false; go.disabled = false; go.textContent = 'Ask';
+  document.getElementById('askq').focus();
 }
-const ASK_EX = ['What crack width is safe against chloride?', 'Is HDC the same as ECC?', 'Why does PVA fail in high-strength HDC?', 'Effect of fly ash on strain capacity', 'Behaviour at high temperature', 'Sợi PVA hay PE cho HDC cường độ cao?'];
+const ASK_EX = ['What crack width is safe against chloride?', 'Is HDC the same as ECC?', 'Why does PVA fail in high-strength HDC?', 'How does fly ash change strain capacity?', 'How does HDC behave at high temperature?', 'Sợi PVA hay PE cho HDC cường độ cao?'];
 document.getElementById('askex').innerHTML = ASK_EX.map(q => `<button type="button" class="chip">${esc(q)}</button>`).join('');
-document.querySelectorAll('#askex .chip').forEach(b => b.onclick = () => { document.getElementById('askq').value = b.textContent; runAsk(b.textContent); });
-document.getElementById('askform').addEventListener('submit', e => { e.preventDefault(); runAsk(document.getElementById('askq').value); });
+document.querySelectorAll('#askex .chip').forEach(b => b.onclick = () => runAsk(b.textContent));
+document.getElementById('askform').addEventListener('submit', e => { e.preventDefault(); const i = document.getElementById('askq'); const q = i.value; i.value = ''; runAsk(q); });
 
 /* ---------- router ---------- */
 function route() {
@@ -482,7 +579,7 @@ function route() {
   if (view === 'graph' && !G) initGraph();
   if (view === 'catalog') renderCatalog();
   if (view === 'note') renderNote(decodeURIComponent(arg));
-  if (view === 'ask') setTimeout(() => document.getElementById('askq').focus(), 0);
+  if (view === 'ask') { ensurePuter().catch(() => {}); setTimeout(() => document.getElementById('askq').focus(), 0); }
   if (view !== 'note') document.title = 'HDC Wiki';
 }
 window.addEventListener('hashchange', route);
