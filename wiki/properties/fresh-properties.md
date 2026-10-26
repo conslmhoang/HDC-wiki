@@ -3,8 +3,8 @@ type: property
 slug: fresh-properties
 aliases: [rheology, workability, slump, plastic viscosity, yield stress]
 tags: [fresh, processing]
-sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, sun2019-modified-pva-fiber-ecc, kanda2003-sprayed-ecc, yuan2020-nshsdc-beam-strengthening, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw]
-updated: 2026-10-21
+sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, sun2019-modified-pva-fiber-ecc, kanda2003-sprayed-ecc, yuan2020-nshsdc-beam-strengthening, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment]
+updated: 2026-10-26
 ---
 
 # Fresh Properties & Rheology
@@ -54,6 +54,14 @@ updated: 2026-10-21
 - **Air content in hybrid PVA+PE SHCC**: 10.0–13.1% without deliberate air entrainment; the mix with more PE (0.75%)
   had 13.1% vs 10.4% at W/B 0.45, with lower f'c; PE multifilament is hard to disperse
   ([[yun2013-shcc-freeze-thaw]], Table 3, p. 13–14). → [[pe-fiber]], [[hybrid-fiber]]
+
+## Round 7 evidence (2026-10-26)
+- **SP dose vs setting in AAS**: ED-AASC needed 0.106 liquid PCE (0.031 solids) per binder for rheology and PE dispersion; the
+  high dose delayed hydration so that demoulding was possible only at 11 d ([[hieu2023-aas-extremely-ductile-22pct]], §2.1,
+  §2.2.2). Mini-slump flow is shown (Fig. 5) but no value is reported. The ED-EGC authors likewise call for optimising SP to
+  shorten setting before demoulding ([[huy2023-egc-activator-pretreatment]], Conclusions). → [[alkali-activated-binder]]
+- **Mixing energy** (time and speed) changed ε 2.3× at fixed proportions, with no fresh-state measurement to explain it
+  ([[hieu2023-aas-extremely-ductile-22pct]], Fig. 3, Table 4). → [[fiber-dispersion]]
 
 > Synthesis: no round-4 source links a measured rheological parameter to fiber dispersion or ε_tu. The fresh-state data
 > are process-specific (spraying, printing) and use different tests, so they cannot be compared directly.

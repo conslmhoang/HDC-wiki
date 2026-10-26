@@ -253,3 +253,45 @@ Append-only. Format: `## YYYY-MM-DD — <operation> — <subject>`, followed by 
   carbonation, healing vs age, sulfate trend, Chai and Mohammed temperature rows).
 - **index:** gaps count; one-liners of sun2019 and shumuye2022 (strain basis). review-outline unchanged (no chapter's
   evidence status changed). `raw/README.md`: one line on `raw/xml-archive/`.
+
+## 2026-10-26 — ingest new — 3 sources (CNU alkali-activated / geopolymer composites)
+- **Sources (3, all Chonnam National University, B.Y. Lee group; corpus now 63):**
+  hieu2023-aas-extremely-ductile-22pct (Lương et al. 2023, Ceram. Int. 49:12069–12078),
+  huy2023-egc-activator-pretreatment (Nguyễn et al. 2023, J. Build. Eng. 80:108093),
+  huy2023-egc-pe-pva-hybrid-healing (Nguyễn et al. 2023, Cem. Concr. Compos. 142:105155).
+- **Naming choice (human):** these three slugs (and raw file names) use the first author's **given** name ("hieu" =
+  Quang-Hiếu Lương; "huy" = Huy Hoàng Nguyễn) instead of the family name, to tell several Nguyễn/Lương 2023 papers apart.
+  In prose they are cited as "Lương et al. 2023" / "Nguyễn et al. 2023" next to the slug. The two Huy2023 raw files were
+  renamed by the human from Nguyen2023_…; content verified against the PDFs.
+- **Material terms recorded as used:** ED-AASC / HD-AASC (extremely/highly-ductile alkali-activated slag-based composite),
+  ED-EGC (extremely ductile engineered geopolymer composite), HSUD-EGC (high-strength and ultra-ductility EGC). None is
+  called HDC/ECC/SHCC by its authors. No separate EGC page: covered in alkali-activated-binder.
+- **Headline:** new wiki maximum tensile strain capacity **22.34 ± 0.48% at peak** (ED-AASC R5-S8-M1, 28 d, JSCE dumbbell,
+  80 mm gauge; σ_tu 7.63 MPa, f'c 53.6 MPa), previous primary maximum UHDC 9.45%; mixing procedure alone 9.81 → 20.89 /
+  22.34% at identical proportions. Second highest 18.62% (fly-ash ED-EGC-CP, f'c 20.7 MPa). Cementless HSUD-EGC 84.3 MPa
+  with 10.51% (≈ 35 d ⚠️). First geopolymer micromechanics (Km 0.06–0.11 MPa√m; PSH_E 452 / 817 scaled ×8.75 from
+  0.2 vol.%, flagged as likely inflated). First healing data on a cementless SHCC: limited (crack healing rate 7.4–31.4%),
+  product C-(N)-A-S-H.
+- **Dataset rows added (27):** mix-designs +7 (113 → 120), mechanical-results +13 (221 → 234, incl. 4 healed/reloaded rows),
+  micromechanical-parameters +3 (26 → 29; header note on macroscopic indices and the ×8.75 scaling). Rows placed after
+  choi2016 (same group).
+- **Topic pages updated (31):** alkali-activated-binder (rewritten: four CNU sources, terms table, results table,
+  further cited EGCs), pe-fiber, pva-fiber, hybrid-fiber, ggbfs, fly-ash, crumb-rubber, silica-fume, heat-curing, uhdc,
+  hshdc, terminology-hdc-ecc-shcc, strain-hardening, multiple-cracking, fiber-bridging, fiber-matrix-interface,
+  fiber-dispersion, tensile-strain-capacity, crack-width, self-healing, compressive-strength, tensile-toughness,
+  matrix-fracture-toughness, fresh-properties, dogbone-uniaxial-tension, single-crack-test,
+  notched-beam-three-point-bending, mix-designs, mechanical-results, micromechanical-parameters, review-outline.
+  Source pages: "Pages updated" lists completed. No new pages created.
+- **gaps:** 80 conflict rows (was 73): 7 new — J′b scaling to full Vf (scaled σ0 > fts); PE strength 2700 vs 3030 MPa
+  (minor); crack width of cementless AAS/EGC + PE 172–212 µm vs ≈ 100 µm; healing product C-(N)-A-S-H vs CaCO₃; PE vs PVA
+  healing vs homma2009; fly ash and healing vs ozbay2013; Ohno & Li 2014 strain 4.3% (text) vs 3.40% (Fig. 11). Updated 3:
+  strength–ductility trade-off (holds locally within one system, not across systems), healing crack-width bands (now seen
+  in a strain-hardening EGC), "PE heals poorly" (resolved for cement-based matrices only). Under-studied areas and open
+  questions updated (record strains with wide cracks, heat-curing controls, mixing energy, AAS/EGC micromechanics,
+  EGC healing).
+- **index:** 3 source one-liners; counts (63 sources, 80 conflicts, 120 / 234 / 29 rows); 27 summaries revised.
+- **To verify (combined):** Lương 2023 M1 f'c 53.6 vs 53.4 MPa; dumbbell gauge width; sand max size; S-CR5 year and the
+  2012 comparator ref.; bending geometry. Nguyễn 2023 (activator): Ohno & Li 4.3 vs 3.40%; abstract density/f'c wording;
+  water 0.345 for both mixes; ×8.75 scaling; Km Eq. 3 α vs a; single-crack rate. Nguyễn 2023 (hybrid): virgin test age
+  ≈ 35 d; f'c read from Fig. 3; p_index 23.7% (text) vs ≈ 13.6% (Fig. 6); ref. [28] PVA vs PE; first-crack after healing
+  (text "lower" vs Table 8 higher); NaOH 11.5 M basis; total water/precursor ≈ 0.38 computed.

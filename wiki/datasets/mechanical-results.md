@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mechanical-results
-updated: 2026-10-21
+updated: 2026-10-26
 ---
 
 # Mechanical Results — Master Table
@@ -9,6 +9,7 @@ updated: 2026-10-21
 One row per mix and condition. Link the Mix ID to [[mix-designs]].
 **Tension setups differ between sources** (see [[dogbone-uniaxial-tension]]).
 n.s. = not stated; ≈ = read from a figure.
+The [[huy2023-egc-pe-pva-hybrid-healing]] "healed" rows give ε including the 3% pre-strain; virgin rows of that source are at ≈ 35 d (inferred).
 Member, field and fatigue data are kept on the source pages, not here: column tests in [[deng2018-hdc-short-columns]] (Table 5), field crack widths in [[kunieda2006-hpfrcc-japan-applications]], S–N data in [[sui2018-uhp-ecc-flexural-fatigue]] (Table 6). The FE input values of [[tabrizikahou2022-masonry-ecc-sma-retrofit]] are not measurements and are omitted.
 
 | Source | Mix ID | Age (d) | f'c (MPa) | Specimen (tension) | First-crack σ (MPa) | σ_tu (MPa) | ε_tu (%) | Avg crack width (µm) | Flexural strength (MPa) | Location (Table/Fig) |
@@ -183,6 +184,19 @@ Member, field and fatigue data are kept on the source pages, not here: column te
 | same | M30 | 28 | 49.0 | same | 4.61 | 11.46 | 6.33 | 106.9 | — | Tables 5, 7, 8 |
 | same | M34 | 28 | 42.3 | same | 3.92 | 7.64 | 5.35 | 109.8 | — | Tables 5, 7, 8 |
 | same | M38 | 28 | 36.3 | same | 3.37 | 5.06 | 4.58 | 99.3 | — | Tables 5, 7, 8 |
+| [[hieu2023-aas-extremely-ductile-22pct]] | R5-S8-M0 | 28 | 54.6 (50 mm cube) | JSCE dumbbell, 13 mm thick, 80 mm gauge | 5.08 | 7.92 | 9.81 (at peak) | 117.2 (computed, at peak) | — | Fig. 7; Tables 4, 6 |
+| same | R5-S8-M1 | 28 | 53.6 (53.4 in Table 7 ⚠️) | same | 4.70 | 7.63 | **22.34** (at peak) | 212.0 | — (103 mm deflection, Fig. 12) | Fig. 7; Tables 4, 6 |
+| same | R5-S8-M2 | 28 | 52.2 | same | 4.12 | 8.19 | 20.89 (at peak) | 204.0 | — | Fig. 7; Tables 4, 6 |
+| [[huy2023-egc-activator-pretreatment]] | ED-EGC-WP | 28 | 31.1 (50 mm cube) | JSCE dogbone 30 × 13 mm, 80 mm gauge | 4.67 | 8.72 | 10.97 (at peak) | 171.8 (computed, at peak) | — | Tables 4–5, Fig. 8 |
+| same | ED-EGC-CP | 28 | 20.7 | same | 3.40 | 5.54 | 18.62 (at peak) | 199.3 (computed) | — | Tables 4–5, Fig. 8 |
+| [[huy2023-egc-pe-pva-hybrid-healing]] | S-PE | ≈ 35 ⚠️ (7 d + 28 d water) | 84.3 (50 mm cube, Fig. 3) | JSCE dumbbell 30 × 13 mm, 80 mm gauge | 3.70 | 6.64 | 10.51 (at peak) | 100.3 (computed, at peak) | — | Fig. 3; Tables 5–6 |
+| same | S-PVA | ≈ 35 ⚠️ | 86.5 | same | 3.84 | 6.04 | 6.79 (at peak) | 83.2 | — | Fig. 3; Tables 5–6 |
+| same | F-PE | ≈ 35 ⚠️ | 50.4 | same | 2.70 | 5.18 | 11.99 (at peak) | 128.4 | — | Fig. 3; Tables 5–6 |
+| same | F-PVA | ≈ 35 ⚠️ | 51.9 | same | 2.84 | 4.60 | 10.35 (at peak) | 136.1 | — | Fig. 3; Tables 5–6 |
+| same | S-PE healed (3% pre-strain at 7 d, 28 d water, reloaded) | 35 | — | same | 3.76 | 7.53 | 9.45 (incl. 3% pre-strain) | — | — | Table 8 |
+| same | S-PVA healed | 35 | — | same | 4.21 | 6.33 | 6.29 (incl. 3% pre-strain) | — | — | Table 8 |
+| same | F-PE healed | 35 | — | same | 3.81 | 5.23 | 11.97 (incl. 3% pre-strain) | — | — | Table 8 |
+| same | F-PVA healed | 35 | — | same | 3.21 | 4.40 | 9.67 (incl. 3% pre-strain) | — | — | Table 8 |
 | [[pourfalah2018-ecc-high-temperature]] | ECC @20 °C | 28 | 38.8 (50 mm cube) | dogbone, 80 mm gauge, 30 × 13 mm | 2.75 | 3.85 | 3.5 (at peak) | ≈ 50 (bending) | n.r. (load only, ≈ 1300–1400 N peak, Fig. 10b ⚠️) | Tables 4–5; §4.3 |
 | same | H6ECC @20 °C | 28 | 40.1 | same | 2.89 | 4.36 | 3.0 | ≈ 40 (bending) | n.r. | Tables 4–5 |
 | same | H13ECC @20 °C | 28 | 45 | same | 3.32 | 4.71 | 2.5 | ≈ 40 (bending) | n.r. | Tables 4–5 |

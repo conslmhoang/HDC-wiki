@@ -3,8 +3,8 @@ type: concept
 slug: fiber-matrix-interface
 aliases: [interfacial bond, frictional bond, chemical bond, snubbing, slip hardening, inclination hardening, fiber pullout model]
 tags: [micromechanics, interface]
-sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, gao2020-hdcc-recycled-fine-aggregate, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, lepech2009-ecc-water-permeability]
-updated: 2026-10-21
+sources: [li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, mechtcherine2011-shcc-high-strain-rate, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, gao2020-hdcc-recycled-fine-aggregate, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2023-ecc-frost-damage, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, lepech2009-ecc-water-permeability, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Fiber/Matrix Interface Properties
@@ -126,5 +126,14 @@ These parameters govern single-fiber pullout and therefore [[fiber-bridging]].
 - **M45 bond model limits**: the pull-out model behind σ(δ) ignores two-way pull-out and matrix spalling, so J′b is
   underestimated; J′b/J_tip ≈ 1.08 is a lower bound ([[lepech2009-ecc-water-permeability]], p. 749).
 
+## Round-7 interface evidence (2026-10-26): PE/PVA in geopolymer matrices
+- **PE in fly-ash ED-EGC**: SEM shows reaction products agglomerated on PE surfaces and both pull-out and rupture failure modes
+  (Fig. 12); BSE shows voids at the PE/matrix interface, attributed to drying (Fig. 13), so a strong bond is not confirmed
+  ([[huy2023-egc-activator-pretreatment]], p. 13). τ0 and Gd were not measured.
+- **Hybrid PE + PVA in GGBS/FA EGC**: GGBS-rich (S) mixes had more, narrower cracks, which the authors read as a stronger
+  fibre–matrix bond (not measured); hydrophilic PVA attracts healing products, hydrophobic PE does not
+  ([[huy2023-egc-pe-pva-hybrid-healing]], §3.1.2, §3.2.1). After healing, the authors claim a better-bonded interface (σ_tu
+  +3.7%, ε −6.1% on reloading, Table 8). → [[self-healing]], [[hybrid-fiber]]
+
 ## Related
-- [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]] · [[fiber-surface-treatment]] · [[interface-bond]] · [[high-temperature-behaviour]]
+- [[fiber-bridging]] · [[single-fiber-pullout-test]] · [[pe-fiber]] · [[pva-fiber]] · [[fiber-surface-treatment]] · [[interface-bond]] · [[high-temperature-behaviour]] · [[alkali-activated-binder]]

@@ -3,8 +3,8 @@ type: material
 slug: pe-fiber
 aliases: [UHMWPE fiber, polyethylene fiber, PE]
 tags: [fiber, synthetic, hydrophobic]
-sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, li1992-steady-state-multiple-cracking, homma2009-frcc-self-healing, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw]
-updated: 2026-10-21
+sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, li1992-steady-state-multiple-cracking, homma2009-frcc-self-healing, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # UHMWPE (PE) Fiber
@@ -58,6 +58,9 @@ Melting-point values differ between sources (about 124–150 °C), probably beca
 | [[yuan2020-nshsdc-beam-strengthening]] Table 4; [[lee2021-hsdc-wall-emi-impact]] | NSHSDC / HSDC (hybrid) | 31 | 12 | 2900 | 100 | — | 0.97 | 0.5 (+ 1.0 steel) |
 | [[ivaniuk2022-printable-shcc-design]] §2.1 | printable SHCC (Dyneema SK60) | n.r. | 6 | — | — | — | — | 1.5 |
 | [[choi2016-pe-alkali-activated-slag-composite]] Table 3 | PE alkali-activated slag composite (cementless) | 12 | 18 (L/d 1500) | 2700 | 88 | — | 0.97 | 1.75 |
+| [[hieu2023-aas-extremely-ductile-22pct]] Table 3 | ED-AASC (cementless AAS + sand + CR) | 12 | 18 | 2700 | 88 | — | 0.97 | 1.75 |
+| [[huy2023-egc-activator-pretreatment]] Table 3 | ED-EGC (fly-ash geopolymer), UHMWPE (Dyneema) | 12 | 18 | 2700 | 88 | — | 0.97 | 1.75 |
+| [[huy2023-egc-pe-pva-hybrid-healing]] Table 3 | HSUD-EGC (hybrid with PVA) | 12 | 18 (L/d 1500) | **3030** ⚠️ | 88 | — | n.r. | 1.0 or 0.5 (+ PVA) |
 | [[yun2013-shcc-freeze-thaw]] §2.1 | SHCC (hybrid with PVA) | 12 | 12 | — | — | — | — | 0.20 or 0.75 (+ PVA) |
 
 ### Behaviour
@@ -82,6 +85,22 @@ Melting-point values differ between sources (about 124–150 °C), probably beca
   at f'c 36.3–54.8 MPa, 28 d ([[choi2016-pe-alkali-activated-slag-composite]], Tables 5, 7). PE was chosen because it is
   hydrophobic and stronger than PVA; the authors contrast ≤ 4.5% for PVA in alkali-activated slag (as cited, §1).
   → [[alkali-activated-binder]], [[uhdc]]
+- **Same PE, later CNU cementless matrices (2026-10-26).** At 1.75 vol.%: ε at peak **9.81–22.34%** at σ_tu 7.6–8.2 MPa in
+  AAS + silica sand (S/B 0.8) + 5% crumb rubber, with mixing procedure the only variable ([[hieu2023-aas-extremely-ductile-22pct]],
+  Tables 3–4); **10.97–18.62%** at σ_tu 5.5–8.7 MPa in a fly-ash geopolymer ([[huy2023-egc-activator-pretreatment]], Tables 3–4).
+  These are the two highest strain capacities in the wiki. Failure: pull-out with gradual exhaustion of bridging, turning to
+  rupture where stress exceeds bridging capacity ([[hieu2023-aas-extremely-ductile-22pct]], Fig. 11); SEM shows reaction products
+  on PE surfaces and both pull-out and rupture, while BSE shows voids at the PE/matrix interface
+  ([[huy2023-egc-activator-pretreatment]], Figs. 12–13). → [[fiber-matrix-interface]]
+- ⚠️ The same 12 µm × 18 mm PE is listed at 2700 MPa by three CNU papers but at 3030 MPa by [[huy2023-egc-pe-pva-hybrid-healing]]
+  (Table 3); a different product or batch is possible.
+- **PE vs PVA in a hybrid EGC**: PE-rich (1.0 PE + 0.5 PVA) mixes gave higher σ_tu and ε than PVA-rich (0.5 + 1.0) ones
+  (e.g. S-PE 6.64 MPa / 10.51% vs S-PVA 6.04 MPa / 6.79%), but hydrophobic PE healed less: crack healing rate 26.78 vs 31.40%
+  and resonant-frequency recovery +15.63 vs +24.16 %-points ([[huy2023-egc-pe-pva-hybrid-healing]], Table 5, Figs. 10, 12).
+  ⚔️ This contrasts with [[homma2009-frcc-self-healing]] (fine PE promotes CaCO₃ healing in a cement FRCC); the matrix and the
+  healing product (C-(N)-A-S-H) differ. → [[self-healing]], [[gaps]]
+- **Cost**: PE 52.5 $/kg vs PVA 10 $/kg (≈ 5×) ([[huy2023-egc-pe-pva-hybrid-healing]], Table 7); PE dominates the material cost
+  of ED-AASC (≈ 893 $/m³, read from Fig. 16c) ([[hieu2023-aas-extremely-ductile-22pct]], §4).
 - **PE in hybrids with PVA**: PE multifilament is hard to disperse, raises air content (13.1 vs 10.4%) and lowers f'c,
   but gives more fine cracks before F-T ([[yun2013-shcc-freeze-thaw]], Table 3, Fig. 11, p. 13–14). → [[hybrid-fiber]], [[freeze-thaw]]
 - PE is non-conductive; in the Korea Univ. hybrid, EMI shielding comes from the steel fibers ([[lee2021-hsdc-wall-emi-impact]], §3.1). → [[hybrid-fiber]]

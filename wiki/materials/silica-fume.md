@@ -3,8 +3,8 @@ type: material
 slug: silica-fume
 aliases: [microsilica, SF]
 tags: [binder, pozzolan, ultra-fine]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, homma2009-frcc-self-healing, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, zhao2022-ecc-tension-damage-model]
-updated: 2026-10-21
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, homma2009-frcc-self-healing, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, ivaniuk2022-printable-shcc-design, zhao2022-ecc-tension-damage-model, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Silica Fume (Microsilica)
@@ -36,6 +36,7 @@ updated: 2026-10-21
 | [[yuan2020-nshsdc-beam-strengthening]] Table 2; [[lee2021-hsdc-wall-emi-impact]] Table 1 | NSHSDC / HSDC | 0.25 of cement (+ silica filler 0.30) | W/B 0.172, f'c ≈ 122–123 MPa, room-cured |
 | [[ivaniuk2022-printable-shcc-design]] §2.1 | printable SHCC | 15% of binder (as suspension) | W/B (0.212–0.250) reproduced only if suspension water and ≈ 70% of SP mass are counted (computed) ⚠️ |
 | [[zhao2022-ecc-tension-damage-model]] Table 1 | ECC | 0.073 of cement | FA/C 2.0 |
+| [[huy2023-egc-pe-pva-hybrid-healing]] §2.1, Table 1 | HSUD-EGC (cementless geopolymer) | 0.05 of precursor (Elkem, mean 0.15 µm, SG 2.25) | filler/pozzolan with GGBS + FA; f'c 50.4–86.5 MPa |
 
 - None of these sources varies SF alone, so they add dosages but no SF-effect data.
 

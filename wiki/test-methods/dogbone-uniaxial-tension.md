@@ -3,8 +3,8 @@ type: test-method
 slug: dogbone-uniaxial-tension
 aliases: [direct tension test, uniaxial tension, JSCE dogbone, dumbbell, XAUAT dogbone, DBJ61/T112-2016]
 tags: [tension, test, standard]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, li2003-ecc-review, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, xue2023-shcc-structural-review, kunieda2006-hpfrcc-japan-applications, kanda2003-sprayed-ecc, wang2019-rc-beam-ecc-shear-strengthening, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, zhao2022-ecc-tension-damage-model, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, deng2018-hdc-short-columns, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, deng2017-rc-column-hdc-jacket]
-updated: 2026-10-21
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, kanda2006-psh-design-criteria, chai2023-hdc-ambient-temperature, li2003-ecc-review, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, xue2023-shcc-structural-review, kunieda2006-hpfrcc-japan-applications, kanda2003-sprayed-ecc, wang2019-rc-beam-ecc-shear-strengthening, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, shumuye2022-slag-fa-pe-ecc, sun2019-modified-pva-fiber-ecc, zhao2022-ecc-tension-damage-model, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, deng2018-hdc-short-columns, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, deng2017-rc-column-hdc-jacket, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Dogbone (Dumbbell) Uniaxial Tension Test
@@ -136,6 +136,9 @@ T2 = 100 × 60 mm dogbone, pin–fix, H or V; T3 = Ø70 dogbone, pin–fix, V; T
 | [[li2021-hdc-beam-shear]] Fig. 2 | HDC (Henan / XAUAT) | dogbone 15 mm thick, 50 mm narrow width, 80 mm ends, narrow length ≈ 150 mm (drawing partly illegible ⚠️) | n.r. | n.r. | n.r. | 3 per batch |
 | [[deng2017-rc-column-hdc-jacket]] Fig. 1a | HDC (XAUAT) | uniaxial tension, geometry / gauge / rate n.r. ⚠️ | — | — | — | — |
 | [[choi2016-pe-alkali-activated-slag-composite]] §2.4, Fig. 1 | AAS-PE composite (Chonnam) | JSCE dogbone, 30 × 13 mm section, **80 mm gauge** | — | 0.1 mm/min | 2 LVDTs | 4 |
+| [[hieu2023-aas-extremely-ductile-22pct]] §2.3, Fig. 6 | ED-AASC (Chonnam) | JSCE dumbbell 330 mm long, 13 mm thick, 60 mm wide ends, R25, **80 mm gauge** (gauge width not dimensioned ⚠️) | — | 0.1 mm/min, 20 kN UTM | 2 LVDTs; crack width = elongation at peak / crack count | 5 |
+| [[huy2023-egc-activator-pretreatment]] §2.3, Fig. 3 | ED-EGC (Chonnam) | JSCE dogbone 330 mm, 30 × 13 mm, 80 mm gauge | — | 0.1 mm/min | 2 LVDTs | n.r. |
+| [[huy2023-egc-pe-pva-hybrid-healing]] §2.3, Fig. 1 | HSUD-EGC (Chonnam) | JSCE 2008 dumbbell 330 mm, 30 × 13 mm, 80 mm gauge; also used for 3% pre-strain and reloading after healing | — | n.r. ⚠️, 20 kN UTM | 2 LVDTs | 3 |
 | [[pourfalah2018-ecc-high-temperature]] §3.1 | ECC / HECC (Heriot-Watt) | JSCE dogbone 330 mm, 80 mm gauge, 30 × 13 mm section | — | 1 mm/min | 2 LVDTs | n.r. |
 | [[yun2013-shcc-freeze-thaw]] §2.3 | SHCC (hybrid PVA+PE) | JSCE 2008 dumbbell (dimensions n.r. ⚠️), used after 0–300 F-T cycles | — | n.r. | — | **2** per point |
 | [[yang2009-ecc-self-healing-wet-dry]] §2.1.2 | ECC (M45) | coupon 230 × 76 × 13 mm | glued Al plates | 0.0025 mm/s | 2 LVDTs | — |
@@ -149,6 +152,12 @@ T2 = 100 × 60 mm dogbone, pin–fix, H or V; T3 = Ø70 dogbone, pin–fix, V; T
   rather than induce bending ([[zhang2022-hdc-basalt-textile-tension]], §2.3). → [[textile-reinforced-hdc]]
 - **Resonant frequency as a damage index:** ASTM C215 resonant frequency of pre-strained ECC falls bilinearly with
   tensile strain, knee at ≈ 1% ([[yang2009-ecc-self-healing-wet-dry]], Fig. 2); used to track self-healing. → [[self-healing]]
+
+- **Chonnam (CNU) JSCE dumbbell** produced every strain above 10% in the wiki (up to 22.34% at peak,
+  [[hieu2023-aas-extremely-ductile-22pct]]). The 13 mm thickness with 18 mm fibres favours 2-D fibre orientation, so these
+  values are likely upper bounds for thick members (cf. [[kunieda2010-uhp-shcc-steel-reinforcement]];
+  [[kanakubo2006-dfrcc-tensile-test-method]]). Crack width is computed as gauge elongation at peak / crack count (loaded,
+  average), not measured. → [[tensile-strain-capacity]], [[crack-width]]
 
 - Uniaxial tension is impractical for plant QC: special jigs, labour, alignment sensitivity
   ([[kanakubo2006-dfrcc-tensile-test-method]], p. 14; [[qian2007-shcc-inverse-tensile-strain]], p. 236).

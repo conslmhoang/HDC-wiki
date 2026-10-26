@@ -3,8 +3,8 @@ type: concept
 slug: fiber-bridging
 aliases: [crack bridging, σ-δ relation, bridging law, scale-linking model, complementary energy]
 tags: [micromechanics, constitutive]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, jin2019-hvfa-shcc-structural, zhao2022-ecc-tension-damage-model, kunieda2010-uhp-shcc-steel-reinforcement, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, mechtcherine2011-shcc-high-strain-rate, li2021-hdc-beam-shear, pourfalah2018-ecc-high-temperature, zhang2022-hdc-basalt-textile-tension]
-updated: 2026-10-21
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, jin2019-hvfa-shcc-structural, zhao2022-ecc-tension-damage-model, kunieda2010-uhp-shcc-steel-reinforcement, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, mechtcherine2011-shcc-high-strain-rate, li2021-hdc-beam-shear, pourfalah2018-ecc-high-temperature, zhang2022-hdc-basalt-textile-tension, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment]
+updated: 2026-10-26
 ---
 
 # Fiber Bridging & the σ–δ Relation
@@ -101,5 +101,14 @@ The bridging stress σ that fibers carry across a crack, as a function of the cr
   suggests that short fibres carry load in addition to the grid ([[zhang2022-hdc-basalt-textile-tension]], Table 8).
   → [[textile-reinforced-hdc]]
 
+## Round-7 evidence (2026-10-26)
+- **Single-crack bridging in a fly-ash geopolymer** (0.2 vol.% PE, notched JSCE-type dogbone): σ0 1.45 (WP) / 1.28 (CP) MPa,
+  δ0 0.18 / 0.19 mm, J′b 64.8 / 57.5 J/m² ([[huy2023-egc-activator-pretreatment]], Table 7). The activator pretreatment lowered σ0
+  by only 12% while Km fell by ≈ 45% (Tables 6–7), so the ductility gain comes mainly from the matrix side. → [[single-crack-test]]
+- ⚠️ Scaling σ0 and J′b by ×8.75 to 1.75 vol.% (assuming proportionality, citing Yang 2008) gives σ0 ≈ 12.7 / 11.2 MPa, above the
+  measured fts (8.72 / 5.54 MPa) — proportional scaling over-predicts bridging at high Vf in this matrix (§3.2).
+- **Failure mode at very high strain**: PE pull-out with gradual exhaustion of bridging, turning to rupture once stress
+  exceeds bridging capacity; good dispersion at the crack face ([[hieu2023-aas-extremely-ductile-22pct]], Fig. 11, §3.1).
+
 ## Related
-- [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]] · [[compressive-constitutive-model]] · [[textile-reinforced-hdc]]
+- [[strain-hardening]] · [[fiber-matrix-interface]] · [[fiber-dispersion]] · [[fiber-geometry]] · [[single-crack-test]] · [[compressive-constitutive-model]] · [[textile-reinforced-hdc]] · [[alkali-activated-binder]]

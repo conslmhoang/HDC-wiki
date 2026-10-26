@@ -1,13 +1,13 @@
 ---
 type: dataset
 slug: micromechanical-parameters
-updated: 2026-10-21
+updated: 2026-10-26
 ---
 
 # Micromechanical Parameters — Master Table
 
 Links: [[fiber-matrix-interface]], [[strain-hardening]], [[fiber-bridging]].
-Rows marked "assumed" or "model input" are analysis inputs, not measurements. The [[chavesfigueiredo2020-printed-shcc]] J values come from a flexural stress–CMOD method and are not comparable with single-crack J′b. The [[choi2016-pe-alkali-activated-slag-composite]] row is a macroscopic σ_tu/σ_fc index, not a micromechanical σ0/σ_fc ratio.
+Rows marked "assumed" or "model input" are analysis inputs, not measurements. The [[chavesfigueiredo2020-printed-shcc]] J values come from a flexural stress–CMOD method and are not comparable with single-crack J′b. The [[choi2016-pe-alkali-activated-slag-composite]] row is a macroscopic σ_tu/σ_fc index, not a micromechanical σ0/σ_fc ratio; the same holds for the [[huy2023-egc-pe-pva-hybrid-healing]] row and for PSH_strength in the [[huy2023-egc-activator-pretreatment]] rows (σ0 set = fts). ⚠️ The PSH_energy values of [[huy2023-egc-activator-pretreatment]] (452 / 817) scale J′b measured at 0.2 vol.% by ×8.75 to 1.75 vol.%, assuming proportionality; the scaled σ0 (12.7 / 11.2 MPa) exceeds the measured fts (8.72 / 5.54 MPa), so these PSH_energy values are likely inflated and are out of scale with all other rows.
 
 | Source | Material | Fiber | τ0 (MPa) | Gd (J/m²) | β | f | µ (N/(m·rad)) | Km (MPa√m) | J_tip (J/m²) | σ0 (MPa) | σ_fc (MPa) | J′b (J/m²) | PSH_strength | PSH_energy | Location |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -34,6 +34,9 @@ Rows marked "assumed" or "model input" are analysis inputs, not measurements. Th
 | same | chosen design, w/c 0.32 | same | — | — | — | — | — | — | — | — | — | — | — | about 2.0 (J′b/J_tip; ≥ 2.7 needs w/c ≥ 0.44) | p. 270–271, Fig. 2 |
 | [[lepech2009-ecc-water-permeability]] | ECC M45 (14 d) | PVA 39 µm × 12 mm, 1.2% oil | n.r. | n.r. | n.r. | n.r. | n.r. | n.r. (measured, value not given) | n.r. | n.r. | n.r. | n.r. | n.r. | ≈ 1.08 (lower bound) | p. 749 |
 | [[choi2016-pe-alkali-activated-slag-composite]] | AAS-PE M26 / M30 / M34 / M38 (macroscopic index only) | PE 12 µm × 18 mm, 1.75% | — | — | — | — | — | — | — | — | 4.87 / 4.61 / 3.92 / 3.37 (measured first crack) | — | 2.68 / 2.49 / 1.95 / 1.50 (σ_tu/σ_fc, macroscopic, not σ0/σ_fc) | — | §3.3, Table 7 |
+| [[huy2023-egc-activator-pretreatment]] | ED-EGC-WP (FA geopolymer, 80 °C cured) | PE 12 µm × 18 mm, 1.75% (single-crack test at 0.2%) | not measured | — | — | — | — | 0.11 | 1.25 (Km²/Em, Em 10.08 GPa from composite) | 1.45 at 0.2% (σ0 for PSH taken = fts 8.72) | 4.67 (first crack) | 64.79 at 0.2% | 1.87 (fts/fcs, computed here; macroscopic) | 452.4 (J′b scaled ×8.75 from 0.2% ⚠️) | Tables 4, 6, 7; §3.2 |
+| same | ED-EGC-CP | same | not measured | — | — | — | — | 0.06 | 0.62 (Em 6.81 GPa) | 1.28 at 0.2% (= fts 5.54 for PSH) | 3.40 | 57.52 at 0.2% | 1.63 (computed here; macroscopic) | 817.2 (scaled ×8.75 ⚠️) | Tables 4, 6, 7; §3.2 |
+| [[huy2023-egc-pe-pva-hybrid-healing]] | HSUD-EGC S-PE / S-PVA / F-PE / F-PVA (macroscopic index only) | PE 12 µm × 18 mm + PVA 40 µm × 12 mm, 1.5% total | — | — | — | — | — | — | — | — | 3.70 / 3.84 / 2.70 / 2.84 (measured first crack) | — | 1.79 / 1.57 / 1.92 / 1.62 (σ_tu/σ_fc, macroscopic, computed from Table 5) | — | Table 5, §3.1.2 |
 | [[jin2019-hvfa-shcc-structural]] | parametric model input (generic SHCC, Yang 2008 model) | PVA 39 µm, 12 mm, 2%, E_f 22 GPa, f_f 1092 MPa | 1.0 (assumed) | 1.5 (assumed) | n.r. | n.r. | — | varied (Fig. 1g) | n.r. | Fig. 1 | n.r. | Fig. 1 | target > 1.45 (as cited) | target > 3 (J′b/J_tip, cited from Kanda & Li 1998, p. 3) | Table 1; Fig. 1, pp. 4–5 (sweeps: Vf 0.5–2.5%, Gd 1–8 J/m², τ0 1–5 MPa, Km ≈ 8–20 MPa·mm^0.5) |
 | [[chavesfigueiredo2020-printed-shcc]] | printed XVA3PVA20 (notched-beam stress–CMOD integrals, not single-crack J′b; units suspect ⚠️) | PVA 2% | — | — | — | — | — | — | 16.37 "kJ/m²" as printed ⚠️ | — | — | J_b 430.74 "kJ/m²" ⚠️ | — | ≈26 (J_b/J_tip, computed) | Table 3, p. 9 (units confirmed as printed; magnitudes fit J/m²; J_tip > LOP × CMOD_LOP ≈ 11.7, internally inconsistent ⚠️) |
 | same | printed YVA4PVA20-S05 (same method ⚠️) | PVA 2% | — | — | — | — | — | — | 7.11 ⚠️ | — | — | J_b 260.94 ⚠️ | — | ≈37 (computed) | Table 3, p. 9 |

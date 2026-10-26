@@ -3,8 +3,8 @@ type: property
 slug: matrix-fracture-toughness
 aliases: [Km, K_IC, matrix toughness, J_tip, crack tip toughness]
 tags: [fracture, matrix]
-sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, chavesfigueiredo2020-printed-shcc, mechtcherine2011-shcc-high-strain-rate, lepech2009-ecc-water-permeability, choi2016-pe-alkali-activated-slag-composite]
-updated: 2026-10-21
+sources: [ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, li2002-pva-ecc-interface-tailoring, li1992-steady-state-multiple-cracking, kanda2006-psh-design-criteria, kanda2003-sprayed-ecc, jin2019-hvfa-shcc-structural, chavesfigueiredo2020-printed-shcc, mechtcherine2011-shcc-high-strain-rate, lepech2009-ecc-water-permeability, choi2016-pe-alkali-activated-slag-composite, huy2023-egc-activator-pretreatment, hieu2023-aas-extremely-ductile-22pct]
+updated: 2026-10-26
 ---
 
 # Matrix Fracture Toughness (Km) & J_tip
@@ -21,6 +21,7 @@ energy criterion. A higher Km raises the first-crack strength and makes strain h
 | same (Orange 2000; Yang 2008, as cited) | UHPC / ECC | 1.31 / about 0.5 | — |
 | [[su2023-rubber-modified-hshdc]] Fig. 7 | GDUT matrix, PR 0 / 10 / 20 / 35% | 0.787 / 0.772 / 0.740 / 0.671 | 40×40×160 mm notched beam |
 | [[ye2021-uhdc-flexural-size-effect]] Table 4 | NC / UHDC-1 / UHDC-2 (**composite**, apparent K_IC) | 0.62–0.86 / 2.81–4.94 / 3.41–10.08 | double-K, notched 3PB |
+| [[huy2023-egc-activator-pretreatment]] Table 6 | fly-ash geopolymer matrix (ED-EGC) WP / CP, 80 °C cured, 28 d | **0.11 / 0.06** (J_tip 1.25 / 0.62 J/m²) | 90 × 90 × 400 mm beam, span 360 mm, 45 mm cast notch (α 0.5), ASTM E399, Eq. 3 |
 
 Ye's K_IC is an apparent toughness of the fiber-reinforced composite, not the matrix Km. Do not mix
 the two. On an Ashby chart UHDC sits near metals, bamboo and wood
@@ -73,6 +74,16 @@ the two. On an Ashby chart UHDC sits near metals, bamboo and wood
   ([[choi2016-pe-alkali-activated-slag-composite]], §2.1); Km not measured. Lower W/B (0.26) still gave the highest ε
   (7.50%) and σ_fc (4.87 MPa), so the strength–toughness penalty of a denser matrix was outweighed by bridging
   (Table 7). → [[alkali-activated-binder]], [[water-binder-ratio]]
+
+## Round-7 additions (2026-10-26)
+- **Lowest Km in the wiki**: fly-ash geopolymer matrix 0.11 (WP) and 0.06 MPa√m (CP), about 1/5–1/10 of the ≈ 0.5 MPa√m
+  quoted for ECC ([[huy2023-egc-activator-pretreatment]], Table 6). J_tip = Km²/Em with Em taken from the **composite**
+  tensile initial slope (10.08 / 6.81 GPa), not from a matrix test (§3.2).
+- Cooling pretreatment halved Km; the authors attribute this to porosity from re-formed SMP crystals and incomplete
+  geopolymerisation (§3.2). ε rose 10.97 → 18.62% (Table 4). → [[alkali-activated-binder]]
+- **Sand + crumb rubber**: [[hieu2023-aas-extremely-ductile-22pct]] adds silica sand (S/B 0.8), which raises toughness, and 5%
+  crumb rubber to offset it (§1); Km is not measured, yet ε reached 22.34%. This refines the "no aggregate to keep Km low"
+  rationale of [[choi2016-pe-alkali-activated-slag-composite]]. → [[crumb-rubber]]
 
 ## Related
 - [[strain-hardening]] · [[fracture-process-zone]] · [[micromechanical-parameters]]

@@ -3,8 +3,8 @@ type: concept
 slug: strain-hardening
 aliases: [pseudo strain-hardening, PSH, tensile strain-hardening, strain-hardening criteria, PSH index]
 tags: [micromechanics, design-theory]
-sources: [kanda2006-psh-design-criteria, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, deng2018-hdc-short-columns, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, homma2009-frcc-self-healing, tabrizikahou2022-masonry-ecc-sma-retrofit, choi2016-pe-alkali-activated-slag-composite, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [kanda2006-psh-design-criteria, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, deng2018-hdc-short-columns, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, gao2020-hdcc-recycled-fine-aggregate, kunieda2010-uhp-shcc-steel-reinforcement, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, homma2009-frcc-self-healing, tabrizikahou2022-masonry-ecc-sma-retrofit, choi2016-pe-alkali-activated-slag-composite, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Tensile Strain-Hardening & the PSH Criteria
@@ -169,6 +169,26 @@ and the saturation thresholds came later: 1.2 / 3 (Kanda & Li 1998b, pull-out ty
 - **Short fibres + textile**: with ≥ 1.5% PVA, basalt-textile-reinforced HDC shows multiple cracking up to peak, although
   plain HDC dogbones reach only 0.12–0.45% ([[zhang2022-hdc-basalt-textile-tension]], §3.1, Table 8). → [[textile-reinforced-hdc]]
 
+## Round-7 evidence (2026-10-26): cementless CNU composites
+- **First measured PSH indices for a geopolymer composite**: fly-ash ED-EGC, Km 0.11 / 0.06 MPa√m, J_tip 1.25 / 0.62 J/m²,
+  J′b 64.8 / 57.5 J/m² at 0.2 vol.% PE (single-crack test) ([[huy2023-egc-activator-pretreatment]], Tables 6–7).
+  - PSH_E = J′b/J_tip after scaling J′b by ×8.75 (1.75/0.2 vol.%) = **452 (WP) / 817 (CP)**, far above the 2.7 threshold quoted
+    from Kanda & Li 2006 and out of scale with every other row in [[micromechanical-parameters]] (≤ ≈ 200). ⚠️ The ×8.75
+    proportional scaling is inconsistent with the measured composite: scaled σ0 (12.7 / 11.2 MPa) exceeds fts (8.72 / 5.54 MPa),
+    so the PSH_E values are likely inflated (§3.2).
+  - PSH_S is taken as fts/fcs (σ0 set = fts), i.e. a macroscopic ratio as in [[choi2016-pe-alkali-activated-slag-composite]]:
+    1.87 / 1.63 (computed here). The authors state that PSH_E tracks ε better than PSH_S (§3.2, Table 7).
+- **Macroscopic SPI in HSUD-EGC**: σ_tu/σ_fc 1.79 / 1.57 / 1.92 / 1.62 (S-PE / S-PVA / F-PE / F-PVA, computed from Table 5);
+  F mixes slightly higher ([[huy2023-egc-pe-pva-hybrid-healing]], §3.1.2). EPI not measured.
+- **Minimum condition fts > fcr** with saturated multiple cracking (66–86 cracks in 80 mm) gives 22.34% at peak in ED-AASC;
+  more cracks ↔ higher ε ([[hieu2023-aas-extremely-ductile-22pct]], Table 6, §3.1). fts/fcr is 1.56 / 1.62 / 1.99 for M0 / M1 / M2
+  (computed from Table 4), so the mix with the highest ε (M1) does not have the highest ratio.
+- **Processing, not only design**: identical ED-AASC proportions gave 9.81% (M0) or 22.34% (M1) depending on mixing
+  ([[hieu2023-aas-extremely-ductile-22pct]], Table 4). → [[fiber-dispersion]]
+- **Trade-off within one study**: weakening the ED-EGC matrix (CP pretreatment) lowered f'c 31.1 → 20.7 MPa and raised ε
+  10.97 → 18.62% ([[huy2023-egc-activator-pretreatment]], Table 4); a GGBS-rich HSUD-EGC keeps 10.51% at 84.3 MPa
+  ([[huy2023-egc-pe-pva-hybrid-healing]], Table 5, Fig. 3). → [[gaps]]
+
 ## Conflicts & open questions
 - ⚔️ The PSH criteria do not fully predict the brittle failure of short-fiber mixes → [[gaps]]
 - ⚔️ PSH strength threshold: 1.2 (1998b) / 1.3 (2006) vs 1.45 (as quoted by [[jin2019-hvfa-shcc-structural]]) → [[gaps]]
@@ -176,6 +196,8 @@ and the saturation thresholds came later: 1.2 / 3 (Kanda & Li 1998b, pull-out ty
 - Papers in the corpus quote "1.2 and 3" for all fiber types. Kanda & Li 2006 restrict those to
   pull-out type fibers. Check which set a paper uses before comparing.
 - Kanda & Li 1998b (the pull-out thresholds) has not been ingested.
+- ⚠️ PSH_E 452–817 in [[huy2023-egc-activator-pretreatment]] rests on proportional scaling of single-crack J′b from 0.2 to
+  1.75 vol.%; treat as an upper bound. → [[single-crack-test]]
 
 ## Related
 - [[multiple-cracking]] · [[alkali-activated-binder]] · [[fiber-bridging]] · [[tensile-strain-capacity]] · [[micromechanical-parameters]] · [[steady-state-cracking]] · [[recycled-fine-aggregate]]

@@ -3,8 +3,8 @@ type: material
 slug: pva-fiber
 aliases: [polyvinyl alcohol fiber, PVA]
 tags: [fiber, synthetic, hydrophilic]
-sources: [li2002-pva-ecc-interface-tailoring, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ranade2015-hshdc-tensile-rate-effects, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, yang2008-ecc-fiber-bridging-law, li2021-hdc-sulfate-dry-wet, chai2023-hdc-ambient-temperature, li2003-ecc-review, kanda2006-psh-design-criteria, chai2019-hdcc-freeze-thaw-carbonation-flexure, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, herbert2013-ecc-self-healing-natural-environment, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, kanakubo2006-dfrcc-tensile-test-method, mechtcherine2011-shcc-high-strain-rate, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, paul2014-r-shcc-chloride-corrosion, qian2007-shcc-inverse-tensile-strain, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, zhong2019-ecc-freeze-thaw, zhou2023-hsecc-elevated-temperature, chavesfigueiredo2020-printed-shcc, bu2022-ecc-chloride-crack-width, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [li2002-pva-ecc-interface-tailoring, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, ranade2015-hshdc-tensile-rate-effects, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, ma2021-ecc-durability-review, yang2008-ecc-fiber-bridging-law, li2021-hdc-sulfate-dry-wet, chai2023-hdc-ambient-temperature, li2003-ecc-review, kanda2006-psh-design-criteria, chai2019-hdcc-freeze-thaw-carbonation-flexure, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, gao2020-hdcc-recycled-fine-aggregate, herbert2013-ecc-self-healing-natural-environment, jin2019-hvfa-shcc-structural, kanda2003-sprayed-ecc, kanakubo2006-dfrcc-tensile-test-method, mechtcherine2011-shcc-high-strain-rate, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, paul2014-r-shcc-chloride-corrosion, qian2007-shcc-inverse-tensile-strain, sun2019-modified-pva-fiber-ecc, vanzijl2010-shcc-durability, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, zhong2019-ecc-freeze-thaw, zhou2023-hsecc-elevated-temperature, chavesfigueiredo2020-printed-shcc, bu2022-ecc-chloride-crack-width, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # PVA Fiber
@@ -201,5 +201,14 @@ friction with the matrix. Untreated PVA tends to rupture rather than pull out
 - **Self-healing**: oiled-PVA ECC M45 recovered 87–100% resonant frequency after 10 wet–dry cycles
   ([[yang2009-ecc-self-healing-wet-dry]], Fig. 7). → [[self-healing]]
 
+## Round 7 additions (2026-10-26): PVA in a cementless hybrid EGC
+- Fibre: PVA 40 µm × 12 mm, L/d 300, 1560 MPa, 41 GPa, used with 18 mm × 12 µm PE at 0.5 or 1.0 vol.% (1.5% total) in a
+  GGBS/FA geopolymer ([[huy2023-egc-pe-pva-hybrid-healing]], Table 3, Table 1).
+- PVA-rich mixes gave lower σ_tu and ε than PE-rich mixes (S-PVA 6.04 MPa / 6.79% vs S-PE 6.64 MPa / 10.51%, ≈ 35 d ⚠️), but
+  healed better: crack healing rate 31.40% (S-PVA) vs 26.78% (S-PE), resonant-frequency recovery +24.16 vs +15.63 %-points
+  ([[huy2023-egc-pe-pva-hybrid-healing]], Table 5, Figs. 10, 12). The authors attribute this to hydrophilic PVA attracting
+  healing products (§1, §3.2.1). → [[hybrid-fiber]], [[self-healing]]
+- Cost motive: PVA ≈ 1/5 of the PE price (10 vs 52.5 $/kg) ([[huy2023-egc-pe-pva-hybrid-healing]], Table 7).
+
 ## Related
-- [[pe-fiber]] · [[hybrid-fiber]] · [[fiber-matrix-interface]] · [[fiber-surface-treatment]] · [[terminology-hdc-ecc-shcc]] · [[recycled-fine-aggregate]] · [[freeze-thaw]] · [[high-temperature-behaviour]] · [[textile-reinforced-hdc]]
+- [[pe-fiber]] · [[hybrid-fiber]] · [[fiber-matrix-interface]] · [[fiber-surface-treatment]] · [[terminology-hdc-ecc-shcc]] · [[recycled-fine-aggregate]] · [[freeze-thaw]] · [[high-temperature-behaviour]] · [[textile-reinforced-hdc]] · [[alkali-activated-binder]]

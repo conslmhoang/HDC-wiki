@@ -3,8 +3,8 @@ type: concept
 slug: fiber-dispersion
 aliases: [fiber distribution, fiber orientation, effective fiber volume, fiber agglomeration]
 tags: [variability, processing]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, chai2023-hdc-ambient-temperature, yang2008-ecc-fiber-bridging-law, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, kanakubo2006-dfrcc-tensile-test-method, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, zhong2019-ecc-freeze-thaw, shumuye2022-slag-fa-pe-ecc, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw]
-updated: 2026-10-21
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, chai2023-hdc-ambient-temperature, yang2008-ecc-fiber-bridging-law, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, kanakubo2006-dfrcc-tensile-test-method, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, zhong2019-ecc-freeze-thaw, shumuye2022-slag-fa-pe-ecc, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, hieu2023-aas-extremely-ductile-22pct]
+updated: 2026-10-26
 ---
 
 # Fiber Dispersion & Orientation
@@ -69,6 +69,20 @@ set the section-to-section variation in bridging capacity, and therefore min(σ0
   ([[choi2016-pe-alkali-activated-slag-composite]], §2.1, §3.1). → [[alkali-activated-binder]], [[viscosity-modifying-admixtures]]
 - **PE multifilament** is hard to disperse in PVA + PE hybrids, raising air content (up to 13.1%) and lowering f'c
   ([[yun2013-shcc-freeze-thaw]], p. 13–14, Table 3). → [[hybrid-fiber]]
+
+## Round-7 evidence (2026-10-26): mixing procedure as the only variable
+- [[hieu2023-aas-extremely-ductile-22pct]] made one ED-AASC mix (1.75% PE, 18 L planetary mixer) with three procedures (Fig. 3):
+  - **M0** (earlier procedure): dry 1 min 90 rpm → liquids 1 min 90 + 3 min 180 rpm → PE 15 min 270 rpm → ε **9.81 ± 2.92%**.
+  - **M1**: dry 3 min 180 rpm → liquids 3 min 270 + 7 min 360 rpm → PE 3 min 270 + 15 min 360 rpm (≈ 31 min) → **22.34 ± 0.48%**.
+  - **M2**: solids + PE dry-mixed 5 min 180 rpm → liquids 3 min 270 + 20 min 360 rpm → **20.89 ± 2.13%**.
+  (all at peak, 28 d; Table 4). f'c (52.2–54.6 MPa) and density (2.25–2.26 g/cm³) were unchanged (Fig. 7).
+- The authors attribute the 2.2–2.3× gain and the lower COV to better homogeneity and fibre distribution (citing Li & Li 2013
+  on dispersion and COV), but **dispersion was not measured** (no image analysis or rheology) (§3.1).
+- A high SP dose (0.106 liquid PCE) was needed for rheology and dispersion; it delayed hydration (demoulding at 11 d) (§2.1, §2.2.2).
+
+> Synthesis: this is the clearest evidence in the wiki that processing alone can more than double ε at fixed proportions.
+> Reported ε values from different labs may therefore differ through mixing energy as much as through mix design;
+> mixing procedures should be recorded with any tensile result. → [[tensile-strain-capacity]], [[gaps]]
 
 ## Related
 - [[fiber-bridging]] · [[fresh-properties]] · [[strain-hardening]] · [[3d-printed-hdc]] · [[viscosity-modifying-admixtures]] · [[dogbone-uniaxial-tension]] · [[alkali-activated-binder]]

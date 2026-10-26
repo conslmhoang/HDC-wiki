@@ -3,8 +3,8 @@ type: concept
 slug: terminology-hdc-ecc-shcc
 aliases: [HDC, TR-HDC, HECC, HDCC, Eco-HDCC, ECC, SHCC, HPFRCC, DFRCC, FRCC, UHP-SHCC, UHP-ECC, HSECC, HSDC, NSHSDC, PDCC, HSHDC, UHDC, UHTCC, UHS-UHDCC, high ductility concrete, high ductile concrete, highly ductile concrete, bendable concrete]
 tags: [scope, terminology]
-sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, ma2021-ecc-durability-review, zhang2022-hshdcc-review, li2003-ecc-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, kanda2006-psh-design-criteria, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chai2019-hdcc-freeze-thaw-carbonation-flexure, gao2020-hdcc-recycled-fine-aggregate, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2006-hpfrcc-japan-applications, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, zhou2023-hsecc-elevated-temperature, qian2007-shcc-inverse-tensile-strain, vanzijl2010-shcc-durability, mechtcherine2011-shcc-high-strain-rate, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, homma2009-frcc-self-healing, zhang2022-ecc-carbonation-sustained-load, wang2019-rc-beam-ecc-shear-strengthening, mohammed2020-cr-ecc-elevated-temperature, bu2022-ecc-chloride-crack-width, zhong2019-ecc-freeze-thaw, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [he2024-hdc-research-advances, yang2024-hshdc-uniaxial-tension, su2023-rubber-modified-hshdc, ye2021-uhdc-flexural-size-effect, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, li1992-steady-state-multiple-cracking, li2002-pva-ecc-interface-tailoring, yu2018-ecc-direct-tensile-review, ma2021-ecc-durability-review, zhang2022-hshdcc-review, li2003-ecc-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, kanda2006-psh-design-criteria, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chai2019-hdcc-freeze-thaw-carbonation-flexure, gao2020-hdcc-recycled-fine-aggregate, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2006-hpfrcc-japan-applications, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, zhou2023-hsecc-elevated-temperature, qian2007-shcc-inverse-tensile-strain, vanzijl2010-shcc-durability, mechtcherine2011-shcc-high-strain-rate, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, xue2023-shcc-structural-review, homma2009-frcc-self-healing, zhang2022-ecc-carbonation-sustained-load, wang2019-rc-beam-ecc-shear-strengthening, mohammed2020-cr-ecc-elevated-temperature, bu2022-ecc-chloride-crack-width, zhong2019-ecc-freeze-thaw, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Terminology: HDC, ECC, SHCC and their sub-classes
@@ -151,6 +151,21 @@ adopted the JSCE values; this is not shown by either paper. → [[gaps]]
 > so **fiber grade**, not the "HDC" label, sets the ductility class. Most XAUAT structural papers report ≈ 1%, which
 > passes the HDC standards (JC/T 2461; DBJ61/T112) but not the ECC > 3% convention. The new Chonnam cementless composite
 > shows that a paper can meet the ECC bar (7.5%) without using any of the HDC/ECC/SHCC labels.
+
+## Further terms (2026-10-26, round 7 ingest: Chonnam cementless composites)
+| Term | Meaning as used | Group | Fiber | Strain hardening shown in the paper? | Source |
+|---|---|---|---|---|---|
+| **ED-AASC** ("extremely-ductile alkali-activated slag-based composite"), sub-class of **HD-AASC** ("highly-ductile alkali-activated slag-based composites") | fibre-reinforced cement-free material with pseudo strain hardening and multiple cracking; ECC used only for comparison materials | Chonnam (Lee) | PE 1.75% | yes, 9.81–**22.34%** at peak | [[hieu2023-aas-extremely-ductile-22pct]], abstract, §1 |
+| **EGC** ("engineered geopolymer composites"); **ED-EGC** = extremely ductile EGC | cement-free composite in which a geopolymer binder replaces Portland cement in ECC | Chonnam (Lee) | PE 1.75% | yes, 10.97–18.62% at peak | [[huy2023-egc-activator-pretreatment]], abstract, §1 |
+| **HSUD-EGC** ("high-strength and ultra-ductility EGC") | HS = f'c > 55 MPa (Yoo & Banthia 2022; ACI 363, as cited); UD = ε > 6% (Choi 2016; Li 2001, as cited); the F group (50–52 MPa) is below the authors' own HS threshold | Chonnam (Lee) / Stevens | PE + PVA 1.5% | yes, 6.79–11.99% at peak | [[huy2023-egc-pe-pva-hybrid-healing]], §1 |
+
+- None of the three uses HDC, ECC or SHCC for its own material; record them under their own terms and do not relabel them.
+  → [[alkali-activated-binder]]
+- The "ultra-ductile > 6%" and "high-strength > 55 MPa" class limits quoted by [[huy2023-egc-pe-pva-hybrid-healing]] differ from
+  the HSHDCC bar (> 100 MPa, > 3%) on [[hshdc]]; check which definition a paper uses.
+
+> Synthesis (round 7): the highest strains in the wiki (22.34%, 18.62%) belong to materials that carry none of the
+> HDC/ECC/SHCC labels. For the review, "HDC-type" performance must be defined by measured tensile behaviour, not by name.
 
 ## Related
 - [[alkali-activated-binder]] · [[textile-reinforced-hdc]] · [[hshdc]] · [[uhdc]] · [[uhpc-vhsc]] · [[strain-hardening]] · [[hybrid-fiber]] · [[3d-printed-hdc]] · [[review-outline]] · [[gaps]]

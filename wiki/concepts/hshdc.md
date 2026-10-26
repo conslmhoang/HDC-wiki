@@ -3,8 +3,8 @@ type: concept
 slug: hshdc
 aliases: [HSHDC, high-strength high-ductility concrete, high strength-high ductility concrete, R-HSHDC, HS-ECC, PE-HSHDC, PVA-HSHDC, HSDC, NSHSDC, UHP-ECC, UHP-SHCC]
 tags: [material-family, high-strength]
-sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, kunieda2010-uhp-shcc-steel-reinforcement, zhou2023-hsecc-elevated-temperature, choi2016-pe-alkali-activated-slag-composite]
-updated: 2026-10-21
+sources: [ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, sui2018-uhp-ecc-flexural-fatigue, kunieda2010-uhp-shcc-steel-reinforcement, zhou2023-hsecc-elevated-temperature, choi2016-pe-alkali-activated-slag-composite, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # HSHDC: High-Strength High-Ductility Concrete (four lineages)
@@ -97,6 +97,7 @@ Full rows are in [[mix-designs]] and [[mechanical-results]].
 | UHP-ECC | Shenzhen / PolyU | 102.8 (28 d) / 120.7 (90 d), 100 mm cube | ≈ 11.5–12.4 (avg curve ≈ 11.1) | ≈ 6.9–8.8 (avg ≈ 8.3; end of hardening) | PE | yes | [[sui2018-uhp-ecc-flexural-fatigue]], abstract; Fig. 4, p. 5 (read-off) |
 | UHP-SHCC | Nagoya (Kunieda) | 95 (Ø50 cylinder, 28 d) | 6.5 | 1.5 (dumbbell, at ultimate load) | PE 1.5%, 6 mm × 12 µm | no | [[kunieda2010-uhp-shcc-steel-reinforcement]], §2, Table 3 |
 | HSECC | Zhou 2023 | 83.1 | not tested | not tested; softens in bending | PVA + steel | no (not strain hardening) | [[zhou2023-hsecc-elevated-temperature]] |
+| HSUD-EGC (cementless geopolymer) | Chonnam (Lee) | 84.3–86.5 (50 mm cube, ≈ 35 d ⚠️) | 6.04–6.64 | 6.79–10.51 (at peak) | PE + PVA 1.5% | no (f'c < 100 MPa); high-strength by the authors' > 55 MPa criterion | [[huy2023-egc-pe-pva-hybrid-healing]], Fig. 3, Table 5 |
 
 - UHP-SHCC loses strain hardening in unreinforced 50 mm-thick tension members (ε about 85% lower than dumbbells),
   and light steel reinforcement (ρs 0.3%) restores it ([[kunieda2010-uhp-shcc-steel-reinforcement]], Table 3).
@@ -116,6 +117,14 @@ Full rows are in [[mix-designs]] and [[mechanical-results]].
   composite (M26) vs 8.7% for HSHDC (§3.3). The AAS composite (55 MPa) is **not** high-strength; it shows that HSHDC-level
   σ_tu (13 MPa) does not need an HSHDC-level matrix. → [[alkali-activated-binder]], [[uhdc]]
 - First-crack 8.3 MPa here vs 8.1 MPa in [[ranade2015-hshdc-tensile-rate-effects]] (Table 2): minor.
+
+## Cementless high-strength EGC (2026-10-26)
+- [[huy2023-egc-pe-pva-hybrid-healing]] reaches f'c 84.3 MPa with ε 10.51% (S-PE) without Portland cement; f'c × ε = 8.8 MPa vs
+  10.0 (Yu 2018 UHP-ECC) and 9.2 MPa (Zhang 2021) for HSUD-ECCs (as cited, Fig. 6). Cost per unit performance 91 $/(MPa·m³) vs
+  124–133 for HSUD-ECCs and 181–274 for HS-ECCs incl. M45 (Fig. 7). The authors define high-strength as f'c > 55 MPa
+  (Yoo & Banthia 2022; ACI 363, as cited, §1), far below the > 100 MPa HSHDCC bar used on this page. → [[terminology-hdc-ecc-shcc]],
+  [[alkali-activated-binder]]
+- ⚠️ The text says the two HSUD-ECCs have 4.5% and 23.7% higher p_index than S-PE, but the Fig. 6 bars give ≈ 13.6% and 4.5%.
 
 ## Conflicts & open questions
 - ⚔️ Quasi-static ε_tu of Michigan HSHDC: 3.4% vs 4.2%, plus 3.5% at 14 d in the 2011 version

@@ -3,8 +3,8 @@ type: property
 slug: compressive-strength
 aliases: [f'c, fc, uniaxial compression]
 tags: [compression]
-sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, sun2019-modified-pva-fiber-ecc, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhou2023-hsecc-elevated-temperature, kunieda2010-uhp-shcc-steel-reinforcement, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, zhang2022-hshdcc-review, ma2021-ecc-durability-review, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, deng2018-hdc-short-columns, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, jin2019-hvfa-shcc-structural, mohammed2020-cr-ecc-elevated-temperature, ozbay2013-ecc-self-healing-sustained-load, shumuye2022-slag-fa-pe-ecc, sui2018-uhp-ecc-flexural-fatigue, sun2019-modified-pva-fiber-ecc, wang2019-rc-beam-ecc-shear-strengthening, wang2023-ecc-frost-damage, zhou2023-hsecc-elevated-temperature, kunieda2010-uhp-shcc-steel-reinforcement, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Compressive Strength
@@ -105,6 +105,9 @@ Always record the specimen type and size and the age.
 | [[li2021-hdc-beam-shear]] §2.1 | HDC 2% PVA (FA/C 1.0) / C50 concrete | 70.7 mm cube / 100 mm cube | 28 d | 70.55 / 75.77 |
 | [[zhang2022-hdc-basalt-textile-tension]] Table 3 | XAUAT HDC Type I (FA/C 1.1) / Type II (HVFA, FA/C 3.25), 0–2% PVA | 100 mm cube | 28 d | 52–58 / 30–38 |
 | [[choi2016-pe-alkali-activated-slag-composite]] Table 5 | cementless AAS + 1.75% PE, W/B 0.26 → 0.38 | 50 mm cube | 28 d | 54.8 → 36.3; first-crack/f'c ≈ 9.2% |
+| [[hieu2023-aas-extremely-ductile-22pct]] Fig. 7 | ED-AASC (AAS + sand + CR, 1.75% PE), mixing M0 / M1 / M2 | 50 mm cube (ASTM C109) | 28 d | 54.6 / 53.6 (53.4 in Table 7 ⚠️) / 52.2; COV 1.83%; density 2.25–2.26 g/cm³ |
+| [[huy2023-egc-activator-pretreatment]] Fig. 8 | fly-ash ED-EGC WP / CP | 50 mm cube | 28 d | 31.1 / 20.7; density ≈ 1.7 / ≈ 1.5 g/cm³ |
+| [[huy2023-egc-pe-pva-hybrid-healing]] Fig. 3 | HSUD-EGC S-PE / S-PVA / F-PE / F-PVA (GGBS/FA/SF geopolymer) | 50 mm cube (ASTM C109) | ≈ 35 d ⚠️ | 84.3 / 86.5 / 50.4 / 51.9 (bar labels) |
 | [[pourfalah2018-ecc-high-temperature]] Table 5 | PVA-ECC / H6ECC / H13ECC (PVA + steel), **tested hot** at 20 / 200 / 400 / 600 °C | 50 mm cube | 28 d | ECC 38.8 / 36.15 / 35.1 / 29.2; H6 40.1 / 38.45 / 32 / 27.2; H13 45 / 38.5 / 32.8 / 29.5 |
 | [[yun2013-shcc-freeze-thaw]] Table 3, Fig. 4 | hybrid PVA+PE SHCC, W/B 0.45 (PVA/PE 1.30/0.20 vs 0.75/0.75) | n.r. | 39 d ⚠️ | 48.80 vs 43.95; ratio after 300 F-T cycles ≥ 1 in 3 of 4 mixes (ageing to 151 d confounded) |
 
@@ -115,6 +118,10 @@ Always record the specimen type and size and the age.
 - **Hot (in-situ) compression:** f'c −10% (ECC) at 400 °C and −25 to −35% at 600 °C; compressive E 40.2 → 19.4 GPa
   (ECC); no spalling to 600 °C ([[pourfalah2018-ecc-high-temperature]], Table 5, §4.2). → [[high-temperature-behaviour]]
 - **Cementless binder:** alkali-activated GGBS + PE reaches 54.8 MPa without cement ([[choi2016-pe-alkali-activated-slag-composite]]). → [[alkali-activated-binder]]
+  (2026-10-26) A GGBS-rich geopolymer EGC reaches **84.3–86.5 MPa** without cement; GGBS:FA 5.5:4 gives ≈ 67% higher f'c than
+  3:6.5 ([[huy2023-egc-pe-pva-hybrid-healing]], Fig. 3). Mixing procedure does not change f'c (52.2–54.6 MPa) although it
+  changes ε 2.3× ([[hieu2023-aas-extremely-ductile-22pct]], Fig. 7). The activator cooling pretreatment lowers f'c by ≈ 33%
+  (31.1 → 20.7 MPa) ([[huy2023-egc-activator-pretreatment]], Fig. 8).
 - **Same XAUAT matrix, different results:** f_cu 61.15 MPa (2% PVA, 28 d) vs 49.80 MPa (1.7% PVA, air-cured ≈ 2 months)
   ([[deng2019-urm-shaking-table-hdc]]; [[deng2020-aac-wall-hdc-retrofit]]) — different Vf and curing, not a conflict.
 

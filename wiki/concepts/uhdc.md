@@ -3,8 +3,8 @@ type: concept
 slug: uhdc
 aliases: [UHDC, ultra-high ductile concrete, UHDCC, ultra-high ductility cementitious composites]
 tags: [material-family, pe-fiber, tongji]
-sources: [ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, sui2018-uhp-ecc-flexural-fatigue, choi2016-pe-alkali-activated-slag-composite]
-updated: 2026-10-21
+sources: [ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, sui2018-uhp-ecc-flexural-fatigue, choi2016-pe-alkali-activated-slag-composite, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # UHDC: Ultra-High Ductile Concrete
@@ -52,6 +52,20 @@ bars under ISO and Chinese codes ([[ye2021-uhdc-flexural-size-effect]], p. 2).
 
 > Synthesis (round 5): three PE composites now reach ≥ 7.5% at very different f'c: UHDC (≈ 37 MPa), alkali-activated
 > slag (≈ 55 MPa, [[choi2016-pe-alkali-activated-slag-composite]]) and UHP-ECC (≈ 121 MPa). Matrix strength alone does not set the ductility class.
+
+## UHDC is no longer the strain maximum (2026-10-26)
+- Tongji UHDCC as cited by [[hieu2023-aas-extremely-ductile-22pct]] (Table 7; Yu et al. 2018): UB f'c 12.9 MPa / ε 13.55% /
+  σ_tu 4.97 MPa; UA 45.9 / 11.98 / 6.07. These second-hand values exceed the primary 9.45% of [[ye2021-uhdc-flexural-size-effect]].
+- The CNU cementless PE composites now exceed UHDC: ED-AASC 22.34% at peak (f'c 53.6 MPa;
+  [[hieu2023-aas-extremely-ductile-22pct]], Table 4) and fly-ash ED-EGC 18.62% (f'c 20.7 MPa; [[huy2023-egc-activator-pretreatment]],
+  Table 4). Both authors compare ε with minimum steel-bar elongation (ASTM A615 9%, A706 14%, ISO 6935-2 14/17%), the same
+  "steel-like deformability" argument as the UHDC name, but with a different gauge and definition (strain at peak over 80 mm
+  vs elongation at fracture) ([[hieu2023-aas-extremely-ductile-22pct]], Fig. 15; [[huy2023-egc-activator-pretreatment]], Fig. 11).
+- Cited as a benchmark for a cementless high-strength EGC: Yu 2018 UHP-ECC f'c × ε = 10.0 MPa vs 8.8 MPa for HSUD-EGC S-PE
+  ([[huy2023-egc-pe-pva-hybrid-healing]], Fig. 6). → [[hshdc]]
+
+> Synthesis: "ultra-high ductility" (> 6%, as cited in [[huy2023-egc-pe-pva-hybrid-healing]] §1) is now reached by several
+> PE composite families; the top values (18.6–22.3%) are in cementless matrices with wide cracks (≈ 200 µm).
 
 ## Related
 - [[terminology-hdc-ecc-shcc]] · [[hshdc]] · [[alkali-activated-binder]] · [[pe-fiber]] · [[size-effect]]

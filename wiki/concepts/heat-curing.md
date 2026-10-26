@@ -3,8 +3,8 @@ type: concept
 slug: heat-curing
 aliases: [curing regime, elevated temperature curing, standard curing, ambient curing]
 tags: [curing, processing]
-sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, mechtcherine2011-shcc-high-strain-rate, zhao2022-ecc-tension-damage-model, gao2020-hdcc-recycled-fine-aggregate, chai2019-hdcc-freeze-thaw-carbonation-flexure, kanda2003-sprayed-ecc, bu2022-ecc-chloride-crack-width, herbert2013-ecc-self-healing-natural-environment, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, sun2019-modified-pva-fiber-ecc, shumuye2022-slag-fa-pe-ecc, jin2019-hvfa-shcc-structural, vanzijl2010-shcc-durability, chavesfigueiredo2020-printed-shcc, yang2009-ecc-self-healing-wet-dry, choi2016-pe-alkali-activated-slag-composite]
-updated: 2026-10-21
+sources: [ranade2017-hshdc-impact-resistance, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, zhang2022-hshdcc-review, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, kunieda2010-uhp-shcc-steel-reinforcement, sui2018-uhp-ecc-flexural-fatigue, mechtcherine2011-shcc-high-strain-rate, zhao2022-ecc-tension-damage-model, gao2020-hdcc-recycled-fine-aggregate, chai2019-hdcc-freeze-thaw-carbonation-flexure, kanda2003-sprayed-ecc, bu2022-ecc-chloride-crack-width, herbert2013-ecc-self-healing-natural-environment, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, sun2019-modified-pva-fiber-ecc, shumuye2022-slag-fa-pe-ecc, jin2019-hvfa-shcc-structural, vanzijl2010-shcc-durability, chavesfigueiredo2020-printed-shcc, yang2009-ecc-self-healing-wet-dry, choi2016-pe-alkali-activated-slag-composite, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Curing Regimes (heat vs ambient)
@@ -72,5 +72,15 @@ updated: 2026-10-21
 - **No heat curing needed** for a 7.5% / 13 MPa PE composite: the cementless alkali-activated slag composite was cured 2 d
   sealed and then in water at 23 ± 3 °C ([[choi2016-pe-alkali-activated-slag-composite]], §2.1). → [[alkali-activated-binder]]
 
+## Round-7 evidence (2026-10-26): heat curing in alkali-activated / geopolymer composites
+| Source | Regime | Purpose (as stated) | Isolated? |
+|---|---|---|---|
+| [[hieu2023-aas-extremely-ductile-22pct]] §2.2.2 | 11 d air (delayed demoulding) + 12 d water at 23 °C + **24 h at 80 °C** + air to 28 d | new curing procedure for ED-AASC | no (M0 baseline used the same regime) |
+| [[huy2023-egc-activator-pretreatment]] §2.2 | 5 d at 23 °C in moulds + **2 d at 80 °C** + 23 °C to 28 d | promote geopolymerisation; elevated-temperature curing said to improve EGC ductility (as cited, §1) | no |
+| [[huy2023-egc-pe-pva-hybrid-healing]] §2.2 | 2 d sealed at 23 °C + **24 h at 100 °C** + air to 7 d + 28 d water | enable geopolymerisation of GGBS/FA EGC | no |
+
+- Unlike [[choi2016-pe-alkali-activated-slag-composite]] (no heat), all three later CNU cementless composites use a heat step,
+  and none tests an ambient-cured control, so the role of heat in their 10–22% strains is unknown. → [[alkali-activated-binder]], [[gaps]]
+
 ## Related
-- [[hshdc]] · [[mix-designs]] · [[fly-ash]] · [[hybrid-fiber]] · [[pva-fiber]] · [[self-healing]]
+- [[hshdc]] · [[mix-designs]] · [[alkali-activated-binder]] · [[fly-ash]] · [[hybrid-fiber]] · [[pva-fiber]] · [[self-healing]]

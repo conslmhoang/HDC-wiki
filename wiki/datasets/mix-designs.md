@@ -1,7 +1,7 @@
 ---
 type: dataset
 slug: mix-designs
-updated: 2026-10-21
+updated: 2026-10-26
 ---
 
 # Mix Designs — Master Table
@@ -10,7 +10,7 @@ One row per mix. **Check the Units column**: sources give ratios to cement, frac
 kg/m³. Each row must cite its source.
 The review [[he2024-hdc-research-advances]] gives no complete mixes, so it has no rows here.
 The FE study [[tabrizikahou2022-masonry-ecc-sma-retrofit]] reports no mix, so it has no rows either.
-Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC papers, then JACT papers, then others by year. Round 5 (2026-10-21): the Xi'an HDC rows (deng2017, deng2019, deng2020, li2021 beam shear, zhang2022 basalt textile) follow [[deng2018-hdc-short-columns]]; the other round-5 rows are slotted by year.
+Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC papers, then JACT papers, then others by year. Round 5 (2026-10-21): the Xi'an HDC rows (deng2017, deng2019, deng2020, li2021 beam shear, zhang2022 basalt textile) follow [[deng2018-hdc-short-columns]]; the other round-5 rows are slotted by year. Round 7 (2026-10-26): the three Chonnam National University alkali-activated / geopolymer sources ([[hieu2023-aas-extremely-ductile-22pct]], [[huy2023-egc-activator-pretreatment]], [[huy2023-egc-pe-pva-hybrid-healing]]) follow [[choi2016-pe-alkali-activated-slag-composite]] (same group).
 
 | Source | Mix ID | Term | Cement | FA | Slag/other | Sand | Max sand size (mm) | W/B | SP | Fiber | L (mm) | d (µm) | Vf (vol.%) | Units | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -95,6 +95,13 @@ Row order: older batches first; the 2026-10-20 batch is grouped as HDC/HDCC/HSDC
 | same | M30 | same | 0 | 0 | 1 | 0 | — | 0.30 | 0.009 | PE | 18 | 12 | 1.75 | mass ratio to binder | Table 1 |
 | same | M34 | same | 0 | 0 | 1 | 0 | — | 0.34 | 0.004 (+ VMA 0.0001) | PE | 18 | 12 | 1.75 | mass ratio to binder | Table 1 |
 | same | M38 | same | 0 | 0 | 1 | 0 | — | 0.38 | 0.002 (+ VMA 0.0003) | PE | 18 | 12 | 1.75 | mass ratio to binder | Table 1 |
+| [[hieu2023-aas-extremely-ductile-22pct]] | R5-S8-M0 / M1 / M2 | ED-AASC (alkali-activated slag, cement-free) | 0 | 0 | GGBS 0.90 + Ca(OH)₂ 0.10 (binder); crumb rubber 0.05 (≈ 400 µm) | silica sand 0.8 | ≈ 0.3–0.5 (read from Fig. 2 ⚠️) | 0.18 (0.26 incl. SP water) | 0.106 liquid PCE (0.031 solids); defoamer 0.001 | PE (2700 MPa, 88 GPa) | 18 | 12 | 1.75 | mass ratio to binder | identical proportions; mixes differ only in mixing procedure (Fig. 3); 11 d air + 12 d water 23 °C + 24 h 80 °C + air to 28 d; Table 1 |
+| [[huy2023-egc-activator-pretreatment]] | ED-EGC-WP | ED-EGC (fly-ash EGC, cementless) | 0 | 0.7 | SH 0.1 + SMP 0.2 (activator solids in binder); defoamer 0.001 | none | — | 0.345 | P-SP 0.003 | PE (UHMWPE, 2700 MPa, 88 GPa) | 18 | 12 | 1.75 | mass ratio to binder | activator warming pretreatment (5 min, 50 °C); 5 d 23 °C + 2 d 80 °C + 23 °C to 28 d; Table 1 |
+| same | ED-EGC-CP | ED-EGC | 0 | 0.7 | SH 0.1 + SMP 0.2; defoamer 0.001 | none | — | 0.345 ⚠️ (single entry in Table 1) | P-SP 0.037 | PE | 18 | 12 | 1.75 | mass ratio to binder | cooling pretreatment (24 h, 23 °C; SMP partly re-solidified); same curing; Table 1 |
+| [[huy2023-egc-pe-pva-hybrid-healing]] | S-PE | HSUD-EGC (engineered geopolymer composite, cementless) | 0 | 0.40 | GGBS 0.55; SF 0.05; NaOH flakes 0.05; water glass 0.45 | silica sand 1.0 (mean 120 µm) | n.r. | added water 0.1; ≈ 0.38 total water/precursor (computed: 0.1 + 0.62 × 0.45) | 0.02 | PE (3030 MPa) + PVA (1560 MPa) | 18 / 12 | 12 / 40 | 1.0 + 0.5 = 1.5 | mass ratio to precursor (GGBS+FA+SF) | 2 d sealed 23 °C + 24 h 100 °C + air to 7 d + 28 d water; Table 1 |
+| same | S-PVA | same | 0 | 0.40 | same as S-PE | same | n.r. | same | 0.02 | PE + PVA | 18 / 12 | 12 / 40 | 0.5 + 1.0 = 1.5 | same | Table 1 |
+| same | F-PE | same | 0 | 0.65 | GGBS 0.30; SF 0.05; NaOH flakes 0.05; water glass 0.45 | same | n.r. | same | 0.02 | PE + PVA | 18 / 12 | 12 / 40 | 1.0 + 0.5 = 1.5 | same | Table 1 |
+| same | F-PVA | same | 0 | 0.65 | same as F-PE | same | n.r. | same | 0.02 | PE + PVA | 18 / 12 | 12 / 40 | 0.5 + 1.0 = 1.5 | same | Table 1 |
 | [[pourfalah2018-ecc-high-temperature]] | ECC | ECC | 454 | 817 | — | 273 (silica sand) | n.r. (avg 0.12) | 0.28 (derived) | HRWR 4.5 | PVA | 12 | 40 | 2.0 (derived from 26 kg/m³) | kg/m³ | FA/C 1.80; water 356; Tables 2–3 |
 | same | H6ECC | HECC | 451 | 817 | — | 273 | n.r. (avg 0.12) | 0.28 (derived 354/1268) | HRWR 4.5 | PVA + straight steel | 12 / 6 | 40 / 150 | 1.75 + 0.75 | kg/m³ | steel 58.86 kg/m³; Tables 2–3 |
 | same | H13ECC | HECC | 451 | 817 | — | 273 | n.r. (avg 0.12) | 0.28 (derived) | HRWR 4.5 | PVA + straight steel | 12 / 13 | 40 / 150 | 1.75 + 0.75 | kg/m³ | Tables 2–3 |

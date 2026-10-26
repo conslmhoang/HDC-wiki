@@ -3,8 +3,8 @@ type: material
 slug: fly-ash
 aliases: [FA, Class F fly ash, high-volume fly ash, HVFA]
 tags: [binder, pozzolan, sustainability]
-sources: [yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, ozbay2013-ecc-self-healing-sustained-load, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, shumuye2022-slag-fa-pe-ecc, zhong2019-ecc-freeze-thaw, herbert2013-ecc-self-healing-natural-environment, zhang2022-ecc-carbonation-sustained-load, chai2019-hdcc-freeze-thaw-carbonation-flexure, mohammed2020-cr-ecc-elevated-temperature, zhou2023-hsecc-elevated-temperature, gao2020-hdcc-recycled-fine-aggregate, kanda2003-sprayed-ecc, mechtcherine2011-shcc-high-strain-rate, paul2014-r-shcc-chloride-corrosion, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, bu2022-ecc-chloride-crack-width, ivaniuk2022-printable-shcc-design, chavesfigueiredo2020-printed-shcc, deng2017-rc-column-hdc-jacket, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, ma2021-ecc-durability-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, chai2023-hdc-ambient-temperature, li2021-hdc-sulfate-dry-wet, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, ozbay2013-ecc-self-healing-sustained-load, deng2015-hdc-compressive-toughness, deng2018-hdc-compressive-constitutive, shumuye2022-slag-fa-pe-ecc, zhong2019-ecc-freeze-thaw, herbert2013-ecc-self-healing-natural-environment, zhang2022-ecc-carbonation-sustained-load, chai2019-hdcc-freeze-thaw-carbonation-flexure, mohammed2020-cr-ecc-elevated-temperature, zhou2023-hsecc-elevated-temperature, gao2020-hdcc-recycled-fine-aggregate, kanda2003-sprayed-ecc, mechtcherine2011-shcc-high-strain-rate, paul2014-r-shcc-chloride-corrosion, wang2023-ecc-frost-damage, zhao2022-ecc-tension-damage-model, bu2022-ecc-chloride-crack-width, ivaniuk2022-printable-shcc-design, chavesfigueiredo2020-printed-shcc, deng2017-rc-column-hdc-jacket, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Fly Ash
@@ -104,10 +104,24 @@ updated: 2026-10-21
 > Jin's FA/C 4.4 suggests the gain levels off or reverses above about 3. The frost optimum is lower (35% replacement,
 > [[zhong2019-ecc-freeze-thaw]]), so the "best" FA level depends on the target property.
 
+### Fly ash in cementless geopolymer composites (2026-10-26)
+- **Sole precursor** of a fly-ash geopolymer (SiO₂ 74.59%, Al₂O₃ 14.38%, CaO 3.02%) activated by NaOH + sodium metasilicate,
+  no aggregate, 1.75% PE: ε 10.97–18.62% at peak with f'c 20.7–31.1 MPa (28 d) ([[huy2023-egc-activator-pretreatment]],
+  Table 2, Table 4, Fig. 8). The authors state, citing earlier work, that FA lowers Km and favours strain hardening (§1).
+  → [[alkali-activated-binder]]
+- **GGBS:FA ratio**: raising FA from 0.40 to 0.65 of precursor (GGBS:FA 5.5:4 → 3:6.5) lowered f'c by ≈ 40% and density by
+  ≈ 3.8%, raised ε (10.51 → 11.99% PE-rich; 6.79 → 10.35% PVA-rich), widened cracks and **reduced self-healing**: crack
+  healing rate 7.36 / 12.48% vs 26.78 / 31.40%, and resonant-frequency recovery became **negative** (−9.58 / −6.59 %-points)
+  ([[huy2023-egc-pe-pva-hybrid-healing]], Tables 4–6, Figs. 3, 10, 12). The authors follow Wang & Li 2007 (FA lowers matrix
+  toughness) for the ε gain (§3.1.2).
+- ⚔️ Fly ash and healing: higher FA/C gave better healing in cement-based PVA-ECC ([[ozbay2013-ecc-self-healing-sustained-load]])
+  but the FA-rich geopolymer EGC healed worst and lost stiffness in water ([[huy2023-egc-pe-pva-hybrid-healing]], Fig. 12).
+  The binders differ (cement vs geopolymer). → [[self-healing]], [[gaps]]
+
 - ⚔️ [[shumuye2022-slag-fa-pe-ecc]]: the text says the all-FA mix (SF-0-60) had the highest tensile capacity, but the
   reported 28-d strains at peak are about 2.0% (SF-0-60) < 2.9% (SF-10-50) < 3.5% (SF-5-55); SF-15-45 ≈ 2.2% (Sect. 3.2;
   Fig. 5b, p. 8). The paper does not
   clearly support "FA raises ductility" for PE-ECC. → [[gaps]]
 
 ## Related
-- [[silica-fume]] · [[ggbfs]] · [[alkali-activated-binder]] · [[uhdc]] · [[mix-designs]] · [[water-binder-ratio]] · [[freeze-thaw]] · [[carbonation]]
+- [[silica-fume]] · [[ggbfs]] · [[alkali-activated-binder]] · [[self-healing]] · [[uhdc]] · [[mix-designs]] · [[water-binder-ratio]] · [[freeze-thaw]] · [[carbonation]]

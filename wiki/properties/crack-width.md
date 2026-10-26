@@ -3,8 +3,8 @@ type: property
 slug: crack-width
 aliases: [crack opening, residual crack width, crack spacing, COD, maximum crack width]
 tags: [cracking, durability-relevant]
-sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ma2021-ecc-durability-review, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, chai2023-hdc-ambient-temperature, bu2022-ecc-chloride-crack-width, vanzijl2010-shcc-durability, paul2014-r-shcc-chloride-corrosion, ozbay2013-ecc-self-healing-sustained-load, herbert2013-ecc-self-healing-natural-environment, homma2009-frcc-self-healing, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, chai2019-hdcc-freeze-thaw-carbonation-flexure, sui2018-uhp-ecc-flexural-fatigue, qian2007-shcc-inverse-tensile-strain, lee2021-hsdc-wall-emi-impact, shumuye2022-slag-fa-pe-ecc, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, choi2016-pe-alkali-activated-slag-composite, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, su2023-rubber-modified-hshdc, ma2021-ecc-durability-review, he2024-hdc-research-advances, zhang2022-hshdcc-review, yu2018-ecc-direct-tensile-review, yang2008-ecc-fiber-bridging-law, li2003-ecc-review, chai2023-hdc-ambient-temperature, bu2022-ecc-chloride-crack-width, vanzijl2010-shcc-durability, paul2014-r-shcc-chloride-corrosion, ozbay2013-ecc-self-healing-sustained-load, herbert2013-ecc-self-healing-natural-environment, homma2009-frcc-self-healing, kanda2003-sprayed-ecc, kunieda2006-hpfrcc-japan-applications, kunieda2010-uhp-shcc-steel-reinforcement, chai2019-hdcc-freeze-thaw-carbonation-flexure, sui2018-uhp-ecc-flexural-fatigue, qian2007-shcc-inverse-tensile-strain, lee2021-hsdc-wall-emi-impact, shumuye2022-slag-fa-pe-ecc, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, choi2016-pe-alkali-activated-slag-composite, pourfalah2018-ecc-high-temperature, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Crack Width
@@ -37,6 +37,9 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 | same, Table 5 | same, after unloading (permeability specimens) | residual; avg vs max not stated ⚠️ | 50 / 52 / 63 ± 10 at 1.5 / 2 / 3% (47 / 59 / 87 cracks) |
 | same, Table 3 | steel-reinforced mortar at 1.5% | — | 125–500; spacing 5–30 mm |
 | [[choi2016-pe-alkali-activated-slag-composite]] Table 8 | cementless AAS + 1.75% PE, W/B 0.26–0.38 | **computed** = gauge elongation / crack count at end of loading | 88.9–109.8 (mean ≈ 101); spacing 1.20–2.25 mm; smallest at lowest W/B (67.3 cracks) |
+| [[hieu2023-aas-extremely-ductile-22pct]] Table 6 | ED-AASC (AAS + sand + CR, 1.75% PE), ε 9.81 / 22.34 / 20.89% | **computed** = elongation at peak / crack count (loaded) | **117.2 / 212.0 / 204.0**; spacing 0.95–1.27 mm; "two times" earlier highly ductile composites (Concl. 2) |
+| [[huy2023-egc-activator-pretreatment]] Table 5 | fly-ash ED-EGC WP / CP, 1.75% PE, ε 10.97 / 18.62% | computed at peak (loaded) | **171.8 / 199.3**; spacing 1.57 / 1.07 mm; > 2× the < 100 µm of ECC (§3.1) |
+| [[huy2023-egc-pe-pva-hybrid-healing]] Table 6 | HSUD-EGC S-PE / S-PVA / F-PE / F-PVA, 1.5% PE + PVA | computed = max deformation / crack count (at peak, check computed) | 100.3 / 83.2 / 128.4 / 136.1; spacing 0.96–1.31 mm; GGBS-rich narrower |
 | [[pourfalah2018-ecc-high-temperature]] §4.3, Fig. 10e | PVA-ECC vs HECC (PVA + steel) small prisms, four-point bending, **tested hot** | 20 °C / 60–100 °C | ECC ≈ 50 → hundreds (text 400 / 750; Fig. ≈ 570–1070 ⚠️); HECC ≈ 40 → 70 → 200 |
 | [[lee2021-hsdc-wall-emi-impact]] §3.2.1, pp. 10–11; Fig. 9d | NC panel with 2 × 20 mm HSDC skins (H20D) | drop-weight impact, after blow 1 / 4 / 5 | about 50 / 700 / 1100 (thinner skins 5000–5500); units mm per the figure axes (text's "m" is a typo) |
 
@@ -141,6 +144,9 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
 > Synthesis (revised 2026-10-20): there are two crack-width "families" of **average residual** width.
 > - **PVA-ECC: about 22–90 µm** (HVFA mixes 22–40 µm: Herbert, Paul, Özbay; standard mixes 40–90 µm).
 > - **PE-based HSHDC / UHP-ECC: about 80–200 µm** (Sui 2018: < 160 µm; PE-ECC with slag ≈ 100–130 µm, Shumuye 2022, radar read-off).
+> - (2026-10-26) **Cementless PE composites at extreme strain: about 170–212 µm** average at peak (loaded, computed)
+>   ([[hieu2023-aas-extremely-ductile-22pct]]; [[huy2023-egc-activator-pretreatment]]), above the 200 µm HDC limit of JC/T 2461 in
+>   two mixes; the high-strength HSUD-EGC stays at 83–136 µm ([[huy2023-egc-pe-pva-hybrid-healing]]).
 >
 > Three refinements weaken the simple message "PVA-ECC stays below the thresholds": maximum widths in PVA-SHCC
 > reach 290–420 µm at 3% strain (van Zijl); widths under sustained load are about 2× residual (Özbay); and under
@@ -163,6 +169,10 @@ literature is a residual **average** width; see "Average vs maximum" and "Loaded
   Different definitions, not a real conflict.
 
 ## Conflicts & open questions
+- ⚔️ Crack width of cementless AAS/EGC + PE: 172–212 µm at peak ([[hieu2023-aas-extremely-ductile-22pct]], Table 6;
+  [[huy2023-egc-activator-pretreatment]], Table 5) vs ≈ 89–110 µm in the earlier AAS + PE composite of the same group
+  ([[choi2016-pe-alkali-activated-slag-composite]], Table 8) and the ≈ 100 µm ECC norm. The wider cracks carry the higher
+  strain (≈ 1 mm spacing in all), so very high ε is bought with width, not with more cracks. → [[gaps]]
 - ⚔️ Chloride threshold: 55–80 µm (Jang 2011, second-hand) vs 100–200 µm under immersion (Bu 2022) vs no safe
   width under wet–dry (Paul 2014). → [[gaps]]
 - ⚔️ Loaded/unloaded ratio: about 2× (Özbay 2013, sustained flexure) vs ≈ 15% closure (Yang 2009, primary, tension) and

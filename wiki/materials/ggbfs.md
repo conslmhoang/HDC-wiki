@@ -3,8 +3,8 @@ type: material
 slug: ggbfs
 aliases: [GGBFS, slag, ground granulated blast-furnace slag]
 tags: [binder, sustainability]
-sources: [su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, ma2021-ecc-durability-review, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, sui2018-uhp-ecc-flexural-fatigue, choi2016-pe-alkali-activated-slag-composite]
-updated: 2026-10-21
+sources: [su2023-rubber-modified-hshdc, zhang2022-hshdcc-review, ma2021-ecc-durability-review, shumuye2022-slag-fa-pe-ecc, chavesfigueiredo2020-printed-shcc, sui2018-uhp-ecc-flexural-fatigue, choi2016-pe-alkali-activated-slag-composite, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # GGBFS (Ground Granulated Blast-Furnace Slag)
@@ -52,8 +52,19 @@ updated: 2026-10-21
   PVA (Ohno & Li 2014) 27.6 MPa / 4.3%; EGC (Nematollahi 2015) 63.7 MPa / 4.3% (§1).
   Full page: [[alkali-activated-binder]].
 
+### Later CNU cementless slag composites (2026-10-26)
+- **Sole precursor, Ca(OH)₂-only activator:** GGBS (4030 cm²/g, SG 2.91, CaO 42.88%, SiO₂ 34.95%, Al₂O₃ 13.58%) 0.90 +
+  Ca(OH)₂ powder 0.10, with silica sand S/B 0.8 and 5% crumb rubber; 1.75% PE gave ε 9.81–22.34% at peak and f'c 52.2–54.6 MPa
+  (28 d) ([[hieu2023-aas-extremely-ductile-22pct]], Table 2, Table 4, Fig. 7). → [[alkali-activated-binder]]
+- **GGBS with FA in a sodium-activated geopolymer** (NaOH flakes + water glass, 5% SF): GGBS (CaO 56.8%, Na₂O 7.8%) at
+  GGBS:FA 5.5:4 gave f'c 84.3–86.5 MPa vs 50.4–51.9 MPa at 3:6.5, i.e. ≈ 67% higher, with ≈ 3.8% higher density,
+  narrower cracks (83–100 vs 128–136 µm), lower ε (PE-rich 10.51 vs 11.99%) and better healing (crack healing rate 26.8–31.4%
+  vs 7.4–12.5%) ([[huy2023-egc-pe-pva-hybrid-healing]], Table 2, Tables 4–6, Figs. 3, 10). The authors attribute the
+  strength gain to finer, more amorphous products and faster FA geopolymerisation (§3.1.1).
+
 > Synthesis: in the round-4 primary data, slag is a strength lever (+35% f'c at 15%) with a cost in crack width.
-> No source measures slag's effect on the PSH indices.
+> No source measures slag's effect on the PSH indices. The cementless EGC data ([[huy2023-egc-pe-pva-hybrid-healing]])
+> point the same way: more slag → higher f'c and narrower cracks, lower ε.
 
 ## Related
 - [[fly-ash]] · [[silica-fume]] · [[pe-fiber]] · [[mix-designs]] · [[alkali-activated-binder]]

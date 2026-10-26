@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-10-21
+updated: 2026-10-26
 ---
 
 # HDC Wiki — Index
@@ -8,12 +8,12 @@ updated: 2026-10-21
 The LLM reads this page first. Each entry is a wikilink to a page slug, followed by a one-line summary.
 
 ## Hubs
-- [[gaps]]: 73 conflicts (grouped by theme; incl. XAUAT strain spread, 8 internal inconsistencies of single sources found in the PDF re-ingest, permeability and healing-threshold corrections), under-studied areas for the 60-source corpus, open questions
+- [[gaps]]: 80 conflicts (grouped by theme; incl. XAUAT strain spread, 9 internal inconsistencies of single sources, permeability and healing-threshold corrections; round 7: cementless crack width ≈ 200 µm, healing product C-(N)-A-S-H vs CaCO₃, PE vs PVA and fly ash in healing, J′b scaling), under-studied areas for the 63-source corpus, open questions
 - [[log]]: operation history
 - [[review-outline]]: review chapters, with source coverage (✅/🟡/❌)
-- [[terminology-hdc-ecc-shcc]]: HDC ≈ ECC/SHCC; HDCC, DFRCC/HPFRCC (JCI), UHP-SHCC, HSDC; HSHDC has 4 lineages; UHDC; JSCE 2008 vs JC/T 2461 (and Shaanxi DBJ61/T112-2016) definition
+- [[terminology-hdc-ecc-shcc]]: HDC ≈ ECC/SHCC; HDCC, DFRCC/HPFRCC (JCI), UHP-SHCC, HSDC; HSHDC has 4 lineages; UHDC; JSCE 2008 vs JC/T 2461 (and Shaanxi DBJ61/T112-2016) definition; cementless ED-AASC / HD-AASC, EGC / ED-EGC / HSUD-EGC (not called HDC/ECC)
 
-## Sources (60)
+## Sources (63)
 
 ### Foundations and theory
 - [[li1992-steady-state-multiple-cracking]]: Li & Leung 1992 (J Eng Mech): steady-state cracking theory; V_f^crit; failure-mode map
@@ -88,6 +88,9 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 
 ### Alkali-activated and cementless composites
 - [[choi2016-pe-alkali-activated-slag-composite]]: Choi, Lee, Ranade, Li & Lee 2016 (CCC): cementless GGBS + Ca(OH)₂/Na₂SO₄ with 1.75% PE, no aggregate; ε 7.50% at σ_tu 13.06 MPa and f'c 54.8 MPa (W/B 0.26); all properties fall with W/B
+- [[hieu2023-aas-extremely-ductile-22pct]]: Lương, Nguyễn, Nguyễn, Kang & Lee 2023 (Ceram. Int.): ED-AASC, GGBS + Ca(OH)₂ with sand S/B 0.8, 5% crumb rubber, 1.75% PE, heat step 80 °C; **22.34% at peak** (wiki maximum) at σ_tu 7.63 MPa, f'c 53.6 MPa; mixing procedure alone 9.81 → 20.9–22.3%; cracks ≈ 200 µm
+- [[huy2023-egc-activator-pretreatment]]: Nguyễn, Lương, Nguyễn, Kim, Kim & Lee 2023 (J. Build. Eng.): fly-ash ED-EGC, 1.75% PE; activator cooling vs warming pretreatment → 18.62% vs 10.97% at f'c 20.7 vs 31.1 MPa; first geopolymer micromechanics (Km 0.06–0.11 MPa√m; PSH_E scaled ×8.75 ⚠️)
+- [[huy2023-egc-pe-pva-hybrid-healing]]: Nguyễn, Nguyễn, Lương, Meng & Lee 2023 (CCC): HSUD-EGC, GGBS/FA/SF geopolymer + PE/PVA hybrid 1.5%; 84.3 MPa with 10.51%; limited autogenous healing (≤ 31%), product C-(N)-A-S-H; PVA-rich and GGBS-rich heal better
 
 ### Structures, retrofit and 3D printing
 - [[wang2019-rc-beam-ecc-shear-strengthening]]: Wang et al. 2019 (Materials): sprayed PVA-ECC side layers on stirrup-free RC beams; ultimate load +20–89%; all 40 mm layers debonded
@@ -96,63 +99,63 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[ivaniuk2022-printable-shcc-design]]: Ivaniuk et al. 2022 (Materials): printable PE-SHCC with starch/cellulose ethers; ε 2–3%, σ_tu −24%; weaker across layers in flexure
 
 ## Concepts
-- [[hshdc]]: four HSHDC lineages compared (Michigan, GDUT, Xi'an, Korea Univ. steel + PE hybrid)
-- [[uhdc]]: ultra-high ductile concrete (Tongji, PE, up to 9.45%); UHP-SHCC / UHP-ECC relatives
+- [[hshdc]]: four HSHDC lineages compared (Michigan, GDUT, Xi'an, Korea Univ. steel + PE hybrid); cementless HSUD-EGC (84 MPa, 10.5%) for comparison
+- [[uhdc]]: ultra-high ductile concrete (Tongji, PE, up to 9.45% primary; 13.55% as cited); UHP-SHCC / UHP-ECC relatives; no longer the wiki strain maximum (cementless ED-AASC 22.34%)
 - [[steady-state-cracking]]: Li & Leung 1992 foundation; V_f^crit; failure modes
 - [[fiber-surface-treatment]]: PVA oiling, VAE and other pre-treatments, PE coatings; interface tailoring
 - [[uhpc-vhsc]]: comparison family; Cor-Tuf FR-UHPC; Ductal in the JCI round robin
-- [[strain-hardening]]: PSH criteria; 1998 vs 2006 thresholds by fiber type (and the quoted 1.45); where each index fails
-- [[multiple-cracking]]: cracking stages, crack counts, member vs dogbone cracking, impact damage patterns
-- [[fiber-bridging]]: σ–δ, scale-linking, J′b; bridging as confinement in compression
-- [[fiber-matrix-interface]]: τ0, Gd, β, f, µ; W/B and FA effects; rate dependence; SEM-only bond claims
+- [[strain-hardening]]: PSH criteria; 1998 vs 2006 thresholds by fiber type (and the quoted 1.45); where each index fails; first geopolymer PSH indices (scaled PSH_E 452–817 ⚠️)
+- [[multiple-cracking]]: cracking stages, crack counts, member vs dogbone cracking, impact damage patterns; ≈ 1 mm spacing with 50–86 cracks in cementless PE composites
+- [[fiber-bridging]]: σ–δ, scale-linking, J′b; bridging as confinement in compression; single-crack σ0/J′b of fly-ash EGC and the Vf-scaling problem
+- [[fiber-matrix-interface]]: τ0, Gd, β, f, µ; W/B and FA effects; rate dependence; SEM-only bond claims (incl. PE/PVA in geopolymer EGC)
 - [[interface-bond]]: macro-scale bond of HDC/ECC: substrate overlays and jackets (slant shear of NSHSDC, debonding of thick sprayed layers, visual-only bond of XAUAT jackets and masonry overlays, AAC substrate failure, FE interface sensitivity), interlayer bond of printed SHCC (⚔️ strong vs weak), rebar–ECC pull-out bond after freeze–thaw
-- [[fiber-dispersion]]: min Vf, 2-D vs 3-D orientation, agglomeration, orientation in printing
+- [[fiber-dispersion]]: min Vf, 2-D vs 3-D orientation, agglomeration, orientation in printing; mixing procedure alone 9.81 → 22.34% (Lương 2023)
 - [[fiber-geometry]]: fiber length, diameter, Vf; reinforcement index; 6 mm PE conflict
 - [[water-binder-ratio]]: optimum W/B 0.16 in Xi'an HSHDC; ⚔️ direction of W/B effect in PVA-ECC; cementless PE/AAS loses ductility monotonically with W/B 0.26 → 0.38
-- [[heat-curing]]: 90 °C vs ambient curing; heat is not required; age effects
+- [[heat-curing]]: 90 °C vs ambient curing; heat is not required; age effects; 80–100 °C steps in cementless CNU composites (not isolated)
 - [[strain-rate-effects]]: dynamic tension; non-monotonic PVA-SHCC response up to 50 s⁻¹
 - [[size-effect]]: Bažant SEL; no size effect in UHDC-2; thickness/member effect in direct tension
 - [[fracture-process-zone]]: D_pz
 - [[tensile-constitutive-model]]: trilinear and bilinear (JSCE draft) models; damage model; FE inputs; bilinear TR-HDC model
 
 ## Materials
-- [[pe-fiber]]: UHMWPE properties across sources; rate-sensitive; low melting point; 6 mm fiber conflict
-- [[pva-fiber]]: needs oiling or pre-treatment; 4.88% in a normal matrix; melting onset 230 °C; fails in high-strength matrices; Japanese vs Chinese PVA in XAUAT HDC (≈ 3.0 vs 1.2%); ⚔️ modulus 40 / 32 / 14 GPa
-- [[hybrid-fiber]]: steel + PE / PVA + steel / PVA + PE hybrid systems (Homma 2009 HFRCC, JCI "HB", Korea Univ. NSHSDC/HSDC, Guangzhou HSECC, Pourfalah HECC, Yun hybrid SHCC); strength, fire, F-T, healing and EMI effects
-- [[fly-ash]]: raises ductility; HVFA (FA/C up to 4.4); property-dependent optimum
-- [[silica-fume]] · [[ggbfs]]: binder components; slag raises f'c, widens cracks; activated slag as sole binder (Choi 2016)
-- [[alkali-activated-binder]]: cementless alkali-activated binders: GGBS + Ca(OH)₂/Na₂SO₄ with 1.75% PE and no aggregate strain-hardens to 7.50% at σ_tu 13.06 MPa and f'c 54.8 MPa (Choi 2016); lower W/B more ductile; earlier AAS/geopolymer SHCC as cited
+- [[pe-fiber]]: UHMWPE properties across sources; rate-sensitive; low melting point; 6 mm fiber conflict; 12 µm × 18 mm PE gives 10–22% in cementless matrices; 2700 vs 3030 MPa ⚠️; PE heals less than PVA in EGC
+- [[pva-fiber]]: needs oiling or pre-treatment; 4.88% in a normal matrix; melting onset 230 °C; fails in high-strength matrices; Japanese vs Chinese PVA in XAUAT HDC (≈ 3.0 vs 1.2%); ⚔️ modulus 40 / 32 / 14 GPa; PVA-rich hybrid EGC heals better
+- [[hybrid-fiber]]: steel + PE / PVA + steel / PVA + PE hybrid systems (Homma 2009 HFRCC, JCI "HB", Korea Univ. NSHSDC/HSDC, Guangzhou HSECC, Pourfalah HECC, Yun hybrid SHCC, CNU PE + PVA HSUD-EGC 6.8–12.0%); strength, fire, F-T, healing and EMI effects
+- [[fly-ash]]: raises ductility; HVFA (FA/C up to 4.4); property-dependent optimum; sole geopolymer precursor (ED-EGC); ⚔️ FA-rich EGC heals worst
+- [[silica-fume]] · [[ggbfs]]: binder components; slag raises f'c, widens cracks; activated slag as sole binder (Choi 2016; Lương 2023); GGBS-rich EGC 84–87 MPa, better healing
+- [[alkali-activated-binder]]: cementless AAS and geopolymer (EGC) composites, 4 CNU sources: 7.50% (Choi 2016) → **22.34%** (ED-AASC) and 18.62% (fly-ash ED-EGC) at peak, 84.3 MPa / 10.51% (HSUD-EGC); terms used; heat curing; wide cracks (≈ 170–212 µm); limited healing (C-(N)-A-S-H); earlier AAS/EGC as cited
 - [[textile-reinforced-hdc]]: TR-HDC: HDC with built-in (basalt) textile grids; ≥ 1.5% PVA switches failure from textile slip to rupture; peak stress up to 10.02 MPa set by textile level; empirical α and bilinear σ–ε model (Zhang 2022)
-- [[crumb-rubber]]: powder rubber raises ε_tu, lowers f'c and Km; CR-ECC at high temperature
+- [[crumb-rubber]]: powder rubber raises ε_tu, lowers f'c and Km; CR-ECC at high temperature; 5% CR in the 22% ED-AASC (not varied)
 - [[recycled-fine-aggregate]]: 100% recycled concrete fines in PVA-HDCC (Gao 2020): properties, higher inferred bond and ductility, sand/binder and sand-type effects
 - [[viscosity-modifying-admixtures]]: HPMC, cellulose and starch ethers, and SAP in sprayed, printed and cast SHCC/ECC: open time, water retention, air and water side effects
 
 ## Properties
-- [[tensile-strain-capacity]]: ε_tu across lineages; the trade-off is not fundamental (7.50% cementless PE/AAS); strain at peak vs post-peak; geometry dependence; ⚔️ XAUAT PVA-HDC ≈ 3.0 / 1.0 / 0.34–0.45%
-- [[tensile-toughness]]: gp, σe, Ipost indices; work of fracture
-- [[compressive-strength]]: f'c across lineages; XAUAT member-study cubes; hot f'c of ECC to 600 °C
+- [[tensile-strain-capacity]]: ε_tu across lineages; **wiki maximum 22.34% at peak** (cementless ED-AASC; 18.62% ED-EGC); mixing alone 2.3×; the trade-off is not fundamental across systems; strain at peak vs post-peak; geometry dependence; ⚔️ XAUAT PVA-HDC ≈ 3.0 / 1.0 / 0.34–0.45%
+- [[tensile-toughness]]: gp, σe, Ipost indices; work of fracture; E_t/Ut 0.64–1.38 MJ/m³ in cementless PE composites
+- [[compressive-strength]]: f'c across lineages; XAUAT member-study cubes; hot f'c of ECC to 600 °C; cementless 20.7–86.5 MPa
 - [[compressive-constitutive-model]]: compressive stress–strain of PVA-HDC: ~3× matrix peak strain, 10–20% residual capacity, W_cu toughness index (Deng 2015) and Weibull damage model with γ = 0.8ε0, β = 1.3ε0 (Deng 2018)
 - [[flexural-strength]]: notched f_n, f_f, f_b; bending–tension relations
 - [[shear-behaviour]]: shear of HDC/ECC/SHCC members: HDC short columns vs GB 50010/ACI, whole-HDC beams with stirrups (ACI 318-14 / EN 1992 2–5× conservative, modified η–δ formulas), HDC column jackets, masonry overlays, SHCC beams without stirrups, ECC side layers and NSHSDC jackets, truss–arch model
-- [[crack-width]]: average vs maximum, residual vs loaded widths (≈ 10–15% closure on unloading in tension, primary); exposure-dependent thresholds; 100 µm target traced to concrete (Wang 1997)
-- [[matrix-fracture-toughness]]: Km and apparent K_IC
+- [[crack-width]]: average vs maximum, residual vs loaded widths (≈ 10–15% closure on unloading in tension, primary); exposure-dependent thresholds; 100 µm target traced to concrete (Wang 1997); ⚔️ 172–212 µm in cementless composites at extreme strain
+- [[matrix-fracture-toughness]]: Km and apparent K_IC; lowest Km in the wiki (fly-ash geopolymer 0.06–0.11 MPa√m)
 - [[impact-resistance]]: drop-weight slab results; HSDC-skinned panels
 - [[fatigue]]: primary PE UHP-ECC flexural S–N data; ⚔️ bilinear vs continuous S–N
-- [[fresh-properties]]: rheology, slump, open time of printable and sprayed mixes
+- [[fresh-properties]]: rheology, slump, open time of printable and sprayed mixes; SP-delayed setting in AAS
 - [[durability]]: hub: primary studies for most exposures (now incl. permeability, wet–dry healing, hot tests, tension after F-T); sulfate, acid; links to sub-pages
 - [[freeze-thaw]]: freeze–thaw and salt scaling of ECC/HDCC/SHCC: 4 primary studies (PVA-ECC survives 300–500 cycles vs 25–110 for concrete/mortar; W/B dominant), first uniaxial tension after F-T (hybrid SHCC, Yun 2013), coupled F-T + carbonation; Yun 2011 vs 2013 resolved
 - [[carbonation]]: accelerated carbonation of PVA-ECC/HDCC: depth vs sustained stress (4.8 → 9.9 mm at 28 d), frost damage and cracking, densification; ⚔️ 0.8 vs 4.8 vs 13 mm
 - [[chloride-and-corrosion]]: chloride ingress in cracked ECC/SHCC (immersion vs wet–dry), diffusion model, R/SHCC corrosion (localised pitting), tapered-pin test; transport-mode-dependent crack-width thresholds
-- [[self-healing]]: five primary studies (FRCC, outdoor ECC, sustained load, wet–dry cycles, flowing-water permeation); width, not PE, limits healing; healing needs flowing water or wet–dry cycles, less with hot drying
+- [[self-healing]]: six primary studies (FRCC, outdoor ECC, sustained load, wet–dry cycles, flowing-water permeation, cementless EGC); width, not PE, limits healing in cement-based matrices; healing needs flowing water or wet–dry cycles, less with hot drying; ⚔️ EGC: C-(N)-A-S-H, limited, PVA and GGBS help, FA hurts
 - [[high-temperature-behaviour]]: −30 to 60 °C PVA-HDC (primary); 200–1000 °C residual tests and first hot (in-situ) tests to 600 °C (primary); PE loses SH at 100–140 °C, PVA melts from 230 °C; hot ECC bending brittle from 200 °C
 - [[permeability]]: primary water permeability of cracked ECC (Lepech & Li 2009): ≈ 10⁻¹⁰ m/s at 50–63 µm; corrected mortar value 4.46 × 10⁻⁴ m/s at 500 µm; 0.10–0.15 mm mis-citation
 - [[shrinkage]]: durability sub-topic (review and second-hand data; field shrinkage cracking)
 
 ## Test methods
-- [[dogbone-uniaxial-tension]]: setups compared; JCI round robin shows strong shape and casting effects; XAUAT dogbones and DBJ61/T112-2016; TR-HDC 350 mm dogbones
+- [[dogbone-uniaxial-tension]]: setups compared; JCI round robin shows strong shape and casting effects; XAUAT dogbones and DBJ61/T112-2016; TR-HDC 350 mm dogbones; CNU JSCE dumbbells (all > 10% strains)
 - [[four-point-bending-inverse-analysis]]: four-point bending and inverse analysis of tensile properties: JCI-S-003-2005 moment–curvature method (Kanakubo 2006), Michigan UM method ε_tu(%) = 0.50·δ_u(mm) − 0.22 (Qian & Li 2007), validation data, 4PB setups in the corpus; deflection hardening ≠ tensile strain hardening
-- [[notched-beam-three-point-bending]]: size effect, K_IC, Km
-- [[single-fiber-pullout-test]] · [[single-crack-test]] (incl. zero-span) · [[impact-test]] · [[digital-image-correlation]]
+- [[notched-beam-three-point-bending]]: size effect, K_IC, Km (incl. 90 × 90 × 400 mm geopolymer matrix beam)
+- [[single-fiber-pullout-test]] · [[single-crack-test]] (incl. zero-span; CNU 0.2% PE notched dogbone) · [[impact-test]] · [[digital-image-correlation]]
 
 ## Applications
 - [[repair-and-field-applications]]: sprayed ECC, Japanese field uses with second-hand field crack widths (≤ 120 µm at 24 months), link slabs; XAUAT seismic retrofit of village masonry
@@ -162,9 +165,9 @@ The LLM reads this page first. Each entry is a wikilink to a page slug, followed
 - [[extreme-loading-applications]] · [[3d-printed-hdc]]: impact, blast, EMI shielding; printed SHCC (2 primary studies)
 
 ## Datasets
-- [[mix-designs]]: 113 rows (some grouped)
-- [[mechanical-results]]: 221 rows
-- [[micromechanical-parameters]]: 26 rows (some are assumed model inputs or macroscopic indices, labelled)
+- [[mix-designs]]: 120 rows (some grouped)
+- [[mechanical-results]]: 234 rows
+- [[micromechanical-parameters]]: 29 rows (some are assumed model inputs or macroscopic indices, labelled; scaled PSH_E of the fly-ash EGC flagged)
 
 ## Synthesis
 - [[review-outline]]

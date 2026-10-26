@@ -3,8 +3,8 @@ type: property
 slug: self-healing
 aliases: [autogenous healing, crack healing, recovery]
 tags: [durability, cracking]
-sources: [ma2021-ecc-durability-review, homma2009-frcc-self-healing, herbert2013-ecc-self-healing-natural-environment, ozbay2013-ecc-self-healing-sustained-load, chai2019-hdcc-freeze-thaw-carbonation-flexure, li2002-pva-ecc-interface-tailoring, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability]
-updated: 2026-10-21
+sources: [ma2021-ecc-durability-review, homma2009-frcc-self-healing, herbert2013-ecc-self-healing-natural-environment, ozbay2013-ecc-self-healing-sustained-load, chai2019-hdcc-freeze-thaw-carbonation-flexure, li2002-pva-ecc-interface-tailoring, yang2009-ecc-self-healing-wet-dry, lepech2009-ecc-water-permeability, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Self-Healing (autogenous crack healing)
@@ -15,7 +15,8 @@ updated: 2026-10-21
 > [[ozbay2013-ecc-self-healing-sustained-load]] (ECC, sustained load). Added 2026-10-21:
 > [[yang2009-ecc-self-healing-wet-dry]] (ECC M45 under wet–dry cycles; its crack-width limits come from a
 > 0.5 vol.% PVA **tension-softening mortar**, not ECC) and [[lepech2009-ecc-water-permeability]] (healing
-> during permeation of cracked ECC M45).
+> during permeation of cracked ECC M45). Added 2026-10-26: [[huy2023-egc-pe-pva-hybrid-healing]], the first primary healing
+> data on a **cementless** strain-hardening composite (GGBS/FA geopolymer EGC, PE + PVA).
 
 ## Mechanism (primary)
 - **Main product is CaCO₃** (Raman, [[homma2009-frcc-self-healing]], Fig. 12; EDX at 30 d,
@@ -38,6 +39,11 @@ updated: 2026-10-21
   ([[lepech2009-ecc-water-permeability]], p. 752). ⚔️ partial conflict with healing under plain water
   immersion over 28–90 d ([[homma2009-frcc-self-healing]]; [[ozbay2013-ecc-self-healing-sustained-load]]),
   where water renewal is not reported. → [[gaps]]
+- ⚔️ **Binder-dependent product**: in a cementless GGBS/FA/SF geopolymer EGC the healing product plots in the
+  **C-(N)-A-S-H** gel field (SEM/EDS ternary diagram), not CaCO₃; the authors propose that Na⁺, Ca²⁺ and Al³⁺ leached from
+  unreacted precursors and residual activator react further and seal cracks from the inside out until reactants are
+  exhausted ([[huy2023-egc-pe-pva-hybrid-healing]], Table 9, Figs. 15–16, p. 11). The CaCO₃ statement above holds for
+  cement-based materials only. → [[alkali-activated-binder]], [[gaps]]
 - **Drying temperature**: wet–dry cycles with 55 °C oven drying (CR2) healed less than with room-air drying
   (CR1) ([[yang2009-ecc-self-healing-wet-dry]], Figs. 7, 12). → [[heat-curing]]
 
@@ -52,6 +58,7 @@ updated: 2026-10-21
 | Heide & Schlangen 2007; Li & Yang 2007, as cited in [[ozbay2013-ecc-self-healing-sustained-load]] | — | below 100 µm, preferably < 50 µm (p. 167) |
 | Zhu 2012/2016, as cited in [[chai2019-hdcc-freeze-thaw-carbonation-flexure]] | under F-T | obvious healing for cracks < 43 µm (p. 127) |
 | Yıldırım 2018, as cited there | crack < 100 µm, 90 d | healing rate 80% in water, 40% in CO₂-air (p. 127) |
+| [[huy2023-egc-pe-pva-hybrid-healing]] (HSUD-EGC, cementless, strain-hardening) | 3% tensile pre-strain at 7 d, 28 d water | a few cracks < 50 µm healed completely; most 50–150 µm cracks healed partly or little (Fig. 9, p. 8) — the Yang 2009 bands, now seen in a strain-hardening composite |
 
 ### Recovery of properties
 | Source (term) | Exposure | Recovery |
@@ -63,6 +70,7 @@ updated: 2026-10-21
 | [[yang2009-ecc-self-healing-wet-dry]] (ECC M45, FA/C 1.20, PVA; cracked at ≈ 6 months; 0.3–3% tensile pre-strain, residual max crack 50–90 µm, Table 2) | 10 wet–dry cycles; CR1 = water 20 °C / air 21 °C; CR2 = water 20 °C / oven 55 °C | RF ratio CR1 40–82% → **87–100%**; CR2 31–83% → **77–90%** (Fig. 7 ⚠️ read; text vs abstract give 87 vs 76% at 3% pre-strain ⚠️); recovery stabilises after 4–5 cycles (Fig. 6); reloading stiffness ≈ 74–90% (CR1) and ≈ 54–74% (CR2) vs ≈ 4–6% unhealed (Fig. 12 ⚠️ read) |
 | same, reloading in tension | after 10 cycles | healed ECC keeps ε 1.7–3.1% (CR1) and 0.8–2.2% (CR2) on reloading (residual strain excluded); first-crack strength below virgin; re-cracks run along healed CaCO₃ paths, some new cracks beside them (p. 388; Figs. 9–10, 15–17) |
 | [[lepech2009-ecc-water-permeability]] (ECC M45, 1.5–3% pre-strain, cracks 50–63 µm) | ≈ 1 month of constant-head permeation | k fell ≈ 2 orders (≈ 10⁻⁸–10⁻⁷ → ≈ 10⁻¹⁰ m/s) over ≈ 20–30 d (Fig. 7 ⚠️ read) → [[permeability]] |
+| [[huy2023-egc-pe-pva-hybrid-healing]] (HSUD-EGC S-PE / S-PVA / F-PE / F-PVA; avg crack 83–136 µm) | 3% pre-strain at 7 d, 28 d water at 23 °C | crack healing rate **26.78 / 31.40 / 7.36 / 12.48%** (Fig. 10); normalised RF at 28 d 61.5 / 76.9 / 27.6 / 45.1%, RF_r **+15.63 / +24.16 / −9.58 / −6.59** %-points (Figs. 11–12); reloaded: strain hardening kept, σ_tu +3.7% and ε −6.1% on average (Table 8). Authors: healing "relatively limited" |
 | [[homma2009-frcc-self-healing]] | permeability, 28 d | small cracks return to uncracked k (≈10⁻¹¹ m/s); cracks ≥ ≈370 µm stay nearly constant after 3 d; most deposition in first 3 d (Figs. 5, 10) |
 
 - Recovery > 100% includes bulk hydration; healed specimens never exceeded uncracked controls of equal
@@ -96,6 +104,14 @@ updated: 2026-10-21
 - **Fly ash**: FA/C 2.2 gives more, narrower cracks and better healing than 1.2
   ([[ozbay2013-ecc-self-healing-sustained-load]], Table 3; [[herbert2013-ecc-self-healing-natural-environment]], §2.1, p. 2834 — its 24 / 30 µm widths are cited with ref. [29] ⚠️). → [[fly-ash]]
 - **Fibre count / fineness**: more, finer fibres → thicker deposits ([[homma2009-frcc-self-healing]]). → [[pe-fiber]]
+  ⚔️ In the cementless EGC, PE-rich mixes healed **less** than PVA-rich ones (crack healing rate 26.78 vs 31.40%; RF_r +15.63
+  vs +24.16 %-points); the authors credit hydrophilic PVA attracting healing products ([[huy2023-egc-pe-pva-hybrid-healing]],
+  Figs. 10, 12). Matrix and product differ from Homma's FRCC. → [[pva-fiber]], [[hybrid-fiber]]
+- ⚔️ **Fly ash in a geopolymer**: the FA-rich EGC (GGBS:FA 3:6.5) healed worst and lost stiffness in water (RF_r −9.58 /
+  −6.59 %-points), opposite to cement-based ECC where higher FA/C healed better ([[huy2023-egc-pe-pva-hybrid-healing]], Fig. 12;
+  vs [[ozbay2013-ecc-self-healing-sustained-load]]). → [[fly-ash]]
+- **Activator**: sodium-silicate activators seemed unhelpful for healing (authors, citing an earlier AAS study)
+  ([[huy2023-egc-pe-pva-hybrid-healing]], p. 8).
 - **Exposure**: continuous water > wet–dry > CO₂-air > dry air. Wet–dry healing in ECC is "reasonably
   robust" ([[yang2009-ecc-self-healing-wet-dry]], Abstract), but hot (55 °C) drying reduces it (Fig. 7).
 - **Damage level**: RF rebound grows with crack number, but the final healed state is less complete at higher
@@ -119,7 +135,17 @@ updated: 2026-10-21
 > not Yang 2009. ECC itself was only tested at 50–90 µm residual widths, where it healed well. Under a
 > constant-head flow, healing also needs a carbonate supply ([[lepech2009-ecc-water-permeability]]).
 
+> Synthesis (2026-10-26): the only alkali-activated data show that healing chemistry and its drivers change with the binder:
+> C-(N)-A-S-H instead of CaCO₃, slag rather than fly ash helping, and PVA rather than PE helping. Even at ≈ 100 µm cracks the
+> recovery was limited (crack healing rate ≤ 31%), so cementless HDC-type composites cannot borrow the ECC healing claims.
+
 ## Conflicts & open questions
+- ⚔️ Healing product: CaCO₃ (cement-based: Homma, Özbay, Yang, Lepech) vs C-(N)-A-S-H (cementless EGC,
+  [[huy2023-egc-pe-pva-hybrid-healing]]). Binder-dependent. → [[gaps]]
+- ⚔️ PE vs PVA for healing: fine PE promotes CaCO₃ deposits ([[homma2009-frcc-self-healing]]) vs PE-rich EGC heals less than
+  PVA-rich EGC ([[huy2023-egc-pe-pva-hybrid-healing]]). → [[gaps]]
+- ⚔️ Fly ash and healing: better with higher FA/C ([[ozbay2013-ecc-self-healing-sustained-load]]) vs worst and negative RF
+  recovery in FA-rich EGC ([[huy2023-egc-pe-pva-hybrid-healing]]). → [[gaps]]
 - ⚔️ (refinement) Healing under F-T: ≈100% recovery at 0.5–1% pre-strain (Zhu 2012, as cited in
   [[ma2021-ecc-durability-review]]) vs 20–30 µm cracks widening under F-T + carbonation + 60 °C drying
   ([[chai2019-hdcc-freeze-thaw-carbonation-flexure]]). Different exposure. → [[gaps]]
@@ -135,6 +161,8 @@ updated: 2026-10-21
 - Note: the "Özbay 2013" cited in [[ma2021-ecc-durability-review]] for slag-ECC frost resistance is a
   different paper, not [[ozbay2013-ecc-self-healing-sustained-load]].
 - Open: 100% recovery after repeated damage; healing of cracks made at late age (> 6 months); healing in HSHDC/UHDC; temperature effect on healing (named by [[yang2009-ecc-self-healing-wet-dry]]).
+  Healing in a high-strength (≈ 85 MPa) cementless composite is now covered by one source ([[huy2023-egc-pe-pva-hybrid-healing]]);
+  ambient-cured EGC, wet–dry exposure and other activators remain untested.
 
 ## Related
-- [[crack-width]] · [[durability]] · [[permeability]] · [[freeze-thaw]] · [[carbonation]] · [[chloride-and-corrosion]] · [[fly-ash]] · [[pe-fiber]] · [[heat-curing]]
+- [[crack-width]] · [[durability]] · [[permeability]] · [[freeze-thaw]] · [[carbonation]] · [[chloride-and-corrosion]] · [[fly-ash]] · [[pe-fiber]] · [[pva-fiber]] · [[heat-curing]] · [[alkali-activated-binder]]

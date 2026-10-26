@@ -2,32 +2,37 @@
 type: synthesis
 slug: review-outline
 status: draft
-updated: 2026-10-21
+updated: 2026-10-26
 ---
 
 # Literature Review — Outline
 
-Scope: 60 papers (round 5 added the 9 hand-downloaded ScienceDirect papers and Choi 2016 in place of the paywalled
-Wang 2007, ACI). Legend: ✅ = primary data; 🟡 = review or second-hand only.
+Scope: 63 papers (round 5 added the 9 hand-downloaded ScienceDirect papers and Choi 2016 in place of the paywalled
+Wang 2007, ACI; round 7 added three Chonnam National University cementless composites: Lương et al. 2023
+[[hieu2023-aas-extremely-ductile-22pct]], Nguyễn et al. 2023 [[huy2023-egc-activator-pretreatment]] and
+[[huy2023-egc-pe-pva-hybrid-healing]]). Legend: ✅ = primary data; 🟡 = review or second-hand only.
 
 1. **Introduction & terminology** ✅
    - HDC ≈ ECC/SHCC; HDCC; the Japanese DFRCC ⊃ HPFRCC classification.
    - Definitions: JSCE 2008 vs JC/T 2461-2018 (0.5% / 200 µm); Shaanxi DBJ61/T112-2016 (cited, not ingested).
-   - Classes: normal ECC/HDC, HSHDCC, UHDC / UHP-SHCC; cementless alkali-activated SHCC.
+   - Classes: normal ECC/HDC, HSHDCC, UHDC / UHP-SHCC; cementless alkali-activated SHCC (ED-AASC / HD-AASC; EGC, ED-EGC,
+     HSUD-EGC — none labelled HDC/ECC by their authors).
    - Lineages: Michigan, GDUT, Xi'an, Tongji, Korea Univ. (steel + PE hybrid).
    - Labelled-but-untested materials (no tension test); XAUAT HDC below the 0.5% bar in one matrix.
    → [[terminology-hdc-ecc-shcc]], [[hshdc]], [[uhdc]]
 2. **Historical development** ✅
    - Li & Leung 1992 → Li 2002 PVA-ECC → sprayed ECC and Japanese field use (2003–2006) → durability of M45 ECC
-     (2009) → HSHDC (2011–2017) → Chinese HDC members and retrofit (2017–2021) → HSHDCC/UHDC (2017–2024).
+     (2009) → HSHDC (2011–2017) → Chinese HDC members and retrofit (2017–2021) → HSHDCC/UHDC (2017–2024);
+     cementless line: PVA-AAS 4.5% (2012, as cited) → PE-AAS 7.5% (2016) → 22.3% ED-AASC and 18.6% ED-EGC (2023).
    → [[li1992-steady-state-multiple-cracking]], [[li2002-pva-ecc-interface-tailoring]], [[kanda2003-sprayed-ecc]],
    [[kunieda2006-hpfrcc-japan-applications]], [[lepech2009-ecc-water-permeability]], [[deng2017-rc-column-hdc-jacket]],
-   [[zhang2022-hshdcc-review]]
+   [[zhang2022-hshdcc-review]], [[choi2016-pe-alkali-activated-slag-composite]], [[hieu2023-aas-extremely-ductile-22pct]]
 3. **Design theory** ✅
    - steady-state cracking;
    - PSH criteria and their limits;
    - fiber bridging;
-   - interface tailoring; macro-scale bond.
+   - interface tailoring; macro-scale bond;
+   - first geopolymer PSH indices and the problem of scaling single-crack J′b to full Vf ([[huy2023-egc-activator-pretreatment]]).
    → [[steady-state-cracking]], [[strain-hardening]], [[fiber-bridging]], [[fiber-matrix-interface]],
    [[fiber-surface-treatment]], [[multiple-cracking]], [[interface-bond]]
 4. **Constituents & mix design** ✅
@@ -35,13 +40,17 @@ Wang 2007, ACI). Legend: ✅ = primary data; 🟡 = review or second-hand only.
    [[fly-ash]], [[silica-fume]], [[ggbfs]], [[alkali-activated-binder]], [[crumb-rubber]], [[recycled-fine-aggregate]],
    [[viscosity-modifying-admixtures]], [[water-binder-ratio]], [[heat-curing]], [[fresh-properties]],
    [[textile-reinforced-hdc]]
+   — processing: mixing procedure alone 9.81 → 22.34% ([[hieu2023-aas-extremely-ductile-22pct]]); activator pretreatment
+   ([[huy2023-egc-activator-pretreatment]]); PE + PVA hybrid in a cementless matrix ([[huy2023-egc-pe-pva-hybrid-healing]])
 5. **Mechanical properties** ✅
    - tension → [[tensile-strain-capacity]], [[tensile-toughness]], [[tensile-constitutive-model]]
-     (⚔️ XAUAT strain spread; cementless 7.50% at 13.06 MPa, [[choi2016-pe-alkali-activated-slag-composite]])
+     (⚔️ XAUAT strain spread; cementless 7.50% at 13.06 MPa, [[choi2016-pe-alkali-activated-slag-composite]];
+     **wiki maximum 22.34% at peak**, [[hieu2023-aas-extremely-ductile-22pct]]; 18.62%, [[huy2023-egc-activator-pretreatment]];
+     84.3 MPa with 10.51%, [[huy2023-egc-pe-pva-hybrid-healing]])
    - compression → [[compressive-strength]], [[compressive-constitutive-model]]
    - flexure and size effect → [[flexural-strength]], [[size-effect]], [[fracture-process-zone]]
    - shear → [[shear-behaviour]] (columns, beams with stirrups, jackets, overlays)
-   - cracking → [[crack-width]]
+   - cracking → [[crack-width]] (⚔️ ≈ 200 µm average cracks at extreme strain in cementless composites)
    - data → [[mechanical-results]]
 6. **Dynamic, impact & fatigue behaviour** ✅ → [[strain-rate-effects]], [[impact-resistance]], [[fatigue]]
    (fatigue: one primary data set)
@@ -51,7 +60,8 @@ Wang 2007, ACI). Legend: ✅ = primary data; 🟡 = review or second-hand only.
    → [[durability]], [[freeze-thaw]], [[carbonation]], [[chloride-and-corrosion]], [[permeability]],
    [[self-healing]], [[shrinkage]] (🟡), [[high-temperature-behaviour]]
    — key sources: [[yang2009-ecc-self-healing-wet-dry]], [[lepech2009-ecc-water-permeability]],
-   [[yun2013-shcc-freeze-thaw]], [[pourfalah2018-ecc-high-temperature]]
+   [[yun2013-shcc-freeze-thaw]], [[pourfalah2018-ecc-high-temperature]], [[huy2023-egc-pe-pva-hybrid-healing]] (first healing
+   data on a cementless SHCC: C-(N)-A-S-H, limited recovery)
 8. **Test methods** ✅ (JCI round robin, inverse bending methods, XAUAT dogbones)
    → [[dogbone-uniaxial-tension]], [[four-point-bending-inverse-analysis]], [[single-fiber-pullout-test]],
    [[single-crack-test]], [[notched-beam-three-point-bending]], [[impact-test]], [[digital-image-correlation]]
@@ -63,15 +73,18 @@ Wang 2007, ACI). Legend: ✅ = primary data; 🟡 = review or second-hand only.
    [[interface-bond]]
    — key sources: [[deng2017-rc-column-hdc-jacket]], [[deng2019-urm-shaking-table-hdc]],
    [[deng2020-aac-wall-hdc-retrofit]], [[li2021-hdc-beam-shear]], [[zhang2022-hdc-basalt-textile-tension]]
-10. **Sustainability** 🟡/✅ (HVFA, slag, cementless alkali-activated slag, recycled fine aggregate, crumb rubber; no LCA
-    source)
+10. **Sustainability** 🟡/✅ (HVFA, slag, cementless alkali-activated slag and geopolymer, recycled fine aggregate, crumb
+    rubber; no full LCA source, but material sustainability indicators (EE, CF, cost per m³) for ED-AASC
+    ([[hieu2023-aas-extremely-ductile-22pct]], §4) and cost per unit performance for HSUD-EGC
+    ([[huy2023-egc-pe-pva-hybrid-healing]], Fig. 7))
     → [[fly-ash]], [[ggbfs]], [[alkali-activated-binder]], [[crumb-rubber]], [[recycled-fine-aggregate]]
 11. **Research gaps & future directions** → [[gaps]]
 12. **Conclusions**
 
 Key figures to build:
 1. f'c vs ε_tu across lineages, from [[mechanical-results]]. Show the trade-off and the HSHDCC and cementless
-   (Choi 2016) points that break it.
+   (Choi 2016; Lương 2023 22.34%; Nguyễn 2023 ED-EGC and HSUD-EGC) points that break it, marking that the > 10% points all
+   come from one lab, thin dumbbells and heat-cured matrices.
 2. PVA oiling → τ0, Gd, ε_tu, crack width, from [[li2002-pva-ecc-interface-tailoring]].
 3. Crack width vs durability thresholds **by exposure** (immersion vs wet–dry vs healing vs permeability), with residual
    vs loaded and average vs maximum widths, from [[crack-width]], [[permeability]] and [[chloride-and-corrosion]].
@@ -82,3 +95,5 @@ Key figures to build:
    [[mechtcherine2011-shcc-high-strain-rate]].
 7. Retrofit gains of HDC in members (peak load, ductility factor, drift, energy) for column jackets, AAC walls and the
    URM shake table, from [[rc-member-strengthening]] and [[masonry-wall-retrofit]].
+8. Average crack width vs ε at peak (cementless PE composites ≈ 200 µm at 18–22% vs ECC ≈ 60 µm), from [[crack-width]]
+   and [[alkali-activated-binder]].

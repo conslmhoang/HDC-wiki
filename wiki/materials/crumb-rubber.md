@@ -3,8 +3,8 @@ type: material
 slug: crumb-rubber
 aliases: [powder rubber, PR, crumb rubber, CR, waste tire rubber]
 tags: [aggregate-replacement, sustainability]
-sources: [su2023-rubber-modified-hshdc, mohammed2020-cr-ecc-elevated-temperature]
-updated: 2026-10-21
+sources: [su2023-rubber-modified-hshdc, mohammed2020-cr-ecc-elevated-temperature, hieu2023-aas-extremely-ductile-22pct]
+updated: 2026-10-26
 ---
 
 # Crumb / Powder Rubber (from waste tires)
@@ -51,10 +51,19 @@ updated: 2026-10-21
 
   - The authors state CR melts at 170 °C and leaves vapour escape paths (uncited ⚠️, §3.3). → [[high-temperature-behaviour]]
 
+## Crumb rubber in a cementless AAS composite (2026-10-26)
+- [[hieu2023-aas-extremely-ductile-22pct]] (ED-AASC): CR from waste tyres, average particle 400 µm, density 1.13 g/cm³, at
+  **5% of binder mass**, added to offset the higher matrix toughness of silica sand at S/B 0.8 (§1, §2.1). Rubber content is
+  **not** a variable; all mixes reach ε 9.81–22.34% at peak with f'c 52.2–54.6 MPa (Table 4, Fig. 7). → [[alkali-activated-binder]]
+- As cited there: CR at 5% of binder raised ε by 36% in an earlier AAS composite (S-CR5, 10.67%, Lương 2021) (§1, Table 7).
+- CR has a high carbon footprint per kg but is counted as a waste material in the MSI assessment (§4).
+
 > Synthesis: both rubber sources report lower f'c (powder rubber −33% max in [[su2023-rubber-modified-hshdc]]; coarser CR
 > lower residual f'c up to ≈ 500 °C in [[mohammed2020-cr-ecc-elevated-temperature]], converging at higher temperature). Only Su 2023 measures tension, so the claim that
 > rubber raises ε rests on one HSHDC study. Particle size (30–300 µm vs 0.6–2.36 mm) and the replaced phase (quartz
 > powder by volume vs sand by mass) differ. Rubber is one form of alternative aggregate → [[recycled-fine-aggregate]].
+> (2026-10-26) [[hieu2023-aas-extremely-ductile-22pct]] adds a second tension source using rubber, but rubber is not varied
+> there, so the "rubber raises ε" claim still rests on Su 2023 plus second-hand data (Lương 2021, as cited).
 
 ## Related
-- [[hshdc]] · [[matrix-fracture-toughness]] · [[tensile-strain-capacity]] · [[crack-width]] · [[high-temperature-behaviour]] · [[recycled-fine-aggregate]]
+- [[hshdc]] · [[alkali-activated-binder]] · [[matrix-fracture-toughness]] · [[tensile-strain-capacity]] · [[crack-width]] · [[high-temperature-behaviour]] · [[recycled-fine-aggregate]]

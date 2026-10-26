@@ -3,8 +3,8 @@ type: property
 slug: tensile-strain-capacity
 aliases: [tensile ductility, ε_tu, εp, ε_cu, strain capacity, peak strain]
 tags: [tension, ductility, key-property]
-sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, zhao2022-ecc-tension-damage-model, deng2018-hdc-short-columns, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, sun2019-modified-pva-fiber-ecc, wang2023-ecc-frost-damage, xue2023-shcc-structural-review, shumuye2022-slag-fa-pe-ecc, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, sui2018-uhp-ecc-flexural-fatigue, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature]
-updated: 2026-10-21
+sources: [li2002-pva-ecc-interface-tailoring, ranade2015-hshdc-tensile-rate-effects, ranade2017-hshdc-impact-resistance, su2023-rubber-modified-hshdc, yang2024-hshdc-uniaxial-tension, ye2021-uhdc-flexural-size-effect, he2024-hdc-research-advances, yu2018-ecc-direct-tensile-review, zhang2022-hshdcc-review, chai2023-hdc-ambient-temperature, kanda2006-psh-design-criteria, yang2008-ecc-fiber-bridging-law, kanakubo2006-dfrcc-tensile-test-method, kunieda2010-uhp-shcc-steel-reinforcement, chavesfigueiredo2020-printed-shcc, ivaniuk2022-printable-shcc-design, gao2020-hdcc-recycled-fine-aggregate, zhao2022-ecc-tension-damage-model, deng2018-hdc-short-columns, jin2019-hvfa-shcc-structural, qian2007-shcc-inverse-tensile-strain, mechtcherine2011-shcc-high-strain-rate, sun2019-modified-pva-fiber-ecc, wang2023-ecc-frost-damage, xue2023-shcc-structural-review, shumuye2022-slag-fa-pe-ecc, paul2014-r-shcc-chloride-corrosion, kanda2003-sprayed-ecc, sui2018-uhp-ecc-flexural-fatigue, deng2017-rc-column-hdc-jacket, deng2019-urm-shaking-table-hdc, deng2020-aac-wall-hdc-retrofit, li2021-hdc-beam-shear, zhang2022-hdc-basalt-textile-tension, choi2016-pe-alkali-activated-slag-composite, yang2009-ecc-self-healing-wet-dry, yun2013-shcc-freeze-thaw, pourfalah2018-ecc-high-temperature, hieu2023-aas-extremely-ductile-22pct, huy2023-egc-activator-pretreatment, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Tensile Strain Capacity (ε_tu)
@@ -49,7 +49,7 @@ so check this before comparing. → [[dogbone-uniaxial-tension]]
   ([[pourfalah2018-ecc-high-temperature]], Table 4). → [[hybrid-fiber]]
 
 > Synthesis: Across sources, ε_tu falls as matrix strength rises:
-> - UHDC (f'c about 37 MPa): up to 9.45%
+> - UHDC (f'c about 37 MPa): up to 9.45% (superseded as the wiki maximum on 2026-10-26 by cementless ED-AASC, 22.34%; see Round-7 below)
 > - Xi'an HSHDC (about 100 MPa): up to 6.5%
 > - GDUT (about 120–157 MPa): up to 5.7%
 > - Michigan (166 MPa): 3.4–4.2%
@@ -196,6 +196,37 @@ Same PVA-DFRCC mix, four tension methods ([[kanakubo2006-dfrcc-tensile-test-meth
 > variable (Deng 2017). Because most XAUAT strains are figure-read and their basis (peak vs end of curve) is not
 > always stated, "≈ 1% for Chinese PVA-HDC" is a cluster, not a material constant. The Choi 2016 AAS-PE result adds
 > to the evidence that the strength–ductility "trade-off" is not fundamental.
+
+## Round-7 evidence (2026-10-26): new maximum strains (Chonnam cementless composites)
+| Source | Material (authors' term) | Curing / age | ε at peak (%) | σ_tu (MPa) | Note |
+|---|---|---|---|---|---|
+| [[hieu2023-aas-extremely-ductile-22pct]] Table 4 | ED-AASC R5-S8-M1 (GGBS + Ca(OH)₂, sand S/B 0.8, 5% CR, 1.75% PE) | air + water + 24 h 80 °C; 28 d | **22.34 ± 0.48** | 7.63 | **highest in the wiki**; f'c 53.6 MPa; JSCE dumbbell, 80 mm gauge, 5 specimens |
+| same | R5-S8-M2 / R5-S8-M0 (same proportions, other mixing procedures) | 28 d | 20.89 ± 2.13 / 9.81 ± 2.92 | 8.19 / 7.92 | mixing alone: 2.2–2.3× |
+| [[huy2023-egc-activator-pretreatment]] Table 4 | ED-EGC-CP / ED-EGC-WP (fly-ash geopolymer, 1.75% PE) | 5 d 23 °C + 2 d 80 °C; 28 d | **18.62 ± 1.59** / 10.97 ± 1.31 | 5.54 / 8.72 | f'c 20.7 / 31.1 MPa |
+| [[huy2023-egc-pe-pva-hybrid-healing]] Table 5 | HSUD-EGC S-PE / S-PVA / F-PE / F-PVA (GGBS/FA/SF geopolymer, 1.5% PE + PVA) | 24 h 100 °C + 28 d water; ≈ 35 d ⚠️ | 10.51 / 6.79 / 11.99 / 10.35 | 6.64 / 6.04 / 5.18 / 4.60 | f'c 84.3 / 86.5 / 50.4 / 51.9 MPa |
+| same, Table 8 | the same after 3% pre-strain + 28 d water healing, reloaded | 35 d | 9.45 / 6.29 / 11.97 / 9.67 (incl. 3% pre-strain) | 7.53 / 6.33 / 5.23 / 4.40 | on average σ_tu +3.7%, ε −6.1% vs virgin |
+
+- **New maximum**: 22.34% at peak (previous primary maximum: UHDC 9.45%, [[ye2021-uhdc-flexural-size-effect]]; Choi 2016
+  7.50%). All values above 10% in the wiki now come from one group (Chonnam National University), the same 18 mm × 12 µm PE,
+  thin (13 mm) JSCE dumbbells with an 80 mm gauge, and heat-cured cementless matrices.
+- **Mixing procedure** alone moved ε from 9.81 to 22.34% at identical proportions and cut the COV (2.92 → 0.48 %-points)
+  ([[hieu2023-aas-extremely-ductile-22pct]], Table 4, §3.1). → [[fiber-dispersion]]
+- **Matrix weakening** (activator cooling pretreatment) raised ε from 10.97 to 18.62% while f'c fell from 31.1 to 20.7 MPa
+  ([[huy2023-egc-activator-pretreatment]], Table 4).
+- **GGBS:FA ratio**: more FA (3:6.5) raised ε (10.51 → 11.99%, PE-rich) and lowered f'c by ≈ 40%
+  ([[huy2023-egc-pe-pva-hybrid-healing]], Table 5, Fig. 3). → [[fly-ash]]
+- **Steel-bar comparison**: both ED papers compare ε with minimum rebar elongation (ASTM A615 9%, A706 14%, ISO 6935-2 14 /
+  17%) ([[hieu2023-aas-extremely-ductile-22pct]], Fig. 15; [[huy2023-egc-activator-pretreatment]], Fig. 11). Caution: composite
+  strain at peak over 80 mm vs steel elongation at fracture over a different gauge.
+- **Index values**: f'c × ε 11.9 MPa and σ_tu × ε 1.70 MPa for ED-AASC M1, the highest of the composites compared there
+  ([[hieu2023-aas-extremely-ductile-22pct]], Table 7); 8.8 MPa for HSUD-EGC S-PE ([[huy2023-egc-pe-pva-hybrid-healing]], Fig. 6).
+
+> Synthesis (round 7): the record strains are an upper bound on **thin-specimen, heat-cured, single-lab** data. They come
+> with wide cracks (≈ 170–212 µm average at peak), low-to-moderate σ_tu (5.5–8.2 MPa) and, for ED-EGC-CP, a weak matrix
+> (20.7 MPa). Thickness and size effects ([[kunieda2010-uhp-shcc-steel-reinforcement]]; [[kanakubo2006-dfrcc-tensile-test-method]])
+> suggest lower values in members. Within one study, a weaker matrix gave more strain ([[huy2023-egc-activator-pretreatment]]),
+> which supports a trade-off locally; across studies, HSUD-EGC at 84 MPa with 10.5% supports "the trade-off is not fundamental".
+> The review should cite "> 20% at peak in a cementless PE composite" with these qualifiers. → [[gaps]]
 
 ## Related
 - [[alkali-activated-binder]] · [[textile-reinforced-hdc]] · [[strain-hardening]] · [[crack-width]] · [[tensile-toughness]] · [[mechanical-results]] · [[four-point-bending-inverse-analysis]] · [[recycled-fine-aggregate]]

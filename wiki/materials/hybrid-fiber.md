@@ -3,8 +3,8 @@ type: material
 slug: hybrid-fiber
 aliases: [hybrid fiber reinforcement, steel + PE hybrid, PVA + steel hybrid, PVA + PE hybrid, HFRCC, HB, HECC, steel fiber, steel cord]
 tags: [fiber, steel, hybrid]
-sources: [homma2009-frcc-self-healing, kanakubo2006-dfrcc-tensile-test-method, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, zhou2023-hsecc-elevated-temperature, mechtcherine2011-shcc-high-strain-rate, zhang2022-hshdcc-review, pourfalah2018-ecc-high-temperature, yun2013-shcc-freeze-thaw, zhang2022-hdc-basalt-textile-tension]
-updated: 2026-10-21
+sources: [homma2009-frcc-self-healing, kanakubo2006-dfrcc-tensile-test-method, yuan2020-nshsdc-beam-strengthening, lee2021-hsdc-wall-emi-impact, zhou2023-hsecc-elevated-temperature, mechtcherine2011-shcc-high-strain-rate, zhang2022-hshdcc-review, pourfalah2018-ecc-high-temperature, yun2013-shcc-freeze-thaw, zhang2022-hdc-basalt-textile-tension, huy2023-egc-pe-pva-hybrid-healing]
+updated: 2026-10-26
 ---
 
 # Hybrid Fiber Systems (steel + polymer, polymer + polymer)
@@ -18,11 +18,14 @@ is covered in [[textile-reinforced-hdc]]. A hybrid is **not** HDC/ECC/SHCC by de
 be shown in the source (CLAUDE.md §3).
 
 ## Key points
-- Six hybrid systems are in the wiki. Steel + PE (Japan, Korea), PVA + steel (China; UK "HECC"), PVA + PE (Korea), and one
-  hybrid in the JCI round robin.
+- Seven hybrid systems are in the wiki. Steel + PE (Japan, Korea), PVA + steel (China; UK "HECC"), PVA + PE (Korea, two:
+  cement-based SHCC and the cementless HSUD-EGC), and one hybrid in the JCI round robin.
 - Until round 4, no primary hybrid paper clearly showed tensile strain hardening in a coupon test, except the modest JCI
   result. **Updated 2026-10-21**: SH is now shown for PVA + steel HECC (dog-bones, ε at peak 2.5–3.0%,
   [[pourfalah2018-ecc-high-temperature]], Table 4) and for PVA + PE SHCC (JSCE dumbbells, [[yun2013-shcc-freeze-thaw]], Fig. 8).
+- **Updated 2026-10-26**: a polymer–polymer (PE + PVA, no steel) hybrid in a **cementless** high-strength matrix strain-hardened
+  to 6.79–11.99% at peak with f'c 50.4–86.5 MPa ([[huy2023-egc-pe-pva-hybrid-healing]], Table 5, Fig. 3); the highest hybrid
+  strain in the wiki.
 
 ## Quantitative evidence
 ### Mix and fibers
@@ -35,6 +38,7 @@ be shown in the source (CLAUDE.md §3).
 | [[pourfalah2018-ecc-high-temperature]] Tables 2–3, 5 | HECC: H6ECC / H13ECC (Heriot-Watt) | PVA 12 mm × 40 µm, 1.75% | straight steel 6 or 13 mm × 150 µm, 3000 MPa, 210 GPa, 0.75% | 2.5 | 0.28 (derived) | 40.1 / 45 (ECC 38.8; 50 mm cubes, 28 d) |
 | [[yun2013-shcc-freeze-thaw]] Tables 1, 3 | SHCC (Chungnam) | PVA 12 mm × 40 µm + PE 12 mm × 12 µm: 1.30 + 0.20 or 0.75 + 0.75 | none | 1.5 | 0.45 / 0.55 | 35.73–48.80 (before F-T) |
 | [[zhou2023-hsecc-elevated-temperature]] Tables 2–3 | HSECC PS-I / PS-II (Guangzhou) | PVA 12 mm, 1.5% / 1.0% | Cu-coated steel 13 mm × 220 µm, 2800 MPa, 200 GPa, 0.5% / 1.0% | 2.0 | 0.20 | 75.1 / 93.8 (PVA-only 83.1) |
+| [[huy2023-egc-pe-pva-hybrid-healing]] Tables 1, 3; Fig. 3 | HSUD-EGC (Chonnam; cementless GGBS/FA/SF geopolymer) | PE 18 mm × 12 µm (3030 MPa, 88 GPa) + PVA 12 mm × 40 µm (1560 MPa, 41 GPa): 1.0 + 0.5 or 0.5 + 1.0 | none | 1.5 | n.r. (≈ 0.38 total water/precursor, computed) | 84.3–86.5 (GGBS:FA 5.5:4) / 50.4–51.9 (3:6.5); ≈ 35 d ⚠️ |
 
 ### Tension and flexure
 | Source | Result | Location |
@@ -45,6 +49,7 @@ be shown in the source (CLAUDE.md §3).
 | [[zhou2023-hsecc-elevated-temperature]] | flexural softening at every temperature; no tension test | Fig. 10 |
 | [[pourfalah2018-ecc-high-temperature]] | dog-bone (80 mm gauge, 30 × 13 mm), 28 d: σ_tu 3.85 / 4.36 / 4.71 MPa and ε at peak 3.5 / 3.0 / 2.5% for ECC / H6ECC / H13ECC; longer steel → fewer cracks, lower strain, higher strength | Table 4, §4.1, Fig. 4 |
 | [[yun2013-shcc-freeze-thaw]] | JSCE dumbbells strain-harden; σ_tu 2.35–3.77 MPa before F-T; more PE (0.75/0.75) → more fine cracks, lower f'c, more air | Table 3, Figs. 8, 11 |
+| [[huy2023-egc-pe-pva-hybrid-healing]] | JSCE dumbbell (80 mm gauge): σ_tu 4.60–6.64 MPa, ε at peak 6.79–11.99%, 61–84 cracks, avg width 83–136 µm; PE-rich > PVA-rich in σ_tu and ε | Tables 5–6 |
 
 ### Behaviour after exposure
 | Source | Exposure | PVA- or PE-only | Hybrid |
@@ -56,6 +61,7 @@ be shown in the source (CLAUDE.md §3).
 | same, Fig. 16 | corrosion | — | in the hybrid, steel corrosion stayed on the outer face |
 | [[pourfalah2018-ecc-high-temperature]] | **hot** tests 20–600 °C | ECC: brittle from 200 °C; 30% debris at 600 °C; crack width hundreds of µm at 60–100 °C | HECC: ≈ 2× ECC bending peak load at 100–600 °C; crack width ≈ 5× smaller at 60–100 °C; 8.5% debris; no spalling; steel pulls out to 400 °C, ruptures at 600 °C; steel length does not change debris (Figs. 7, 10, 14) |
 | [[yun2013-shcc-freeze-thaw]] | 300 F-T cycles (ASTM C666 B) | — | σ_tu kept, strain capacity slightly lower; larger loss with more PVA and W/B 0.55 (Concl. 3) |
+| [[huy2023-egc-pe-pva-hybrid-healing]] Figs. 10, 12; Table 8 | 3% pre-strain at 7 d, 28 d in water | — | crack healing rate 26.78 / 31.40 / 7.36 / 12.48% and RF recovery +15.63 / +24.16 / −9.58 / −6.59 %-points (S-PE / S-PVA / F-PE / F-PVA); PVA-rich heals better; reloaded σ_tu +3.7%, ε −6.1% on average |
 
 ## Influencing factors / relationships
 - **Steel content is capped to keep PE in control.** Korea Univ. limits steel to 1.0 vol.% so that PE drives strain
@@ -70,6 +76,8 @@ be shown in the source (CLAUDE.md §3).
   [[mechtcherine2011-shcc-high-strain-rate]], p. 51). → [[strain-rate-effects]]
 - **Review data:** at 2% total fiber, 2% PE gives 23× the ε_tu of 2% steel; adding steel narrows cracks and raises f'c by
   up to 51% (as cited in [[zhang2022-hshdcc-review]], p. 9–14). → [[fiber-geometry]]
+- **PE:PVA ratio (polymer hybrid):** PE-rich (2:1) gives higher σ_tu and ε, PVA-rich (1:2) heals better; hybridisation is
+  motivated by cost (PVA ≈ 1/5 of PE price) ([[huy2023-egc-pe-pva-hybrid-healing]], Table 5, Table 7, Figs. 10, 12).
 
 - **Recommended dosage (author)**: 6 mm steel for elements exposed to ≤ 100 °C or blast, at "0.5 vol.%" although 0.75% was
   tested ⚠️ ([[pourfalah2018-ecc-high-temperature]], p. 929–930).
@@ -94,4 +102,4 @@ be shown in the source (CLAUDE.md §3).
   [[zhou2023-hsecc-elevated-temperature]], p. 749).
 
 ## Related
-- [[pe-fiber]] · [[pva-fiber]] · [[hshdc]] · [[high-temperature-behaviour]] · [[self-healing]] · [[rc-member-strengthening]] · [[four-point-bending-inverse-analysis]] · [[freeze-thaw]] · [[textile-reinforced-hdc]]
+- [[pe-fiber]] · [[pva-fiber]] · [[hshdc]] · [[high-temperature-behaviour]] · [[self-healing]] · [[rc-member-strengthening]] · [[four-point-bending-inverse-analysis]] · [[freeze-thaw]] · [[textile-reinforced-hdc]] · [[alkali-activated-binder]]
