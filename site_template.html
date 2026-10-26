@@ -469,7 +469,7 @@ function highlight(html, qt) {
   return html.replace(/(^|>)([^<]+)/g, (m, a, t) => a + t.replace(re, (mm, pre, w, rest) => `${pre}<mark>${w}${rest}</mark>`));
 }
 /* AI backend: Cloudflare Worker (worker/hdc-ask-worker.js). Paste its URL here after deploying. */
-const ASK_API = '';
+const ASK_API = 'https://hdc-ask.cons-lmhoang.workers.dev/';
 async function* aiStream(messages, signal) {
   const res = await fetch(ASK_API, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({messages}), signal});
   if (!res.ok) throw new Error(res.status + ' ' + (await res.text()).slice(0, 200));
@@ -493,25 +493,40 @@ function contextFor(q) {
   const vi = viToEn(q);
   const query = vi.text + ' ' + vi.hit.join(' ');
   const r = askSearch(query);
-  const lines = r.passages.map(({p}) => `[[${p.n.slug}]] (${p.n.title}${p.head ? ' > ' + p.head : ''}):\n${p.text}`);
-  let ctx = lines.join('\n\n');
-  for (const n of r.top) {
-    const extra = `\n\n=== Full note [[${n.slug}]] ${n.title} (excerpt) ===\n` + n.body.slice(0, 3500);
-    if ((ctx + extra).length > 26000) break;
+  const main = r.top.filter(n => n.type !== 'source' && n.type !== 'hub').concat(r.top.filter(n => n.type === 'source' || n.type === 'hub'));
+  let ctx = 'MAIN NOTES (the wiki\'s own summaries; use them for definitions and the overall answer):\n';
+  for (const n of main) {
+    const extra = `\n=== [[${n.slug}]] ${n.title} ===\n` + n.body.slice(0, 5000) + '\n';
+    if ((ctx + extra).length > 17000) break;
     ctx += extra;
+  }
+  ctx += '\nSUPPORTING PASSAGES (details and numbers from other notes):\n\n';
+  for (const {p} of r.passages) {
+    const line = `[[${p.n.slug}]] (${p.n.title}${p.head ? ' > ' + p.head : ''}):\n${p.text}\n\n`;
+    if ((ctx + line).length > 28000) break;
+    ctx += line;
   }
   return {r, ctx, vi};
 }
 const SYS = `You are the assistant of the HDC Wiki, a literature wiki on High Ductile Concrete (HDC) and related strain-hardening cementitious composites (ECC, SHCC), compiled from 60 papers. Answer ONLY from the WIKI EXCERPTS given in the user message.
 Rules:
 - After every number or claim, cite the note id in double square brackets, e.g. [[li2002-pva-ecc-interface-tailoring]], plus the table/figure/page if the excerpt gives one. Only use note ids that appear in the excerpts.
+- Base the overall answer and any definition on the MAIN NOTES (they already weigh all papers); use SUPPORTING PASSAGES for extra numbers.
 - If excerpts disagree, give both values with their sources; never average them.
 - If the excerpts do not answer the question, say so honestly and suggest which note to read.
 - Keep each paper's own material term (HDC, ECC, SHCC, HSHDC, UHDC...).
-- Reply in the language of the question (Vietnamese question -> Vietnamese answer). Be clear and friendly like a chat assistant: a direct answer first, then 3-6 short bullets. Under 230 words unless asked for more. Markdown allowed (bullets, bold, small tables); no headings.`;
+- Use the answer language requested at the end of the user message. Be clear and friendly like a chat assistant: a direct answer first, then 3-6 short bullets. Under 230 words unless asked for more. Markdown allowed (bullets, bold, small tables); no headings.`;
+const shortLabel = id => {
+  const n = BY[id];
+  if (n.type === 'source') { const m = id.match(/^([a-z]+?)(\d{4})/); if (m) return m[1][0].toUpperCase() + m[1].slice(1) + ' ' + m[2]; }
+  return n.title.replace(/\s*[(:—].*$/, '');
+};
 function renderAns(text) {
-  const html = marked.parse(wl(text));
-  return html;
+  const md = text.replace(/\[\[([^\]|#]+)(?:\|[^\]]+)?\]\]/g, (m, raw) => {
+    const id = raw.trim(), n = BY[id];
+    return n ? `<a class="wl" href="#/note/${id}" style="color:${color(n.type)}" title="${esc(n.title)}">${esc(shortLabel(id))}</a>` : '';
+  });
+  return marked.parse(md);
 }
 async function runAsk(q) {
   q = (q || '').trim();
@@ -540,7 +555,7 @@ async function runAsk(q) {
   }
   const hist = CHAT.slice(-4);
   const messages = [{role: 'system', content: SYS}, ...hist,
-    {role: 'user', content: `WIKI EXCERPTS:\n${ctx}\n\nQUESTION: ${q}`}];
+    {role: 'user', content: `WIKI EXCERPTS:\n${ctx}\n\nQUESTION: ${q}\n\nWrite the whole answer in ${/[ăâđêôơưàáảãạèéẻẽẹìíỉĩịòóỏõọùúủũụỳýỷỹỵ]/i.test(q) ? 'Vietnamese' : 'English'}.`}];
   let text = '';
   try {
     ans.innerHTML = '<p class="typing">Thinking…</p>';
