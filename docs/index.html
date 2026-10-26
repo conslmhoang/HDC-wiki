@@ -202,7 +202,7 @@ mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;
       <input type="search" id="askq" placeholder="Ask a question, e.g. What crack width is safe against chloride?" aria-label="Your question">
       <button class="go" type="submit" id="askgo">Ask</button>
     </form>
-    <p class="ask-note" id="askfoot">Answers are written by Claude (Haiku) through Puter, free for visitors (a Puter sign-in window may appear the first time). The AI can be wrong: check the cited notes.</p>
+    <p class="ask-note" id="askfoot">Answers are written by an AI model (Llama on Cloudflare) from the wiki passages it is given; no sign-in needed. The AI can be wrong: check the cited notes.</p>
   </div></div></section>
   <section class="view" id="v-note"><div class="page"><div class="page-inner">
     <div class="note-side" id="note-side"></div>
@@ -468,18 +468,24 @@ function highlight(html, qt) {
   const re = new RegExp('(^|[^\\p{L}\\p{N}])(' + qt.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')([\\p{L}\\p{N}]*)', 'giu');
   return html.replace(/(^|>)([^<]+)/g, (m, a, t) => a + t.replace(re, (mm, pre, w, rest) => `${pre}<mark>${w}${rest}</mark>`));
 }
-let puterReady = null;
-function ensurePuter() {
-  if (puterReady) return puterReady;
-  puterReady = new Promise((res, rej) => {
-    if (window.puter) return res(window.puter);
-    const sc = document.createElement('script');
-    sc.src = 'https://js.puter.com/v2/';
-    sc.onload = () => window.puter ? res(window.puter) : rej(new Error('puter missing'));
-    sc.onerror = () => { puterReady = null; rej(new Error('Could not load the AI service.')); };
-    document.head.appendChild(sc);
-  });
-  return puterReady;
+/* AI backend: Cloudflare Worker (worker/hdc-ask-worker.js). Paste its URL here after deploying. */
+const ASK_API = '';
+async function* aiStream(messages, signal) {
+  const res = await fetch(ASK_API, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({messages}), signal});
+  if (!res.ok) throw new Error(res.status + ' ' + (await res.text()).slice(0, 200));
+  const reader = res.body.getReader(), dec = new TextDecoder();
+  let buf = '';
+  for (;;) {
+    const {value, done} = await reader.read();
+    if (done) break;
+    buf += dec.decode(value, {stream: true});
+    const lines = buf.split('\n'); buf = lines.pop();
+    for (const line of lines) {
+      const d = line.trim(); if (!d.startsWith('data:')) continue;
+      const payload = d.slice(5).trim(); if (payload === '[DONE]') return;
+      try { const j = JSON.parse(payload); const t = j.response ?? j.choices?.[0]?.delta?.content; if (t) yield t; } catch {}
+    }
+  }
 }
 const CHAT = [];
 let asking = false;
@@ -538,22 +544,15 @@ async function runAsk(q) {
   let text = '';
   try {
     ans.innerHTML = '<p class="typing">Thinking…</p>';
-    const puter = await ensurePuter();
-    const stream = await puter.ai.chat(messages, {model: 'claude-haiku-5-5', stream: true, max_tokens: 900});
-    for await (const part of stream) {
-      if (part && part.type === 'error') throw new Error(part.message || 'AI error');
-      const t = part?.text; if (!t) continue;
-      text += t;
-      ans.innerHTML = renderAns(text);
-    }
+    if (!ASK_API) throw new Error('not_connected');
+    for await (const t of aiStream(messages)) { text += t; ans.innerHTML = renderAns(text); }
     if (!text) throw new Error('empty');
     ans.innerHTML = renderAns(text);
     CHAT.push({role: 'user', content: q}, {role: 'assistant', content: text});
   } catch (e) {
     const msg = String(e?.message || e?.error?.message || e || '');
-    const why = /insufficient|402|funds|credit/i.test(msg) ? 'The free AI allowance for this browser is used up.'
-      : /429|too_many|rate/i.test(msg) ? 'Too many questions at once. Wait a few seconds and ask again.'
-      : /cancel|closed|denied|auth/i.test(msg) ? 'The AI needs the Puter sign-in window to be allowed.'
+    const why = /not_connected/.test(msg) ? 'The AI is not connected yet.'
+      : /429|limit|quota/i.test(msg) ? 'The free AI quota for today is used up, or too many questions came at once. Try again later.'
       : 'The AI service did not answer.';
     if (!text) ans.innerHTML = `<p>${why} Here is what the wiki says about your question instead:</p>` + psgHtml;
     else ans.insertAdjacentHTML('beforeend', `<p class="warn">${why}</p>`);
@@ -579,7 +578,7 @@ function route() {
   if (view === 'graph' && !G) initGraph();
   if (view === 'catalog') renderCatalog();
   if (view === 'note') renderNote(decodeURIComponent(arg));
-  if (view === 'ask') { ensurePuter().catch(() => {}); setTimeout(() => document.getElementById('askq').focus(), 0); }
+  if (view === 'ask') setTimeout(() => document.getElementById('askq').focus(), 0);
   if (view !== 'note') document.title = 'HDC Wiki';
 }
 window.addEventListener('hashchange', route);
