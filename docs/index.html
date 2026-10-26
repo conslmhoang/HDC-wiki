@@ -195,7 +195,7 @@ mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;
   <section class="view" id="v-about"><div class="page"><div class="page-inner about" id="about"></div></div></section>
   <section class="view" id="v-ask"><div class="page" id="askpage"><div class="page-inner">
     <h2>Ask the HDC wiki</h2>
-    <p class="lede">Chat with an AI that answers only from this wiki's 60 papers and 129 notes. Each answer cites the notes it used; open them to check. English or Vietnamese.</p>
+    <p class="lede">Chat with an AI that answers only from this wiki's <span id="askcount">papers and notes</span>. Each answer cites the notes it used; open them to check. English or Vietnamese.</p>
     <div class="ask-ex" id="askex"></div>
     <div id="askthread" aria-live="polite"></div>
     <form class="askbar" id="askform" autocomplete="off">
@@ -508,7 +508,7 @@ function contextFor(q) {
   }
   return {r, ctx, vi};
 }
-const SYS = `You are the assistant of the HDC Wiki, a literature wiki on High Ductile Concrete (HDC) and related strain-hardening cementitious composites (ECC, SHCC), compiled from 60 papers. Answer ONLY from the WIKI EXCERPTS given in the user message.
+const SYS = `You are the assistant of the HDC Wiki, a literature wiki on High Ductile Concrete (HDC) and related strain-hardening cementitious composites (ECC, SHCC), compiled from ${nSrc} papers. Answer ONLY from the WIKI EXCERPTS given in the user message.
 Rules:
 - After every number or claim, cite the note id in double square brackets, e.g. [[li2002-pva-ecc-interface-tailoring]], plus the table/figure/page if the excerpt gives one. Only use note ids that appear in the excerpts.
 - Base the overall answer and any definition on the MAIN NOTES (they already weigh all papers); use SUPPORTING PASSAGES for extra numbers.
@@ -579,6 +579,7 @@ async function runAsk(q) {
   asking = false; go.disabled = false; go.textContent = 'Ask';
   document.getElementById('askq').focus();
 }
+document.getElementById('askcount').textContent = `${nSrc} papers and ${NOTES.length} notes`;
 const ASK_EX = ['What crack width is safe against chloride?', 'Is HDC the same as ECC?', 'Why does PVA fail in high-strength HDC?', 'How does fly ash change strain capacity?', 'How does HDC behave at high temperature?', 'Sợi PVA hay PE cho HDC cường độ cao?'];
 document.getElementById('askex').innerHTML = ASK_EX.map(q => `<button type="button" class="chip">${esc(q)}</button>`).join('');
 document.querySelectorAll('#askex .chip').forEach(b => b.onclick = () => runAsk(b.textContent));
