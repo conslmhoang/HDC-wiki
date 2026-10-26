@@ -110,7 +110,31 @@ footer{padding:12px 24px;border-top:1px solid var(--line);font-size:12.5px;color
   input[type=search]{width:100%}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
-nav a.ask-ai{font-weight:600}
+
+/* ask */
+nav a.ask-nav{font-weight:600;color:var(--source)}
+#v-ask .page-inner{max-width:860px}
+.askbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}
+.askbar input{flex:1;min-width:0;width:auto;font-size:16px;padding:11px 14px}
+.askbar .go{font:inherit;font-weight:600;padding:10px 18px;border:0;border-radius:4px;background:var(--source);color:var(--paper);cursor:pointer}
+.ask-ex{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px}
+.ask-ex .chip{cursor:pointer}
+.ask-note{font-size:13px;color:var(--muted);margin:0 0 18px}
+.ask-out h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:26px 0 10px}
+.ask-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.ask-top a.card{display:block;text-decoration:none;color:var(--graphite);background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--c);padding:12px 14px;border-radius:4px}
+.ask-top a.card b{display:block;font-size:14.5px;line-height:1.3;margin:4px 0 6px}
+.ask-top a.card span{font-family:"Source Serif 4",Georgia,serif;font-size:13.5px;color:var(--muted);line-height:1.45}
+.psg{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--c);padding:10px 14px;margin:0 0 10px;border-radius:2px}
+.psg .src{font-size:12.5px;color:var(--muted);margin:0 0 4px}
+.psg .src a{font-weight:600;text-decoration:none}
+.psg .txt{font-family:"Source Serif 4",Georgia,serif;font-size:15px;line-height:1.6;overflow-wrap:anywhere}
+.psg .txt table{border-collapse:collapse;font-family:Archivo,sans-serif;font-size:13px;display:block;overflow-x:auto}
+.psg .txt th,.psg .txt td{border:1px solid var(--line);padding:4px 7px;text-align:left}
+.psg .txt a.wl{text-decoration:none;border-bottom:1px solid currentColor}
+mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;padding:0 1px;border-radius:2px}
+.ask-ai{margin-top:26px;padding:14px 16px;border:1px dashed var(--line);border-radius:4px;font-size:14px;color:var(--muted)}
+.ask-ai a{font-weight:600}
 </style>
 </head>
 <body>
@@ -120,7 +144,7 @@ nav a.ask-ai{font-weight:600}
     <p>A knowledge graph of high ductile concrete research, compiled and kept current by an LLM. Every number links back to its paper.</p>
   </div>
   <nav aria-label="Sections">
-    <a href="#/graph">Graph</a><a href="#/catalog">Catalog</a><a href="#/concepts">Concepts</a><a href="#/about">About</a><a class="ask-ai" href="https://claude.ai/artifact/QAHob5Vs5U5x9jWj2X2Xiq" target="_blank" rel="noopener" title="Ask questions about the wiki (opens on claude.ai, sign-in needed)">Ask AI ↗</a>
+    <a href="#/graph">Graph</a><a href="#/catalog">Catalog</a><a href="#/concepts">Concepts</a><a href="#/about">About</a><a href="#/ask" class="ask-nav">Ask the HDC wiki</a>
   </nav>
   <div class="stats" id="stats"></div>
 </header>
@@ -150,6 +174,16 @@ nav a.ask-ai{font-weight:600}
     <div class="groups" id="groups"></div>
   </div></div></section>
   <section class="view" id="v-about"><div class="page"><div class="page-inner about" id="about"></div></div></section>
+  <section class="view" id="v-ask"><div class="page"><div class="page-inner">
+    <h2>Ask the HDC wiki</h2>
+    <p class="lede">Type a question in English or Vietnamese. The wiki finds the most relevant sentences, bullets and table rows across all its notes, highlights your keywords and links each one to its note and paper.</p>
+    <form class="askbar" id="askform" autocomplete="off">
+      <input type="search" id="askq" placeholder="e.g. What crack width is safe against chloride?" aria-label="Your question">
+      <button class="go" type="submit">Ask</button>
+    </form>
+    <div class="ask-ex" id="askex"></div>
+    <div class="ask-out" id="askout"></div>
+  </div></div></section>
   <section class="view" id="v-note"><div class="page"><div class="page-inner">
     <div class="note-side" id="note-side"></div>
     <article class="md" id="note-body"></article>
@@ -322,6 +356,123 @@ function renderNote(slug) {
   document.title = n.title + ' · HDC Wiki';
 }
 
+
+/* ---------- ask: in-browser retrieval over every note ---------- */
+const AI_URL = 'https://claude.ai/artifact/QAHob5Vs5U5x9jWj2X2Xiq';
+const VI = [
+  ['bề rộng vết nứt','crack width'],['độ rộng vết nứt','crack width'],['vết nứt','crack'],
+  ['cường độ chịu nén','compressive strength'],['cường độ nén','compressive strength'],['cường độ chịu kéo','tensile strength'],
+  ['cường độ kéo','tensile strength'],['cường độ cao','high strength hshdc'],['cường độ','strength'],
+  ['khả năng biến dạng','strain capacity'],['tốc độ biến dạng','strain rate'],['biến dạng','strain'],['độ dẻo','ductility strain capacity'],['dẻo','ductile'],
+  ['sợi pva','pva fiber'],['sợi pe','pe fiber'],['sợi thép','steel fiber hybrid'],['sợi','fiber'],
+  ['clorua','chloride'],['clo','chloride'],['ăn mòn','corrosion'],['cốt thép','rebar reinforcement'],
+  ['nhiệt độ cao','high temperature fire'],['nhiệt độ','temperature'],['hỏa hoạn','fire'],['cháy','fire'],
+  ['co ngót','shrinkage'],['tự lành','self-healing'],['tự phục hồi','self-healing'],['băng giá','freeze thaw'],['đóng băng','freeze thaw'],['đông tan','freeze thaw'],
+  ['cacbonat hóa','carbonation'],['cacbonat','carbonation'],['sunfat','sulfate'],['tính thấm','permeability'],['thấm','permeability'],['độ bền lâu','durability'],['độ bền','durability'],
+  ['tro bay','fly ash'],['xỉ','slag ggbfs'],['muội silic','silica fume'],['cao su','rubber'],['cát tái chế','recycled aggregate'],
+  ['tỉ lệ nước','water binder ratio'],['nước/chất kết dính','water binder ratio'],['chất kết dính','binder'],['cấp phối','mix design'],
+  ['uốn','flexural bending'],['nén','compressive'],['kéo','tensile'],['cắt','shear'],['dầm','beam'],['cột','column'],['tường gạch','masonry wall'],['tường','wall'],['gạch','masonry'],
+  ['gia cường','strengthening retrofit'],['sửa chữa','repair'],['va đập','impact'],['mỏi','fatigue'],['in 3d','3d printed'],['kích thước','size effect'],
+  ['thí nghiệm','test'],['tiêu chuẩn','standard'],['mâu thuẫn','conflict'],['khoảng trống','gap'],['giao diện','interface'],['liên kết','bond interface'],
+  ['thuật ngữ','terminology'],['so sánh','compare'],['ứng dụng','application'],['kết cấu','structural']
+];
+function viToEn(q) {
+  let s = q.toLowerCase().normalize('NFC'), hit = [];
+  for (const [vi, en] of VI) if (s.includes(vi)) { s = s.split(vi).join(' ' + en + ' '); hit.push(en); }
+  return {text: s, hit};
+}
+const STOP = new Set('a an the of and or for to in on at by with is are was were be been it its this that these those what which who how why when does do did can could should would there their from as into than then also about between under over per vs not no use used using i my me we our you your'.split(' '));
+const stem = t => t.length > 4 ? t.replace(/(ies)$/, 'y').replace(/(es|s)$/, '').replace(/(ing|ed)$/, '') : t;
+const toks = s => (s.toLowerCase().match(/[\p{L}\p{N}µ]+/gu) || []).filter(t => t.length > 1 && !STOP.has(t)).map(stem);
+const PASS = [];
+for (const n of NOTES) {
+  if (n.slug === 'log' || n.slug === 'index') continue;
+  let head = '', lines = n.body.split('\n'), i = 0, tableHead = null;
+  while (i < lines.length) {
+    const l = lines[i];
+    if (/^#{1,4}\s/.test(l)) { head = l.replace(/^#+\s*/, ''); tableHead = null; i++; continue; }
+    if (/^\s*\|/.test(l)) {
+      const rows = []; while (i < lines.length && /^\s*\|/.test(lines[i])) rows.push(lines[i++]);
+      const body = rows.filter(r => !/^\s*\|[\s:|-]+\|\s*$/.test(r));
+      const hd = body[0];
+      for (const r of body.slice(1)) PASS.push({n, head, kind: 'row', text: hd + '\n|' + '---|'.repeat((hd.match(/\|/g) || []).length - 1) + '\n' + r});
+      continue;
+    }
+    if (/^\s*([-*]|\d+\.)\s+/.test(l)) {
+      let t = l; i++;
+      while (i < lines.length && /^\s{2,}\S/.test(lines[i]) && !/^\s*([-*]|\d+\.)\s+/.test(lines[i].trim() ? lines[i] : 'x')) t += ' ' + lines[i++].trim();
+      PASS.push({n, head, kind: 'li', text: t.replace(/^\s*([-*]|\d+\.)\s+/, '')}); continue;
+    }
+    if (!l.trim() || /^---/.test(l)) { i++; continue; }
+    let t = l; i++;
+    while (i < lines.length && lines[i].trim() && !/^(#|\s*\||\s*([-*]|\d+\.)\s)/.test(lines[i])) t += ' ' + lines[i++].trim();
+    PASS.push({n, head, kind: 'p', text: t.replace(/^>\s*/, '')});
+  }
+}
+for (const p of PASS) { p.t = toks(p.text + ' ' + p.head); p.tt = new Set(toks(p.n.title + ' ' + p.n.slug.replace(/-/g, ' '))); }
+const PDF = new Map(); for (const p of PASS) for (const t of new Set(p.t)) PDF.set(t, (PDF.get(t) || 0) + 1);
+const PAVG = PASS.reduce((a, p) => a + p.t.length, 0) / PASS.length;
+function askSearch(q) {
+  const qt = [...new Set(toks(q))].filter(t => PDF.has(t));
+  const N = PASS.length, k1 = 1.3, b = 0.6;
+  const scored = [];
+  for (const p of PASS) {
+    if (p.t.length < 4 || /re-checked against|publisher pdf on|^raw[_ ]file/i.test(p.text)) continue;
+    const tf = new Map(); for (const t of p.t) tf.set(t, (tf.get(t) || 0) + 1);
+    let s = 0, matched = 0;
+    for (const t of qt) {
+      const f = tf.get(t), inTitle = p.tt.has(t);
+      if (!f && !inTitle) continue;
+      matched++;
+      const idf = Math.log(1 + (N - PDF.get(t) + 0.5) / (PDF.get(t) + 0.5));
+      if (f) s += idf * (f * (k1 + 1)) / (f + k1 * (1 - b + b * p.t.length / PAVG));
+      if (inTitle) s += idf * 0.6;
+    }
+    if (!s) continue;
+    s *= (0.5 + matched / Math.max(qt.length, 1));
+    if (/\d/.test(p.text)) s *= 1.08;
+    if (p.n.type !== 'source' && p.n.type !== 'hub') s *= 1.25;
+    scored.push({p, s});
+  }
+  scored.sort((a, b) => b.s - a.s);
+  const per = {}, out = [];
+  for (const x of scored) { const id = x.p.n.slug; if ((per[id] || 0) >= 2) continue; per[id] = (per[id] || 0) + 1; out.push(x); if (out.length >= 10) break; }
+  const noteScore = {};
+  for (const x of scored.slice(0, 60)) noteScore[x.p.n.slug] = (noteScore[x.p.n.slug] || 0) + x.s;
+  const top = Object.entries(noteScore).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id]) => BY[id]);
+  return {qt, passages: out, top};
+}
+function wl(md) { return md.replace(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g, (m, s, lab) => BY[s] ? `<a class="wl" href="#/note/${s}" style="color:${color(BY[s].type)}">${esc(lab || BY[s].title.replace(/\s*\(.*$/, ''))}</a>` : esc(lab || s)); }
+function highlight(html, qt) {
+  if (!qt.length) return html;
+  const re = new RegExp('(^|[^\\p{L}\\p{N}])(' + qt.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')([\\p{L}\\p{N}]*)', 'giu');
+  return html.replace(/(^|>)([^<]+)/g, (m, a, t) => a + t.replace(re, (mm, pre, w, rest) => `${pre}<mark>${w}${rest}</mark>`));
+}
+function runAsk(q) {
+  const out = document.getElementById('askout');
+  q = (q || '').trim();
+  if (!q) { out.innerHTML = ''; return; }
+  const vi = viToEn(q);
+  const query = vi.text + ' ' + vi.hit.join(' ');
+  const {qt, passages, top} = askSearch(query);
+  const aiBox = `<div class="ask-ai">Want a written answer that combines these passages? <a href="${AI_URL}" target="_blank" rel="noopener">Ask Claude about this ↗</a> (opens on claude.ai; needs a JNU Claude account).</div>`;
+  if (!passages.length) {
+    out.innerHTML = `<p class="ask-note">Nothing in the wiki matches “${esc(q)}”. Try other terms, for example crack width, PVA fiber, chloride, strain capacity, fly ash.</p>` + aiBox;
+    return;
+  }
+  const interp = vi.hit.length ? `<p class="ask-note">Searched with: ${esc([...new Set(vi.hit)].join(', '))}</p>` : '';
+  const cards = top.map(n => `<a class="card" href="#/note/${n.slug}" style="--c:${color(n.type)}"><span class="type">${dot(n.type)}${TLABEL[n.type] || n.type}</span><b>${esc(n.title)}</b><span>${esc((n.summary || '').slice(0, 160))}${(n.summary || '').length > 160 ? '…' : ''}</span></a>`).join('');
+  const ps = passages.map(({p}) => {
+    const html = p.kind === 'row' ? marked.parse(wl(p.text)) : marked.parseInline(wl(p.text));
+    return `<div class="psg" style="--c:${color(p.n.type)}"><p class="src">${dot(p.n.type)} <a href="#/note/${p.n.slug}" style="color:${color(p.n.type)}">${esc(p.n.title)}</a>${p.head ? ' › ' + esc(p.head) : ''}</p><div class="txt">${highlight(html, qt)}</div></div>`;
+  }).join('');
+  out.innerHTML = interp + `<h3>Most relevant notes</h3><div class="ask-top">${cards}</div><h3>What the wiki says</h3>${ps}` + aiBox;
+}
+const ASK_EX = ['What crack width is safe against chloride?', 'Is HDC the same as ECC?', 'Why does PVA fail in high-strength HDC?', 'Effect of fly ash on strain capacity', 'Behaviour at high temperature', 'Sợi PVA hay PE cho HDC cường độ cao?'];
+document.getElementById('askex').innerHTML = ASK_EX.map(q => `<button type="button" class="chip">${esc(q)}</button>`).join('');
+document.querySelectorAll('#askex .chip').forEach(b => b.onclick = () => { document.getElementById('askq').value = b.textContent; runAsk(b.textContent); });
+document.getElementById('askform').addEventListener('submit', e => { e.preventDefault(); runAsk(document.getElementById('askq').value); });
+
 /* ---------- router ---------- */
 function route() {
   const h = location.hash || '#/graph';
@@ -331,6 +482,7 @@ function route() {
   if (view === 'graph' && !G) initGraph();
   if (view === 'catalog') renderCatalog();
   if (view === 'note') renderNote(decodeURIComponent(arg));
+  if (view === 'ask') setTimeout(() => document.getElementById('askq').focus(), 0);
   if (view !== 'note') document.title = 'HDC Wiki';
 }
 window.addEventListener('hashchange', route);
