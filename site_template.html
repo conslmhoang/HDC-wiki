@@ -87,14 +87,16 @@ table.cat a.t:hover{text-decoration:underline}
 .flow div{border:1px solid var(--graphite);padding:12px;margin-right:-1px;background:var(--paper)}
 .flow b{display:block;margin-bottom:4px}
 /* note reader */
-#v-note .page-inner{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px}
+#v-note .page-inner{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;max-width:1500px}
 .note-side{font-size:13.5px;position:sticky;top:0;align-self:start}
 .note-side h3{font-size:13px;color:var(--muted);margin:18px 0 6px}
-.md{font-family:"Source Serif 4",Georgia,serif;font-size:16.5px;line-height:1.65;max-width:78ch;background:var(--paper);padding:32px 40px;border:1px solid var(--line)}
+.md{font-family:"Source Serif 4",Georgia,serif;font-size:16.5px;line-height:1.65;background:var(--paper);padding:32px 40px;border:1px solid var(--line);min-width:0;overflow-x:auto}
+.md > p,.md > ul,.md > ol,.md > blockquote,.md > h1,.md > h2,.md > h3{max-width:80ch}
 .md h1{font-family:Archivo,sans-serif;font-size:26px;line-height:1.25;margin:0 0 18px;letter-spacing:-.01em}
 .md h2{font-family:Archivo,sans-serif;font-size:19px;margin:30px 0 10px}
 .md h3{font-family:Archivo,sans-serif;font-size:16px;margin:22px 0 8px}
-.md table{border-collapse:collapse;font-family:Archivo,sans-serif;font-size:13px;line-height:1.4;display:block;overflow-x:auto;margin:12px 0}
+.md table{border-collapse:collapse;font-family:Archivo,sans-serif;font-size:13.5px;line-height:1.45;width:100%;margin:12px 0}
+.md td{min-width:110px}
 .md th,.md td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .md th{background:var(--slab)}
 .md blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--concept);background:var(--slab)}
@@ -154,6 +156,31 @@ mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;
 .bub-a summary{cursor:pointer;font-size:13px;color:var(--muted)}
 .bub-a .warn{color:var(--concept);font-size:13.5px;margin:8px 0 0}
 #v-ask .askbar{position:sticky;bottom:0;background:var(--cement);padding:10px 0;margin:0}
+
+/* conflicts */
+#v-conflicts .page-inner{max-width:1000px}
+.cf-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
+.cf-bar input{flex:1;min-width:200px}
+.cf-chip{font:inherit;font-size:13px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--graphite);cursor:pointer}
+.cf-chip[aria-pressed=true]{background:var(--graphite);color:var(--slab);border-color:var(--graphite)}
+.cf-group h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:26px 0 10px}
+.cf{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:0 0 12px}
+.cf-head{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;margin:0 0 10px}
+.cf-head b{font-size:15.5px}
+.st{font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.st-open{background:color-mix(in srgb,var(--property) 18%,transparent);color:var(--property)}
+.st-resolved{background:color-mix(in srgb,var(--material) 20%,transparent);color:var(--material)}
+.st-partly{background:color-mix(in srgb,var(--concept) 20%,transparent);color:var(--concept)}
+.st-verify{background:color-mix(in srgb,var(--test-method) 18%,transparent);color:var(--test-method)}
+.st-note{background:var(--slab);color:var(--muted)}
+.cf-ab{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch}
+.cf-ab > div{font-family:"Source Serif 4",Georgia,serif;font-size:14.5px;line-height:1.55;background:var(--slab);border-radius:4px;padding:8px 10px;min-width:0;overflow-wrap:anywhere}
+.cf-ab .vs{background:none;font-family:Archivo,sans-serif;font-weight:700;color:var(--muted);align-self:center;padding:0}
+.cf-ab i{display:block;font-style:normal;font-family:Archivo,sans-serif;font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.cf-why{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+.cf-why b{color:var(--graphite);font-weight:600}
+.cf a.wl{text-decoration:none;border-bottom:1px solid currentColor;font-family:Archivo,sans-serif;font-size:.9em;font-weight:600}
+@media (max-width:640px){.cf-ab{grid-template-columns:1fr}.cf-ab .vs{text-align:center}}
 </style>
 </head>
 <body>
@@ -163,7 +190,7 @@ mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;
     <p>A knowledge graph of high ductile concrete research, compiled and kept current by an LLM. Every number links back to its paper.</p>
   </div>
   <nav aria-label="Sections">
-    <a href="#/graph">Graph</a><a href="#/catalog">Catalog</a><a href="#/concepts">Concepts</a><a href="#/about">About</a><a href="#/ask" class="ask-nav">Ask the HDC wiki</a>
+    <a href="#/graph">Graph</a><a href="#/catalog">Catalog</a><a href="#/concepts">Concepts</a><a href="#/conflicts">Conflicts</a><a href="#/about">About</a><a href="#/ask" class="ask-nav">Ask the HDC wiki</a>
   </nav>
   <div class="stats" id="stats"></div>
 </header>
@@ -191,6 +218,12 @@ mark{background:color-mix(in srgb,var(--concept) 28%,transparent);color:inherit;
     <h2>Concepts</h2>
     <p class="lede">Topic notes synthesised across papers, grouped by kind. Each one cites the source notes behind its claims.</p>
     <div class="groups" id="groups"></div>
+  </div></div></section>
+  <section class="view" id="v-conflicts"><div class="page"><div class="page-inner">
+    <h2>Conflicts between sources</h2>
+    <p class="lede">Where two papers report different values for the same thing, the wiki keeps both, with their sources, a likely reason and a status, instead of picking one or averaging. Open conflicts are research gaps. Full table: <a href="#/note/gaps">gaps note</a>.</p>
+    <div class="cf-bar"><input type="search" id="cfq" placeholder="Filter conflicts, e.g. chloride, PVA, strain" aria-label="Filter conflicts"><span id="cfchips" style="display:flex;gap:6px;flex-wrap:wrap"></span></div>
+    <div id="cfout"></div>
   </div></div></section>
   <section class="view" id="v-about"><div class="page"><div class="page-inner about" id="about"></div></div></section>
   <section class="view" id="v-ask"><div class="page" id="askpage"><div class="page-inner">
@@ -361,12 +394,57 @@ document.getElementById('about').innerHTML = `
   <h3>Current contents</h3>
   <p>${nSrc} papers, ${NOTES.length} notes and ${nLinks} links. Start with the <a href="#/note/index">index</a>, the <a href="#/note/review-outline">review outline</a> or the <a href="#/note/terminology-hdc-ecc-shcc">terminology</a> note.</p>`;
 
+/* ---------- short labels: papers as "Author Year", topics by title ---------- */
+function noteLabel(id) {
+  const n = BY[id]; if (!n) return id;
+  if (n.type === 'source') { const m = id.match(/^([a-z]+?)(\d{4})/); if (m) return m[1][0].toUpperCase() + m[1].slice(1) + ' ' + m[2]; }
+  return n.title.replace(/\s*[(:—].*$/, '');
+}
+function linkify(md) {
+  return md.replace(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g, (m, raw, lab) => { const id = raw.trim(); return BY[id] ? `<a class="wl" href="#/note/${id}" style="color:${color(BY[id].type)}" title="${esc(BY[id].title)}">${esc(lab || noteLabel(id))}</a>` : esc(lab || id); });
+}
+
+/* ---------- conflicts view ---------- */
+const CF = (() => {
+  const g = BY['gaps']; if (!g) return [];
+  const sec = g.body.split(/^## /m).find(x => /^⚔️|^Conflicts/i.test(x.trim())) || '';
+  const out = []; let group = 'Other';
+  for (const line of sec.split('\n')) {
+    if (!/^\|/.test(line) || /^\|\s*-/.test(line) || /^\|\s*Topic\s*\|/.test(line)) continue;
+    const c = line.replace(/^\||\|\s*$/g, '').split('|').map(x => x.trim());
+    if (c.length >= 2 && /^\*\*.*\*\*$/.test(c[0]) && c.slice(1).every(x => !x)) { group = c[0].replace(/\*\*/g, ''); continue; }
+    if (c.length < 5) continue;
+    const st = c[4], k = st.toLowerCase();
+    const cls = /^(partly|probably)/.test(k) ? 'partly' : /^resolved/.test(k) ? 'resolved' : /^(verify|⚠️ verify)/.test(k) ? 'verify' : /open/.test(k.slice(0, 12)) ? 'open' : 'note';
+    out.push({group, topic: c[0], a: c[1], b: c[2], why: c[3], st, cls});
+  }
+  return out;
+})();
+const CF_LABEL = {open: 'Open', partly: 'Partly resolved', resolved: 'Resolved', verify: 'To verify', note: 'Refined / note'};
+let cfFilter = 'all';
+function renderConflicts() {
+  const q = (document.getElementById('cfq').value || '').toLowerCase();
+  const counts = {}; CF.forEach(x => counts[x.cls] = (counts[x.cls] || 0) + 1);
+  document.getElementById('cfchips').innerHTML = [['all', `All ${CF.length}`], ...Object.keys(CF_LABEL).filter(k => counts[k]).map(k => [k, `${CF_LABEL[k]} ${counts[k]}`])]
+    .map(([k, t]) => `<button type="button" class="cf-chip" data-k="${k}" aria-pressed="${cfFilter === k}">${t}</button>`).join('');
+  document.querySelectorAll('#cfchips .cf-chip').forEach(b => b.onclick = () => { cfFilter = b.dataset.k; renderConflicts(); });
+  const shown = CF.filter(x => (cfFilter === 'all' || x.cls === cfFilter) && (!q || (x.topic + x.a + x.b + x.why + x.group).toLowerCase().includes(q)));
+  const groups = [...new Set(shown.map(x => x.group))];
+  const inl = t => marked.parseInline(linkify(t || '—'));
+  document.getElementById('cfout').innerHTML = shown.length ? groups.map(gname => `<div class="cf-group"><h3>${esc(gname)}</h3>` +
+    shown.filter(x => x.group === gname).map(x => `<div class="cf"><div class="cf-head"><b>${inl(x.topic)}</b><span class="st st-${x.cls}">${CF_LABEL[x.cls]}</span></div>
+      <div class="cf-ab"><div><i>Source A says</i>${inl(x.a)}</div><span class="vs">⚔️</span><div><i>Source B says</i>${inl(x.b)}</div></div>
+      <p class="cf-why"><b>Why:</b> ${inl(x.why)} &nbsp;·&nbsp; <b>Status:</b> ${inl(x.st)}</p></div>`).join('') + '</div>').join('')
+    : '<p class="lede">No conflict matches this filter.</p>';
+}
+document.getElementById('cfq').addEventListener('input', renderConflicts);
+
 /* ---------- note reader ---------- */
 marked.use({gfm: true});
 function renderNote(slug) {
   const n = BY[slug];
   if (!n) { document.getElementById('note-body').innerHTML = `<h1>Note not found</h1><p>No note is named “${esc(slug)}”. Go back to the <a href="#/graph">graph</a> or the <a href="#/concepts">concepts list</a>.</p>`; document.getElementById('note-side').innerHTML = ''; return; }
-  const md = n.body.replace(/\[\[([^\]|#]+)\]\]/g, (m, s) => BY[s] ? `<a class="wl" href="#/note/${s}" style="color:${color(BY[s].type)}">${esc(BY[s].title.replace(/\s*\(.*$/, ''))}</a>` : `<a class="wl missing">${esc(s)}</a>`);
+  const md = n.body.replace(/\[\[([^\]|#]+)\]\]/g, (m, s) => BY[s] ? `<a class="wl" href="#/note/${s}" style="color:${color(BY[s].type)}" title="${esc(BY[s].title)}">${esc(noteLabel(s))}</a>` : `<a class="wl missing">${esc(s)}</a>`);
   document.getElementById('note-body').innerHTML = marked.parse(md);
   const li = arr => arr.map(s => `<li>${dot(BY[s].type)}<a href="#/note/${s}">${esc(BY[s].title)}</a></li>`).join('');
   document.getElementById('note-side').innerHTML = `<a href="#/graph">Back to graph</a>
@@ -593,6 +671,7 @@ function route() {
   document.querySelectorAll('nav a').forEach(a => { if (a.getAttribute('href') === '#/' + view) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   if (view === 'graph' && !G) initGraph();
   if (view === 'catalog') renderCatalog();
+  if (view === 'conflicts') renderConflicts();
   if (view === 'note') renderNote(decodeURIComponent(arg));
   if (view === 'ask') setTimeout(() => document.getElementById('askq').focus(), 0);
   if (view !== 'note') document.title = 'HDC Wiki';

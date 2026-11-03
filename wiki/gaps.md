@@ -1,15 +1,16 @@
 ---
 type: hub
-updated: 2026-10-26
+updated: 2026-11-03
 ---
 
 # Research Gaps, Conflicts & Open Questions
 
 This page feeds the "Research gaps and future directions" chapter of [[review-outline]].
-Corpus: 63 source pages (round 7, 2026-10-26: three Chonnam National University alkali-activated / geopolymer composites
-added to the 60 of round 5). 80 conflict rows below, grouped by theme (51 after round 4; 64 after round 5, which added
-13 rows, updated 12 and resolved or probably resolved 4; the PDF re-ingest added 9 rows — 8 internal inconsistencies of
-single sources and 1 corrected wiki reading, already resolved — and updated 13; round 7 added 7 rows and updated 3).
+
+- **Conflicts** (80 rows, grouped by theme): where sources disagree, both values are kept with their
+  sources, a likely reason and a status (open, partly resolved, resolved, verify). Open rows are research gaps.
+- **Under-studied areas** and **Open questions** follow the table.
+- Corpus: 63 papers. How the rows were added round by round is recorded in [[log]].
 
 ## ⚔️ Conflicts between sources
 | Topic | Source A says | Source B says | Possible reason | Status |
